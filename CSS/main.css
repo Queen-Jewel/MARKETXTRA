@@ -763,6 +763,22 @@ video {
   margin-left: 70px;
 }
 
+.ml-3{
+  margin-left: 0.75rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.ml-10{
+  margin-left: 2.5rem;
+}
+
 .flex{
   display: flex;
 }
