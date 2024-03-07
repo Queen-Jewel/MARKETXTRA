@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>Welcome Back</title>
+  </head>
+  <body>
+    <div
+      class="container font-Work flex items-center justify-center max-w-[100%]"
+    >
+      <div class="body font-Work bg-white w-[424px] h-[734px]">
+        <img
+          class="mx2 mt-4 ml-32 mb-7 w-[158.41px] h-[56.63px]"
+          src="./images/Mx 2@2x.png"
+          alt="mx2"
+        />
+        <div class="sign pl-7">
+          <div
+            class="flex flex-col items-center justify-center w-[360px] h-[88px] mb-6"
+          >
+            <h2
+              class="h-[32px] mb-3 font-Work text-Graytrue-900 font-semibold text-2xl items-center"
+            >
+              Welcome Back!
+            </h2>
+            <p class="text-center text-Graytrue text-sm h-[48px] px-5">
+              Sign in to your Marketxtra account to continue.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-start justify-center text-Graytrue text-[14px] w-[360px] h-[116px]"
+          >
+            <input
+              class="border-Gray-400 border py-3 pl-2 w-[360px] h-[54px] mb-2 rounded-md"
+              type="email"
+              name="Email"
+              placeholder="E-mail"
+              required
+            />
+            <div class="pass">
+              <input
+                class="border-Gray-400 border py-3 pl-2 w-[360px] mb-2 rounded-md relative"
+                type="password"
+                name="Password"
+                placeholder="Password"
+                required
+              />
+              <span class="absolute top-[45.5%] left-[61%]"
+                ><img src="/images/Eyes-Outline.png" alt="eye"
+              /></span>
+            </div>
+          </div>
+          <div
+            class="mid flex items-center justify-between w-[360px] h-5 text-[14px] mt-6"
+          >
+            <div class="checked w-[177px]">
+              <input
+                type="checkbox"
+                id="myCheckbox"
+                class="peer relative appearance-none w-4 h-4 border rounded-sm focus:outline-none checked:bg-black
+                after:absolute after:left-0 after:top-0 after:h-full after:w-full
+                after:bg-[url('/images/icons8-checkmark.svg')]  after:bg-[length:16px] after:bg-center after:bg-no-repeat after:content-[''] hover:ring hover:ring-gray-300 "
+              />
+              <label for="myCheckbox">Remember password?</label>
+            </div>
+            <a class="text-Orange underline font-semibold" href="#"
+              >Forgot password</a
+            >
+          </div>
+
+          <button
+            class="w-[360px] h-[44px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg mt-7"
+            type="submit"
+          >
+            Sign In
+          </button>
+
+          <div
+            class="or flex items-center justify-center mt-8 mb-8 w-[361px] h-5"
+          >
+            <span class="border-gray-300 border-[0.3px] w-[150px]"></span>
+            <p class="mx-4">or</p>
+            <span class="border-gray-300 border-[0.3px] w-[150px]"></span>
+          </div>
+
+          <div
+            class="goo font-Work font-medium text-[16px] border-[1px] border-GreenB flex items-center justify-center w-[360px] h-[44px] rounded-[8px] py-[10px] px-[10px] mb-2"
+          >
+            <img
+              class="w-[24px] h-[24px] text-TextGray mr-3"
+              src="images/google.svg"
+              alt="google"
+            />
+            <span>Continue with Google</span>
+          </div>
+          <div
+            class="app font-Work font-medium text-[16px] border-[1px] border-GreenB flex items-center justify-center w-[360px] h-[44px] rounded-[8px] py-[10px] px-[10px]"
+          >
+            <img
+              class="mr-3 text-TextGray"
+              src="images/ri_apple-line.png"
+              alt="apple"
+            />
+            <span>Continue with Apple</span>
+          </div>
+
+          <p class="mt-6 ml-8 w-[293px] h-5 text-[14px]">
+            Don't have an account?<a class="text-Orange underline" href="#"
+              >Create an account</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="JS/app2.js"></script>
+  </body>
+</html>
