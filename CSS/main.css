@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -629,8 +631,16 @@ video {
   margin-left: 2rem;
 }
 
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .mr-3{
   margin-right: 0.75rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
 }
 
 .mt-3{
@@ -653,32 +663,12 @@ video {
   margin-top: 2rem;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
-}
-
-.mr-4{
-  margin-right: 1rem;
-}
-
-.mr-5{
-  margin-right: 1.25rem;
-}
-
-.mr-6{
-  margin-right: 1.5rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
-}
-
 .flex{
   display: flex;
+}
+
+.h-12{
+  height: 3rem;
 }
 
 .h-4{
@@ -721,6 +711,10 @@ video {
   height: 56.63px;
 }
 
+.h-\[732px\]{
+  height: 732px;
+}
+
 .h-\[734px\]{
   height: 734px;
 }
@@ -731,18 +725,6 @@ video {
 
 .h-\[88px\]{
   height: 88px;
-}
-
-.h-12{
-  height: 3rem;
-}
-
-.h-\[7px\]{
-  height: 7px;
-}
-
-.h-\[732px\]{
-  height: 732px;
 }
 
 .w-4{
@@ -773,6 +755,10 @@ video {
   width: 293px;
 }
 
+.w-\[340px\]{
+  width: 340px;
+}
+
 .w-\[360px\]{
   width: 360px;
 }
@@ -783,26 +769,6 @@ video {
 
 .w-\[424px\]{
   width: 424px;
-}
-
-.w-\[360pc\]{
-  width: 360pc;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[340px\]{
-  width: 340px;
-}
-
-.w-\[122p\]{
-  width: 122p;
-}
-
-.w-\[122px\]{
-  width: 122px;
 }
 
 .max-w-\[100\%\]{
@@ -924,6 +890,10 @@ video {
   text-align: center;
 }
 
+.font-Rob{
+  font-family: Roboto;
+}
+
 .font-Work{
   font-family: Work Sans;
 }
@@ -949,10 +919,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[14pc\]{
-  font-size: 14pc;
 }
 
 .font-bold{
@@ -999,10 +965,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[14p\]{
-  color: 14p;
 }
 
 .underline{

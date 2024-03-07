@@ -20,7 +20,8 @@ module.exports = {
       },
       fontFamily: {
         Work: ['Work Sans'],
-        Man: ['Manrope']
+        Man: ['Manrope'],
+        Rob: ['Roboto']
       }
     },
   },
