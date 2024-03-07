@@ -671,6 +671,46 @@ video {
   margin-left: 0.5rem;
 }
 
+.ml-12{
+  margin-left: 3rem;
+}
+
+.ml-14{
+  margin-left: 3.5rem;
+}
+
+.ml-20{
+  margin-left: 5rem;
+}
+
+.ml-\[200px\]{
+  margin-left: 200px;
+}
+
+.ml-\[150px\]{
+  margin-left: 150px;
+}
+
+.ml-\[100px\]{
+  margin-left: 100px;
+}
+
+.ml-\[80px\]{
+  margin-left: 80px;
+}
+
+.mt-\[32\]{
+  margin-top: 32;
+}
+
+.mt-\[32px\]{
+  margin-top: 32px;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .flex{
   display: flex;
 }
