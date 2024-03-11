@@ -21,11 +21,11 @@
             class="flex flex-col items-center justify-center w-[360px] h-[88px] mb-6"
           >
             <h2
-              class="h-[32px] mb-3 font-Work text-Graytrue-900 font-semibold text-2xl items-center"
+              class="h-[32px] mb-2 font-Work text-Graytrue-900 font-semibold text-2xl items-center"
             >
               Welcome Back!
             </h2>
-            <p class="text-center text-Graytrue text-sm h-[48px] px-5">
+            <p class="text-center text-gray-900 text-md h-[48px] px-5">
               Sign in to your Marketxtra account to continue.
             </p>
           </div>
@@ -34,21 +34,23 @@
             class="flex flex-col items-start justify-center text-Graytrue text-[14px] w-[360px] h-[116px]"
           >
             <input
-              class="border-Gray-400 border py-3 pl-2 w-[360px] h-[54px] mb-2 rounded-md"
+            id="email"
+              class="border-Gray-400 border py-3 pl-2 w-[360px] h-[54px] mb-2 rounded-md font-medium"
               type="email"
               name="Email"
               placeholder="E-mail"
-              required
+              required autocomplete="email"
             />
-            <div class="pass">
+            <div>
               <input
-                class="border-Gray-400 border py-3 pl-2 w-[360px] mb-2 rounded-md relative"
+              id="password"
+                class="border-Gray-400 border py-3 pl-2 w-[360px] mb-2 rounded-md relative font-medium"
                 type="password"
                 name="Password"
                 placeholder="Password"
-                required
+                required autocomplete="current-password"
               />
-              <span class="absolute top-[45.5%] left-[61%]"
+              <span id="togglePassword" class="absolute top-[44%] left-[60%]"
                 ><img src="/images/Eyes-Outline.png" alt="eye"
               /></span>
             </div>
@@ -56,22 +58,23 @@
           <div
             class="mid flex items-center justify-between w-[360px] h-5 text-[14px] mt-6"
           >
-            <div class="checked w-[177px]">
+            <div class="checked w-[185px] flex items-center justify-center relative">
               <input
                 type="checkbox"
                 id="myCheckbox"
-                class="peer relative appearance-none w-4 h-4 border rounded-sm focus:outline-none checked:bg-black
+                class=" peer relative appearance-none w-[18px] h-[18px]  border-2 rounded-sm focus:outline-none checked:bg-black
                 after:absolute after:left-0 after:top-0 after:h-full after:w-full
                 after:bg-[url('/images/icons8-checkmark.svg')]  after:bg-[length:16px] after:bg-center after:bg-no-repeat after:content-[''] hover:ring hover:ring-gray-300 "
               />
-              <label  for="myCheckbox">Remember password?</label>
+              <label class="ml-2 "   for="myCheckbox">Remember password?</label>
             </div>
-            <a class="text-Orange underline font-semibold " href="#"
+            <a id="forgot" class="text-Orange underline font-semibold " href="#"
               >Forgot password</a
             >
           </div>
 
           <button
+          id="button"
             class="w-[360px] h-[44px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg mt-7"
             type="submit"
           >
@@ -116,6 +119,6 @@
       </div>
     </div>
 
-    <script type="module" src="JS/welcome.js"></script>
+    <script src="JS/welcome.js"></script>
   </body>
 </html>

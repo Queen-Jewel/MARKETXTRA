@@ -32,32 +32,35 @@
           </div>
 
           <input
+          id="new1"
               class="border-Gray-400 border py-3 pl-2 w-[360px] mb-2 rounded-md"
               type="password"
               name="password"
               placeholder="New password"
-              required
+              required autocomplete="new-password"
             />
           <input
+          id="new2"
               class="border-Gray-400 border py-3 pl-2 w-[360px] mt-5 mb-2 rounded-md"
               type="password"
               name="password"
               placeholder="Confirm new password"
-              required
+              required autocomplete="new-password"
             />
 
             <button
+            id="button"
             class="w-[360px] h-[44px] mt-3 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg"
             type="submit"
           >
             Continue
           </button>
 
-          <a class="flex items-center justify-center font-Rob mt-4 mr-5 text-sm text-Orange font-semibold " href="#"><img class="mr-1" src="images/arrow-left.png" alt="lft">Back to Login</a>
+          <a id="login" class=" transition hover:-translate-x-2 hover:scale-100 duration-200 flex items-center justify-center font-Rob mt-4 mr-5 text-sm text-Orange font-semibold " href="#"><img class="mr-1" src="images/arrow-left.png" alt="lft">Back to Login</a>
         </div>
       </div>
     </div>
 
-    <script type="module" src="JS/new.js"></script>
+    <script src="JS/new.js"></script>
   </body>
 </html>
