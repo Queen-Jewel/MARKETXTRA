@@ -614,6 +614,138 @@ video {
   top: 44%;
 }
 
+.top-\[\]{
+  top: ;
+}
+
+.top-\[50\%\]{
+  top: 50%;
+}
+
+.top-\[52\%\]{
+  top: 52%;
+}
+
+.left-\[\]{
+  left: ;
+}
+
+.left-\[70\%\]{
+  left: 70%;
+}
+
+.left-\[0\%\]{
+  left: 0%;
+}
+
+.left-\[85\%\]{
+  left: 85%;
+}
+
+.left-\[80\%\]{
+  left: 80%;
+}
+
+.top-\[53\%\]{
+  top: 53%;
+}
+
+.left-\[90\%\]{
+  left: 90%;
+}
+
+.left-\[86\%\]{
+  left: 86%;
+}
+
+.left-\[88\%\]{
+  left: 88%;
+}
+
+.left-\[8\%\]{
+  left: 8%;
+}
+
+.left-\[86\.5\%\]{
+  left: 86.5%;
+}
+
+.left-\[7\%\]{
+  left: 7%;
+}
+
+.left-\[75\%\]{
+  left: 75%;
+}
+
+.left-\[76\%\]{
+  left: 76%;
+}
+
+.top-\[4\%\]{
+  top: 4%;
+}
+
+.top-\[46\%\]{
+  top: 46%;
+}
+
+.top-\[47\%\]{
+  top: 47%;
+}
+
+.left-\[35px\]{
+  left: 35px;
+}
+
+.left-\[40px\]{
+  left: 40px;
+}
+
+.left-\[50px\]{
+  left: 50px;
+}
+
+.left-\[35\%\]{
+  left: 35%;
+}
+
+.top-\[55\.3\%\]{
+  top: 55.3%;
+}
+
+.top-\[60\.3\%\]{
+  top: 60.3%;
+}
+
+.top-\[64\%\]{
+  top: 64%;
+}
+
+.left-\[30\%\]{
+  left: 30%;
+}
+
+.top-\[63\.5\%\]{
+  top: 63.5%;
+}
+
+.top-\[63\.7\%\]{
+  top: 63.7%;
+}
+
+.top-\[56\%\]{
+  top: 56%;
+}
+
+.top-\[54\.5\%\]{
+  top: 54.5%;
+}
+
+.top-\[53\.5\%\]{
+  top: 53.5%;
+}
+
 .m-4{
   margin: 1rem;
 }
@@ -729,6 +861,26 @@ video {
 
 .mb-1{
   margin-bottom: 0.25rem;
+}
+
+.ml-28{
+  margin-left: 7rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
+}
+
+.mr-20{
+  margin-right: 5rem;
+}
+
+.mr-12{
+  margin-right: 3rem;
+}
+
+.ml-24{
+  margin-left: 6rem;
 }
 
 .flex{
@@ -911,6 +1063,30 @@ video {
   width: 185px;
 }
 
+.w-\[180px\]{
+  width: 180px;
+}
+
+.w-\[358px\]{
+  width: 358px;
+}
+
+.w-\[355px\]{
+  width: 355px;
+}
+
+.w-\[370px\]{
+  width: 370px;
+}
+
+.w-\[350px\]{
+  width: 350px;
+}
+
+.w-\[375px\]{
+  width: 375px;
+}
+
 .max-w-\[100\%\]{
   max-width: 100%;
 }
@@ -1033,6 +1209,18 @@ video {
 
 .pl-7{
   padding-left: 1.75rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
+}
+
+.pr-3{
+  padding-right: 0.75rem;
 }
 
 .text-center{
@@ -1258,4 +1446,75 @@ video {
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 768px){
+  .md\:top-\[43\.5\%\]{
+    top: 43.5%;
+  }
+
+  .md\:left-\[60\%\]{
+    left: 60%;
+  }
+
+  .md\:top-\[44\.5\%\]{
+    top: 44.5%;
+  }
+
+  .md\:left-\[44\%\]{
+    left: 44%;
+  }
+
+  .md\:top-\[50\%\]{
+    top: 50%;
+  }
+
+  .md\:top-\[55\%\]{
+    top: 55%;
+  }
+
+  .md\:top-\[53\%\]{
+    top: 53%;
+  }
+
+  .md\:top-\[53\.5\%\]{
+    top: 53.5%;
+  }
+
+  .md\:top-\[53\.3\%\]{
+    top: 53.3%;
+  }
+
+  .md\:ml-32{
+    margin-left: 8rem;
+  }
+
+  .md\:mr-0{
+    margin-right: 0px;
+  }
+
+  .md\:mr-12{
+    margin-right: 3rem;
+  }
+
+  .md\:w-\[424px\]{
+    width: 424px;
+  }
+
+  .md\:px-\[10px\]{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .md\:pl-2{
+    padding-left: 0.5rem;
+  }
+
+  .md\:pl-7{
+    padding-left: 1.75rem;
+  }
+
+  .md\:font-Work{
+    font-family: Work Sans;
+  }
 }
