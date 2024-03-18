@@ -602,6 +602,10 @@ video {
   top: 63.7%;
 }
 
+.top-\[\%\]{
+  top: %;
+}
+
 .m-4{
   margin: 1rem;
 }
@@ -793,6 +797,14 @@ video {
 
 .h-\[lv\]{
   height: lv;
+}
+
+.h-\[772\]{
+  height: 772;
+}
+
+.h-\[772px\]{
+  height: 772px;
 }
 
 .max-h-\[100\%\]{
