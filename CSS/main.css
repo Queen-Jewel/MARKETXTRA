@@ -606,6 +606,10 @@ video {
   top: %;
 }
 
+.top-\[40\%\]{
+  top: 40%;
+}
+
 .m-4{
   margin: 1rem;
 }
