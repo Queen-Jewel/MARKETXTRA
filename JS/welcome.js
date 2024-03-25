@@ -7,6 +7,7 @@ const passwordInput = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
 const eyeImage = togglePassword.querySelector('img');
 
+
 togglePassword.addEventListener('click', function() {
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
@@ -33,6 +34,8 @@ let success = () => {
         alert('Incorrect format');
     } else if (password.length <= 8 || !uppercaseRegex.test(password) || !lowercaseRegex.test(password) || !numberRegex.test(password)) {
         alert('Not a strong password');
+    }else {
+        window.location.href = '/step.html'
     }
 }
 
