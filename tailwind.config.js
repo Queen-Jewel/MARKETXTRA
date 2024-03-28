@@ -19,6 +19,7 @@ module.exports = {
         Drwhite: '#FAFAFA',
         txtgray: '#424242',
         stepgray:'#D9D9D9',
+        footer: '#ECF1F4',
 
       },
       fontFamily: {
