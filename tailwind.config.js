@@ -20,8 +20,13 @@ module.exports = {
         txtgray: '#424242',
         stepgray:'#D9D9D9',
         footer: '#ECF1F4',
-
+        gradientCol: {
+        GreenT: '#008000',
+        GreenL: '#00B800',
       },
+      },
+      
+      
       fontFamily: {
         Work: ['Work Sans'],
         Man: ['Manrope'],
