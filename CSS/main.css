@@ -958,6 +958,18 @@ video {
   margin-top: 1050px;
 }
 
+.mt-\[250px\]{
+  margin-top: 250px;
+}
+
+.mt-\[270px\]{
+  margin-top: 270px;
+}
+
+.mt-\[800px\]{
+  margin-top: 800px;
+}
+
 .block{
   display: block;
 }
