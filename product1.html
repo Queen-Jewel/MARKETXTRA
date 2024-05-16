@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <div class="h-[2225px] bg-Drwhite">
+      <!-- Container -->
+      <div class="flex items-start justify-start font-Work">
+        <!-- Side NavBar -->
+        <div
+          class="w-[267px] h-[2225px] flex flex-col items-center justify-start bg-white"
+        >
+          <!-- image -->
+          <div class="h-[99px] p-6">
+            <img
+              class="w-[158.41px] h-[56.63px]"
+              src="images/Mx 2@2x.png"
+              alt="mx2"
+            />
+          </div>
+          <!-- nav dashboards -->
+          <div
+            class="w-[117px] h-[246px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray"
+          >
+            <!-- 1st -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img
+                class="mr-[6px]"
+                src="images/StorefrontB.png"
+                alt="my store"
+              />
+              <p>My store</p>
+            </div>
+            <!-- 2nd -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img class="mr-[6px]" src="images/Receipt.png" alt="Receipt" />
+              <p>Dashboard</p>
+            </div>
+            <!-- 3rd -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 text-Orange font-bold"
+            >
+              <img class="mr-[6px]" src="images/PO.png" alt="Package" />
+              <p>Products</p>
+            </div>
+
+            <!-- 4th -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img class="mr-[6px]" src="images/Note.png" alt="Note" />
+              <p>Orders</p>
+            </div>
+            <!-- 5th -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img class="mr-[6px]" src="images/Users.png" alt="Note" />
+              <p>Customers</p>
+            </div>
+            <!-- 6th -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img class="mr-[6px]" src="images/set.png" alt="MapPin" />
+              <p>Settings</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Side -->
+        <main>
+          <div class="flex flex-col items-start justify-start">
+            <!-- nav body -->
+            <div class="h-[97px] flex items-center justify-between mb-10">
+              <!-- search bar -->
+              <div
+                class="w-[620px] h-12 ml-5 bg-footer rounded-lg shadow-lg flex items-center justify-between"
+              >
+                <input
+                  class="outline-none bg-footer pl-3"
+                  type="text"
+                  placeholder="Search"
+                  name="Search"
+                />
+                <img class="pr-2" src="images/srch.png" alt="srch" />
+              </div>
+
+              <!-- User -->
+              <div
+                class="w-[283px] h-[43px] ml-48 flex items-center justify-center"
+              >
+                <span
+                  class="w-[43px] h-[43px] mr-3 flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray"
+                  >JJ</span
+                >
+                <p class="font-normal text-base">Jaachi Jeff</p>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="flex flex-col items-center justify-start">
+              <!-- cat and prod -->
+              <div
+                class="w-[1150px] h-[64px] bg-white py-6 flex items-center justify-start text-base text-txtgray font-normal pl-[21px] pt-6 pr-6 pb-[21px]"
+              >
+                <p>Category</p>
+                <p
+                  class="font-bold bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent pl-8"
+                >
+                  Products
+                </p>
+              </div>
+
+              <!-- add and filter -->
+              <div class="mr-[740px] flex items-center justify-start mt-11">
+                <button
+                  id="button"
+                  class="flex items-center justify-center w-[191px] h-[38px] p-[10px] pb-2 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg"
+                  type="submit"
+                >
+                  Add New Product
+                  <span>
+                    <img
+                      src="/images/PlusCircle.png"
+                      alt="plus"
+                      class="ml-2 w-[22px] h-[22px]"
+                  /></span>
+                </button>
+                <!-- filter -->
+                <div
+                  class="ml-5 w-[160px] h-12 rounded-md bg-footer p-[10px] flex items-center justify-between text-base font-normal text-txtgray"
+                >
+                  <p>filter</p>
+                  <img src="images/ChevronDown.png" alt="ChevronDown" />
+                </div>
+              </div>
+
+              <!-- Products -->
+              <!-- 1st box -->
+              <div
+                class="w-[1028px] h-[407px] bg-white rounded-lg mt-10 ml-5 flex items-center justify-between mr-[100px]"
+              >
+                <!-- img -->
+                <img
+                  src="images/Blue-t-shirt.png"
+                  alt="bts"
+                  class="w-[419px] w-[355px] rounded-lg ml-6"
+                />
+
+                <!-- Description -->
+                <div
+                  class="w-[529px] h-[351px] flex flex-col items-start justify-start mr-5 text-txtgray"
+                >
+                  <!-- 1 -->
+                  <div class="w-[529px] h-6 flex items-center justify-between">
+                    <div class="bg-footer w-[75px] h-[21px] px-2">
+                      <p class="text-[14px] font-normal">Plain T's</p>
+                    </div>
+                    <div class="w-20 h-6 flex items-center justify-between">
+                      <img
+                        class="w-6 h-6"
+                        src="images/PencilLine.png"
+                        alt="PencilLine"
+                      />
+                      <img
+                        class="w-6 h-6"
+                        src="images/ShareNetwork.png"
+                        alt="ShareNetwork"
+                      />
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div
+                    class="w-[304px] h-7 flex items-center justify-start mt-3"
+                  >
+                    <p class="font-semibold text-2xl">Blue Plain T Shirt</p>
+                    <div
+                      class="flex items-center justify-center bg-footer p-[10px] w-[84px] h-[27px] ml-3"
+                    >
+                      <p class="text-base font-normal">#325412</p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="w-[529px] h-[110px] text-base my-4">
+                    <p class="leading-[22.4px]">
+                      Lörem ipsum mes makronde pren kal. Teneras ongar än fans.
+                      Euska hisat fast pararere arade för hetoktiga. Kron
+                      logogam i sysk, fav decipuligt. Gåsat kassa nyll. Lörem
+                      ipsum mes makronde pren kal. Teneras ongar än fans. Euska
+                      hisat fast pararere arade för hetoktiga. Kron logogam i
+                      sysk, fav decipuligt. Gåsat kassa nyll.
+                    </p>
+                  </div>
+                  <!-- 4 -->
+                  <div class="w-[529px] bg-footer h-[1px] mt-[2px]"></div>
+                  <!-- 5 -->
+                  <div
+                    class="w-[529px] h-[29px] flex items-center justify-between my-4"
+                  >
+                    <div
+                      class="w-[198px] h-7 flex items-center justify-between"
+                    >
+                      <p
+                        class="text-2xl font-bold flex items-center justify-start line-through"
+                      >
+                        <span
+                          ><img
+                            class="mr-[2px]"
+                            src="images/naira  (2).png"
+                            alt="naira"
+                        /></span>
+                        3,500
+                      </p>
+                      <p
+                        class="text-2xl font-bold flex items-center justify-start bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent"
+                      >
+                        <span
+                          ><img
+                            class="mr-[2px]"
+                            src="images/naira  (1).png"
+                            alt="naira"
+                        /></span>
+                        3,500
+                      </p>
+                    </div>
+                    <div
+                      class="w-[228px] h-29px flex items-center justify-between mt-[3px]"
+                    >
+                      <div
+                        class="w-[102px] h-[29px] border-[0.5px] border-txtgry p-[10px] flex items-center justify-center rounded-md"
+                      >
+                        <p class="font-normal text-base">Units: 20</p>
+                      </div>
+                      <div
+                        class="w-[102px] h-[29px] border-[0.5px] border-txtgry p-[10px] flex items-center justify-center rounded-md"
+                      >
+                        <p class="font-normal text-base">Sold: 0</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div
+                    class="w-[529px] h-20 flex items-start justify-between font-normal text-base"
+                  >
+                    <!-- lhs -->
+                    <div
+                      class="w-[191px] h-20 flex flex-col items-start justify-start"
+                    >
+                      <p class="text-base font-normal mb-3">
+                        Available colors:
+                      </p>
+                      <!-- first set of colors -->
+                      <div
+                        class="flex items-center justify-between w-[169px] h-[21px] pb-3"
+                      >
+                        <div
+                          class="bg-footer w-[45px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Red</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[45px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Blue</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[63px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Green</p>
+                        </div>
+                      </div>
+                      <!-- second set of colors -->
+                      <div
+                        class="flex items-center justify-between w-[197px] h-[21px]"
+                      >
+                        <div
+                          class="bg-footer w-[58px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>White</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[58px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Black</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[63px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Brown</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- rhs -->
+                    <div class="w-[229px] h-6 flex items-center justify-start">
+                      <p>Sizes:</p>
+                      <div
+                        class="w-[171px] h-6 flex items-center justify-start ml-3"
+                      >
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[31px] h-6 flex items-center justify-center p-[10px]"
+                        >
+                          S
+                        </div>
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[31px] h-6 flex items-center justify-center p-[10px]"
+                        >
+                          S
+                        </div>
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[31px] h-6 flex items-center justify-center p-[10px]"
+                        >
+                          S
+                        </div>
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[36px] h-6 flex items-center justify-center p-[10px]"
+                        >
+                          XL
+                        </div>
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[42px] h-6 flex items-center justify-center p-[10px]"
+                        >
+                          XXL
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2nd box -->
+              <div
+                class="w-[1028px] h-[407px] bg-white rounded-lg mt-10 mb-5 ml-5 flex items-center justify-between mr-[100px]"
+              >
+                <!-- img -->
+                <img
+                  src="images/Canvas.png"
+                  alt="bts"
+                  class="w-[419px] w-[355px] rounded-lg ml-6"
+                />
+
+                <!-- Description -->
+                <div
+                  class="w-[529px] h-[351px] flex flex-col items-start justify-start mr-5 text-txtgray"
+                >
+                  <!-- 1 -->
+                  <div class="w-[529px] h-6 flex items-center justify-between">
+                    <div
+                      class="bg-footer w-[106px] h-[21px] flex items-center justify-center"
+                    >
+                      <p class="text-[14px] font-normal">Foot wears</p>
+                    </div>
+                    <div class="w-20 h-6 flex items-center justify-between">
+                      <img
+                        class="w-6 h-6"
+                        src="images/PencilLine.png"
+                        alt="PencilLine"
+                      />
+                      <img
+                        class="w-6 h-6"
+                        src="images/ShareNetwork.png"
+                        alt="ShareNetwork"
+                      />
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div
+                    class="w-[304px] h-7 flex items-center justify-start mt-3"
+                  >
+                    <p class="font-semibold text-2xl">Canvas</p>
+                    <div
+                      class="flex items-center justify-center bg-footer p-[10px] w-[84px] h-[27px] ml-3"
+                    >
+                      <p class="text-base font-normal">#325412</p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="w-[529px] h-[110px] text-base my-4">
+                    <p class="leading-[22.4px]">
+                      Lörem ipsum mes makronde pren kal. Teneras ongar än fans.
+                      Euska hisat fast pararere arade för hetoktiga. Kron
+                      logogam i sysk, fav decipuligt. Gåsat kassa nyll. Lörem
+                      ipsum mes makronde pren kal. Teneras ongar än fans. Euska
+                      hisat fast pararere arade för hetoktiga. Kron logogam i
+                      sysk, fav decipuligt. Gåsat kassa nyll.
+                    </p>
+                  </div>
+                  <!-- 4 -->
+                  <div class="w-[529px] bg-footer h-[1px] mt-[2px]"></div>
+                  <!-- 5 -->
+                  <div
+                    class="w-[529px] h-[29px] flex items-center justify-between my-4"
+                  >
+                    <div
+                      class="w-[198px] h-7 flex items-center justify-between"
+                    >
+                      <p
+                        class="text-2xl font-bold flex items-center justify-start line-through"
+                      >
+                        <span
+                          ><img
+                            class="mr-[2px]"
+                            src="images/naira  (2).png"
+                            alt="naira"
+                        /></span>
+                        3,500
+                      </p>
+                      <p
+                        class="text-2xl font-bold flex items-center justify-start bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent"
+                      >
+                        <span
+                          ><img
+                            class="mr-[2px]"
+                            src="images/naira  (1).png"
+                            alt="naira"
+                        /></span>
+                        3,500
+                      </p>
+                    </div>
+                    <div
+                      class="w-[228px] h-29px flex items-center justify-between mt-[3px]"
+                    >
+                      <div
+                        class="w-[102px] h-[29px] border-[0.5px] border-txtgry p-[10px] flex items-center justify-center rounded-md"
+                      >
+                        <p class="font-normal text-base">Units: 20</p>
+                      </div>
+                      <div
+                        class="w-[102px] h-[29px] border-[0.5px] border-txtgry p-[10px] flex items-center justify-center rounded-md"
+                      >
+                        <p class="font-normal text-base">Sold: 0</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div
+                    class="w-[529px] h-20 flex items-start justify-between font-normal text-base"
+                  >
+                    <!-- lhs -->
+                    <div
+                      class="w-[191px] h-20 flex flex-col items-start justify-start"
+                    >
+                      <p class="text-base font-normal mb-3">
+                        Available colors:
+                      </p>
+                      <!-- first set of colors -->
+                      <div
+                        class="flex items-center justify-between w-[169px] h-[21px] pb-3"
+                      >
+                        <div
+                          class="bg-footer w-[45px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Red</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[45px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Blue</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[63px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Green</p>
+                        </div>
+                      </div>
+                      <!-- second set of colors -->
+                      <div
+                        class="flex items-center justify-between w-[197px] h-[21px]"
+                      >
+                        <div
+                          class="bg-footer w-[58px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>White</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[58px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Black</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[63px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Brown</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- rhs -->
+                    <div
+                      class="w-[229px] h-6 flex flex-col items-start justify-start"
+                    >
+                      <p>Sizes:</p>
+                      <div
+                        class="w-[231px] h-[21px] flex items-center justify-start my-2"
+                      >
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[32px] h-6 flex items-center justify-center bg-footer p-[10px]"
+                        >
+                          42
+                        </div>
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[32px] h-6 flex items-center justify-center bg-footer p-[10px]"
+                        >
+                          40
+                        </div>
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[32px] h-6 flex items-center justify-center bg-footer p-[10px]"
+                        >
+                          45
+                        </div>
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[32px] h-6 flex items-center justify-center bg-footer p-[10px]"
+                        >
+                          43
+                        </div>
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[32px] h-6 flex items-center justify-center bg-footer p-[10px]"
+                        >
+                          44
+                        </div>
+                        <div
+                          class="rounded-md border-[0.5px] border-txtgry w-[32px] h-6 flex items-center justify-center bg-footer p-[10px]"
+                        >
+                          41
+                        </div>
+                      </div>
+                      <p>Weight:</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3rd box -->
+              <div
+                class="w-[1028px] h-[407px] bg-white rounded-lg mt-10 mb-5 ml-5 flex items-center justify-between mr-[100px]"
+              >
+                <!-- img -->
+                <img
+                  src="images/PB.png"
+                  alt="bts"
+                  class="w-[419px] w-[355px] rounded-lg ml-6"
+                />
+
+                <!-- Description -->
+                <div
+                  class="w-[529px] h-[351px] flex flex-col items-start justify-start mr-5 text-txtgray"
+                >
+                  <!-- 1 -->
+                  <div class="w-[529px] h-6 flex items-center justify-between">
+                    <div
+                      class="bg-footer w-[152px] h-[21px] flex items-center justify-center"
+                    >
+                      <p class="text-[14px] font-normal">Phone accessory</p>
+                    </div>
+                    <div class="w-20 h-6 flex items-center justify-between">
+                      <img
+                        class="w-6 h-6"
+                        src="images/PencilLine.png"
+                        alt="PencilLine"
+                      />
+                      <img
+                        class="w-6 h-6"
+                        src="images/ShareNetwork.png"
+                        alt="ShareNetwork"
+                      />
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div
+                    class="w-[304px] h-7 flex items-center justify-start mt-3"
+                  >
+                    <p class="font-semibold text-2xl">Power Bank</p>
+                    <div
+                      class="flex items-center justify-center bg-footer p-[10px] w-[84px] h-[27px] ml-3"
+                    >
+                      <p class="text-base font-normal">#325412</p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="w-[529px] h-[110px] text-base my-4">
+                    <p class="leading-[22.4px]">
+                      Lörem ipsum mes makronde pren kal. Teneras ongar än fans.
+                      Euska hisat fast pararere arade för hetoktiga. Kron
+                      logogam i sysk, fav decipuligt. Gåsat kassa nyll. Lörem
+                      ipsum mes makronde pren kal. Teneras ongar än fans. Euska
+                      hisat fast pararere arade för hetoktiga. Kron logogam i
+                      sysk, fav decipuligt. Gåsat kassa nyll.
+                    </p>
+                  </div>
+                  <!-- 4 -->
+                  <div class="w-[529px] bg-footer h-[1px] mt-[2px]"></div>
+                  <!-- 5 -->
+                  <div
+                    class="w-[529px] h-[29px] flex items-center justify-between my-4"
+                  >
+                    <div
+                      class="w-[198px] h-7 flex items-center justify-between"
+                    >
+                      <p
+                        class="text-2xl font-bold flex items-center justify-start line-through"
+                      >
+                        <span
+                          ><img
+                            class="mr-[2px]"
+                            src="images/naira  (2).png"
+                            alt="naira"
+                        /></span>
+                        3,500
+                      </p>
+                      <p
+                        class="text-2xl font-bold flex items-center justify-start bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent"
+                      >
+                        <span
+                          ><img
+                            class="mr-[2px]"
+                            src="images/naira  (1).png"
+                            alt="naira"
+                        /></span>
+                        3,500
+                      </p>
+                    </div>
+                    <div
+                      class="w-[228px] h-29px flex items-center justify-between mt-[3px]"
+                    >
+                      <div
+                        class="w-[102px] h-[29px] border-[0.5px] border-txtgry p-[10px] flex items-center justify-center rounded-md"
+                      >
+                        <p class="font-normal text-base">Units: 20</p>
+                      </div>
+                      <div
+                        class="w-[102px] h-[29px] border-[0.5px] border-txtgry p-[10px] flex items-center justify-center rounded-md"
+                      >
+                        <p class="font-normal text-base">Sold: 0</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div
+                    class="w-[529px] h-20 flex items-start justify-between font-normal text-base"
+                  >
+                    <!-- lhs -->
+                    <div
+                      class="w-[191px] h-20 flex flex-col items-start justify-start"
+                    >
+                      <p class="text-base font-normal mb-3">
+                        Available colors:
+                      </p>
+                      <!-- first set of colors -->
+                      <div
+                        class="flex items-center justify-between w-[169px] h-[21px] pb-3"
+                      >
+                        <div
+                          class="bg-footer w-[45px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Red</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[45px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Blue</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[63px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Green</p>
+                        </div>
+                      </div>
+                      <!-- second set of colors -->
+                      <div
+                        class="flex items-center justify-between w-[197px] h-[21px]"
+                      >
+                        <div
+                          class="bg-footer w-[58px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>White</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[58px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Black</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[63px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Brown</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- rhs -->
+                    <div
+                      class="w-[231px] h-[92px] flex flex-col items-start justify-start"
+                    >
+                      <div
+                        class="border-[0.5px] border-txtgry w-[115px] h-[27px] flex items-center justify-center bg-footer"
+                      >
+                        Height: 24m
+                      </div>
+                      <div
+                        class="border-[0.5px] border-txtgry w-[115px] h-[27px] flex items-center justify-center bg-footer my-2"
+                      >
+                        Length: 24m
+                      </div>
+                      <p>Weight:</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4th box -->
+              <div
+                class="w-[1028px] h-[407px] bg-white rounded-lg mt-10 mb-5 ml-5 flex items-center justify-between mr-[100px]"
+              >
+                <!-- img -->
+                <img
+                  src="images/vintage.png"
+                  alt="bts"
+                  class="w-[419px] w-[355px] rounded-lg ml-6"
+                />
+
+                <!-- Description -->
+                <div
+                  class="w-[529px] h-[351px] flex flex-col items-start justify-start mr-5 text-txtgray"
+                >
+                  <!-- 1 -->
+                  <div class="w-[529px] h-6 flex items-center justify-between">
+                    <div
+                      class="bg-footer w-[141px] h-[21px] flex items-center justify-center"
+                    >
+                      <p class="text-[14px] font-normal">Cloth materials</p>
+                    </div>
+                    <div class="w-20 h-6 flex items-center justify-between">
+                      <img
+                        class="w-6 h-6"
+                        src="images/PencilLine.png"
+                        alt="PencilLine"
+                      />
+                      <img
+                        class="w-6 h-6"
+                        src="images/ShareNetwork.png"
+                        alt="ShareNetwork"
+                      />
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div
+                    class="w-[304px] h-7 flex items-center justify-start mt-3"
+                  >
+                    <p class="font-semibold text-2xl">Vintage Material</p>
+                    <div
+                      class="flex items-center justify-center bg-footer p-[10px] w-[84px] h-[27px] ml-3"
+                    >
+                      <p class="text-base font-normal">#325412</p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="w-[529px] h-[110px] text-base my-4">
+                    <p class="leading-[22.4px]">
+                      Lörem ipsum mes makronde pren kal. Teneras ongar än fans.
+                      Euska hisat fast pararere arade för hetoktiga. Kron
+                      logogam i sysk, fav decipuligt. Gåsat kassa nyll. Lörem
+                      ipsum mes makronde pren kal. Teneras ongar än fans. Euska
+                      hisat fast pararere arade för hetoktiga. Kron logogam i
+                      sysk, fav decipuligt. Gåsat kassa nyll.
+                    </p>
+                  </div>
+                  <!-- 4 -->
+                  <div class="w-[529px] bg-footer h-[1px] mt-[2px]"></div>
+                  <!-- 5 -->
+                  <div
+                    class="w-[529px] h-[29px] flex items-center justify-between my-4"
+                  >
+                    <div
+                      class="w-[198px] h-7 flex items-center justify-between"
+                    >
+                      <p
+                        class="text-2xl font-bold flex items-center justify-start line-through"
+                      >
+                        <span
+                          ><img
+                            class="mr-[2px]"
+                            src="images/naira  (2).png"
+                            alt="naira"
+                        /></span>
+                        3,500
+                      </p>
+                      <p
+                        class="text-2xl font-bold flex items-center justify-start bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent"
+                      >
+                        <span
+                          ><img
+                            class="mr-[2px]"
+                            src="images/naira  (1).png"
+                            alt="naira"
+                        /></span>
+                        3,500
+                      </p>
+                    </div>
+                    <div
+                      class="w-[228px] h-29px flex items-center justify-between mt-[3px]"
+                    >
+                      <div
+                        class="w-[102px] h-[29px] border-[0.5px] border-txtgry p-[10px] flex items-center justify-center rounded-md"
+                      >
+                        <p class="font-normal text-base">Units: 20</p>
+                      </div>
+                      <div
+                        class="w-[102px] h-[29px] border-[0.5px] border-txtgry p-[10px] flex items-center justify-center rounded-md"
+                      >
+                        <p class="font-normal text-base">Sold: 0</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div
+                    class="w-[529px] h-20 flex items-start justify-between font-normal text-base"
+                  >
+                    <!-- lhs -->
+                    <div
+                      class="w-[191px] h-20 flex flex-col items-start justify-start"
+                    >
+                      <p class="text-base font-normal mb-3">
+                        Available colors:
+                      </p>
+                      <!-- first set of colors -->
+                      <div
+                        class="flex items-center justify-between w-[169px] h-[21px] pb-3"
+                      >
+                        <div
+                          class="bg-footer w-[45px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Red</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[45px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Blue</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[63px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Green</p>
+                        </div>
+                      </div>
+                      <!-- second set of colors -->
+                      <div
+                        class="flex items-center justify-between w-[197px] h-[21px]"
+                      >
+                        <div
+                          class="bg-footer w-[58px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>White</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[58px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Black</p>
+                        </div>
+                        <div
+                          class="bg-footer w-[63px] h-[21px] flex items-center justify-center p-[10px]"
+                        >
+                          <p>Brown</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- rhs -->
+                    <div
+                      class="w-[231px] h-[92px] flex flex-col items-start justify-start"
+                    >
+                      <div
+                        class="border-[0.5px] border-txtgry w-[98px] h-[27px] mb-2 flex items-center justify-center bg-footer"
+                      >
+                        Yard: 3yrd
+                      </div>
+
+                      <p>Weight:</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Footer -->
+            <div
+              class="w-[1150px] h-[100px] mt-[60px] flex items-center justify-start pl-10 bg-footer"
+            >
+              <img
+                class="w-[50px] h-[50px] mr-8"
+                src="images/Mx 1.png"
+                alt="Mx"
+              />
+              <div class="w-[266px] h-[30px] flex items-center justify-center">
+                <img
+                  class="w-6 h-6 mr-2"
+                  src="images/Copyright.png"
+                  alt="Copyright"
+                />
+                <p class="font-medium text-base text-txtgray">
+                  2024, Powered by Marketxtra.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
