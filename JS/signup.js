@@ -28,7 +28,7 @@ let signUp = (e) => {
     const uppercaseRegex = /[A-Z]/;
     const lowercaseRegex = /[a-z]/;
     const numberRegex = /[0-9]/;
-    let url = '/welcome.html';
+    let url = '/verify.html';
 
 
     let success = () => {
