@@ -7,13 +7,19 @@
     <title>Step 1</title>
 </head>
 <body>
-    <div class=" flex items-center justify-center max-w-[100%] max-h-[100%]">
-        <div class="font-Work flex items-center justify-center relative  w-[1171px] h-[857px]">
-            
+    <div class=" flex items-center justify-center">
+        <div class="font-Work flex items-center justify-center relative  w-[1348.5px] h-[1024px]">
+
 
                 <!-- left side -->
-                <div id="left" class=" flex flex-col items-start justify-center h-[700px] ">
-                    <img class="w-[158.41px] h-[56.63px] mb-10 mt-10" src="images/Mx 2@2x.png" alt="mx2">
+                <div class="w-[800px] h-[1024px] relative overflow-hidden">
+                    <img src="images/smiling-ethnic-woman-with-tablet 1.png" alt="smiling-ethnic-woman-with-tablet" class="absolute inset-0 w-full h-full object-cover transform scale-120 translate-x-1/10">
+                </div>
+            
+
+                <!-- right side -->
+                <div id="left" class=" flex flex-col items-start justify-center w-[590px] h-[1024px] ml-32">
+                    <img class="w-[158.41px] h-[56.63px] mb-10 mt-18" src="images/Mx 2@2x.png" alt="mx2">
                     <p class="w-[473px] h-[56px] font-medium text-[24px] leading-tight text-txtgray">You’re three (3) steps away from creating your custom online store!</p>
 
                     <div class="store w-[306px] h-[76px] mt-7 ">
@@ -26,84 +32,43 @@
                         </div>
                     </div>
 
-                    <div class="input flex flex-col items-start justify-center w-[360px] h-[232px] mt-10 text-TextGray font-medium text-14px">
+                    <div class="input flex flex-col items-start justify-center w-[360px] h-[124px] mt-10 text-TextGray font-medium text-14px">
                         <input id="shopName" class="border w-[360px] h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="Shop name"  placeholder="Shop name" required>
                         <input id="Category" class="border w-[360px] h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="category" placeholder="Category"required>
-                        <input id="business" class="border w-[360px] h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="business handle" placeholder="Business handle" required>
+                        
+                    </div>
+
+
+                     <!-- Image upload -->
+                     <div class="w-[359px] h-[92px] flex flex-col items-end justify-center text-txtgray mb-5 mt-3">
+                        <p class="font-normal text-[16px]">Please upload an image of your logo</p>
+                        <div class="w-[359px] h-[62px] flex items-center justify-between">
+                            <img src="images/Component Placeholder Image.png" alt="placeholder">
+                            <div class="w-[291px] h-[62px] rounded-lg p-[10px] bg-[#ECF1F4] flex items-center justify-between">
+                                <input id="img-file-input" class= " border-transparent hover:border hover:border-Orange hover:rounded-lg px-2 py-3 pr-4 text-[16px] font-normal" type="file" name="Cover" placeholder="Choose file" required>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cover Upload -->
+                    <div class="w-[359px] h-[92px] flex flex-col items-end justify-center text-txtgray">
+                        <p class="font-normal text-[16px]">Please upload a cover photo</p>
+                        <div class="w-[359px] h-[62px] flex items-center justify-between">
+                            <img src="images/Component Placeholder Image.png" alt="placeholder">
+                            <div class="w-[291px] h-[62px] rounded-lg p-[10px] bg-[#ECF1F4] flex items-center justify-center">
+                                <input id="cover-file-input" class= " border-transparent hover:border hover:border-Orange hover:rounded-lg px-2 py-3 pr-4 text-[16px] font-normal" type="file" name="Cover" placeholder="Choose file" required>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Next and Previous page -->
+                    <div  class="w-[108px] h-[54px] flex items-end justify-center mt-[150px] ml-[370px]">
+                        <img id="next" src="/images/ArrowCircleRight.png" alt="rt">
                     </div>
                 </div>
 
-                <span class="vl h-[390px] border bg-txtgray absolute left-[504px] top-[500px]"></span>
-
-
-                <!-- right side -->
-                <div class="right flex flex-col items-center justify-center mt-[300px] ">
-                    <img class="w-[133px] h-[133px] mb-[60px]" src="/images/Device Shop.png" alt="shop">
-
-                    <div class="flex items-center justify-between">
-                        <!-- color and image selection -->
-                    <div class="cont w-[359px] h-[375px]">
-                        <!-- color selection -->
-                        <div class="color mb-10 w-[358px] h-[111px] flex flex-col items-center justify-center border rounded-lg px-[2px] py-[1px] bg-[#ECF1F4]">
-                            <p class="font-normal text-[16px] text-txtgray">Choose a color theme for your store</p>
-                            <div class="palette">
-                                <div class="pal1 mb-[1px] w-[336px] h-[30px] flex items-center justify-between">
-                                    <span class="col w-[30px] h-[30px] bg-[#FFB901] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#CA500F] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#F7630D] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#E2008F] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#99008A] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#0078D7] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#0063B1] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#0099BB] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#2D7C9A] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#00CC69] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                </div>
-                                <div class="pal2 w-[336px] h-[30px] flex items-center justify-between">
-                                    <span class="col w-[30px] h-[30px] bg-[#10883E] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#7A7474] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#5E5A57] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#837544] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#7E7260] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#00B294] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#FFFFF0] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#424242] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#556B2F] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                    <span class="col w-[30px] h-[30px] bg-[#4A4A6B] transition ease-in-out delay-150 hover:-transition-y-1 hover:scale-100 hover:duration-500 hover:shadow-gray-500 "></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Image upload -->
-                        <div class="w-[359px] h-[92px] flex flex-col items-end justify-center text-txtgray mb-10">
-                            <p class="font-normal text-[16px]">Please upload an image of your logo</p>
-                            <div class="w-[359px] h-[62px] flex items-center justify-between">
-                                <img src="images/Component Placeholder Image.png" alt="placeholder">
-                                <div class="w-[291px] h-[62px] rounded-lg p-[10px] bg-[#ECF1F4] flex items-center justify-between">
-                                    <input id="img-file-input" class= " border-transparent hover:border hover:border-Orange hover:rounded-lg px-2 py-3 pr-4 text-[16px] font-normal" type="file" name="Cover" placeholder="Choose file" required>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Cover Upload -->
-                        <div class="w-[359px] h-[92px] flex flex-col items-end justify-center text-txtgray">
-                            <p class="font-normal text-[16px]">Please upload a cover photo</p>
-                            <div class="w-[359px] h-[62px] flex items-center justify-between">
-                                <img src="images/Component Placeholder Image.png" alt="placeholder">
-                                <div class="w-[291px] h-[62px] rounded-lg p-[10px] bg-[#ECF1F4] flex items-center justify-center">
-                                    <input id="cover-file-input" class= " border-transparent hover:border hover:border-Orange hover:rounded-lg px-2 py-3 pr-4 text-[16px] font-normal" type="file" name="Cover" placeholder="Choose file" required>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Next and Previous page -->
-                    <div  class="w-[108px] h-[54px] flex items-center justify-center mt-[320px] ml-20">
-                        <img id="prev" src="/images/ArrowCircleLeft.png" alt="lt">
-                        <img id="next" src="/images/ArrowCircleRight.png" alt="rt">
-                    </div>
+                   
                 </div>
                 </div>
             </div>
