@@ -626,6 +626,18 @@ video {
   left: 90%;
 }
 
+.left-\[0\%\]{
+  left: 0%;
+}
+
+.left-\[\%\]{
+  left: %;
+}
+
+.left-\[84\%\]{
+  left: 84%;
+}
+
 .m-2{
   margin: 0.5rem;
 }
