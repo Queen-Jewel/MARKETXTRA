@@ -59,47 +59,64 @@
                 <main>
 
                     <!-- main nav -->
-                    <header class="flex items-center justify-center w-[100%] h-[99px] bg-GreenB text-white text-[24px] font-medium">Hello there, you’re welcome to my online store</header>
 
+                    <!-- the top -->
+                    <header class="flex items-center justify-center w-[100%] h-[99px] bg-GreenB text-white text-[24px] font-medium">Hello there, you’re welcome to my online store</header>
                     <div class=" h-[99px] flex items-center justify-between font-normal text-base text-txtgray">
                          <!-- Logo -->
+                         <div class="w-[161px] h-[53px] flex items-center justify-start border-[1px] border-txtgray rounded-lg ml-4 relative">
                         <div class="w-[128px] h-[43px] flex items-center justify-center ml-4">
                             <span class="w-[43px] h-[43px] border-transparent bg-stepgray rounded-[50%] mr-[2px]"></span>
                             <p>Your Logo</p>
                         </div>
+                        
+                        </div>
+                        <span class="absolute left-[32.3%]">
+                            <img src="images/Group 6.png" alt="Group6">
+                        </span>
 
                         <!-- Switch -->
-                        <div class=" ml-[550px] w-[188px] h-10 flex items-center justify-between">
-                            <img src="images/ToggleLeft.png" alt="ToggleRight">
+                        <div class="w-[188px] h-10 flex items-center justify-between ml-[550px]">
+                            <img id="Switch" src="images/ToggleLeft.png" alt="ToggleRight">
                             <p>View as customer</p>
                         </div>
 
-                        <!-- Catelog -->
-                        <div class=" h-[30px] flex items-center justify-center">
-                            <img class="mr-5" src="images/ShoppingCartSimple.png" alt="ShoppingCartSimple">
+                        <!-- Share -->
+                        <div class="h-[30px] flex items-center justify-center mr-[60px] w-[32px] h-[32px]">
+                            <img class="mr-5" src="images/ShareNetwork.png" alt="ShareNetwork">
                         </div>
                     </div>
 
                     <!-- main showcase -->
                     <!-- first box -->
-                    <div class=" h-[481px] relative flex flex-col overflow-hidden ">
+                   
+                        <div class=" h-[481px] relative flex flex-col overflow-hidden ">
                         <div class="absolute inset-0 bg-cover filter blur-sm bg-[url('/images/shirtf.png')]"></div>
 
                         <!-- Dark overlay -->
                         <div class="absolute inset-0 bg-black opacity-70"></div>
 
                         <!-- content -->
-                        <div class="absolute inset-0 flex flex-col items-center justify-center">
-                            <p class="mb-5  block w-[590px] text-[64px] text-white font-bold">We Sell The Best 
+                        <div class="absolute inset-0 flex flex-col items-center justify-center mt-5">
+                            <div class="w-[600px] h-[200px] flex items-center justify-start border-[3px] border-white rounded-lg ml-4 relative">
+                            <p class="mb-5 mt-5 block w-[590px] text-[64px] text-white font-bold flex text-center">We Sell The Best 
                                 Quality of T-shirts</p>
+                            </div>
+                            <span class="absolute left-[77%] top-[40%] w-[37.03px] h-[37.03px]">
+                                <img src="images/Group 6.png" alt="Group6">
+                            </span>
+
                             <button
                                 id="button1"
-                                class="w-[262px] h-[70px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] rounded-lg"
+                                class="w-[262px] h-[70px]  mt-5 bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] rounded-lg"
                                 type="button">
                                 Shop Now!
                             </button>
                         </div>
-                    </div>
+                        <span class="absolute left-[93%] top-[10%] w-[37.03px] h-[37.03px]">
+                            <img src="images/Group 6.png" alt="Group6">
+                        </span>
+                        </div>
 
                     <!-- second box -->
                     <div class="w-[1050px] h-[502px] flex flex-col items-start justify-center text-txtgray  ml-4 mt-5">
@@ -109,7 +126,7 @@
                         <div class="w-[1050px] h-[366px] flex items-center justify-between mt-20">
 
                             <!-- 1st -->
-                            <div class="w-[331px] h-[442px] flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
+                            <div class=" greenB curser-pointer border-[1px] border-transparent w-[331px] h-[442px] flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
                                 <img class="w-[331px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
@@ -133,7 +150,7 @@
                                     </div>
                             </div>
                             <!-- 2nd -->
-                            <div class="w-[331px] h-[442px] flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl">
+                            <div class=" greenB curser-pointer border-[1px] border-transparent w-[331px] h-[442px] flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl">
                                 <img class="w-[331px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
@@ -157,7 +174,7 @@
                                     </div>
                             </div>
                             <!-- 3rd -->
-                            <div class="w-[331px] h-[442px] flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
+                            <div class="greenB cursor-pointer w-[331px] h-[442px] flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
                                 <img class="w-[331px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
@@ -191,12 +208,17 @@
                         <div class="absolute inset-0 bg-black opacity-70"></div>
 
                         <!-- content -->
-                        <div class="absolute inset-0 flex flex-col items-center justify-start">
+                        <div class="absolute inset-0 flex flex-col items-center justify-start mt-5">
+                            <div class="w-[627px] h-[138px] flex items-center justify-start border-[3px] border-white rounded-lg ml-4 relative">
                             <p class=" mb-10 mt-2 block w-[600px] h-[118px] leading-tight text-[50px] text-center text-white font-bold">See variety of products
                                 and collections</p>
+                            </div>
+                            <span class="absolute left-[78.5%] top-[20%] w-[37.03px] h-[37.03px]">
+                                <img src="images/Group 6.png" alt="Group6">
+                            </span>
                             <button
                                 id="button2"
-                                class="w-[373px] h-[70px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium rounded-lg"
+                                class="w-[373px] h-[70px] mt-4 bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium rounded-lg"
                                 type="button">Go to Product Catalog
                             </button>
                         </div>
@@ -213,5 +235,7 @@
                 </main>
             </div>
     </div>
+
+    <script src="JS/owner.js"></script>
 </body>
 </html>
