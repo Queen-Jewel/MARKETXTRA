@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>My Store</title>
+</head>
+<body>
+    <div class="h-[1620px] bg-Drwhite ">
+        
+        <div class="font-Work flex flex-col items-start justify-center">
+            <!-- the top -->
+            <header class="flex items-center justify-center w-[100%] h-[99px] bg-GreenB text-white text-[24px] font-medium">Hello there, you’re welcome to my online store</header>
+    
+            <!-- the rest of the page -->
+            <div class="h-[1500px] flex items-start justify-start">
+    
+                <!-- Nav Bar -->
+                <div class="w-[267px] h-[1541px]  flex flex-col items-center justify-start bg-white">
+                    <!-- image -->
+                    <div class="h-[99px] p-6">
+                        <img class="w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
+                    </div>
+                    <!-- nav dashboards -->
+                    <div class="w-[117px] h-[246px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray">
+                        <!-- 1st -->
+                        <div class="flex items-center justify-center h-6 mb-7 text-Orange font-bold ">
+                            <img class="mr-[6px] " src="images/Storefront.png" alt="my store">
+                            <p>My store</p>
+                        </div>
+                        <!-- 2nd -->
+                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                            <img class="mr-[6px] " src="images/Receipt.png" alt="Receipt">
+                            <p>Dashboard</p>
+                        </div>
+                        <!-- 3rd -->
+                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                            <img class="mr-[6px] " src="images/Package.png" alt="Package">
+                            <p>Products</p>
+                        </div>
+                        <!-- 4th -->
+                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                            <img class="mr-[6px] " src="images/Note.png" alt="Note">
+                            <p>Order</p>
+                        </div>
+                        
+                        <!-- 5th -->
+                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                            <img class="mr-[6px] " src="images/Users.png" alt="Users">
+                            <p>Customers</p>
+                        </div>
+                        <!-- 6th -->
+                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                            <img class="mr-[6px] " src="images/set.png" alt="ChartLine">
+                            <p>Settings</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main -->
+                <main>
+
+                    <!-- main nav -->
+                    <div class=" h-[99px] flex items-center justify-between font-normal text-base text-txtgray">
+                         <!-- Logo -->
+                        <div class="w-[128px] h-[43px] flex items-center justify-center ml-4">
+                            <span class="w-[43px] h-[43px] border-transparent bg-stepgray rounded-[50%] mr-[2px]"></span>
+                            <p>Your Logo</p>
+                        </div>
+
+                        <!-- Other pages -->
+                        <div class="w-[524px] h-[22px] flex items-center justify-between ">
+                            <a href="#" class="bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent font-bold">Home</a>
+                            <a href="#" class="  hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">Product Catalog</a>
+                            <div class="flex items-center justify-center p[10px] w-[118px] h-[22px]">
+                                <p>category </p>
+                                <img class="w-4 h-[10px] ml-3" src="images/ChevronDown.png" alt="">
+                            </div>
+                            <a href="#" class=" hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">Contact</a>
+                            <a href="#" class=" hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">About Us</a>
+                        </div>
+
+                        <!-- Switch -->
+                        <div class="w-[188px] h-10 flex items-center justify-between">
+                            <img src="images/ToggleRight.png" alt="ToggleRight">
+                            <p>View as customer</p>
+                        </div>
+
+                        <!-- Catelog -->
+                        <div class="h-[30px] flex items-center justify-center">
+                            <img class="mr-5" src="images/ShoppingCartSimple.png" alt="ShoppingCartSimple">
+                        </div>
+                    </div>
+
+                    <!-- main showcase -->
+                    <!-- first box -->
+                    <div class=" h-[481px] relative flex flex-col overflow-hidden ">
+                        <div class="absolute inset-0 bg-cover filter blur-sm bg-[url('/images/shirtf.png')]"></div>
+
+                        <!-- Dark overlay -->
+                        <div class="absolute inset-0 bg-black opacity-70"></div>
+
+                        <!-- content -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center">
+                            <p class="mb-5  block w-[590px] text-[64px] text-white font-bold">We Sell The Best 
+                                Quality of T-shirts</p>
+                            <button
+                                id="button1"
+                                class="w-[262px] h-[70px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] rounded-lg"
+                                type="button">
+                                Shop Now!
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- second box -->
+                    <div class="w-[1050px] h-[502px] flex flex-col items-start justify-center text-txtgray  ml-4 mt-5">
+                        <p class="font-bold text-[24px]">Featured Products</p>
+
+                        <!-- shirts -->
+                        <div class="w-[1050px] h-[366px] flex items-center justify-between mt-20">
+
+                            <!-- 1st -->
+                            <div class="w-[331px] h-[442px] flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
+                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
+                                <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                    <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
+
+                                    <div class="w-[129px] h-6 flex items-start justify-start mt-10">
+                                        <div class="flex items-center justify-center">
+                                            <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
+                                            <p class="w-[69px] h-[23px] font-bold text-[20px]">3500</p>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                            <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                    <button
+                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        type="button">Add to cart
+                                    </button>
+                                    </div>
+                            </div>
+                            <!-- 2nd -->
+                            <div class="w-[331px] h-[442px] flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl">
+                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
+                                <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                    <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
+
+                                    <div class="w-[129px] h-6 flex items-start justify-start mt-10">
+                                        <div class="flex items-center justify-center">
+                                            <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
+                                            <p class="w-[69px] h-[23px] font-bold text-[20px]">3500</p>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                            <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                    <button
+                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        type="button">Add to cart
+                                    </button>
+                                    </div>
+                            </div>
+                            <!-- 3rd -->
+                            <div class="w-[331px] h-[442px] flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
+                                <img class="w-[331px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
+                                <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                    <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
+
+                                    <div class="w-[129px] h-6 flex items-start justify-start mt-10">
+                                        <div class="flex items-center justify-center">
+                                            <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
+                                            <p class="w-[69px] h-[23px] font-bold text-[20px]">3500</p>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                            <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                    <button
+                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        type="button">Add to cart
+                                    </button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third box -->
+                    <div class="h-[264px] relative flex flex-col mt-[75px] overflow-hidden ">
+                        <div class="absolute inset-0 bg-cover filter blur-sm bg-[url('/images/shirt4.png')]"></div>
+
+                        <!-- Dark overlay -->
+                        <div class="absolute inset-0 bg-black opacity-70"></div>
+
+                        <!-- content -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-start">
+                            <p class=" mb-10 mt-2 block w-[600px] h-[118px] leading-tight text-[50px] text-center text-white font-bold">See variety of products
+                                and collections</p>
+                            <button
+                                id="button2"
+                                class="w-[373px] h-[70px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium rounded-lg"
+                                type="button">Go to Product Catalog
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class=" h-[103px] flex items-center justify-start mt-20 pl-10 bg-footer">
+                        <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
+                        <div class="w-[266px] h-[30px]  flex items-center justify-center">
+                            <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
+                            <p class="font-medium text-base text-txtgray">2024, Powered by Marketxtra.</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+    </div>
+</body>
+</html>
