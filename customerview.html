@@ -56,7 +56,7 @@
                 </div>
 
                 <!-- main -->
-                <main>
+                <main class="relative" >
 
                     <!-- main nav -->
 
@@ -73,9 +73,9 @@
                         <div class="w-[524px] h-[22px] flex items-center justify-between ">
                             <a href="#" class="bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent font-bold">Home</a>
                             <a href="#" class="  hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">Product Catalog</a>
-                            <div class="flex items-center justify-center p[10px] w-[118px] h-[22px]">
-                                <p>category </p>
-                                <img class="w-4 h-[10px] ml-3" src="images/ChevronDown.png" alt="">
+                            <div id="downarr" class="flex items-center justify-center p[10px] w-[118px] h-[22px]">
+                                <p id="cate">category </p>
+                                <img id="image" onclick="toggleDropdown()" class="w-5 h-4 ml-3" src="images/DNC.svg" alt="">
                             </div>
                             <a href="#" class=" hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">Contact</a>
                             <a href="#" class=" hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">About Us</a>
@@ -222,6 +222,13 @@
                             <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
                             <p class="font-medium text-base text-txtgray">2024, Powered by Marketxtra.</p>
                         </div>
+                    </div>
+
+                    <!-- categpryy options -->
+                    <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-[100px] h-[80px] border-gray-300  top-[9.5%] left-[39.6%] absolute ">
+                        <p id="cat1" class="click   hover:text-footer px-[7px]">category 1</p>
+                        <p id="cat2" class="click  hover:text-footer px-[7px]">category 2</p>
+                        <p id="cat3" class="click hover:text-footer px-[7px]">category 3</p>
                     </div>
                 </main>
             </div>
