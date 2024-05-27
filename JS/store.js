@@ -1,9 +1,3 @@
-// page change
-const flip = document.getElementById('Switch');
-
-flip.addEventListener('click', () => {
-    window.location.href = '/ownerview.html';
-})
 const divs = document.querySelectorAll('.greenB');
 
 // product border change
