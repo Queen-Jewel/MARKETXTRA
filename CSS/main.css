@@ -726,6 +726,110 @@ video {
   top: 34%;
 }
 
+.right-\[\]{
+  right: ;
+}
+
+.right-\[5\]{
+  right: 5;
+}
+
+.right-\[5\%\]{
+  right: 5%;
+}
+
+.top-\[\]{
+  top: ;
+}
+
+.top-\[150\]{
+  top: 150;
+}
+
+.top-\[150\%\]{
+  top: 150%;
+}
+
+.left-\[10\%\]{
+  left: 10%;
+}
+
+.left-\[15\%\]{
+  left: 15%;
+}
+
+.left-\[13\%\]{
+  left: 13%;
+}
+
+.left-\[12\%\]{
+  left: 12%;
+}
+
+.left-\[11\%\]{
+  left: 11%;
+}
+
+.left-\[11\.5\%\]{
+  left: 11.5%;
+}
+
+.left-\[11\.3\%\]{
+  left: 11.3%;
+}
+
+.left-\[11\.1\%\]{
+  left: 11.1%;
+}
+
+.left-\[10\.6\%\]{
+  left: 10.6%;
+}
+
+.left-\[5\%\]{
+  left: 5%;
+}
+
+.left-\[7\%\]{
+  left: 7%;
+}
+
+.left-\[8\%\]{
+  left: 8%;
+}
+
+.top-\[5\%\]{
+  top: 5%;
+}
+
+.top-\[15\%\]{
+  top: 15%;
+}
+
+.top-\[50\%\]{
+  top: 50%;
+}
+
+.top-\[60\%\]{
+  top: 60%;
+}
+
+.top-\[80\%\]{
+  top: 80%;
+}
+
+.top-\[85\%\]{
+  top: 85%;
+}
+
+.top-\[95\%\]{
+  top: 95%;
+}
+
+.top-\[120\%\]{
+  top: 120%;
+}
+
 .m-4{
   margin: 1rem;
 }
@@ -1075,6 +1179,18 @@ video {
 
 .ml-\[380px\]{
   margin-left: 380px;
+}
+
+.mr-4{
+  margin-right: 1rem;
+}
+
+.ml-\[\]{
+  margin-left: ;
+}
+
+.ml-\[600px\]{
+  margin-left: 600px;
 }
 
 .block{
@@ -1467,6 +1583,34 @@ video {
 
 .h-\[27\.8px\]{
   height: 27.8px;
+}
+
+.h-\[1853px\]{
+  height: 1853px;
+}
+
+.h-\[392px\]{
+  height: 392px;
+}
+
+.h-\[26px\]{
+  height: 26px;
+}
+
+.h-\[31px\]{
+  height: 31px;
+}
+
+.h-\[125pxpx\]{
+  height: 125pxpx;
+}
+
+.h-\[45px\]{
+  height: 45px;
+}
+
+.h-\[140pxpx\]{
+  height: 140pxpx;
 }
 
 .max-h-\[100\%\]{
@@ -1977,6 +2121,34 @@ video {
   width: 1080px;
 }
 
+.w-\[246px\]{
+  width: 246px;
+}
+
+.w-\[716px\]{
+  width: 716px;
+}
+
+.w-\[96\]{
+  width: 96;
+}
+
+.w-\[94px\]{
+  width: 94px;
+}
+
+.w-\[90px\]{
+  width: 90px;
+}
+
+.w-\[136px\]{
+  width: 136px;
+}
+
+.w-\[1\]{
+  width: 1;
+}
+
 .max-w-\[100\%\]{
   max-width: 100%;
 }
@@ -2029,6 +2201,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-visible{
+  overflow: visible;
 }
 
 .rounded-3xl{
@@ -2673,9 +2849,27 @@ video {
   border-width: 1px;
 }
 
+.hover\:border-\[1px\]:hover{
+  border-width: 1px;
+}
+
+.hover\:border-2:hover{
+  border-width: 2px;
+}
+
 .hover\:border-Orange:hover{
   --tw-border-opacity: 1;
   border-color: rgb(212 88 0 / var(--tw-border-opacity));
+}
+
+.hover\:border-GreenT:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 128 0 / var(--tw-border-opacity));
+}
+
+.hover\:bg-footer:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 241 244 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-b:hover{

@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/main.css" />
     <title>Products</title>
+    <style>
+      .gradient-border {
+        border-width: 2px;
+        border-style: solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to bottom, #008000, #00B800);
+      }
+    </style>
   </head>
   <body>
     <div class="h-[2225px] bg-Drwhite">
@@ -122,7 +130,7 @@
               </div>
 
               <!-- add and filter -->
-              <div class="mr-[740px] flex items-center justify-start mt-11">
+              <div class=" flex items-center justify-start mt-11">
                 <button
                   id="button"
                   class="flex items-center justify-center w-[191px] h-[38px] p-[10px] pb-2 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg"
@@ -137,12 +145,28 @@
                   /></span>
                 </button>
                 <!-- filter -->
-                <div
-                  class="ml-5 w-[160px] h-12 rounded-md bg-footer p-[10px] flex items-center justify-between text-base font-normal text-txtgray"
-                >
-                  <p>filter</p>
-                  <img src="images/ChevronDown.png" alt="ChevronDown" />
+                <div class="relative overflow-visible">
+                  <div
+                    class="ml-5 w-[160px] h-12 rounded-md bg-footer p-[10px] flex items-center justify-between text-base font-normal text-txtgray"
+                  >
+                    <p id="cate">filter</p>
+                    <img id="image" onclick="toggleDropdown()" class="w-4 h-[10px] ml-3" src="images/icons8-chevron-down-30.png" alt="">
+                  </div>
+                  <!-- categpryy options -->
+                  <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-[160px] h-[140pxpx] border-gray-300  top-[120%] left-[10%] absolute ">
+                    <div id="cat1" class="click flex items-center justify-center w-[160px] h-[45px] hover:bg-footer">
+                      <div> Category 1</div>
+                    </div>
+                    <div id="cat1" class="click flex items-center justify-center w-[160px] h-[45px] hover:bg-footer">
+                      <div> Category 2</div>
+                    </div>
+                    <div id="cat1" class="click flex items-center justify-center w-[160px] h-[45px] hover:bg-footer">
+                      <div> Category 3</div>
+                    </div>
+                    
                 </div>
+                </div>
+                <p class="w-137px h-[19px] font-bold text-base text-txtgray ml-[600px]">85 Product listed</p>
               </div>
 
               <!-- Products -->
@@ -151,12 +175,17 @@
                 class="w-[1028px] h-[407px] bg-white rounded-lg mt-10 ml-5 flex items-center justify-between mr-[100px]"
               >
                 <!-- img -->
-                <img
+                <div class="relative">
+                  <img
                   src="images/Blue-t-shirt.png"
                   alt="bts"
                   class="w-[419px] w-[355px] rounded-lg ml-6"
-                />
+                  />
 
+                  <span class=" absolute top-[5%] left-[11%] w-[90px] h-[26px] border-transparent bg-footer flex items-center justify-center p-[10px]">
+                  <p class="text-base text-txtgray font-normal">Featured</p>
+                  </span>
+              </div>
                 <!-- Description -->
                 <div
                   class="w-[529px] h-[351px] flex flex-col items-start justify-start mr-5 text-txtgray"
@@ -166,7 +195,7 @@
                     <div class="bg-footer w-[75px] h-[21px] px-2">
                       <p class="text-[14px] font-normal">Plain T's</p>
                     </div>
-                    <div class="w-20 h-6 flex items-center justify-between">
+                    <div class="w-[136px] h-6 flex items-center justify-between">
                       <img
                         class="w-6 h-6"
                         src="images/PencilLine.png"
@@ -177,6 +206,7 @@
                         src="images/ShareNetwork.png"
                         alt="ShareNetwork"
                       />
+                      <img src="images/Trash.png" alt="Trash">
                     </div>
                   </div>
                   <!-- 2 -->
@@ -343,12 +373,16 @@
                 class="w-[1028px] h-[407px] bg-white rounded-lg mt-10 mb-5 ml-5 flex items-center justify-between mr-[100px]"
               >
                 <!-- img -->
-                <img
+                <div class="relative">
+                  <img
                   src="images/Canvas.png"
                   alt="bts"
                   class="w-[419px] w-[355px] rounded-lg ml-6"
-                />
-
+                  />
+                  <span class=" absolute top-[5%] left-[11%] w-[90px] h-[26px] border-transparent bg-footer flex items-center justify-center p-[10px]">
+                    <p class="text-base text-txtgray font-normal">Featured</p>
+                  </span>
+                </div>
                 <!-- Description -->
                 <div
                   class="w-[529px] h-[351px] flex flex-col items-start justify-start mr-5 text-txtgray"
@@ -360,7 +394,7 @@
                     >
                       <p class="text-[14px] font-normal">Foot wears</p>
                     </div>
-                    <div class="w-20 h-6 flex items-center justify-between">
+                    <div class="w-[136px] h-6 flex items-center justify-between">
                       <img
                         class="w-6 h-6"
                         src="images/PencilLine.png"
@@ -371,6 +405,7 @@
                         src="images/ShareNetwork.png"
                         alt="ShareNetwork"
                       />
+                      <img src="images/Trash.png" alt="Trash">
                     </div>
                   </div>
                   <!-- 2 -->
@@ -545,12 +580,16 @@
                 class="w-[1028px] h-[407px] bg-white rounded-lg mt-10 mb-5 ml-5 flex items-center justify-between mr-[100px]"
               >
                 <!-- img -->
-                <img
+                <div class="relative">
+                  <img
                   src="images/PB.png"
                   alt="bts"
                   class="w-[419px] w-[355px] rounded-lg ml-6"
-                />
-
+                  />
+                  <span class=" absolute top-[5%] left-[11%] w-[90px] h-[26px] border-transparent bg-footer flex items-center justify-center p-[10px]">
+                    <p class="text-base text-txtgray font-normal">Featured</p>
+                  </span>
+                </div>
                 <!-- Description -->
                 <div
                   class="w-[529px] h-[351px] flex flex-col items-start justify-start mr-5 text-txtgray"
@@ -562,7 +601,7 @@
                     >
                       <p class="text-[14px] font-normal">Phone accessory</p>
                     </div>
-                    <div class="w-20 h-6 flex items-center justify-between">
+                    <div class="w-[136px] h-6 flex items-center justify-between">
                       <img
                         class="w-6 h-6"
                         src="images/PencilLine.png"
@@ -573,6 +612,7 @@
                         src="images/ShareNetwork.png"
                         alt="ShareNetwork"
                       />
+                      <img src="images/Trash.png" alt="Trash">
                     </div>
                   </div>
                   <!-- 2 -->
@@ -722,12 +762,16 @@
                 class="w-[1028px] h-[407px] bg-white rounded-lg mt-10 mb-5 ml-5 flex items-center justify-between mr-[100px]"
               >
                 <!-- img -->
-                <img
+                <div class="relative">
+                  <img
                   src="images/vintage.png"
                   alt="bts"
                   class="w-[419px] w-[355px] rounded-lg ml-6"
-                />
-
+                  />
+                  <span class=" absolute top-[5%] left-[11%] w-[90px] h-[26px] border-transparent bg-footer flex items-center justify-center p-[10px]">
+                    <p class="text-base text-txtgray font-normal">Featured</p>
+                  </span>
+                </div>
                 <!-- Description -->
                 <div
                   class="w-[529px] h-[351px] flex flex-col items-start justify-start mr-5 text-txtgray"
@@ -739,7 +783,7 @@
                     >
                       <p class="text-[14px] font-normal">Cloth materials</p>
                     </div>
-                    <div class="w-20 h-6 flex items-center justify-between">
+                    <div class="w-[136px] h-6 flex items-center justify-between">
                       <img
                         class="w-6 h-6"
                         src="images/PencilLine.png"
@@ -750,6 +794,7 @@
                         src="images/ShareNetwork.png"
                         alt="ShareNetwork"
                       />
+                      <img src="images/Trash.png" alt="Trash">
                     </div>
                   </div>
                   <!-- 2 -->
@@ -914,5 +959,8 @@
 
       </div>
     </div>
+
+
+    <script src="JS/product1.js"></script>
   </body>
 </html>

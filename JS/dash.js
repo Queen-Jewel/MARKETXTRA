@@ -9,9 +9,10 @@ gradient.addColorStop(1, 'rgba(0, 184, 0, 1)');
 let chart = new Chart(line, {
     type: 'line',
     data: {
-        labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'],
+        labels: ['12am', '3am', '9am', '12pm', '3pm', '9pm', '11:59am'],
         datasets:[{
-            data:[20,70, 60, 90, 70, 80, 100],
+            label:'',
+            data:['0k','50k', '100k', '150k', '200k', '250+'],
             backgroundColor: gradient,
             borderColor: 'rgba(0, 128, 0, 1)',
             fill: false,
