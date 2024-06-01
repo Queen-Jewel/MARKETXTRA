@@ -206,7 +206,7 @@
                         src="images/ShareNetwork.png"
                         alt="ShareNetwork"
                       />
-                      <img src="images/Trash.png" alt="Trash">
+                      <img src="images/Trash.png" alt="Trash" id="trashButton">
                     </div>
                   </div>
                   <!-- 2 -->
@@ -405,7 +405,7 @@
                         src="images/ShareNetwork.png"
                         alt="ShareNetwork"
                       />
-                      <img src="images/Trash.png" alt="Trash">
+                      <img src="images/Trash.png" alt="Trash" id="trashButton">
                     </div>
                   </div>
                   <!-- 2 -->
@@ -612,7 +612,7 @@
                         src="images/ShareNetwork.png"
                         alt="ShareNetwork"
                       />
-                      <img src="images/Trash.png" alt="Trash">
+                      <img src="images/Trash.png" alt="Trash" id="trashButton">
                     </div>
                   </div>
                   <!-- 2 -->
@@ -794,7 +794,7 @@
                         src="images/ShareNetwork.png"
                         alt="ShareNetwork"
                       />
-                      <img src="images/Trash.png" alt="Trash">
+                      <img src="images/Trash.png" alt="Trash" id="trashButton">
                     </div>
                   </div>
                   <!-- 2 -->
@@ -961,6 +961,26 @@
     </div>
 
 
+    <!-- Modal Body -->
+    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+      <div class="w-[730px] h-[236px] rounded-lg bg-white flex flex-col items-center justify-center">
+        <div class="w-[600px] h-6 flex items-center justify-between">
+          <p class="font-bold text-base text-txtgray">Remove this product</p>
+          <img src="images/X.png" alt="X" class="close">
+        </div>
+        <p class="font-normal text-base text-txtgray w-[600px] h-[21px] pt-5 pb-16">Are you sure you want to unlist this product</p>
+        <div class="w-[600px] h-[60px] flex items-center justify-start font-normal text-base">
+        <button
+          onclick="confirmDelete()"
+          id="button1"
+          class="w-[285px] mr-10 h-[60px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg  p-[10px] flex items-center justify-center"
+          type="button">
+          No, keep product
+        </button>
+        <button type="button" onclick="confirmDelete()" class="w-[285px] h-[60px] rounded-lg border-[1px] border-Orange p-[10px] flex items-center justify-center">Yes, unlist product</button>
+        </div>
+      </div>
+    </div>
     <script src="JS/product1.js"></script>
   </body>
 </html>

@@ -27,12 +27,40 @@ cats.forEach(cat => {
     });
   });
   
-  cat1.addEventListener('click', ()=> {
-    cate.textContent = 'category 1'
+  cat1.addEventListener('click', () => {
+    cate.textContent = 'category 1';
+});
+
+cat2.addEventListener('click', () => {
+    cate.textContent = 'category 2';
+});
+
+cat3.addEventListener('click', () => {
+    cate.textContent = 'category 3';
+});
+
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("trashButton");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close");
+
+  // When the user clicks the button, open the modal 
+  btn.addEventListener('click', ()=>{
+      modal.classList.remove('hidden');
   });
-  cat2.addEventListener('click', ()=> {
-    cate.textContent = 'category 2'
+
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener('click', ()=>{
+      modal.classList.add('hidden');
   });
-  cat3.addEventListener('click', ()=> {
-    cate.textContent = 'category 3'
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.addEventListener('click', (event)=>{
+      if (event.target == modal) {
+          modal.classList.add('hidden');
+      }
   });

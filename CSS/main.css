@@ -570,6 +570,10 @@ video {
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -680,6 +684,10 @@ video {
 
 .top-\[90\%\]{
   top: 90%;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .m-4{
@@ -1492,6 +1500,26 @@ video {
   height: 100%;
 }
 
+.h-\[\]{
+  height: ;
+}
+
+.h-\[23\]{
+  height: 23;
+}
+
+.h-\[236px\]{
+  height: 236px;
+}
+
+.h-\[2\]{
+  height: 2;
+}
+
+.h-\[60px\]{
+  height: 60px;
+}
+
 .max-h-\[100\%\]{
   max-height: 100%;
 }
@@ -2032,6 +2060,30 @@ video {
   width: 100%;
 }
 
+.w-\[\]{
+  width: ;
+}
+
+.w-\[730px\]{
+  width: 730px;
+}
+
+.w-\[7\]{
+  width: 7;
+}
+
+.w-\[570px\]{
+  width: 570px;
+}
+
+.w-\[610px\]{
+  width: 610px;
+}
+
+.w-\[285px\]{
+  width: 285px;
+}
+
 .max-w-\[100\%\]{
   max-width: 100%;
 }
@@ -2201,6 +2253,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-Orange{
+  --tw-border-opacity: 1;
+  border-color: rgb(212 88 0 / var(--tw-border-opacity));
+}
+
 .border-b-Orange{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(212 88 0 / var(--tw-border-opacity));
@@ -2259,6 +2316,10 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
 }
 
 .bg-\[url\(\'\/images\/shirtf\.png\'\)\]{
@@ -2397,6 +2458,16 @@ video {
   padding-bottom: 38px;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -2451,6 +2522,30 @@ video {
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pb-0{
+  padding-bottom: 0px;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .text-center{
