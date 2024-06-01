@@ -1,3 +1,19 @@
+// Move to add new product page
+const btnP = document.getElementById('button');
+
+btnP.addEventListener('click', ()=> {
+  window.location.href = "/addp1.html";
+})
+const edit = document.querySelectorAll('.button1');
+
+edit.addEventListener('click', ()=> {
+  window.location.href = "editptoduct.html";
+})
+
+
+
+
+
 // Dropdown toggle
 const downC = document.querySelector('#dropdown');
 const toggleDropdown = () => {
@@ -54,7 +70,7 @@ cat3.addEventListener('click', () => {
   });
 
   // When the user clicks on <span> (x), close the modal
-  span.addEventListener('click', ()=>{
+  span.addEventListener('click', ()=> {
       modal.classList.add('hidden');
   });
 
