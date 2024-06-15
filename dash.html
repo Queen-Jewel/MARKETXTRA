@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
-    <div class="h-[1853px] bg-Drwhite">
+    <div class="h-[1900px] bg-Drwhite">
         <!-- container -->
         <div class="flex items-start justify-start font-Work">
             <!-- Side NavBar -->
-            <div class="w-[267px] h-[1541px]  flex flex-col items-center justify-start bg-white">
+            <div class="w-[267px] h-[1900px]  flex flex-col items-center justify-start bg-white">
                 <!-- image -->
                 <div class="h-[99px] p-6">
                     <img class="w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
@@ -30,14 +31,15 @@
                     </div>
                     <!-- 3rd -->
                     <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px] " src="images/Note.png" alt="Note">
-                        <p>Order</p>
-                    </div>
-                    <!-- 4th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
                         <img class="mr-[6px] " src="images/Package.png" alt="Package">
                         <p>Products</p>
                     </div>
+                    <!-- 4th -->
+                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <img class="mr-[6px] " src="images/Note.png" alt="Note">
+                        <p>Orders</p>
+                    </div>
+                    
                     <!-- 5th -->
                     <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
                         <img class="mr-[6px] " src="images/Users.png" alt="Users">
@@ -45,37 +47,17 @@
                     </div>
                     <!-- 6th -->
                     <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px] " src="images/ChartLine.png" alt="ChartLine">
-                        <p>Analytics</p>
-                    </div>
-                    <!-- 7th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px] " src="images/Money.png" alt="Money">
-                        <p>Billings</p>
-                    </div>
-                    <!-- 8th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px] " src="images/Bicycle.png" alt="Bicycle">
-                        <p>Delivery</p>
-                    </div>
-                    <!-- 9th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px] " src="images/Briefcase.png" alt="Briefcase">
-                        <p>My Brand</p>
-                    </div>
-                    <!-- 10th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px] " src="images/MapPin.png" alt="MapPin">
-                        <p>Location</p>
+                        <img class="mr-[6px]" src="images/SEB.png" alt="MapPin" />
+                        <p>Settings</p>
                     </div>
                 </div>
             </div>
 
             <!-- Body -->
-        <div class="flex flex-col items-start justify-start"> 
+        <div class="flex flex-col items-start justify-start ml-8"> 
 
                 <!-- nav body -->
-            <div class="h-[97px] flex items-center justify-between mb-10">
+            <div class="h-[97px] flex items-center justify-between mb-16">
                 <!-- search bar -->
                 <div class=" w-[472px] h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between">
                     <input class="outline-none bg-footer pl-2" type="text" placeholder="Search" name="Search">
@@ -84,38 +66,23 @@
 
                 <!-- Weekly -->
                 <div class="ml-8 w-[160px] h-12 rounded-md bg-footer p-[10px] flex items-center justify-between text-base font-normal text-txtgray">
-                    <p>weekly</p>
+                    <p>Daily</p>
                     <img  src="images/ChevronDown.png" alt="ChevronDown">
                 </div>
 
                 <!-- User -->
-                <div class="w-[283px] h-[43px] ml-[70px] flex items-center justify-center">
+                <div class="w-[283px] h-[43px] ml-[150px] flex items-center justify-center">
                     <img class="mr-4" src="images/Bell.png" alt="Bell">
                     <span class="w-[43px] h-[43px] mr-3 flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray">JJ</span>
                     <p class="font-normal text-base">Jaachi Jeff</p>
                 </div>
             </div>
+
+
                 <!-- showcase 1 -->
-                <div class=" flex items-center justify-between p-6 w-[973px] h-[154px] rounded-lg border-4 border-gradientCol-to-b from-GreenT to-GreenL bg-clip-content mt-[50px]">
-                    <div class="w-[331px] h-[114px] flex flex-col items-start justify-between text-txtgray">
-                        <p class="font-medium text-2xl">Available Balance</p>
-                        <p class="font-bold text-[50px]">NGN 0.00</p>
-                    </div>
-                    <div class=" h-[114px] flex flex-col items-end justify-between">
-                        <button
-                                id="button1"
-                                class="mb-5 w-[103px] h-[38px] bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg p-2"
-                                type="button">Withdraw
-                        </button>
-                        <img src="images/eyed.png" alt="eyed">
-                    </div>
-                </div>
-
-
-                <!-- showcase 2 -->
-                <div class="w-[973px] h-[154px] flex items-center justify-between mt-20">
+                <div class="w-[1085px] h-[154px] flex items-center justify-between">
                     <!-- 1st -->
-                    <div class="w-[307px] h-[154px] rounded-lg drop-shadow-2xl shadow-2xl p-4 bg-GreenB">
+                    <div class="w-[355px] h-[154px] rounded-lg p-4 bg-GreenB hover:shadow-2xl">
                         <div class="flex items-center justify-between">
                         <p class="font-medium text-[24px] text-white">Total Sales</p>
                         <img src="images/cart.png" alt="cart">
@@ -126,8 +93,8 @@
                         <a class="w-[83px] h-[22px] font-normal text-base border-b-[1px] border-b-white" href="#">See report</a>
                         </div>
                     </div>
-                    <!-- 3rd -->
-                    <div class="w-[307px] h-[154px] rounded-lg drop-shadow-2xl shadow-2xl p-4 bg-gradient-to-b from-GreenT to-GreenL">
+                    <!-- 2nd -->
+                    <div class="w-[355px] h-[154px] rounded-lg p-4 bg-gradient-to-b from-GreenT to-GreenL mx-5 hover:shadow-2xl">
                         <div class="flex items-center justify-between">
                         <p class="font-medium text-[24px] text-white">Total Profit</p>
                         <img src="images/Moneyw.png" alt="cart">
@@ -138,8 +105,8 @@
                         
                         </div>
                     </div>
-                    <!-- 1st -->
-                    <div class="w-[307px] h-[154px] rounded-lg drop-shadow-2xl shadow-2xl p-4 bg-Orange">
+                    <!-- 3rd -->
+                    <div class="w-[355px] h-[154px] rounded-lg p-4 bg-Orange hover:shadow-2xl">
                         <div class="flex items-center justify-between">
                         <p class="font-medium text-[24px] text-white">Total Sales</p>
                         <img src="images/Wallet (1).png" alt="cart">
@@ -153,11 +120,11 @@
                 </div>
 
                 <!-- Transaction -->
-                <div class="w-[970px] h-[312px] flex flex-col items-start justify-center text-txtgray font-normal text-base">
+                <div class="w-[1077px] h-[312px] flex flex-col items-start justify-center text-txtgray font-normal text-base mt-28">
                     <p class="font-medium text-2xl mb-4">Transactions History</p>
 
                     <!-- shirt transaction -->
-                    <div class="w-[970px] h-[66px] flex items-center justify-between bg-white rounded-lg p-10">
+                    <div class="w-[1077px] h-[66px] flex items-center justify-between bg-white rounded-lg p-10">
                         <div class="w-[202px] h-[43px] flex items-center justify-between">
                             <img class="rounded-[50%]" src="images/BTS.png" alt="BTS">
                             <p>Blue Plain T-shirt</p>
@@ -165,7 +132,7 @@
                         <p class="mx-56">07 - Mar. 2024</p>
                         <p>NGN3,500</p>
                     </div>
-                    <div class="w-[970px] h-[66px] my-10 flex items-center justify-between bg-white rounded-lg p-10">
+                    <div class="w-[1077px] h-[66px] my-10 flex items-center justify-between bg-white rounded-lg p-10">
                         <div class="w-[202px] h-[43px] flex items-center justify-between">
                             <img class="rounded-[50%]" src="images/BTS.png" alt="BTS">
                             <p>Blue Plain T-shirt</p>
@@ -173,7 +140,7 @@
                         <p class="mx-56">07 - Mar. 2024</p>
                         <p>NGN3,500</p>
                     </div>
-                    <div  class="w-[970px] h-[66px] flex items-center justify-between bg-white rounded-lg p-10">
+                    <div  class="w-[1077px] h-[66px] flex items-center justify-between bg-white rounded-lg p-10">
                         <div class="w-[202px] h-[43px] flex items-center justify-between">
                             <img class="rounded-[50%]" src="images/BTS.png" alt="BTS">
                             <p>Blue Plain T-shirt</p>
@@ -183,12 +150,12 @@
                     </div>
                 </div>
 
-                <div class="w-[970px] flex items-end justify-end mt-12 mb-24">
+                <div class="w-[1077px] flex items-end justify-end mt-12 mb-20">
                     <a href="#" class="w-[61px] h-[22px] text-Orange border-b-[1px] border-b-Orange">View all</a>
                 </div>
 
                 <!-- Charts -->
-                <div class="w-[970px] h-[358px] flex items-center justify-between text-txtgray">
+                <div class="w-[1080px] h-[392px] flex items-center justify-start text-txtgray">
 
                     <!-- Line Chart -->
                     <div class="w-[716px] h-[392px] rounded-lg px-3 py-5 bg-white">
@@ -206,25 +173,35 @@
                     </div>
 
 
-                    <!-- Line Chart -->
-                    <div class="w-[327px] h-[358px] rounded-lg px-3 py-5 bg-white">
+                    <!-- doughnut Chart -->
+                    <div class="w-[327px] h-[300px] rounded-lg px-3 py-5 bg-white relative ml-8 mb-10">
                         <div class=" flex flex-col items-start justify-start">
-                            <p class="font-semibold text-2xl">Sold Products</p>
-                            <!-- Weekly -->
-                            <div class="mt-5 w-[160px] h-12 rounded-md bg-footer p-[10px] flex items-center justify-between text-base font-normal text-txtgray">
-                            <p>weekly</p>
-                            <img  src="images/ChevronDown.png" alt="ChevronDown">
-                        </div>
+                            <p class="font-semibold text-2xl">Best sellers</p>
                         </div>
                         <!-- chart -->
                             <div class="doughnut text-[#000000] text-base font-normal">
                                 <canvas id="doughnut"></canvas>
                             </div>
+                            <span class="absolute left-[23%] top-[52.5%] text-[#000000]">50 Items</span>
+                    </div>
+                    
+                </div>
+
+                <!-- bar chart -->
+                <div class="w-[1000px] h-[550px] flex flex-col items-start justify-center mt-[100px] bg-white">
+                    <div class=" flex items-start justify-between ml-20 mt-5">
+                        <p class="font-semibold text-2xl ml-10">Store visits</p>
+                        <div class="ml-[440px] w-[246px] h-7  flex items-center justify-center text-[24px] font-semibold text-txtgray">
+                            <p>Total Visits - 0,0000</p>
+                        </div>
+                    </div>
+                    <div class="w-[1080px] h-[460px] flex items-start justify-start ml-5">
+                        <canvas id="barchart"></canvas>
                     </div>
                 </div>
 
                 <!-- Footer -->
-                <div class="w-[1100px] h-[103px] flex items-center justify-start mt-40 pl-10 bg-footer">
+                <div class="w-[1100px] h-[103px] flex items-center justify-start pl-10 bg-footer">
                     <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
                     <div class="w-[266px] h-[30px]  flex items-center justify-center">
                         <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
@@ -238,7 +215,5 @@
 
 
     <script src="JS/dash.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
