@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .gradient-border {
+            border-left: 5px solid;
+            border-image: linear-gradient(to bottom, #008000, #00B800);
+            border-image-slice: 1;
+        }
+    </style>
     <title>Dashboard</title>
 </head>
 <body>
-    <div class="h-[1900px] bg-Drwhite">
+    <div class="h-[2100px] bg-Drwhite">
         <!-- container -->
         <div class="flex items-start justify-start font-Work">
             <!-- Side NavBar -->
-            <div class="w-[267px] h-[1900px]  flex flex-col items-center justify-start bg-white">
+            <div class="w-[267px] h-[2100px]  flex flex-col items-center justify-start bg-white">
                 <!-- image -->
                 <div class="h-[99px] p-6">
                     <img class="w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
@@ -64,10 +71,24 @@
                     <img class="pr-2" src="images/srch.png" alt="srch">
                 </div>
 
-                <!-- Weekly -->
-                <div class="ml-8 w-[160px] h-12 rounded-md bg-footer p-[10px] flex items-center justify-between text-base font-normal text-txtgray">
-                    <p>Daily</p>
-                    <img  src="images/ChevronDown.png" alt="ChevronDown">
+                <!-- Daily -->
+                <div class="relative overflow-visible">
+                    <div class="ml-8 w-[160px] h-12 rounded-md bg-white p-[10px] flex items-center justify-between text-base font-normal text-txtgray">
+                        <p id="cate">Daily</p>
+                        <img id="image" onclick="toggleDropdown()" class="w-4 h-[10px] ml-3"  src="images/icons8-chevron-down-30.png" alt="ChevronDown">
+                    </div>
+                    <!-- categpryy options -->
+                    <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-start justify-center w-[160px] h-[140pxpx] border-gray-300  top-[85%] left-[16.5%] absolute ">
+                        <div id="cat1" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer hover:border-l-5 hover:border-l-black">
+                        <div> Daily</div>
+                        </div>
+                        <div id="cat2" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
+                        <div>Weekly</div>
+                        </div>
+                        <div id="cat3" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
+                        <div>Monthly</div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- User -->
@@ -132,7 +153,7 @@
                         <p class="mx-56">07 - Mar. 2024</p>
                         <p>NGN3,500</p>
                     </div>
-                    <div class="w-[1077px] h-[66px] my-10 flex items-center justify-between bg-white rounded-lg p-10">
+                    <div class="w-[1077px] h-[66px] my-5 flex items-center justify-between bg-white rounded-lg p-10">
                         <div class="w-[202px] h-[43px] flex items-center justify-between">
                             <img class="rounded-[50%]" src="images/BTS.png" alt="BTS">
                             <p>Blue Plain T-shirt</p>
@@ -201,7 +222,7 @@
                 </div>
 
                 <!-- Footer -->
-                <div class="w-[1100px] h-[103px] flex items-center justify-start pl-10 bg-footer">
+                <div class="w-[1100px] h-[103px] flex items-center mt-[100px] justify-start pl-10 bg-footer">
                     <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
                     <div class="w-[266px] h-[30px]  flex items-center justify-center">
                         <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
