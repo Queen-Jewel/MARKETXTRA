@@ -16,6 +16,8 @@ new Chart(ctx, {
             backgroundColor: gradient,
             borderColor: 'rgba(0, 128, 0, 1)',
             tension:0.4,
+            pointRadius: 0,
+            
         }]
     },
     options: {
@@ -144,6 +146,8 @@ cat2.addEventListener('click', () => {
     cat1.classList.remove('gradient-border');
     cat2.classList.add('gradient-border');
     cat3.classList.remove('gradient-border');
+    window.location.href = '/dash3.html';
+
 });
 
 cat3.addEventListener('click', () => {
@@ -151,4 +155,5 @@ cat3.addEventListener('click', () => {
     cat1.classList.remove('gradient-border');
     cat2.classList.remove('gradient-border');
     cat3.classList.add('gradient-border');
+    window.location.href = '/dash2.html';
 });

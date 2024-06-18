@@ -598,6 +598,10 @@ video {
   left: 11%;
 }
 
+.left-\[16\.5\%\]{
+  left: 16.5%;
+}
+
 .left-\[23\%\]{
   left: 23%;
 }
@@ -714,44 +718,16 @@ video {
   top: 70%;
 }
 
+.top-\[85\%\]{
+  top: 85%;
+}
+
 .top-\[90\%\]{
   top: 90%;
 }
 
 .top-\[93\.5\%\]{
   top: 93.5%;
-}
-
-.left-\[13\%\]{
-  left: 13%;
-}
-
-.left-\[14\%\]{
-  left: 14%;
-}
-
-.top-\[100\%\]{
-  top: 100%;
-}
-
-.top-\[95\%\]{
-  top: 95%;
-}
-
-.left-\[15\%\]{
-  left: 15%;
-}
-
-.left-\[16\%\]{
-  left: 16%;
-}
-
-.left-\[16\.5\%\]{
-  left: 16.5%;
-}
-
-.top-\[85\%\]{
-  top: 85%;
 }
 
 .z-50{
@@ -965,16 +941,16 @@ video {
   margin-left: 3px;
 }
 
-.ml-\[440px\]{
-  margin-left: 440px;
-}
-
 .ml-\[46px\]{
   margin-left: 46px;
 }
 
 .ml-\[48px\]{
   margin-left: 48px;
+}
+
+.ml-\[540px\]{
+  margin-left: 540px;
 }
 
 .ml-\[600px\]{
@@ -1179,10 +1155,6 @@ video {
 
 .mt-\[2px\]{
   margin-top: 2px;
-}
-
-.mt-\[345px\]{
-  margin-top: 345px;
 }
 
 .mt-\[3px\]{
@@ -1469,10 +1441,6 @@ video {
   height: 18px;
 }
 
-.h-\[1900px\]{
-  height: 1900px;
-}
-
 .h-\[190px\]{
   height: 190px;
 }
@@ -1511,6 +1479,10 @@ video {
 
 .h-\[2090px\]{
   height: 2090px;
+}
+
+.h-\[2100px\]{
+  height: 2100px;
 }
 
 .h-\[210px\]{
@@ -1987,22 +1959,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[2px\]{
-  height: 2px;
-}
-
-.h-\[2500px\]{
-  height: 2500px;
-}
-
-.h-\[2300px\]{
-  height: 2300px;
-}
-
-.h-\[2100px\]{
-  height: 2100px;
 }
 
 .max-h-\[100\%\]{
@@ -2821,10 +2777,6 @@ video {
   width: 100vw;
 }
 
-.w-\[1200px\]{
-  width: 1200px;
-}
-
 .max-w-\[100\%\]{
   max-width: 100%;
 }
@@ -2973,10 +2925,6 @@ video {
 
 .border-b-\[1px\]{
   border-bottom-width: 1px;
-}
-
-.border-l{
-  border-left-width: 1px;
 }
 
 .border-Graytrue{
@@ -3344,10 +3292,6 @@ video {
   padding-top: 1.75rem;
 }
 
-.pl-6{
-  padding-left: 1.5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -3653,14 +3597,6 @@ video {
 
 .hover\:border:hover{
   border-width: 1px;
-}
-
-.hover\:border-l:hover{
-  border-left-width: 1px;
-}
-
-.hover\:border-l-4:hover{
-  border-left-width: 4px;
 }
 
 .hover\:border-Orange:hover{
