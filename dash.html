@@ -15,17 +15,17 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <div class="h-[2100px] bg-Drwhite">
+    <div class="w-full relative h-[2100px] bg-Drwhite">
         <!-- container -->
-        <div class="flex items-start justify-start font-Work">
+        <div class="relative flex items-start justify-start font-Work">
             <!-- Side NavBar -->
-            <div class="w-[267px] h-[2100px]  flex flex-col items-center justify-start bg-white">
+            <div class="w-[240px] h-[2100px]  flex flex-col items-center justify-start bg-white fixed">
                 <!-- image -->
                 <div class="h-[99px] p-6">
                     <img class="w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
                 </div>
                 <!-- nav dashboards -->
-                <div class="w-[117px] h-[246px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray">
+                <div class=" w-[117px] h-[240px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray">
                     <!-- 1st -->
                     <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold ">
                         <img class="mr-[6px] " src="images/StorefrontB.png" alt="my store">
@@ -61,10 +61,10 @@
             </div>
 
             <!-- Body -->
-        <div class="flex flex-col items-start justify-start ml-8"> 
+        <div class="flex flex-col items-start justify-start ml-[200px] pl-10"> 
 
                 <!-- nav body -->
-            <div class="h-[97px] flex items-center justify-between mb-16">
+            <div class="h-[97px] flex items-center justify-between mb-16 pl-4">
                 <!-- search bar -->
                 <div class=" w-[472px] h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between">
                     <input class="outline-none bg-footer pl-2" type="text" placeholder="Search" name="Search">
@@ -92,7 +92,7 @@
                 </div>
 
                 <!-- User -->
-                <div class="w-[283px] h-[43px] ml-[150px] flex items-center justify-center">
+                <div class="w-[283px] h-[43px] ml-[130px] flex items-center justify-center">
                     <img class="mr-4" src="images/Bell.png" alt="Bell">
                     <span class="w-[43px] h-[43px] mr-3 flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray">JJ</span>
                     <p class="font-normal text-base">Jaachi Jeff</p>
@@ -101,7 +101,7 @@
 
 
                 <!-- showcase 1 -->
-                <div class="w-[1085px] h-[154px] flex items-center justify-between">
+                <div class="w-[1085px] h-[154px] flex items-center justify-between ml-4">
                     <!-- 1st -->
                     <div class="w-[355px] h-[154px] rounded-lg p-4 bg-GreenB hover:shadow-2xl">
                         <div class="flex items-center justify-between">
@@ -123,25 +123,24 @@
                         <div class="text-white flex items-center justify-between mt-3">
                         <p class="w-[106px] h-[70px] font-bold text-4xl">NGN 
                             22,500</p>
-                        
+                            <a class="w-[83px] h-[22px] font-normal text-base border-b-[1px] border-b-white mt-12" href="#">See report</a>
                         </div>
                     </div>
                     <!-- 3rd -->
                     <div class="w-[355px] h-[154px] rounded-lg p-4 bg-Orange hover:shadow-2xl">
                         <div class="flex items-center justify-between">
-                        <p class="font-medium text-[24px] text-white">Total Sales</p>
-                        <img src="images/Wallet (1).png" alt="cart">
+                        <p class="font-medium text-[24px] text-white">Total Customers</p>
+                        <img src="images/UserCircle.png" alt="cart">
                         </div>
                         <div class="text-white flex items-end justify-between mt-3">
-                        <p class="w-[106px] h-[70px] font-bold text-4xl">NGN 
-                            25,000</p>
+                        <p class="w-[106px] h-[70px] font-bold text-[50px] pt-4">200</p>
                         <a class="w-[83px] h-[22px] font-normal text-base border-b-[1px] border-b-white" href="#">See report</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Transaction -->
-                <div class="w-[1077px] h-[312px] flex flex-col items-start justify-center text-txtgray font-normal text-base mt-28">
+                <div class="w-[1077px] h-[312px] flex flex-col items-start justify-center text-txtgray font-normal text-base mt-28 pl-4">
                     <p class="font-medium text-2xl mb-4">Transactions History</p>
 
                     <!-- shirt transaction -->
@@ -176,11 +175,11 @@
                 </div>
 
                 <!-- Charts -->
-                <div class="w-[1080px] h-[392px] flex items-center justify-start text-txtgray">
+                <div class="w-[1080px] h-[392px] flex items-center justify-start text-txtgray pl-4">
 
                     <!-- Line Chart -->
                     <div class="w-[716px] h-[392px] rounded-lg px-3 py-5 bg-white">
-                        <div class=" flex items-start justify-between mb-5">
+                        <div class=" flex items-start justify-between ">
                             <p class="font-semibold text-2xl">Sales</p>
                             <!-- Weekly -->
                         <div class="ml-20 w-[246px] h-7  flex items-center justify-center text-[24px] font-semibold text-txtgray">
@@ -189,13 +188,13 @@
                         </div>
                         <!-- chart -->
                             <div class="line">
-                                <canvas class="w-[577px] h-[256px]" id="lineChart"></canvas>
+                                <canvas class="w-[580px] h-[256px]" id="lineChart"></canvas>
                             </div>
                     </div>
 
 
                     <!-- doughnut Chart -->
-                    <div class="w-[327px] h-[300px] rounded-lg px-3 py-5 bg-white relative ml-8 mb-10">
+                    <div class="w-[327px] h-[300px] rounded-lg px-3 py-5 bg-white relative ml-4 mb-16">
                         <div class=" flex flex-col items-start justify-start">
                             <p class="font-semibold text-2xl">Best sellers</p>
                         </div>
@@ -203,20 +202,20 @@
                             <div class="doughnut text-[#000000] text-base font-normal">
                                 <canvas id="doughnut"></canvas>
                             </div>
-                            <span class="absolute left-[23%] top-[52.5%] text-[#000000]">50 Items</span>
+                            <span class="absolute left-[23%] top-[65%] text-[#000000]">50 Items</span>
                     </div>
                     
                 </div>
 
                 <!-- bar chart -->
-                <div class="w-[1000px] h-[550px] flex flex-col items-start justify-center mt-[100px] bg-white">
+                <div class="w-[1000px] h-[550px] flex flex-col items-start justify-center mt-[95px] bg-white ml-4">
                     <div class=" flex items-start justify-between ml-6 mt-5">
                         <p class="font-semibold text-2xl">Store visits</p>
                         <div class="ml-[540px] w-[246px] h-7  flex items-center justify-center text-[24px] font-semibold text-txtgray">
                             <p>Total Visits - 0,0000</p>
                         </div>
                     </div>
-                    <div class="w-[1080px] h-[460px] flex items-start justify-start ml-5">
+                    <div class="w-[1000px] h-[460px] flex items-start justify-start ml-5">
                         <canvas id="barchart"></canvas>
                     </div>
                 </div>
