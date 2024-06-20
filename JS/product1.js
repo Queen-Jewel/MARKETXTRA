@@ -1,23 +1,23 @@
 // Move to add new product page
-const btnP = document.getElementById('button');
+const addButton = document.getElementById('button');
 
-btnP.addEventListener('click', ()=> {
+addButton.addEventListener('click', ()=> {
   window.location.href = "/addp1.html";
 })
-const edit = document.querySelectorAll('.button1');
+// const edit = document.querySelectorAll('.button1');
 
-edit.addEventListener('click', ()=> {
-  window.location.href = "editptoduct.html";
-})
+// edit.addEventListener('click', ()=> {
+//   window.location.href = "editptoduct.html";
+// })
 
 
 
 
 
 // Dropdown toggle
-const downC = document.querySelector('#dropdown');
+const dropdownContainer = document.querySelector('#dropdown');
 const toggleDropdown = () => {
-  downC.classList.toggle('hidden');
+  dropdownContainer.classList.toggle('hidden');
 }
 
 // Image change
@@ -56,13 +56,13 @@ cat3.addEventListener('click', () => {
 });
 
   // Get the modal
-  var modal = document.getElementById("myModal");
+  const modal = document.getElementById("myModal");
 
   // Get the button that opens the modal
-  var btn = document.getElementById("trashButton");
+  const btn = document.getElementById("trashButton");
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close");
+  const closed = document.getElementById("close");
 
   // When the user clicks the button, open the modal 
   btn.addEventListener('click', ()=>{
@@ -70,7 +70,7 @@ cat3.addEventListener('click', () => {
   });
 
   // When the user clicks on <span> (x), close the modal
-  span.addEventListener('click', ()=> {
+  closed.addEventListener('click', ()=> {
       modal.classList.add('hidden');
   });
 
