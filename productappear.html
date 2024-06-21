@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/main.css" />
-    <title>Create Catalog</title>
+    <title>Products</title>
     <style>
       .gradient-border {
         border-width: 2px;
@@ -16,12 +16,12 @@
     </style>
   </head>
   <body>
-    <div class="h-[978px] w-fit bg-Drwhite">
+    <div class="h-[2225px] bg-Drwhite w-fit">
       <!-- Container -->
       <div class="flex items-start justify-start font-Work">
         <!-- Side NavBar -->
         <div
-          class="fixed w-[247px] h-[976px] flex flex-col items-center justify-start bg-white"
+          class="w-[267px] h-[2225px] flex flex-col items-center justify-start bg-white fixed"
         >
           <!-- image -->
           <div class="h-[99px] p-6">
@@ -87,12 +87,12 @@
 
         <!-- Main Side -->
         <main>
-          <div class="flex flex-col items-start justify-start ml-[250px]">
+          <div class="flex flex-col items-start justify-start ml-[115px] pl-16">
             <!-- nav body -->
-            <div class="h-[97px] flex items-center justify-between mb-10 pl-5">
+            <div class="h-[97px] flex items-center justify-between mb-10 pl-[80px]">
               <!-- search bar -->
               <div
-                class="w-[620px] h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between"
+                class="w-[620px] h-12 ml-5 bg-footer rounded-lg shadow-lg flex items-center justify-between"
               >
                 <input
                   class="outline-none bg-footer pl-3"
@@ -105,7 +105,7 @@
 
               <!-- User -->
               <div
-                class="w-[283px] h-[43px] ml-[175px] flex items-center justify-center"
+                class="w-[283px] h-[43px] ml-40 flex items-center justify-center"
               >
                 <span
                   class="w-[43px] h-[43px] mr-3 flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray"
@@ -116,51 +116,70 @@
             </div>
 
             <!-- Body -->
-            <div class="flex flex-col items-start justify-start">
+            <div class="flex flex-col items-center justify-start pl-5">
               <!-- cat and prod -->
               <div
-                class=" w-[1098px] h-[64px] bg-white py-6 flex items-center justify-start text-base text-txtgray font-normal pl-[21px] pt-6 pr-6 pb-[21px]"
+                class="pl-[90px] w-[1150px] h-[64px] bg-white py-6 flex items-center justify-start text-base text-txtgray font-normal pl-[21px] pt-6 pr-6 pb-[21px]"
               >
-                <p class="font-bold bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent mr-10">Category</p>
+              <p class="hover:font-bold hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent">Category</p>
                 <p
-                  class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent pl-8 hover:font-bold"
+                  class="font-bold bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent pl-8"
                 >
                   Products
                 </p>
               </div>
 
-
-              <!-- add category button -->
-              <div class=" flex items-start justify-start mt-11 pl-5">
+              <!-- add and filter -->
+              <div class=" flex items-center justify-start mt-11 pl-10">
                 <button
                   id="button"
                   class="flex items-center justify-center w-[191px] h-[38px] p-[10px] pb-2 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg"
                   type="submit"
                 >
-                Create Category
+                  Add New Product
                   <span>
                     <img
                       src="/images/PlusCircle.png"
                       alt="plus"
-                      class="ml-2 w-[22px] h-[22px]"/></span>
+                      class="ml-2 w-[22px] h-[22px]"
+                  /></span>
                 </button>
-            </div>
-              
-            <!-- Add category -->
-             <div id="addCate" class="w-[970px] h-[300px] bg-white rounded-lg fle flex-col items-start justify-center pl-10 pt-10 ml-5 mt-12">
-                <p>Category 1</p>
-                <p class="my-8">Category 2</p>
-                <p>Category 3</p>
-             </div>
+                <!-- filter -->
+                <div class="relative overflow-visible">
+                  <div
+                    class="ml-5 w-[160px] h-12 rounded-md bg-footer p-[10px] flex items-center justify-between text-base font-normal text-txtgray"
+                  >
+                    <p id="cate">filter</p>
+                    <img id="image" onclick="toggleDropdown()" class="w-4 h-[10px] ml-3" src="images/icons8-chevron-down-30.png" alt="">
+                  </div>
+                  <!-- categpryy options -->
+                  <div id="dropdown" class="hidden absolute cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-[160px] h-[140pxpx] border-gray-300  top-[120%] left-[10%] absolute ">
+                    <div id="cat1" class="click flex items-center justify-center w-[160px] h-[45px] hover:bg-footer">
+                      <div> Category 1</div>
+                    </div>
+                    <div id="cat2" class="click flex items-center justify-center w-[160px] h-[45px] hover:bg-footer">
+                      <div> Category 2</div>
+                    </div>
+                    <div id="cat3" class="click flex items-center justify-center w-[160px] h-[45px] hover:bg-footer">
+                      <div> Category 3</div>
+                    </div>
+                    
+                </div>
+                </div>
+                <p class="w-137px h-[19px] font-bold text-base text-txtgray ml-[500px]">85 Product listed</p>
+              </div>
 
-              
+              <!-- Center -->
+               <div class="w-[1150px] h-[1770px] flex items-center justify-center text-[54px] font-normal text-gray-300">
+                <p class="w-[669px] h-[126px] text-center ml-[100px]">Products will appear here when listed</p>
+               </div>
 
               
 
 
         </div>
             <!-- Footer -->
-         <div class="w-[1098px] h-[100px] mt-[280px] flex items-center justify-start pl-10 bg-footer">
+         <div class="w-[1170px] h-[100px] mt-[60px] flex items-center justify-start pl-10 bg-footer">
             <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
             <div class="w-[266px] h-[30px]  flex items-center justify-center">
                 <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
@@ -170,24 +189,11 @@
 
           </div>
 
-
-          
         </main>
+
       </div>
     </div>
 
-
-    <!-- Modal Body -->
-    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
-      <div class="w-[636px] h-[234px] bg-white rounded-lg flex flex-col items-center justify-center pt-6">
-        <input type="text" name="Name Category" id="Category" placeholder="Name Category" class="w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px]">
-        <button
-                  id="addbutton"
-                  class="flex items-center justify-center w-[135px] h-[62px] px-4 py-8 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium mt-8"
-                  type="button">Add
-                </button>
-      </div>
-    </div>
-    <script src="JS/create.js"></script>
+    <script src="JS/proappear.js"></script>
   </body>
 </html>

@@ -63,29 +63,3 @@ cat3.addEventListener('click', () => {
     cat2.classList.remove('gradient-border');
     cat3.classList.add('gradient-border');
 });
-
-  // Get the modal
-  const modal = document.getElementById("myModal");
-
-  // Get the button that opens the modal
-  const btn = document.getElementById("trashButton");
-
-  // Get the <span> element that closes the modal
-  const closed = document.getElementById("close");
-
-  // When the user clicks the button, open the modal 
-  btn.addEventListener('click', ()=>{
-      modal.classList.remove('hidden');
-  });
-
-  // When the user clicks on <span> (x), close the modal
-  closed.addEventListener('click', ()=> {
-      modal.classList.add('hidden');
-  });
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.addEventListener('click', (event)=>{
-      if (event.target == modal) {
-          modal.classList.add('hidden');
-      }
-  });

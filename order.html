@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>Orders</title>
+  </head>
+  <body>
+    <div class="h-[1344px] w-fit bg-Drwhite">
+      <!-- Container -->
+      <div class="flex items-start justify-start font-Work">
+        <!-- Side NavBar -->
+        <div
+          class="fixed w-[247px] h-[976px] flex flex-col items-center justify-start bg-white"
+        >
+          <!-- image -->
+          <div class="h-[99px] p-6">
+            <img
+              class="w-[158.41px] h-[56.63px]"
+              src="images/Mx 2@2x.png"
+              alt="mx2"
+            />
+          </div>
+          <!-- nav dashboards -->
+          <div
+            class="w-[117px] h-[246px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray"
+          >
+            <!-- 1st -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img
+                class="mr-[6px]"
+                src="images/StorefrontB.png"
+                alt="my store"
+              />
+              <p>My store</p>
+            </div>
+            <!-- 2nd -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img class="mr-[6px]" src="images/Receipt.png" alt="Receipt" />
+              <p>Dashboard</p>
+            </div>
+            <!-- 3rd -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img class="mr-[6px]" src="images/Package.png" alt="Package" />
+              <p>Products</p>
+            </div>
+
+            <!-- 4th -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 text-Orange font-bold"
+            >
+              <img class="mr-[6px]" src="images/NoteO.png" alt="Note" />
+              <p>Orders</p>
+            </div>
+            <!-- 5th -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img class="mr-[6px]" src="images/Users.png" alt="Note" />
+              <p>Customers</p>
+            </div>
+            <!-- 6th -->
+            <div
+              class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
+            >
+              <img class="mr-[6px]" src="images/set.png" alt="MapPin" />
+              <p>Settings</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Side -->
+        <main>
+          <div class="flex flex-col items-start justify-start ml-[240px]">
+            <!-- nav body -->
+            <div class="h-[97px] flex items-center justify-between mb-10">
+              <!-- search bar -->
+              <div
+                class="w-[620px] h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between ml-6"
+              >
+                <input
+                  class="outline-none bg-footer pl-3"
+                  type="text"
+                  placeholder="Search"
+                  name="Search"
+                />
+                <img class="pr-2" src="images/srch.png" alt="srch" />
+              </div>
+
+              <!-- User -->
+              <div
+                class="w-[283px] h-[43px] ml-[120px] mr-[60px] flex items-center justify-end"
+              >
+                <span
+                  class="w-[43px] h-[43px] mr-3 flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray"
+                  >JJ</span
+                >
+                <p class="font-normal text-base">Jaachi Jeff</p>
+              </div>
+            </div>
+        </div>
+
+            <!-- Body -->
+            <div class=" w-[1020px] h-[708px] rounded-lg bg-white flex flex-col items-start justify-start pl-5 ml-[270px]">
+                <p class="font-medium text-2xl text-txtgray my-10">Offline order</p>
+
+                <!-- Inputs -->
+                 <div class="w-[360px] h-[334px] flex flex-col items-start justify-start text-base text-txtgray font-normal">
+                    <input type="text" name="Date of transaction" placeholder="Date of transaction" class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
+                    <div class="flex items-center justify-between relative my-5">
+                       <input type="text" name="Customer" placeholder="Customer" class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
+                       <img class="absolute left-[320px]" src="images/cRT.png" alt="">
+                    </div>
+                    <div class="flex items-center justify-between relative">
+                       <input type="text" name="Product" placeholder="Product" class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
+                       <img class="absolute left-[320px]" src="images/cRT.png" alt="">
+                    </div>
+                    <input type="text" name="Unit" placeholder="Unit" class="my-5 w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
+                    <!-- dropdown -->
+                    <div class="relative overflow-visible">
+                        <div class="flex items-center justify-between relative">
+                            <input id="cate" type="text" name="Payment status" placeholder="Payment status" class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
+                            <img onclick="toggleDropdown()" class="absolute left-[320px] w-[10px] h-2" src="images/icons8-chevron-down-30.png" alt="ChevronDown">
+                        </div>
+                        <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-start justify-center w-[360px] h-[140pxpx] border-gray-300  top-[85%] absolute ">
+                            <div id="cat1" class="click flex items-center justify-start pl-3 w-[360px] h-[45px] hover:bg-footer hover:border-l-5 hover:border-l-black">
+                            <div> Paid</div>
+                            </div>
+                            <div id="cat2" class="click flex items-center justify-start pl-3 w-[360px] h-[45px] hover:bg-footer">
+                            <div>Unpaid</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- button -->
+                <button
+                    id="addbutton"
+                    class="flex items-center justify-center w-[181px] h-[62px] px-4 py-8 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium mt-28"
+                    type="button">Add sale
+                </button>
+
+
+            </div>
+              
+            <!-- Footer -->
+         <div class="w-[1098px] h-[100px] mt-[400px] flex items-center justify-start pl-10 bg-footer ml-[250px]">
+            <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
+            <div class="w-[266px] h-[30px]  flex items-center justify-center">
+                <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
+                <p class="font-medium text-base text-txtgray">2024, Powered by Marketxtra.</p>
+            </div>
+        </div>
+
+          </div>
+
+
+          
+        </main>
+      </div>
+    </div>
+
+
+    <!-- Modal Bodies -->
+     <!-- DOT Modal -->
+    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+        <div class="w-[636px] h-[524px] bg-white rounded-lg flex flex-col items-center justify-center pt-6 relative text-sm">
+            <p class="flex items-center justify-center font-medium text-2xl text-txtgray mb-8">Input details</p>
+          <input type="text" name="Name Category" placeholder="Name" id="customerName" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] required">
+          <input type="text" name="E-mail" placeholder="E-mail" id="customerEmail" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] my-5 required">
+          <input type="text" name="Phone Number" placeholder="Phone Number" id="customerPhone" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] required">
+          <input type="text" name="Date of transaction" placeholder="Date of transaction" id="customerDate" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] mt-5 required">
+          <button
+                    id="addbutton"
+                    class="flex items-center justify-center w-[135px] h-[62px] px-4 py-8 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium mt-8"
+                    type="button">Add
+          </button>
+        </div>
+        
+      </div>
+
+      <!-- Unit Modal -->
+    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+        <div class="w-[636px] h-[524px] bg-white rounded-lg flex flex-col items-center justify-center pt-6 relative text-sm">
+            <p class="flex items-center justify-center font-medium text-2xl text-txtgray mb-8">Input details</p>
+          <input type="text" name="Product name" placeholder="Product name" id="customerName" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] required">
+          <input type="text" name="Units" placeholder="Units" id="customerEmail" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] my-5 required">
+          <input type="text" name="Amount" placeholder="Amount" id="customerPhone" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] required">
+          <input type="text" name="Profit per unit" placeholder="Profit per unit" id="customerDate" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] mt-5 required">
+          <button
+                    id="addbutton"
+                    class="flex items-center justify-center w-[135px] h-[62px] px-4 py-8 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium mt-8"
+                    type="button">Add
+          </button>
+        </div>
+        
+      </div>
+
+      <!-- Customer Modal -->
+      <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+        <div class="w-[889px] h-[744px] bg-white rounded-lg flex flex-col items-start justify-start pt-6 pl-6 my-7">
+            <!-- add category button -->
+            <div class="w-[821px] h-[58px] flex items-start justify-start mt-16 pl-5">
+                <p class="text-2xl font-medium text-txtgray mr-[460px] ">Your Customers</p>
+                <button
+                  id="button"
+                  class="flex items-center justify-center w-[167px] h-[38px] p-[10px] pb-2 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg"
+                  type="submit"
+                >Add Customer
+                  <span>
+                    <img
+                      src="/images/PlusCircle.png"
+                      alt="plus"
+                      class="ml-2 w-[22px] h-[22px]"/></span>
+                </button>
+            </div>
+
+            <!-- customer -->
+             <div class="w-[821px] h-[434px] flex flex-col items-start justify-start pl-5 text-base text-txtgray font-normal">
+                <!-- 1st customer -->
+                <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
+                      <p>Jaachi Jeff</p>
+                      <p>jaachijeff@gmail.com</p>
+                      <p>07025566524</p>
+                      <p>5 days ago</p>
+                  </div>
+                </div>
+                <!-- 2nd customer -->
+                 <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
+                      <p>Jaachi Jeff</p>
+                      <p>jaachijeff@gmail.com</p>
+                      <p>07025566524</p>
+                      <p>5 days ago</p>
+                    </div>
+                </div>
+                <!-- 3rd customer -->
+                 <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
+                      <p>Jaachi Jeff</p>
+                      <p>jaachijeff@gmail.com</p>
+                      <p>07025566524</p>
+                      <p>5 days ago</p>
+                  </div>
+                 </div>
+                <!-- 4th customer -->
+                 <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
+                      <p>Jaachi Jeff</p>
+                      <p>jaachijeff@gmail.com</p>
+                      <p>07025566524</p>
+                      <p>5 days ago</p>
+                    </div>
+                </div>
+                <!-- 5th customer -->
+                 <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
+                      <p>Jaachi Jeff</p>
+                      <p>jaachijeff@gmail.com</p>
+                      <p>07025566524</p>
+                      <p>5 days ago</p>
+                    </div>
+                </div>
+                <!-- 6th customer -->
+                 <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
+                      <p>Jaachi Jeff</p>
+                      <p>jaachijeff@gmail.com</p>
+                      <p>07025566524</p>
+                      <p>5 days ago</p>
+                    </div>
+                </div>
+                <!-- 7th customer -->
+                 <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
+                      <p>Jaachi Jeff</p>
+                      <p>jaachijeff@gmail.com</p>
+                      <p>07025566524</p>
+                      <p>5 days ago</p>
+                    </div>
+                </div>
+             </div>
+
+        </div>
+      </div>
+
+      <!-- Product Modal -->
+      <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+        <div class="w-[889px] h-[483px] bg-white rounded-lg flex flex-col items-start justify-start pt-6 pl-6">
+            <!-- add category button -->
+            <div class="w-[821px] h-[58px] flex items-start justify-start mt-7 mb-3 pl-5">
+                <p class="text-2xl font-medium text-txtgray mr-[460px] ">Your Customers</p>
+                <button
+                  id="button"
+                  class="flex items-center justify-center w-[167px] h-[38px] p-[10px] pb-2 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg"
+                  type="submit">Listed Products
+                  <span>
+                    <img
+                      src="/images/PlusCircle.png"
+                      alt="plus"
+                      class="ml-2 w-[22px] h-[22px]"/></span>
+                </button>
+            </div>
+
+            <!-- customer -->
+             <div class="w-[821px] h-[434px] flex flex-col items-start justify-start pl-5 text-base text-txtgray font-normal">
+                <!-- 1st customer -->
+                <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
+                      <p>Plain T-shirt</p>
+                      <p>2 Units</p>
+                      <p>NGN3,000</p>
+                  </div>
+                </div>
+                <!-- 2nd customer -->
+                 <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
+                      <p>Canvas</p>
+                      <p>2 Units</p>
+                      <p>NGN3,000</p>
+                    </div>
+                </div>
+                <!-- 3rd customer -->
+                 <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
+                      <p>Power bank</p>
+                      <p>2 Units</p>
+                      <p>NGN3,000</p>
+                  </div>
+                 </div>
+                <!-- 4th customer -->
+                 <div class="w-[821px] w-[66px]">
+                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
+                      <p>Vintage</p>
+                      <p>2 Units</p>
+                      <p>NGN3,000</p>
+                    </div>
+                </div>
+             </div>
+
+        </div>
+      </div>
+
+
+  </body>
+</html>

@@ -5,18 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/main.css" />
-    <title>Create Catalog</title>
-    <style>
-      .gradient-border {
-        border-width: 2px;
-        border-style: solid;
-        border-image-slice: 1;
-        border-image-source: linear-gradient(to bottom, #008000, #00B800);
-      }
-    </style>
+    <title>Customer Offline</title>
   </head>
   <body>
-    <div class="h-[978px] w-fit bg-Drwhite">
+    <div class="h-[1344px] w-fit bg-Drwhite">
       <!-- Container -->
       <div class="flex items-start justify-start font-Work">
         <!-- Side NavBar -->
@@ -105,7 +97,7 @@
 
               <!-- User -->
               <div
-                class="w-[283px] h-[43px] ml-[175px] flex items-center justify-center"
+                class="w-[283px] h-[43px] ml-[120px] flex items-center justify-end"
               >
                 <span
                   class="w-[43px] h-[43px] mr-3 flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray"
@@ -121,23 +113,20 @@
               <div
                 class=" w-[1098px] h-[64px] bg-white py-6 flex items-center justify-start text-base text-txtgray font-normal pl-[21px] pt-6 pr-6 pb-[21px]"
               >
-                <p class="font-bold bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent mr-10">Category</p>
-                <p
-                  class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent pl-8 hover:font-bold"
-                >
-                  Products
-                </p>
+                <p class="font-bold bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent mr-10">Online Customers</p>
+                <p id="offline"  class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold pl-8">Offline Customers</p>
+                <p class="w-[171px] h-[19px] font-semibold text-base ml-[500px] pb-4">Total Customers : 100</p>
               </div>
 
 
               <!-- add category button -->
-              <div class=" flex items-start justify-start mt-11 pl-5">
+              <div class="w-[1099px] h-[58px] flex items-start justify-between mt-10 pl-5">
+                <p class="text-2xl font-medium text-txtgray">Your Customers</p>
                 <button
                   id="button"
-                  class="flex items-center justify-center w-[191px] h-[38px] p-[10px] pb-2 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg"
+                  class="flex mr-[45px] items-center justify-center w-[167px] h-[38px] p-[10px] pb-2 rounded-lg bg-gray-400 text-white text-base font-normal rounded-lg"
                   type="submit"
-                >
-                Create Category
+                >Add Customer
                   <span>
                     <img
                       src="/images/PlusCircle.png"
@@ -145,16 +134,66 @@
                       class="ml-2 w-[22px] h-[22px]"/></span>
                 </button>
             </div>
-              
-            <!-- Add category -->
-             <div id="addCate" class="w-[970px] h-[300px] bg-white rounded-lg fle flex-col items-start justify-center pl-10 pt-10 ml-5 mt-12">
-                <p>Category 1</p>
-                <p class="my-8">Category 2</p>
-                <p>Category 3</p>
-             </div>
 
-              
-
+              <!-- Customers -->
+               <div class="w-[1038px] h-[745px] flex flex-col items-start justify-start pl-5 text-base text-txtgray font-normal">
+                <!-- 1st customer -->
+                 <div class="w-[1038px] h-[66px] bg-white flex items-start justify-between rounded-lg px-10 py-5">
+                    <p>Jaachi Jeff</p>
+                    <p>jaachijeff@gmail.com</p>
+                    <p>07025566524</p>
+                    <p>5 days ago</p>
+                 </div>
+                <!-- 2nd customer -->
+                 <div class="w-[1038px] h-[66px] bg-white flex items-start justify-between rounded-lg px-10 py-5 my-5">
+                    <p>Jaachi Jeff</p>
+                    <p>jaachijeff@gmail.com</p>
+                    <p>07025566524</p>
+                    <p>5 days ago</p>
+                 </div>
+                <!-- 3rd customer -->
+                 <div class="w-[1038px] h-[66px] bg-white flex items-start justify-between rounded-lg px-10 py-5">
+                    <p>Jaachi Jeff</p>
+                    <p>jaachijeff@gmail.com</p>
+                    <p>07025566524</p>
+                    <p>5 days ago</p>
+                 </div>
+                <!-- 4th customer -->
+                 <div class="w-[1038px] h-[66px] bg-white flex items-start justify-between rounded-lg px-10 py-5 my-5">
+                    <p>Jaachi Jeff</p>
+                    <p>jaachijeff@gmail.com</p>
+                    <p>07025566524</p>
+                    <p>5 days ago</p>
+                 </div>
+                <!-- 5th customer -->
+                 <div class="w-[1038px] h-[66px] bg-white flex items-start justify-between rounded-lg px-10 py-5">
+                    <p>Jaachi Jeff</p>
+                    <p>jaachijeff@gmail.com</p>
+                    <p>07025566524</p>
+                    <p>5 days ago</p>
+                 </div>
+                <!-- 6th customer -->
+                 <div class="w-[1038px] h-[66px] bg-white flex items-start justify-between rounded-lg px-10 py-5 my-5">
+                    <p>Jaachi Jeff</p>
+                    <p>jaachijeff@gmail.com</p>
+                    <p>07025566524</p>
+                    <p>5 days ago</p>
+                 </div>
+                <!-- 7th customer -->
+                 <div class="w-[1038px] h-[66px] bg-white flex items-start justify-between rounded-lg px-10 py-5">
+                    <p>Jaachi Jeff</p>
+                    <p>jaachijeff@gmail.com</p>
+                    <p>07025566524</p>
+                    <p>5 days ago</p>
+                 </div>
+                <!-- 8th customer -->
+                 <div class="w-[1038px] h-[66px] bg-white flex items-start justify-between rounded-lg px-10 py-5 my-5">
+                    <p>Jaachi Jeff</p>
+                    <p>jaachijeff@gmail.com</p>
+                    <p>07025566524</p>
+                    <p>5 days ago</p>
+                 </div>
+               </div>
               
 
 
@@ -177,17 +216,7 @@
     </div>
 
 
-    <!-- Modal Body -->
-    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
-      <div class="w-[636px] h-[234px] bg-white rounded-lg flex flex-col items-center justify-center pt-6">
-        <input type="text" name="Name Category" id="Category" placeholder="Name Category" class="w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px]">
-        <button
-                  id="addbutton"
-                  class="flex items-center justify-center w-[135px] h-[62px] px-4 py-8 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium mt-8"
-                  type="button">Add
-                </button>
-      </div>
-    </div>
-    <script src="JS/create.js"></script>
+    
+    <script src="JS/customOn.js"></script>
   </body>
 </html>
