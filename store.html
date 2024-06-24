@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
+    <style>
+        .shadow-bottom {
+            box-shadow: 0 10px 16px rgba(111, 110, 112, 0.5);
+        }
+    </style>
     <title>My Store</title>
 </head>
 <body>
@@ -15,9 +20,9 @@
                 <main class="w-[1440px]">
 
                     <!-- main nav -->
-                    <header class="flex items-center justify-center w-[100%] h-[59px] bg-GreenB text-white text-base font-normal">Hello there, you’re welcome to my online store</header>
+                    <header class="fixed flex items-center justify-center w-[100%] h-[59px] bg-GreenB text-white text-base font-normal">Hello there, you’re welcome to my online store</header>
     
-                    <div class=" h-[99px] flex items-center justify-start font-normal text-base text-txtgray mx-[60px] bg-white">
+                    <div class="fixed mt-[59px] w-[1360px] h-[99px] flex items-center justify-between font-normal text-base text-txtgray px-12 bg-white shadow-bottom">
                          <!-- Logo -->
                         <div class="w-[128px] h-[43px] flex items-center justify-center">
                             <span class="w-[43px] h-[43px] border-transparent bg-stepgray rounded-[50%] mr-[2px]"></span>
@@ -36,13 +41,13 @@
 
                         <!-- Catelog -->
                         <div class="h-[30px] flex items-center justify-center ml-[700px]">
-                            <img class="mr-5" src="images/ShoppingCartSimple.png" alt="ShoppingCartSimple">
+                            <img src="images/ShoppingCartSimple.png" alt="ShoppingCartSimple">
                         </div>
                     </div>
 
                     <!-- main showcase -->
                     <!-- first box -->
-                    <div class=" h-[481px] relative flex flex-col overflow-hidden ">
+                    <div class=" h-[481px] relative flex flex-col overflow-hidden mt-[159px]">
                         <div class="absolute inset-0 bg-cover filter blur-sm bg-[url('/images/shirtf.png')]"></div>
 
                         <!-- Dark overlay -->
@@ -56,15 +61,15 @@
                     </div>
 
                     <!-- second box -->
-                    <div class=" h-[586px] flex flex-col items-center justify-center text-txtgray mt-16">
-                        <p class="font-bold text-[24px] mr-[60%]">Featured Products</p>
+                    <div class=" h-[586px] flex flex-col items-center justify-center text-txtgray mt-8">
+                        <p class="font-bold text-[24px] mr-[71%]">Featured Products</p>
 
                         <!-- shirts -->
-                        <div class="w-[1299px] h-[366px] flex items-center justify-center mt-20">
+                        <div class="w-[1299px] h-[526px] flex items-center justify-center mt-20">
 
                             <!-- 1st -->
-                            <div class="w-[331px] h-[442px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg ">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -79,16 +84,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-center mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
                             </div>
                             <!-- 2nd -->
-                            <div class="w-[331px] h-[442px] greenB mx-5 flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB mx-5 flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -103,16 +108,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
                             </div>
                             <!-- 3rd -->
-                            <div class="w-[331px] h-[442px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg ">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -127,9 +132,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
@@ -142,11 +147,11 @@
                         <p class="font-bold text-[24px] mr-[60%]">Product Catalogue</p>
 
                         <!-- shirts 1-->
-                        <div class="w-[1299px] h-[366px] flex items-center justify-center mt-20 mb-10">
+                        <div class="w-[1299px] h-[528px] flex items-center justify-center mt-20 mb-10">
 
                             <!-- 1st -->
-                            <div class="w-[331px] h-[442px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg ">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -161,16 +166,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
                             </div>
                             <!-- 2nd -->
-                            <div class="w-[331px] h-[442px] greenB mx-5 flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
+                            <div class="w-[380px] h-[526px] greenB mx-5 flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg">
+                                <img class="w-[380px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -185,16 +190,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
                             </div>
                             <!-- 3rd -->
-                            <div class="w-[331px] h-[442px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg ">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -209,9 +214,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
@@ -219,11 +224,11 @@
                         </div>
 
                         <!-- shirts 2 -->
-                        <div class="w-[1299px] h-[366px] flex items-center justify-center mt-20 mb-10">
+                        <div class="w-[1299px] h-[526px] flex items-center justify-center mt-20 mb-10">
 
                             <!-- 1st -->
-                            <div class="w-[331px] h-[442px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg ">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -238,16 +243,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
                             </div>
                             <!-- 2nd -->
-                            <div class="w-[331px] h-[442px] greenB mx-5 flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB mx-5 flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -262,16 +267,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
                             </div>
                             <!-- 3rd -->
-                            <div class="w-[331px] h-[442px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg ">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -286,9 +291,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
@@ -296,11 +301,11 @@
                         </div>
 
                         <!-- shirts 3 -->
-                        <div class="w-[1299px] h-[366px] flex items-center justify-center mt-20">
+                        <div class="w-[1299px] h-[526px] flex items-center justify-center mt-20">
 
                             <!-- 1st -->
-                            <div class="w-[331px] h-[442px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg ">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/blackp.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -315,16 +320,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
                             </div>
                             <!-- 2nd -->
-                            <div class="w-[331px] h-[442px] greenB mx-5 flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB mx-5 flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/blackm.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -339,16 +344,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
                             </div>
                             <!-- 3rd -->
-                            <div class="w-[331px] h-[442px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-2xl ">
-                                <img class="w-[331px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
+                            <div class="w-[400px] h-[526px] greenB flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-lg ">
+                                <img class="w-[400px] h-[255px] rounded-lg" src="images/yellow.png" alt="shirt1">
                                 <div class="w-[293px] h-[19px] mt-7 ml-4 flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
 
@@ -363,9 +368,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-[298px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
+                                <div class="w-[380px] h-[38px] px-3 my-2 flex items-center justify-between mt-20">
                                     <button
-                                        class="w-[293px] h-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                        class="w-[380px] h-[42px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
                                         type="button">Add to cart
                                     </button>
                                     </div>
