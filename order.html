@@ -114,24 +114,28 @@
 
                 <!-- Inputs -->
                  <div class="w-[360px] h-[334px] flex flex-col items-start justify-start text-base text-txtgray font-normal">
-                    <input type="text" name="Date of transaction" placeholder="Date of transaction" class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
-                    <div class="flex items-center justify-between relative my-5">
-                       <input type="text" name="Customer" placeholder="Customer" class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
-                       <img class="absolute left-[320px]" src="images/cRT.png" alt="">
+                    <input type="text" name="Date of transaction" placeholder="Date of transaction" id="DOT" class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center required">
+                    <div id="cust" class="flex items-center justify-between relative my-5">
+                       <div class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-start justify-start">
+                        <p id="customer" class="flex items-start justify-start">Customer</p>
+                       </div>
+                       <img id="cus" class="absolute left-[320px]" src="images/cRT.png" alt="">
                     </div>
-                    <div class="flex items-center justify-between relative">
-                       <input type="text" name="Product" placeholder="Product" class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
-                       <img class="absolute left-[320px]" src="images/cRT.png" alt="">
+                    <div id="prod" class="flex items-center justify-between relative">
+                       <div class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-start justify-start">
+                        <p id="product" class="flex items-start justify-start">Product</p>
+                       </div>
+                       <img id="pro" class="absolute left-[320px]" src="images/cRT.png" alt="">
                     </div>
-                    <input type="text" name="Unit" placeholder="Unit" class="my-5 w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
+                    <input type="text" name="Unit" placeholder="Unit" id="unit" class="my-5 w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
                     <!-- dropdown -->
                     <div class="relative overflow-visible">
                         <div class="flex items-center justify-between relative">
                             <input id="cate" type="text" name="Payment status" placeholder="Payment status" class="w-[360px] h-[54px] border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center">
-                            <img onclick="toggleDropdown()" class="absolute left-[320px] w-[10px] h-2" src="images/icons8-chevron-down-30.png" alt="ChevronDown">
+                            <img id="image" onclick="toggleDropdown()" class="absolute left-[320px] w-[10px] h-2" src="images/icons8-chevron-down-30.png" alt="ChevronDown">
                         </div>
                         <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-start justify-center w-[360px] h-[140pxpx] border-gray-300  top-[85%] absolute ">
-                            <div id="cat1" class="click flex items-center justify-start pl-3 w-[360px] h-[45px] hover:bg-footer hover:border-l-5 hover:border-l-black">
+                            <div id="cat1" class="click flex items-center justify-start pl-3 w-[360px] h-[45px] hover:bg-footer">
                             <div> Paid</div>
                             </div>
                             <div id="cat2" class="click flex items-center justify-start pl-3 w-[360px] h-[45px] hover:bg-footer">
@@ -171,7 +175,7 @@
 
     <!-- Modal Bodies -->
      <!-- DOT Modal -->
-    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+    <div id="dotModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
         <div class="w-[636px] h-[524px] bg-white rounded-lg flex flex-col items-center justify-center pt-6 relative text-sm">
             <p class="flex items-center justify-center font-medium text-2xl text-txtgray mb-8">Input details</p>
           <input type="text" name="Name Category" placeholder="Name" id="customerName" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] required">
@@ -188,15 +192,15 @@
       </div>
 
       <!-- Unit Modal -->
-    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+    <div id="unitModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
         <div class="w-[636px] h-[524px] bg-white rounded-lg flex flex-col items-center justify-center pt-6 relative text-sm">
             <p class="flex items-center justify-center font-medium text-2xl text-txtgray mb-8">Input details</p>
-          <input type="text" name="Product name" placeholder="Product name" id="customerName" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] required">
-          <input type="text" name="Units" placeholder="Units" id="customerEmail" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] my-5 required">
-          <input type="text" name="Amount" placeholder="Amount" id="customerPhone" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] required">
-          <input type="text" name="Profit per unit" placeholder="Profit per unit" id="customerDate" class="customerInput w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] mt-5 required">
+          <input type="text" name="Product name" placeholder="Product name" id="customerName2" class="customerInput2 w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] required">
+          <input type="text" name="Units" placeholder="Units" id="customerEmail2" class="customerInput2 w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] my-5 required">
+          <input type="text" name="Amount" placeholder="Amount" id="customerPhone2" class="customerInput2 w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] required">
+          <input type="text" name="Profit per unit" placeholder="Profit per unit" id="customerDate2" class="customerInput2 w-[360px] h-[56px] border-gray-300 border-[1px] rounded-lg px-3 py-[14px] mt-5 required">
           <button
-                    id="addbutton"
+                    id="addbutton2"
                     class="flex items-center justify-center w-[135px] h-[62px] px-4 py-8 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium mt-8"
                     type="button">Add
           </button>
@@ -205,10 +209,10 @@
       </div>
 
       <!-- Customer Modal -->
-      <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
-        <div class="w-[889px] h-[744px] bg-white rounded-lg flex flex-col items-start justify-start pt-6 pl-6 my-7">
+      <div id="cusModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+        <div class="w-[889px] h-[644px] bg-white rounded-lg flex flex-col items-start justify-start pt-10 pl-6">
             <!-- add category button -->
-            <div class="w-[821px] h-[58px] flex items-start justify-start mt-16 pl-5">
+            <div class="w-[821px] h-[58px] flex items-start justify-start pl-5">
                 <p class="text-2xl font-medium text-txtgray mr-[460px] ">Your Customers</p>
                 <button
                   id="button"
@@ -224,65 +228,47 @@
             </div>
 
             <!-- customer -->
-             <div class="w-[821px] h-[434px] flex flex-col items-start justify-start pl-5 text-base text-txtgray font-normal">
+             <div id="customercontainer" class="w-[821px] h-[434px] flex flex-col items-start justify-start pl-5 text-base text-txtgray font-normal">
                 <!-- 1st customer -->
-                <div class="w-[821px] w-[66px]">
+                <div class="custName w-[821px] w-[66px]">
                     <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
-                      <p>Jaachi Jeff</p>
+                      <p class="nameInput">Jaachi Jeff</p>
                       <p>jaachijeff@gmail.com</p>
                       <p>07025566524</p>
                       <p>5 days ago</p>
                   </div>
                 </div>
                 <!-- 2nd customer -->
-                 <div class="w-[821px] w-[66px]">
+                 <div class="custName w-[821px] w-[66px]">
                     <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
-                      <p>Jaachi Jeff</p>
+                      <p class="nameInput">Jaachi Jeff</p>
                       <p>jaachijeff@gmail.com</p>
                       <p>07025566524</p>
                       <p>5 days ago</p>
                     </div>
                 </div>
                 <!-- 3rd customer -->
-                 <div class="w-[821px] w-[66px]">
+                 <div class="custName w-[821px] w-[66px]">
                     <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
-                      <p>Jaachi Jeff</p>
+                      <p class="nameInput">Jaachi Jeff</p>
                       <p>jaachijeff@gmail.com</p>
                       <p>07025566524</p>
                       <p>5 days ago</p>
                   </div>
                  </div>
                 <!-- 4th customer -->
-                 <div class="w-[821px] w-[66px]">
+                 <div class="custName w-[821px] w-[66px]">
                     <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
-                      <p>Jaachi Jeff</p>
+                      <p class="nameInput">Jaachi Jeff</p>
                       <p>jaachijeff@gmail.com</p>
                       <p>07025566524</p>
                       <p>5 days ago</p>
                     </div>
                 </div>
                 <!-- 5th customer -->
-                 <div class="w-[821px] w-[66px]">
+                 <div class="custName w-[821px] w-[66px]">
                     <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
-                      <p>Jaachi Jeff</p>
-                      <p>jaachijeff@gmail.com</p>
-                      <p>07025566524</p>
-                      <p>5 days ago</p>
-                    </div>
-                </div>
-                <!-- 6th customer -->
-                 <div class="w-[821px] w-[66px]">
-                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
-                      <p>Jaachi Jeff</p>
-                      <p>jaachijeff@gmail.com</p>
-                      <p>07025566524</p>
-                      <p>5 days ago</p>
-                    </div>
-                </div>
-                <!-- 7th customer -->
-                 <div class="w-[821px] w-[66px]">
-                    <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
-                      <p>Jaachi Jeff</p>
+                      <p class="nameInput">Jaachi Jeff</p>
                       <p>jaachijeff@gmail.com</p>
                       <p>07025566524</p>
                       <p>5 days ago</p>
@@ -294,15 +280,15 @@
       </div>
 
       <!-- Product Modal -->
-      <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+      <div id="proModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
         <div class="w-[889px] h-[483px] bg-white rounded-lg flex flex-col items-start justify-start pt-6 pl-6">
             <!-- add category button -->
             <div class="w-[821px] h-[58px] flex items-start justify-start mt-7 mb-3 pl-5">
-                <p class="text-2xl font-medium text-txtgray mr-[460px] ">Your Customers</p>
+                <p class="text-2xl font-medium text-txtgray mr-[460px] ">Listed Products</p>
                 <button
-                  id="button"
+                  id="button2"
                   class="flex items-center justify-center w-[167px] h-[38px] p-[10px] pb-2 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg"
-                  type="submit">Listed Products
+                  type="submit">Add Products
                   <span>
                     <img
                       src="/images/PlusCircle.png"
@@ -314,31 +300,31 @@
             <!-- customer -->
              <div class="w-[821px] h-[434px] flex flex-col items-start justify-start pl-5 text-base text-txtgray font-normal">
                 <!-- 1st customer -->
-                <div class="w-[821px] w-[66px]">
+                <div class="prodName w-[821px] w-[66px]">
                     <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
-                      <p>Plain T-shirt</p>
+                      <p class="proInput">Plain T-shirt</p>
                       <p>2 Units</p>
                       <p>NGN3,000</p>
                   </div>
                 </div>
                 <!-- 2nd customer -->
-                 <div class="w-[821px] w-[66px]">
+                 <div class=" prodName w-[821px] w-[66px]">
                     <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
-                      <p>Canvas</p>
+                      <p class="proInput">Canvas</p>
                       <p>2 Units</p>
                       <p>NGN3,000</p>
                     </div>
                 </div>
                 <!-- 3rd customer -->
-                 <div class="w-[821px] w-[66px]">
+                 <div class="prodName w-[821px] w-[66px]">
                     <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5">
-                      <p>Power bank</p>
+                      <p class="proInput">Power bank</p>
                       <p>2 Units</p>
                       <p>NGN3,000</p>
                   </div>
                  </div>
                 <!-- 4th customer -->
-                 <div class="w-[821px] w-[66px]">
+                 <div class="prodName w-[821px] w-[66px]">
                     <div class="w-[821px] h-[66px] bg-footer flex items-start justify-between rounded-lg px-5 py-5 my-3">
                       <p>Vintage</p>
                       <p>2 Units</p>
@@ -350,6 +336,7 @@
         </div>
       </div>
 
+      <script src="JS/order.js"></script>
 
   </body>
 </html>
