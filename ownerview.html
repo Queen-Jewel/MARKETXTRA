@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
+    <style>
+        .shadow-bottom {
+            box-shadow: 0 10px 16px rgba(111, 110, 112, 0.5);
+        }
+    </style>
     <title>Business Owner</title>
 </head>
 <body>
@@ -14,7 +19,7 @@
             <div class="h-[677px] flex items-start justify-start">
     
                 <!-- Nav Bar -->
-                <div class="w-[267px] h-[677px]  flex flex-col items-center justify-start bg-white">
+                <div class=" fixed w-[267px] h-[677px]  flex flex-col items-center justify-start bg-white">
                     <!-- image -->
                     <div class="h-[99px] p-6">
                         <img class="w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
@@ -56,17 +61,17 @@
                 </div>
 
                 <!-- main -->
-                <main class="w-[1080px]">
+                <main class="w-[1080px] ml-[269px]">
                     <!-- the top -->
-                    <header class="flex items-center justify-center h-[59px] bg-GreenB text-white text-base font-normal">
-                        <div class="w-[498px] h-[42px] border-[1px] border-white rounded-lg p-[10px] flex items-center justify-center">
+                    <header class="fixed w-[1360px] flex items-center justify-center h-[59px] bg-GreenB text-white text-base font-normal">
+                        <div class="w-[498px] h-[42px] border-[1px] border-white rounded-lg p-[10px] flex items-center justify-center mr-[230px]">
                             <p>Hello there, you’re welcome to my online store</p>
                         </div>
-                        <span class="absolute left-[77.5%] w-[27.8px] h-[27.8px]">
+                        <span class="absolute left-[59%] w-[27.8px] h-[27.8px]">
                             <img src="images/Group 6.png" alt="Group6">
                         </span>
                     </header>
-                    <div class="h-[99px] flex items-center justify-between font-normal text-base text-txtgray">
+                    <div class="fixed mt-[42px] w-[1360px] h-[99px] flex items-center justify-between font-normal text-base text-txtgray shadow-bottom">
                          <!-- Logo -->
                          <div class="w-[161px]  h-[53px] flex items-center justify-start ml-10 relative">
                         <div class="w-[128px] h-[43px] flex items-center justify-center ml-4">
@@ -75,19 +80,19 @@
                         </div>
                         
                         </div>
-                        <span class="absolute left-[26%] top-[14.5%] w-5 h-5">
+                        <span class="absolute left-[6%] top-[23%] w-5 h-5">
                             <img src="images/Group 6.png" alt="Group6">
                         </span>
 
                         <!-- Switch -->
-                        <div class="w-[188px] h-10 flex items-center justify-between ml-[380px]">
+                        <div class="w-[188px] h-10 flex items-center justify-between ml-[170px]">
                             <img id="Switch" src="images/ToggleLeft.png" alt="ToggleRight">
                             <p>View as customer</p>
                         </div>
 
                         <button
                             id="button1"
-                            class="w-[154px] h-[41px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg text-base text-white font-normal mr-10"
+                            class="w-[154px] h-[41px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg text-base text-white font-normal mr-[310px]"
                             type="button"
                             >
                             Save Changes
@@ -97,7 +102,7 @@
                     <!-- main showcase -->
                     <!-- first box -->
                    
-                        <div class="h-[481px] relative flex flex-col overflow-hidden ">
+                        <div class="h-[481px] relative flex flex-col overflow-hidden  mt-[141px]">
                         <div class="absolute inset-0 bg-cover filter blur-sm bg-[url('/images/shirtf.png')]"></div>
 
                         <!-- Dark overlay -->
@@ -118,6 +123,15 @@
                             <img src="images/Group 6.png" alt="Group6">
                         </span>
                         </div>
+
+                        <!-- Footer -->
+                <div class="w-[1080px] h-[103px] flex items-center mt-[100px] justify-start pl-10 bg-footer">
+                    <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
+                    <div class="w-[266px] h-[30px]  flex items-center justify-center">
+                        <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
+                        <p class="font-medium text-base text-txtgray">2024, Powered by Marketxtra.</p>
+                    </div>
+                </div>
 
                     </main>
 
