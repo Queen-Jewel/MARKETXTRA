@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="CSS/main.css">
+   <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+   <title>example</title>
+   <style>
+      body {
+         background-image: url('images/smiling-ethnic-woman-with-tablet 1.png');
+         background-repeat: no-repeat;
+      }
+        .clip {
+            clip-path: inset(800px, 0, 0, 0);
+        }
+
+      @media (min-width: 640px) {
+         body {
+            background-image: none;
+         }
+      }
+   </style>
+<body>
+   <!-- parent div -->
+
+   <div class="parent-div md:w-[1440px] flex min-h-screen sm:w-[330px] sm:h-[932px]">
+
+      <!-- child div1 -->
+
+      <div class="min-h-screen w-1/2 sm:hidden md:block md:w-[740px]">
+         <img src="images/smiling-ethnic-woman-with-tablet 1.png" class="h-full  ">
+      </div>
+
+
+      <!-- right side -->
+      <div id="left" class=" flex flex-col items-start sm:ml-16 sm:rounded-lg  ml-0 md:items-center sm:items-center sm:justify-center  w-full bg-white bg-opacity-85 sm:w-[380px] sm:h-[555px] p-3  md:w-[702px] md:h-[1024px]">
+        <img class="w-[158.41px] h-[56.63px] sm:mt-0  md:mb-10 md:mt-18 mr-[300px]" src="images/Mx 2@2x.png" alt="mx2">
+        <p class="w-[330px] md:w-[433px] h-[56px] text-base font-normal md:font-medium md:text-[24px] leading-tight text-txtgray">You’re three (3) steps away from creating your custom online store!</p>
+
+        <div class="store w-[306px] h-[76px] mt-7 mr-[120px] ">
+            <h2 class="mb-1 font-medium text-[24px] bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">Store Structure</h2>
+            <p class="font-normal text-[16px] bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">Step 1 of 3</p>
+            <div class="span flex items-center justify-between w-[306px] mt-2">
+                <span class="w-[86px] h-[10px] border rounded-3xl bg-gradient-to-b from-GreenT to-GreenL"></span>
+                <span class=" bg-stepgray w-[86px] h-[10px] border rounded-3xl"></span>
+                <span class=" bg-stepgray w-[86px] h-[10px] border rounded-3xl"></span>
+            </div>
+        </div>
+
+        <div class="input mr-[70px] flex flex-col items-start justify-center w-[360px] h-[124px] mt-[55px] text-TextGray font-medium text-14px">
+            <input id="shopName" class="border w-[360px] h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="Shop name"  placeholder="Shop name" required>
+            <input id="Category" class="border w-[360px] h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="category" placeholder="Category"required>
+            
+        </div>
+        <!-- Next and Previous page -->
+        <div  class="w-[108px] h-[54px] flex items-end justify-center sm:hidden md:block md:mt-[430px] md:ml-[530px]">
+            <img id="next" src="/images/ArrowCircleRight.png" alt="rt">
+        </div>
+    </div>
+
+   </div>
+   <!-- end parent div -->
+
+   <script src="JS/step.js"></script>
+</body>
+
+</html>

@@ -3,11 +3,15 @@ module.exports = {
   content: ['./*.{html,js}'],
   theme: {
     screens: {
-      sm: "376px",
+      sm: "430px",
       md: "768px",
       lg: "1440px",
     },
+    
     extend: {
+      backgroundImage : {
+        'main': "url('images/smiling-ethnic-woman-with-tablet 1.png')",
+      },
       colors: {
         GreenT: '#008000',
         GreenL: '#00B800',

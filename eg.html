@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="CSS/main.css">
+   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+   <title>example</title>
+   <style>
+      body {
+         background-image: url('images/smiling-ethnic-woman-with-tablet 1.png');
+         background-repeat: no-repeat;
+      }
+
+      @media (min-width: 640px) {
+         body {
+            background-image: none;
+         }
+      }
+   </style>
+<!-- add bg image and remove it in sm view -->
+<body>
+   <!-- Tailwind CSS doesn't directly create background images -->
+
+   <!-- parent div -->
+
+   <div class="parent-div flex gap-4 min-h-screen">
+
+      <!-- child div1 -->
+
+      <div class="min-h-screen w-1/2 hidden sm:block">
+         <img src="images/smiling-ethnic-woman-with-tablet 1.png" class="h-full hidden sm:block object-cover">
+      </div>
+
+
+      <!-- child div2 -->
+      <div class="w-full sm:w-1/2 p-3 h-full">
+         <h1 class="text-3xl font-semibold text-green-600">
+            This is an example code
+         </h1>
+
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+      </div>
+
+   </div>
+   <!-- end parent div -->
+</body>
+
+</html>
