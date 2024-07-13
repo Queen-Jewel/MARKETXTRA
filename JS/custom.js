@@ -4,6 +4,12 @@ const flip = document.getElementById('Switch');
 flip.addEventListener('click', () => {
     window.location.href = '/ownerview.html';
 })
+// Second switch
+const flip2 = document.getElementById('Switch2');
+
+flip2.addEventListener('click', () => {
+    window.location.href = '/ownerview.html';
+})
 const divs = document.querySelectorAll('.greenB');
 
 // product border change
@@ -28,10 +34,47 @@ const toggleDropdown = () => {
 const image = document.getElementById('image');
 
 image.addEventListener('click', ()=> {
-  if(image.src.match("icons8-chevron-down-30")) {
-    image.src = '/images/icons8-chevron-up-30.png';
+  if(image.src.match("CD")) {
+    image.src = '/images/CU.png';
   } else {
-    image.src = '/images/icons8-chevron-down-30.png';
+    image.src = '/images/CD.png';
+  }
+})
+
+// three dots
+// Dropdown toggle
+const downD = document.querySelector('#dropdown2');
+const toggleDropdown2 = () => {
+  downD.classList.toggle('hidden');
+}
+
+
+// Image change
+const image2 = document.getElementById('threed');
+
+image2.addEventListener('click', ()=> {
+  if(image2.src.match("DotsThreeVertical.png")) {
+    image2.src = '/images/X (1).png';
+  } else {
+    image2.src = '/images/DotsThreeVertical.png';
+  }
+})
+
+// Dropdown3 toggle
+const down3 = document.querySelector('#dropdown3');
+const toggleDropdown3 = () => {
+  down3.classList.toggle('hidden');
+}
+
+
+// Image change
+const image3 = document.getElementById('ham');
+
+image3.addEventListener('click', ()=> {
+  if(image3.src.match("Menu")) {
+    image3.src = '/images/X (1).png';
+  } else {
+    image3.src = '/images/Menu.png';
   }
 })
 
@@ -52,11 +95,11 @@ cats.forEach(cat => {
 });
 
 cat1.addEventListener('click', ()=> {
-  cate.textContent = 'category 1'
+  cate.textContent = 'Category 1'
 });
 cat2.addEventListener('click', ()=> {
-  cate.textContent = 'category 2'
+  cate.textContent = 'Category 2'
 });
 cat3.addEventListener('click', ()=> {
-  cate.textContent = 'category 3'
+  cate.textContent = 'Category 3'
 });

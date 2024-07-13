@@ -22,10 +22,27 @@ const toggleDropdown = () => {
 const image = document.getElementById('image');
 
 image.addEventListener('click', ()=> {
-  if(image.src.match("icons8-chevron-down-30")) {
-    image.src = '/images/icons8-chevron-up-30.png';
+  if(image.src.match("CD")) {
+    image.src = '/images/CU.png';
   } else {
-    image.src = '/images/icons8-chevron-down-30.png';
+    image.src = '/images/CD.png';
+  }
+})
+// Dropdown2 toggle
+const down2 = document.querySelector('#dropdown2');
+const toggleDropdown2 = () => {
+  down2.classList.toggle('hidden');
+}
+
+
+// Image change
+const image2 = document.getElementById('ham');
+
+image2.addEventListener('click', ()=> {
+  if(image2.src.match("Menu")) {
+    image2.src = '/images/X (1).png';
+  } else {
+    image2.src = '/images/Menu.png';
   }
 })
 
@@ -46,11 +63,11 @@ cats.forEach(cat => {
 });
 
 cat1.addEventListener('click', ()=> {
-  cate.textContent = 'category 1'
+  cate.textContent = 'Category 1'
 });
 cat2.addEventListener('click', ()=> {
-  cate.textContent = 'category 2'
+  cate.textContent = 'Category 2'
 });
 cat3.addEventListener('click', ()=> {
-  cate.textContent = 'category 3'
+  cate.textContent = 'Category 3'
 });

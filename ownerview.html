@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
+    <style>
+        .shadow-bottom {
+            box-shadow: 0 0 10px 0 16px rgba(111, 110, 112, 0.5);
+        }
+    </style>
     <title>Business Owner</title>
 </head>
 <body>
-    <div class="h-[677px] bg-Drwhite ">
+    <div class="md:h-[677px] h-[932px] w-[430px] md:w-[1348px] bg-Drwhite ">
         
         <div class="font-Work flex flex-col items-start justify-center">
             <!-- the rest of the page -->
-            <div class="h-[677px] flex items-start justify-start">
+            <div class="md:h-[677px] flex items-start justify-start">
     
                 <!-- Nav Bar -->
-                <div class=" fixed w-[267px] h-[677px]  flex flex-col items-center justify-start bg-white">
+                <div class="hidden md:block  fixed w-[267px] h-[677px]  flex flex-col items-center justify-start bg-white">
                     <!-- image -->
                     <div class="h-[99px] p-6">
-                        <img class="w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
+                        <img class="ml-6 w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
                     </div>
                     <!-- nav dashboards -->
-                    <div class="w-[117px] h-[246px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray">
+                    <div class="pl-16 w-[117px] h-[246px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray">
                         <!-- 1st -->
-                        <div class="flex items-center justify-center h-6 mb-7 text-Orange font-bold ">
+                        <div class="w-[103px] flex items-center justify-center h-6 mb-7 text-Orange font-bold ">
                             <img class="mr-[6px] " src="images/Storefront.png" alt="my store">
                             <p>My store</p>
                         </div>
                         <!-- 2nd -->
-                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <div class="w-[116px] flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
                             <img class="mr-[6px] " src="images/Receipt.png" alt="Receipt">
                             <p>Dashboard</p>
                         </div>
                         <!-- 3rd -->
-                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <div class="w-[102px] flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
                             <img class="mr-[6px] " src="images/Package.png" alt="Package">
                             <p>Products</p>
                         </div>
                         <!-- 4th -->
-                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                            <img class="mr-[6px] " src="images/Note.png" alt="Note">
+                        <div class="w-[85px] flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                            <img class="mr-[10px] " src="images/Note.png" alt="Note">
                             <p>Order</p>
                         </div>
-                        
                         <!-- 5th -->
-                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <div class="w-[117px] flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
                             <img class="mr-[6px] " src="images/Users.png" alt="Users">
                             <p>Customers</p>
                         </div>
                         <!-- 6th -->
-                        <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <div class="w-[95px] flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
                             <img class="mr-[6px] " src="images/set.png" alt="ChartLine">
                             <p>Settings</p>
                         </div>
@@ -56,48 +60,51 @@
                 </div>
 
                 <!-- main -->
-                <main class="w-[1080px] ml-[269px]">
+                <main class="md:w-[1080px] w-[430px] md:ml-[269px]">
                     <!-- the top -->
-                    <header class="fixed w-[1360px] flex items-center justify-center h-[59px] bg-GreenB text-white text-base font-normal">
-                        <div class="w-[498px] h-[42px] border-[1px] border-white rounded-lg p-[10px] flex items-center justify-center mr-[230px]">
-                            <p>Hello there, you’re welcome to my online store</p>
+                    <header class="fixed md:w-[1080px] w-[430px] h-[38px] md:h-[59px] flex items-center justify-center bg-GreenB text-white  font-normal">
+                        <div class="w-[348px] h-6 md:w-[498px] md:h-[42px] border-[1px] border-white rounded-lg p-[10px] flex items-center justify-center">
+                            <p class="sm:w-[322px] sm:h-5 md:w-[368px] md:h-[22px] sm:text-sm md:text-base">Hello there, you’re welcome to my online store</p>
                         </div>
-                        <span class="absolute left-[59%] w-[27.8px] h-[27.8px]">
-                            <img src="images/Group 6.png" alt="Group6">
+                        <span class="absolute sm:left-[89%] md:left-[72%]">
+                            <img class="sm:w-[13.04px] sm:h-[13.04px] md:w-[27.8px] md:h-[27.8px]" src="images/Group 6.png" alt="Group6">
                         </span>
                     </header>
-                    <div class="fixed mt-[42px] w-[1360px] h-[99px] flex items-center justify-between font-normal text-base text-txtgray">
-                         <!-- Logo -->
-                         <div class="w-[161px]  h-[53px] flex items-center justify-start ml-10 relative">
-                        <div class="w-[128px] h-[43px] flex items-center justify-center ml-4">
-                            <span class="w-[43px] h-[43px] border-[1px] border-Graytrue bg-stepgray rounded-[50%] mr-2"></span>
-                            <p>Your Logo</p>
-                        </div>
+                    <div class="fixed mt-1  md:mt-[42px] sm:w-[430px] md:w-[1080px] h-[99px] md:pt-3 sm:px-5 md:px-0 flex items-center sm:justify-start md:justify-start font-normal text-base text-txtgray shadow-bottom">
+                        <!--Menu-->
+                        <img onclick="toggleDropdown()" src="images/Menu.png" id="ham" class="md:hidden w-5 h-5 flex flex-col items-center justify-center mr-5 mt-1">
                         
+                        <!-- Logo -->
+                         <div class="w-[93.04px] h-[23px] md:w-[161px] md:h-[53px] flex items-center justify-start sm:ml-0 md:ml-10 relative">
+                        <div class="w-[128px] h-[43px] flex items-center justify-center ml-6 md:ml-4 sm:text-sm md:text-base">
+                            <span class="sm:w-4 sm:h-4 md:w-[43px] md:h-[43px] border-[1px] border-Graytrue bg-stepgray rounded-[50%] mr-1 md:mr-2"></span>
+                            <p class="w-[67px] h-5 md:w-[77px] md:h-[22px]">Your Logo</p>
                         </div>
-                        <span class="absolute left-[6%] top-[23%] w-5 h-5">
-                            <img src="images/Group 6.png" alt="Group6">
+                        </div>
+                        <span class="absolute left-[18%] top-[37%] md:left-[7.4%] md:top-[31%] ">
+                            <img class="sm:w-[13.04px] sm:h-[13.04px] md:w-5 md:h-5" src="images/Group 6.png" alt="Group6">
                         </span>
 
                         <!-- Switch -->
-                        <div class="w-[188px] h-10 flex items-center justify-between ml-[170px]">
-                            <img id="Switch" src="images/ToggleLeft.png" alt="ToggleRight">
-                            <p>View as customer</p>
+                        <div class="hidden md:block w-[200px] h-10 flex items-center justify-center ml-[450px]">
+                            <p class="w-[200x] h-10 flex items-center justify-start"> <span> <img id="Switch" class="w-10" src="images/ToggleLeft.png" alt="ToggleRight"></span>View as customer</p>
                         </div>
 
                         <button
                             id="button1"
-                            class="w-[154px] h-[41px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg text-base text-white font-normal mr-[310px]"
+                            class="w-[108px] h-[21px] md:w-[154px] md:h-[41px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-md sm:text-sm md:text-base text-white font-normal md:ml-[40px] ml-[145px]"
                             type="button"
                             >
                             Save Changes
                         </button>
+                        <!-- 3 Dots -->
+                        <img id="threed" onclick="toggleDropdown2()" src="images/DotsThreeVertical.png" class="md:hidden ml-2 w-5 h-5" alt="DotsThreeVertical">
                     </div>
 
                     <!-- main showcase -->
                     <!-- first box -->
                    
-                        <div class="h-[481px] relative flex flex-col overflow-hidden  mt-[141px]">
+                        <div class="w-[430px] h-[239px] md:w-[1080px] md:h-[481px] relative flex flex-col overflow-hidden sm:mt-[76px] md:mt-[141px]">
                         <div class="absolute inset-0 bg-cover filter blur-sm bg-[url('/images/shirtf.png')]"></div>
 
                         <!-- Dark overlay -->
@@ -105,29 +112,42 @@
 
                         <!-- content -->
                         <div class="absolute inset-0 flex flex-col items-center justify-center mt-5">
-                            <div class="w-[600px] h-[200px] flex items-center justify-start border-[3px] border-white rounded-lg ml-4 relative">
-                            <p class="mb-5 mt-5 block w-[590px] text-[64px] text-white font-bold flex text-center">We Sell The Best 
+                            <div class="w-[249px] h-[84px] md:w-[600px] md:h-[200px] flex items-center sm:justify-center md:justify-start border-[1px] md:border-[3px] border-white rounded-lg ml-4 relative">
+                            <p class="mb-5 mt-5 block md:w-[590px] sm:h-[56px]  sm:w-[218px]  md:leading-[70px] text-center sm:text-2xl md:text-[64px] text-white font-bold flex items-center justify-center">We Sell The Best 
                                 Quality of T-shirts</p>
                             </div>
-                            <span class="absolute left-[77%] top-[34%] w-[37.03px] h-[37.03px]">
+                            <span class="absolute left-[78.8%] md:left-[77%] top-[35%] md:top-[34%] w-[19.04px] md:w-[37.03px] md:h-[37.03px]">
                                 <img src="images/Group 6.png" alt="Group6">
                             </span>
                             
                         </div>
-                        <span class="absolute left-[93%] top-[10%] w-[37.03px] h-[37.03px]">
+                        <span class="absolute left-[93%] top-[10%] w-[19.04px] md:w-[37.03px] h-[37.03px]">
                             <img src="images/Group 6.png" alt="Group6">
                         </span>
                         </div>
 
                         <!-- Footer -->
-                <div class="w-[1080px] h-[103px] flex items-center mt-[100px] justify-start pl-10 bg-footer">
-                    <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
-                    <div class="w-[266px] h-[30px]  flex items-center justify-center">
-                        <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
-                        <p class="font-medium text-base text-txtgray">2024, Powered by Marketxtra.</p>
+                <div class=" w-[430px] md:w-[1080px] h-[58px] md:h-[103px] flex items-center mt-[560px] md:mt-[100px] justify-start pl-10 bg-footer">
+                    <img class="w-8 h-8 md:w-[50px] md:h-[50px] mr-2 md:mr-8" src="images/Mx 1.png" alt="Mx">
+                    <div class="w-[231px] h-5 md:w-[266px] md:h-[30px]  flex items-center justify-center">
+                        <img class="w-5 h-5 md:w-6 md:h-6 mr-2" src="images/Copyright.png" alt="Copyright">
+                        <p class=" text-sm font-normal md:font-medium md:text-base text-txtgray">2024, Powered by Marketxtra.</p>
                     </div>
                 </div>
 
+                 <!-- home and about -->
+                 <div id="dropdown" class=" absolute w-[90px] h-[70px] text-sm bg-white flex flex-col items-start justify-center rounded-lg pl-[14px] left-[20px] top-[13%] hidden">
+                    <p class="bg-gradient-to-b from-GreenT to-GreenL bg-clip-text font-bold text-transparent">Home</p>
+                    <p class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold mt-[6px]">About Us</p>
+                </div>
+
+                <!-- Three dots dropdown -->
+                <div id="dropdown2" class="Switch2 hidden absolute cursor-pointer bg-white text-sm text-txtgray rounded-lg font-normal text-sm font-normal flex flex-col items-center justify-center w-[200px] h-[52px] border-gray-300  top-[13%] left-[46%] absolute ">
+                    <div id="view" class="flex items-center justify-center w-[151px] h-5 hover:bg-footer">
+                      <p>View as customer</p>
+                      <img class=" w-5 h-5 ml-2" src="images/ToggleLeft.png" alt="ToggleRight">
+                    </div>
+                </div>
                     </main>
 
                     
