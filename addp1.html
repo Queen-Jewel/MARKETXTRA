@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <style>
         .gradient-border {
             border-width: 2px;
@@ -21,301 +23,304 @@
             accent-color: black;
         }
     </style>
-    <title>Add Products</title>
+    <title>MarketXtra | Add Products</title>
 </head>
 
-<body>
-    <div class="h-[2118px] bg-Drwhite">
-
+<body class="font-Work">
+    <div class="w-full relative min-h-screen bg-Drwhite">
         <!-- Container -->
-        <div class="flex items-start justify-start font-Work">
+        <div class="relative flex items-start justify-start">
 
             <!-- Side Bar -->
-            <div class="w-[267px] h-[2225px] flex flex-col items-center justify-start bg-white">
+            <div id="side-navbar" class="shadow-3xl z-[100] sm:hidden xs:hidden fixed lg:block lg:w-1/5 xs:w-3/4 md:w-1/4 sm:w-2/5 h-full flex flex-col items-center justify-start bg-white">
+                <i id="close-sidebar" class="ph ph-x-circle xs:block lg:hidden sm:block md:block px-5 py-5 text-3xl"></i>
                 <!-- image -->
-                <div class="h-[99px] p-6">
-                    <img class="w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2" />
+                <div class="h-[99px] mb-5">
+                    <img class="w-full min-h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
                 </div>
                 <!-- nav dashboards -->
-                <div class="w-[117px] h-[246px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray">
+                <div class="pb-[100px] pl-5 w-full h-screen overflow-auto flex flex-col items-start justify-start text-[16px] font-normal text-txtgray">
                     <!-- 1st -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px]" src="images/StorefrontB.png" alt="my store" />
+                    <a href="#" class="transition-all flex cursor-pointer items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
                         <p>My store</p>
-                    </div>
+                    </a>
                     <!-- 2nd -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px]" src="images/Receipt.png" alt="Receipt" />
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 text-Orange font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-receipt"></i>
                         <p>Dashboard</p>
-                    </div>
+                    </a>
                     <!-- 3rd -->
-                    <div class="flex items-center justify-center h-6 mb-7 text-Orange font-bold">
-                        <img class="mr-[6px]" src="images/PO.png" alt="Package" />
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-package"></i>
                         <p>Products</p>
-                    </div>
-
+                    </a>
                     <!-- 4th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px]" src="images/Note.png" alt="Note" />
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-note"></i>
                         <p>Orders</p>
-                    </div>
+                    </a>
+                    
                     <!-- 5th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px]" src="images/Users.png" alt="Note" />
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-users"></i>
                         <p>Customers</p>
-                    </div>
+                    </a>
                     <!-- 6th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px]" src="images/set.png" alt="MapPin" />
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-gear"></i>
                         <p>Settings</p>
-                    </div>
+                    </a>
                 </div>
             </div>
 
-
             <!-- Main -->
-            <main>
+            <div class="xs:w-full lg:w-4/5 lg:ml-[20%] md:w-full sm:w-full flex flex-col items-start justify-start relative lg:px-5 sm:px-3 xs:px-2"> 
                 <div class="flex flex-col items-start justify-start">
-                    <!-- Nav -->
-                    <div class="h-[97px] flex items-center justify-between mb-10">
+                    
+                    <!-- nav body -->
+                    <div class="w-full h-[97px] flex items-center justify-between mb-5">
                         <!-- search bar -->
-                        <div
-                            class="w-[620px] h-12 ml-5 bg-footer rounded-lg shadow-lg flex items-center justify-between">
-                            <input class="outline-none bg-footer pl-3" type="text" placeholder="Search" name="Search" />
-                            <img class="pr-2" src="images/srch.png" alt="srch" />
+                        <div class="lg:w-3/5 md:w-3/5 sm:w-2/3 xs:w-2/3 flex items-start">
+                            <div id="sidebar-ctrl" class="mt-1 :block md:block lg:hidden  h-12 flex items-center">
+                                <i class="ph ph-list text-3xl pr-3"></i>
+                            </div>
+                            <div class="lg:w-3/4 sm:w-1/2 min-h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between relative">
+                                <input class="outline-none bg-footer px-4 py-3 pr-[35px] w-full" type="text" placeholder="Search" name="Search">
+                                <i class="ph ph-magnifying-glass pr-2 absolute right-[5px]"></i>
+                            </div>
+        
+                            <!-- Daily -->
+                            <div class="lg:w-1/4 sm:w-1/2 relative overflow-visible mr-4">
+                                <div onclick="toggleDropdown()" class="ml-3 lg:w-[120px] xs:w-[50px] md:w-[100px] h-12 rounded-md bg-white lg:p-[10px] md:p-[8px] sm:p-[5px] xs:p-[2px] flex items-center justify-between text-base font-normal text-txtgray cursor-pointer">
+                                    <p id="cate" class="pr-[2px]">Daily</p>
+                                    <i id="icon-ctrl"  class="ph ph-caret-down text-[13px] w-4 h-[10px] lg:ml-3 xs:ml-1"></i>
+                                </div>
+                                <!-- categpryy options -->
+                                <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-start justify-center w-[160px] h-[140pxpx] border-gray-300  top-[85%] left-[16.5%] absolute ">
+                                    <a href="dash2.html" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer hover:border-l-5 hover:border-l-black">
+                                        <div> Daily</div>
+                                    </a>
+                                    <a href="dash3.html" id="cat2" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
+                                        <div>Weekly</div>
+                                    </a>
+                                    <a href="dash4.html" id="cat3" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
+                                        <div>Monthly</div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- User -->
-                        <div class="w-[283px] h-[43px] ml-48 flex items-center justify-center">
-                            <span
-                                class="w-[43px] h-[43px] mr-3 flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray">JJ</span>
-                            <p class="font-normal text-base">Jaachi Jeff</p>
+                        <div class="lg:w-2/5 md:w-2/5 sm:w-1/3 xs:w-1/3 flex items-end">
+                            <div class="w-full min-h-[43px] flex items-center justify-end xs:ml-[-20px]">
+                                <a href="#">
+                                    <i class="ph ph-bell mr-2 text-2xl text-txtgray"></i>
+                                </a>
+                                <span class="w-[43px] h-[43px] flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray">JJ</span>
+                                <p class="ml-2 font-normal text-base sm:hidden lg:block md:block xs:hidden">Jaachi Jeff</p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Body -->
                     <div class="flex flex-col items-center justify-start">
                         <!-- mini showcase -->
-                        <div class="w-[1150px] h-[65px] flex items-center justify-between p-[10px]">
+                        <div class="w-full h-[65px] flex justify-between p-[10px] mb-4">
                             <!-- 1st -->
-                            <div class="w-[288px] h-[64px] flex items-center justify-between">
-                                <img class="w-[54px] h-[54px] ml-3" src="images/ArrowCircleLeft.png"
-                                    alt="ArrowCircleLeft">
-                                <p class="font-medium text-[24px] text-txtgray">Add New Product</p>
+                            <div class="lg:w-1/3 sm:2/4 xs:2/4 md:2/4 min-h-[64px] flex items-center justify-start">
+                                <a href="#" class="w-full flex items-center justify-start">
+                                    <i class="ph ph-arrow-circle-left text-GreenT text-4xl mr-1"></i>
+                                    <p class="font-medium lg:text-[24px] sm:text-[16px] xs:text-[15px] md:text-[20px] text-txtgray">Add New Product</p>
+                                </a>
                             </div>
                             <!-- active -->
-                            <div class="relative overflow-visible">
-                                <div
-                                    class="mr-[20px] w-[230px] h-[42px] rounded-md bg-footer p-[10px] flex items-center justify-between text-base font-normal text-txtgray">
+                            <div class="lg:w-1/3 sm:2/4 xs:2/4 md:2/4 relative flex">
+                                <div id="dropdown-select" class="cursor-pointer w-full min-h-[42px] rounded-md bg-footer p-[10px] flex items-center justify-between text-base font-normal text-txtgray">
                                     <p id="cate">active</p>
-                                    <img id="image" onclick="toggleDropdown()" class="w-4 h-[10px] ml-3"
-                                        src="images/icons8-chevron-down-30.png" alt="">
+                                    <i class="ph ph-caret-down w-4 h-[10px] ml-3"></i>
                                 </div>
-                                <!-- categpryy options -->
-                                <div id="dropdown"
-                                    class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-[230px] h-[140pxpx] border-gray-300  top-[120%] left-[%] absolute ">
-                                    <div id="cat1"
-                                        class="click flex items-center justify-center w-[160px] h-[45px] hover:bg-footer">
-                                        <div> Active</div>
-                                    </div>
-                                    <div id="cat2"
-                                        class="click flex items-center justify-center w-[160px] h-[45px] hover:bg-footer">
+                                <!-- category options -->
+                                <div id="dropdown-active-select" class="hidden shadow-3xl cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-full min-h-[140px] border-gray-300 absolute top-[50px]">
+                                    <a href="#" class="click flex items-center justify-center w-full h-[45px] hover:bg-footer">
+                                        <div>Active</div>
+                                    </a>
+                                    <a href="#" class="click flex items-center justify-center w-full h-[45px] hover:bg-footer">
                                         <div>Pending</div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Main showcase -->
-                        <div
-                            class="w-[1077px] h-[1834px] rounded-lg bg-white px-6  flex flex-col items-start justify-start text-txtgray">
-
-                            <!-- showcase -->
-                            <div class="w-[1029px] h-[358px] flex items-center justify-between my-10">
-                                <img class="w-[402px] h-[358px]" src="images/Group 16.png" alt="Group">
-                                <input
-                                    class="w-[600px] h-[358px] p-[10px] rounded-lg text-base text-txtgray font-normal flex items-start justify-start border-[1px] border-txtgray"
-                                    type="text" placeholder="Add Product Description (Max. 500 words)" required>
-                            </div>
-
-                            <!-- product unit -->
-                            <div
-                                class="w-[1029px] h-[240px] flex items-center justify-between text-[14px] font-normal text-txtgray">
-                                <!-- first lft -->
-                                <div class="w-[495px] flex flex-col items-center justify-start">
-                                    <input
-                                        class="w-[494px] h-[44px] border-gray-200 border-[1px] rounded-lg px-3 py-[14px]"
-                                        type="text" name="Product Name" placeholder="Product Name" required>
-                                    <input
-                                        class="w-[494px] my-5 h-[44px] border-gray-200 border-[1px] rounded-lg px-3 py-[14px]"
-                                        type="text" name="Category" placeholder="Category" required>
-                                    <input
-                                        class="w-[494px] mb-5 h-[44px] border-gray-200 border-[1px] rounded-lg px-3 py-[14px]"
-                                        type="text" name="Low Stock Alert" placeholder="Low Stock Alert" required>
-                                    <input
-                                        class="w-[494px] h-[44px] border-gray-200 border-[1px] rounded-lg px-3 py-[14px]"
-                                        type="text" name="Units" placeholder="Units" required>
+                        <form action="#" method="POST">
+                            <div class="w-full min-h-[250px] rounded-lg bg-white flex flex-col items-start justify-start text-txtgray p-5">
+                                <!-- showcase -->
+                                <div class="w-full min-h-[358px] lg:flex md:block xs:block sm:block items-center">
+                                    <div id="imageContainer" style="background-image: url('images/placeholder-img.png');" class="lg:w-1/3 sm:w-2/3 xs:w-2/3 md:w-2/3 lg:h-[300px] md:h-[350px] xs:h-[300px] sm:h-[300px] sm:mb-10 xs:mb-10 md:mb-10 lg:mb-0 bg-center bg-cover bg-no-repeat flex items-center justify-center rounded-md">
+                                        <h6 class="font-bold text-TextGray cursor-pointer" id="hide-image-label">Click here to add image</h6>
+                                    </div>
+                                    <input type="file" id="imageInput" accept="image/*" class="hidden">
+                                    <textarea class="lg:w-2/3 sm:w-full xs:w-full md:w-full h-[300px] lg:ml-10 p-[10px] rounded-lg text-base text-txtgray font-normal border-[1px] border-txtgray" type="text" placeholder="Add Product Description (Max. 500 words)" required></textarea>
                                 </div>
-
-                                <!-- second rght -->
-                                <div class="w-[495px] flex flex-col items-center justify-start">
-                                    <input
-                                        class="w-[494px] h-[44px] border-gray-200 border-[1px] rounded-lg px-3 py-[14px]"
-                                        type="text" name="Actual price" placeholder="Actual price" required>
-                                    <input
-                                        class="w-[494px] my-5 h-[44px] border-gray-200 border-[1px] rounded-lg px-3 py-[14px]"
-                                        type="text" name="Slashed price" placeholder="Slashed price" required>
-                                    <input
-                                        class="w-[494px] mb-5 h-[44px] border-gray-200 border-[1px] rounded-lg px-3 py-[14px]"
-                                        type="text" name="Product weight in Kilogram (kg)"
-                                        placeholder="Product weight in Kilogram (kg)" required>
-                                    <input
-                                        class="w-[494px] h-[44px] border-gray-200 border-[1px] rounded-lg px-3 py-[14px]"
-                                        type="text" name="Profit per unit" placeholder="Profit per unit" required>
-                                </div>
-                            </div>
-
-                            <!-- horizontal line -->
-                            <hr class="w-[1029px] border-txtgray b0rder-2 my-12">
-
-                            <!-- Mearsurements -->
-                            <div class="w-[791px] h-[148px] flex flex-col items-start justify-start">
-                                <p class="font-medium text-[24px]">Product dimensions</p>
-
-                                <!-- measure -->
-                                <div class="w-[791px] h-6 flex items-start justify-between my-5">
-                                    <form>
-                                        <input type="radio" id="Centimeter (cm)" name="cm" value="Centimeter (cm)">
-                                        <label class="mr-2" for="Centimeter (cm)">Centimeter (cm)</label>
-                                        <input type="radio" id="Yards (Y)" name="cm" value="Yards (Y)">
-                                        <label class="mr-2" for="Yards (Y)">Yards (Y)</label>
-                                        <input type="radio" id="Foot (ft)" name="cm" value="Foot (ft)">
-                                        <label class="mr-2" for="Foot (ft)">Foot (ft)</label>
-                                        <input type="radio" id="Inches (In)" name="cm" value="Inches (In)">
-                                        <label class="mr-2" for="Inches (In)">Inches (In)</label>
-                                        <input type="radio" id="Meters (m)" name="cm" value="Meters (m)">
-                                        <label class="mr-2" for="Meters (m)">Meters (m)</label>
-                                        <input type="radio" id="Minimeter (mm)" name="cm" value="Minimeter (mm)">
-                                        <label for="Minimeter (mm)">Minimeter (mm)</label>
-                                    </form>
-                                </div>
-
-                                <!-- height -->
-                                <div
-                                    class="w-[691px] h-[44px] flex items-center justify-between text-[14px] font-normal">
-                                    <input
-                                        class="w-[209px] h-[44px] border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-black"
-                                        type="text" name="Height" placeholder="Height" required>
-                                    <input
-                                        class="w-[209px] h-[44px] border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-txtgray"
-                                        type="text" name="Length" placeholder="Length" required>
-                                    <input
-                                        class="w-[209px] h-[44px] border-gray-200 border-[1px] px-3 py-[14px] rounded-lg "
-                                        type="text" name="Yards" placeholder="Yards" required>
-                                </div>
-                            </div>
-
-
-                            <!-- available -->
-                            <div class="w-[363px] h-[116px] flex flex-col items-start justify-start mt-16">
-                                <p class="font-medium text-[24px] mb-4">Available colors</p>
-                                <input
-                                    class="w-[363px] h-[44px] border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-black"
-                                    type="text" name="Available colors" placeholder="Available colors" required>
-                                <p class="text-[14px] font-normal mt-[6px]">Enter color(s) and press “enter” key to add
-                                </p>
-                            </div>
-
-                            <!-- Footware sizes -->
-                            <div
-                                class="w-[363px] h-[116px] flex flex-col items-start justify-start mt-16 text-TextGray relative">
-                                <p class="font-medium text-[24px] mb-4">Footware sizes</p>
-                                <input
-                                    class="w-[363px] h-[44px] border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-black"
-                                    type="text" name="Footware sizes" placeholder="Available colors" required>
-                                <p class="text-[14px] font-normal mt-[6px]">Enter color(s) and press “enter” key to add
-                                </p>
-                            </div>
-                            <span>
-                                <img class="absolute top-[230%] left-[90%]" src="images/ToggleLeft.png"
-                                    alt="ToggleLeft">
-                            </span>
-
-
-                            <!-- Clothes -->
-                            <div class="w-[1028px] h-[69px] flex items-center justify-between mt-16">
-                                <div class="w-[267px] h-[69px] flex flex-col items-start justify-center text-TextGray">
-                                    <p class="font-medium text-[24px] mb-4">Clothe sizes</p>
-                                    <!-- sizes -->
-                                    <div
-                                        class="w-[267px] h-[25px] flex items-center justify-between text-base font-normal">
-                                        <div
-                                            class="w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
-                                            <p>S</p>
-                                        </div>
-                                        <div
-                                            class="w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
-                                            <p>M</p>
-                                        </div>
-                                        <div
-                                            class="w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
-                                            <p>L</p>
-                                        </div>
-                                        <div
-                                            class="w-[36px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
-                                            <p>XL</p>
-                                        </div>
-                                        <div
-                                            class="w-[42px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
-                                            <p>XXL</p>
-                                        </div>
+    
+                                <!-- product unit -->
+                                <div class="w-full min-h-[240px] sm:block md:flex lg:flex xs:block items-center justify-between text-[14px] font-normal text-txtgray">
+                                    <!-- first lft -->
+                                    <div class="lg:w-2/4 xs:w-full sm:w-2/4 md:w-2/4 items-center justify-start p-4">
+                                        <input class="w-full h-[44px] mb-5 border-gray-200 border-[1px] rounded-lg px-3 py-[14px]" type="text" name="Product Name" placeholder="Product Name" required>
+                                        <input class="w-full h-[44px] mb-5 border-gray-200 border-[1px] rounded-lg px-3 py-[14px]" type="text" name="Category" placeholder="Category" required>
+                                        <input class="w-full h-[44px] mb-5 border-gray-200 border-[1px] rounded-lg px-3 py-[14px]" type="text" name="Low Stock Alert" placeholder="Low Stock Alert" required>
+                                        <input class="w-full h-[44px] mb-5 border-gray-200 border-[1px] rounded-lg px-3 py-[14px]" type="text" name="Units" placeholder="Units" required>
+                                    </div>
+    
+                                    <!-- second rght -->
+                                    <div class="lg:w-2/4 xs:w-full sm:w-2/4 md:w-2/4 items-center justify-start p-4">
+                                        <input class="w-full h-[44px] mb-5 border-gray-200 border-[1px] rounded-lg px-3 py-[14px]" type="text" name="Actual price" placeholder="Actual price" required>
+                                        <input class="w-full h-[44px] mb-5 border-gray-200 border-[1px] rounded-lg px-3 py-[14px]" type="text" name="Slashed price" placeholder="Slashed price" required>
+                                        <input class="w-full h-[44px] mb-5 border-gray-200 border-[1px] rounded-lg px-3 py-[14px]" type="text" name="Product weight in Kilogram (kg)" placeholder="Product weight in Kilogram (kg)" required>
+                                        <input class="w-full h-[44px] mb-5 border-gray-200 border-[1px] rounded-lg px-3 py-[14px]" type="text" name="Profit per unit" placeholder="Profit per unit" required>
                                     </div>
                                 </div>
-
-                                <img class="mr-[33px]" src="images/ToggleLeft.png" alt="ToggleLeft">
+    
+                                <!-- horizontal line -->
+                                <hr class="w-full border-txtgray border my-12">
+    
+                                <!-- Measurements -->
+                                <div class="w-full min-h-[148px] flex flex-col items-start justify-start">
+                                    <p class="font-medium text-[24px]">Product dimensions</p>
+    
+                                    <!-- measure -->
+                                    <div class="w-full lg:flex md:flex flex-wrap xs:block sm:block items-start justify-start my-5">
+                                        <div class="flex w-1/3 pr-5">
+                                            <input class="mr-2" type="radio" id="Centimeter (cm)" name="cm" value="Centimeter (cm)">
+                                            <label for="Centimeter (cm)">Centimeter (cm)</label>
+                                        </div>
+                                        <div class="flex w-1/3 pr-5">
+                                            <input class="mr-2" type="radio" id="Yards (Y)" name="cm" value="Yards (Y)">
+                                            <label for="Yards (Y)">Yards (Y)</label>
+                                        </div>
+                                        <div class="flex w-1/3 pr-5">
+                                            <input class="mr-2" type="radio" id="Foot (ft)" name="cm" value="Foot (ft)">
+                                            <label for="Foot (ft)">Foot (ft)</label>
+                                        </div>
+                                        
+                                        <div class="flex w-1/3 pr-5">
+                                            <input class="mr-2" type="radio" id="Inches (In)" name="cm" value="Inches (In)">
+                                            <label for="Inches (In)">Inches (In)</label>
+                                        </div>
+                                        <div class="flex w-1/3 pr-5">
+                                            <input class="mr-2" type="radio" id="Meters (m)" name="cm" value="Meters (m)">
+                                            <label for="Meters (m)">Meters (m)</label>
+                                        </div>
+                                        <div class="flex w-2/3 pr-5">
+                                            <input class="mr-2" type="radio" id="Minimeter (mm)" name="cm" value="Minimeter (mm)">
+                                            <label for="Minimeter (mm)">Minimeter (mm)</label>
+                                        </div>
+                                    </div>
+    
+                                    <!-- height -->
+                                    <div class="w-full min-h-[44px] lg:flex md:block xs:block mt-5 sm:block items-center justify-between text-[14px] font-normal">
+                                        <input class="lg:w-1/3 sm:w-full md:2/4 xs:w-full h-[44px] mb-5 mr-3 border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-black" type="text" name="Height" placeholder="Height" required>
+                                        <input class="lg:w-1/3 sm:w-full md:2/4 xs:w-full h-[44px] mb-5 mr-3 border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-txtgray" type="text" name="Length" placeholder="Length" required>
+                                        <input class="lg:w-1/3 sm:w-full md:2/4 xs:w-full h-[44px] mb-5 mr-3 border-gray-200 border-[1px] px-3 py-[14px] rounded-lg" type="text" name="Yards" placeholder="Yards" required>
+                                    </div>
+                                </div>
+    
+    
+                                <!-- available -->
+                                <div class="lg:w-2/4 xs:w-full sm:w-full md:w-3/4 min-h-[116px] flex flex-col items-start justify-start mt-16">
+                                    <p class="font-medium text-[24px] mb-4">Available colors</p>
+                                    <input class="w-full h-[44px] border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-black" type="text" name="Available colors" placeholder="Available colors" required>
+                                    <p class="text-[14px] font-normal mt-[6px]">Enter color(s) and press “enter” key to add</p>
+                                </div>
+    
+                                <!-- Footware sizes -->
+                                <div class="w-full h-[116px] flex flex-col items-start justify-start mt-16 text-TextGray relative">
+                                    <div class="w-full flex justify-between">
+                                        <p class="font-medium text-[24px] mb-4">Footware sizes</p>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <input class="lg:w-1/2 md:w-3/4 sm:w-full xs:w-full h-[44px] border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-black" type="text" name="Footware sizes" placeholder="Available colors" required>
+                                    <p class="text-[14px] font-normal mt-[6px]">Enter color(s) and press “enter” key to add</p>
+                                </div>
+    
+    
+                                <!-- Clothes -->
+                                <div class="w-full min-h-[69px] flex items-center justify-between mt-16">
+                                    <div class="w-full min-h-[69px] flex flex-col items-start justify-center text-TextGray">
+                                        <div class="w-full flex justify-between">
+                                            <p class="font-medium text-[24px] mb-4">Clothe sizes</p>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                        <!-- sizes -->
+                                        <div class="lg:w-2/4 md:w-3/4 sm:w-full xs:w-full h-[25px] flex items-center justify-between text-base font-normal">
+                                            <label class="w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                                <input type="checkbox" value="S" class="hidden peer">
+                                                <p class="peer-checked:text-green-500 peer-checked:border-GreenT">S</p>
+                                            </label>
+                                            <label class="w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                                <input type="checkbox" value="M" class="hidden peer">
+                                                <p class="peer-checked:text-green-500 peer-checked:border-GreenT">M</p>
+                                            </label>
+                                            <label class="w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                                <input type="checkbox" value="L" class="hidden peer">
+                                                <p class="peer-checked:text-green-500 peer-checked:border-GreenT">L</p>
+                                            </label>
+                                            <label class="w-[36px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                                <input type="checkbox" value="XL" class="hidden peer">
+                                                <p class="peer-checked:text-green-500 peer-checked:border-GreenT">XL</p>
+                                            </label>
+                                            <label class="w-[42px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                                <input type="checkbox" value="XXL" class="hidden peer">
+                                                <p class="peer-checked:text-green-500 peer-checked:border-GreenT">XXL</p>
+                                            </label>
+                                        </div>
+                                                                                                                      
+                                    </div>
+                                </div>
+    
+                                <!-- horizontal line -->
+                                <hr class="w-full border-txtgray border my-16">
+    
+                                <!-- featured products -->
+                                <div class="w-[234px] h-8 flex items-center justify-center text-base font-normal text-#212121 mb-20">
+                                    <input class="w-5 h-5 border-[1.5px] border-#232323 mr-[6px]" type="checkbox" name="checkbox" value="checkbox" id="checkbox">
+                                    <label for="checkbox">Add to featured product</label>
+                                </div>
+    
+                                <!-- buttons -->
+                                <div class="h-[62px] flex items-center justify-between text-[20px] font-medium">
+                                    <button type="button" class="lg:py-4 sm:py-2 xs:py-4 lg:px-8 sm:px-2 xs:px-2 rounded-lg border-[1px] border-txtgray flex items-center justify-center">Cancel</button>
+                                    <button id="button1" class="lg:py-4 sm:py-2 xs:py-4 lg:px-8 sm:px-2 xs:px-2 ml-5 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center" type="button">
+                                        Save Changes
+                                    </button>
+                                </div>
                             </div>
-
-                            <!-- horizontal line -->
-                            <hr class="w-[1029px] border-txtgray b0rder-2 my-16">
-
-                            <!-- featured products -->
-                            <div
-                                class="w-[234px] h-8 flex items-center justify-center text-base font-normal text-#212121 mb-20">
-                                <input class="w-5 h-5 border-[1.5px] border-#232323 mr-[6px]" type="checkbox"
-                                    name="checkbox" value="checkbox">
-                                <label for="checkbox">Add to featured product</label>
-                            </div>
-
-                            <!-- buttons -->
-                            <div class="h-[62px] flex items-center justify-between text-[20px] font-medium">
-                                <button type="button"
-                                    class="w-[163px] h-[62px] rounded-lg border-[1px] border-txtgray flex items-center justify-center">Cancel</button>
-                                <button id="button1"
-                                    class="ml-[48px] w-[232px] h-[62px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center"
-                                    type="button">
-                                    Save Changes
-                                </button>
-                            </div>
-
-
-
-                        </div>
+                        </form>
 
                     </div>
                 </div>
                 <!-- Footer -->
-                <div class=" h-[103px] flex items-center justify-start mt-[80px] pl-10 bg-footer">
+                <div class="w-full mt-[100px] min-h-[103px] flex items-center pl-10 justify-start bg-footer">
                     <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
                     <div class="w-[266px] h-[30px]  flex items-center justify-center">
                         <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
                         <p class="font-medium text-base text-txtgray">2024, Powered by Marketxtra.</p>
                     </div>
-            </main>
+                </div>
+            </div>
 
         </div>
     </div>
 
-    <script src="js/addp1.js"></script>
+    <script src="js/dash.js"></script>
 </body>
 
 </html>
