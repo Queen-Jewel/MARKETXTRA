@@ -2,238 +2,258 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <style>
         .gradient-border {
             border-left: 5px solid;
             border-image: linear-gradient(to bottom, #008000, #00B800);
             border-image-slice: 1;
         }
+        .chart-container {
+            position: relative;
+            width: 100%;
+        }
+        canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
     </style>
     <title>Dashboard</title>
 </head>
-<body>
-    <div class="w-full relative h-[2100px] bg-Drwhite">
+<body class="font-Work">
+    <div class="w-full relative min-h-screen bg-Drwhite">
         <!-- container -->
-        <div class="relative flex items-start justify-start font-Work">
+        <div class="relative flex items-start justify-start">
             <!-- Side NavBar -->
-            <div class="w-[240px] h-[2100px]  flex flex-col items-center justify-start bg-white fixed">
+            <div id="side-navbar" class="z-[100] sm:hidden xs:hidden xs:fixed lg:block lg:w-1/5 xs:w-3/4 md:w-1/4 lg:p-5 sm:p-4 xs:p-5 sm:w-2/5 sm:fixed md:relative lg:relative h-screen flex flex-col items-center justify-start bg-white">
+                <i id="close-sidebar" class="fa fa-close xs:block lg:hidden sm:block md:hidden px-5 py-5 text-2xl"></i>
                 <!-- image -->
-                <div class="h-[99px] p-6">
-                    <img class="w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
+                <div class="h-[99px]">
+                    <img class="w-full min-h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
                 </div>
                 <!-- nav dashboards -->
-                <div class=" w-[117px] h-[240px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray">
+                <div class="w-full h-full flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray">
                     <!-- 1st -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold ">
-                        <img class="mr-[6px] " src="images/StorefrontB.png" alt="my store">
+                    <a href="#" class="transition-all flex cursor-pointer items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
                         <p>My store</p>
-                    </div>
+                    </a>
                     <!-- 2nd -->
-                    <div class="flex items-center justify-center h-6 mb-7 text-Orange font-bold">
-                        <img class="mr-[6px] " src="images/ReceiptO.png" alt="Receipt">
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 text-Orange font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-receipt"></i>
                         <p>Dashboard</p>
-                    </div>
+                    </a>
                     <!-- 3rd -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px] " src="images/Package.png" alt="Package">
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-package"></i>
                         <p>Products</p>
-                    </div>
+                    </a>
                     <!-- 4th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px] " src="images/Note.png" alt="Note">
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-note"></i>
                         <p>Orders</p>
-                    </div>
+                    </a>
                     
                     <!-- 5th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px] " src="images/Users.png" alt="Users">
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-users"></i>
                         <p>Customers</p>
-                    </div>
+                    </a>
                     <!-- 6th -->
-                    <div class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
-                        <img class="mr-[6px]" src="images/SEB.png" alt="MapPin" />
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-gear"></i>
                         <p>Settings</p>
-                    </div>
+                    </a>
                 </div>
             </div>
 
             <!-- Body -->
-        <div class="flex flex-col items-start justify-start ml-[200px] pl-10"> 
+            <div class="xs:w-full lg:w-4/5 md:w-full sm:w-full flex flex-col items-start justify-start relative lg:px-5 sm:px-3 xs:px-2"> 
 
                 <!-- nav body -->
-            <div class="h-[97px] flex items-center justify-between mb-16 pl-4">
-                <!-- search bar -->
-                <div class=" w-[472px] h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between">
-                    <input class="outline-none bg-footer pl-2" type="text" placeholder="Search" name="Search">
-                    <img class="pr-2" src="images/srch.png" alt="srch">
-                </div>
-
-                <!-- Daily -->
-                <div class="relative overflow-visible">
-                    <div class="ml-8 w-[160px] h-12 rounded-md bg-white p-[10px] flex items-center justify-between text-base font-normal text-txtgray">
-                        <p id="cate">Daily</p>
-                        <img id="image" onclick="toggleDropdown()" class="w-4 h-[10px] ml-3"  src="images/icons8-chevron-down-30.png" alt="ChevronDown">
+                <div class="w-full h-[97px] flex items-center justify-between mb-5">
+                    <!-- search bar -->
+                    <div class="lg:w-3/5 md:w-3/5 sm:w-2/3 xs:w-2/3 flex items-start">
+                        <div id="sidebar-ctrl" class="mt-1 :block md:block lg:hidden  h-12 flex items-center">
+                            <i class="ph ph-list text-3xl pr-3"></i>
+                        </div>
+                        <div class="lg:w-3/4 sm:w-1/2 min-h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between relative">
+                            <input class="outline-none bg-footer px-4 py-3 pr-[35px] w-full" type="text" placeholder="Search" name="Search">
+                            <i class="ph ph-magnifying-glass pr-2 absolute right-[5px]"></i>
+                        </div>
+    
+                        <!-- Daily -->
+                        <div class="lg:w-1/4 sm:w-1/2 relative overflow-visible mr-4">
+                            <div onclick="toggleDropdown()" class="ml-3 lg:w-[120px] xs:w-[50px] md:w-[100px] h-12 rounded-md bg-white lg:p-[10px] md:p-[8px] sm:p-[5px] xs:p-[2px] flex items-center justify-between text-base font-normal text-txtgray cursor-pointer">
+                                <p id="cate" class="pr-[2px]">Daily</p>
+                                <i id="icon-ctrl"  class="ph ph-caret-down text-[13px] w-4 h-[10px] lg:ml-3 xs:ml-1"></i>
+                            </div>
+                            <!-- categpryy options -->
+                            <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-start justify-center w-[160px] h-[140pxpx] border-gray-300  top-[85%] left-[16.5%] absolute ">
+                                <a href="dash2.html" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer hover:border-l-5 hover:border-l-black">
+                                    <div> Daily</div>
+                                </a>
+                                <a href="dash3.html" id="cat2" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
+                                    <div>Weekly</div>
+                                </a>
+                                <a href="dash4.html" id="cat3" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
+                                    <div>Monthly</div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <!-- categpryy options -->
-                    <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-start justify-center w-[160px] h-[140pxpx] border-gray-300  top-[85%] left-[16.5%] absolute ">
-                        <div id="cat1" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer hover:border-l-5 hover:border-l-black">
-                        <div> Daily</div>
-                        </div>
-                        <div id="cat2" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
-                        <div>Weekly</div>
-                        </div>
-                        <div id="cat3" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
-                        <div>Monthly</div>
+
+                    <!-- User -->
+                    <div class="lg:w-2/5 md:w-2/5 sm:w-1/3 xs:w-1/3 flex items-end">
+                        <div class="w-full min-h-[43px] flex items-center justify-end xs:ml-[-20px]">
+                            <a href="#">
+                                <i class="ph ph-bell mr-2 text-2xl text-txtgray"></i>
+                            </a>
+                            <span class="w-[43px] h-[43px] flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray">JJ</span>
+                            <p class="ml-2 font-normal text-base sm:hidden lg:block md:block xs:hidden">Jaachi Jeff</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- User -->
-                <div class="w-[283px] h-[43px] ml-[130px] flex items-center justify-center">
-                    <img class="mr-4" src="images/Bell.png" alt="Bell">
-                    <span class="w-[43px] h-[43px] mr-3 flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray">JJ</span>
-                    <p class="font-normal text-base">Jaachi Jeff</p>
-                </div>
-            </div>
 
 
                 <!-- showcase 1 -->
-                <div class="w-[1085px] h-[154px] flex items-center justify-between ml-4">
+                <div class="w-full min-h-[154px] lg:flex md:flex sm:block items-center justify-between">
                     <!-- 1st -->
-                    <div class="w-[355px] h-[154px] rounded-lg p-4 bg-GreenB hover:shadow-2xl">
-                        <div class="flex items-center justify-between">
-                        <p class="font-medium text-[24px] text-white">Total Sales</p>
-                        <img src="images/cart.png" alt="cart">
+                    <div class="mb-5 sm:w-full md:w-1/3 lg:w-1/3 min-h-[154px] rounded-lg p-4 bg-GreenB hover:shadow-2xl lg:mr-3 md:mr-3">
+                        <div class="flex items-center justify-between mb-10">
+                            <p class="font-medium text-[24px] text-white">Total Sales</p>
+                            <i class="ph ph-shopping-cart text-white text-3xl"></i>
                         </div>
                         <div class="text-white flex items-end justify-between mt-3">
-                        <p class="w-[106px] h-[70px] font-bold text-4xl">NGN 
-                            25,000</p>
-                        <a class="w-[83px] h-[22px] font-normal text-base border-b-[1px] border-b-white" href="dash4.html">See report</a>
+                            <p class="font-bold text-2xl lg:text-3xl md:text-2xl sm:text-4xl">NGN 25,000</p>
+                            <a class="ml-5 font-normal text-base border-b-[1px] border-b-white" href="dash4.html">See report</a>
                         </div>
                     </div>
                     <!-- 2nd -->
-                    <div class="w-[355px] h-[154px] rounded-lg p-4 bg-gradient-to-b from-GreenT to-GreenL mx-5 hover:shadow-2xl">
-                        <div class="flex items-center justify-between">
-                        <p class="font-medium text-[24px] text-white">Total Profit</p>
-                        <img src="images/Moneyw.png" alt="cart">
+                    <div class="mb-5 sm:w-full md:w-1/3 lg:w-1/3 min-h-[154px] rounded-lg p-4 bg-gradient-to-b from-GreenT to-GreenL hover:shadow-2xl lg:mr-3 md:mr-3">
+                        <div class="flex items-center justify-between mb-10">
+                            <p class="font-medium text-[24px] text-white">Total Profit</p>
+                            <i class="ph ph-money text-white text-3xl"></i>
                         </div>
                         <div class="text-white flex items-center justify-between mt-3">
-                        <p class="w-[106px] h-[70px] font-bold text-4xl">NGN 
-                            22,500</p>
-                            <a class="w-[83px] h-[22px] font-normal text-base border-b-[1px] border-b-white mt-12" href="dash6.html">See report</a>
+                            <p class="font-bold text-2xl lg:text-3xl md:text-2xl sm:text-4xl">NGN 22,500</p>
+                            <a class="font-normal text-base border-b-[1px] border-b-white ml-5" href="dash6.html">See report</a>
                         </div>
                     </div>
                     <!-- 3rd -->
-                    <div class="w-[355px] h-[154px] rounded-lg p-4 bg-Orange hover:shadow-2xl">
-                        <div class="flex items-center justify-between">
-                        <p class="font-medium text-[24px] text-white">Total Customers</p>
-                        <img src="images/UserCircle.png" alt="cart">
+                    <div class="mb-5 sm:w-full md:w-1/3 lg:w-1/3 min-h-[154px] rounded-lg p-4 bg-Orange hover:shadow-2xl lg:mr-3 md:mr-3">
+                        <div class="flex items-center justify-between mb-10">
+                            <p class="font-medium text-[24px] text-white">Total Customers</p>
+                            <i class="ph ph-user-circle text-white text-3xl"></i>
                         </div>
-                        <div class="text-white flex items-end justify-between mt-3">
-                        <p class="w-[106px] h-[70px] font-bold text-[50px] pt-4">200</p>
-                        <a class="w-[83px] h-[22px] font-normal text-base border-b-[1px] border-b-white" href="#">See report</a>
+                        <div class="text-white flex items-center justify-between mt-3">
+                            <p class="font-bold text-2xl lg:text-3xl md:text-2xl sm:text-4xl">200</p>
+                            <a class="font-normal text-base border-b-[1px] border-b-white ml-5" href="#">See report</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Transaction -->
-                <div class="w-[1077px] h-[312px] flex flex-col items-start justify-center text-txtgray font-normal text-base mt-28 pl-4">
+                <div class="w-full min-h-[312px] flex flex-col items-start justify-center text-txtgray font-normal text-base mt-10">
                     <p class="font-medium text-2xl mb-4">Transactions History</p>
 
                     <!-- shirt transaction -->
-                    <div class="w-[1077px] h-[66px] flex items-center justify-between bg-white rounded-lg p-10">
-                        <div class="w-[202px] h-[43px] flex items-center justify-between">
+                    
+                    <div class="w-full min-h-[66px] mb-5 flex justify-between bg-white rounded-lg p-5">
+                        <div class="min-h-[43px] flex items-center justify-start">
                             <img class="rounded-[50%]" src="images/BTS.png" alt="BTS">
-                            <p>Blue Plain T-shirt</p>
+                            <p class="ml-5 mr-2">Blue Plain T-shirt</p>
                         </div>
-                        <p class="mx-56">07 - Mar. 2024</p>
-                        <p>NGN3,500</p>
+                        <p class="mt-2 ml-2 mr-2">1 unit</p>
+                        <p class="mt-2 ml-2 mr-2">07 - Mar. 2024</p>
+                        <p class="mt-2 ml-2 mr-2">NGN3,500</p>
                     </div>
-                    <div class="w-[1077px] h-[66px] my-5 flex items-center justify-between bg-white rounded-lg p-10">
-                        <div class="w-[202px] h-[43px] flex items-center justify-between">
+                    <div class="w-full min-h-[66px] mb-5 flex justify-between bg-white rounded-lg p-5">
+                        <div class="min-h-[43px] flex items-center justify-start">
                             <img class="rounded-[50%]" src="images/BTS.png" alt="BTS">
-                            <p>Blue Plain T-shirt</p>
+                            <p class="ml-5 mr-2">Blue Plain T-shirt</p>
                         </div>
-                        <p class="mx-56">07 - Mar. 2024</p>
-                        <p>NGN3,500</p>
+                        <p class="mt-2 ml-2 mr-2">2 unit</p>
+                        <p class="mt-2 ml-2 mr-2">07 - Mar. 2024</p>
+                        <p class="mt-2 ml-2 mr-2">NGN3,500</p>
                     </div>
-                    <div  class="w-[1077px] h-[66px] flex items-center justify-between bg-white rounded-lg p-10">
-                        <div class="w-[202px] h-[43px] flex items-center justify-between">
+                    <div class="w-full min-h-[66px] mb-5 flex justify-between bg-white rounded-lg p-5">
+                        <div class="min-h-[43px] flex items-center justify-start">
                             <img class="rounded-[50%]" src="images/BTS.png" alt="BTS">
-                            <p>Blue Plain T-shirt</p>
+                            <p class="ml-5 mr-2">Blue Plain T-shirt</p>
                         </div>
-                        <p class="mx-56">07 - Mar. 2024</p>
-                        <p>NGN3,500</p>
+                        <p class="mt-2 ml-2 mr-2">3 unit</p>
+                        <p class="mt-2 ml-2 mr-2">07 - Mar. 2024</p>
+                        <p class="mt-2 ml-2 mr-2">NGN3,500</p>
                     </div>
                 </div>
 
-                <div class="w-[1077px] flex items-end justify-end mt-12 mb-20">
+                <div class="w-full flex items-end justify-end mt-5 mb-10">
                     <a href="dash4.html" class="w-[61px] h-[22px] text-Orange border-b-[1px] border-b-Orange">View all</a>
                 </div>
 
                 <!-- Charts -->
-                <div class="w-[1080px] h-[392px] flex items-center justify-start text-txtgray pl-4">
+                <div class="w-full min-h-[392px] sm:block lg:flex items-center justify-start text-txtgray">
 
                     <!-- Line Chart -->
-                    <div class="w-[716px] h-[392px] rounded-lg px-3 py-5 bg-white">
+                    <div class="sm:w-full lg:w-2/4 md:w-full min-h-[200px] rounded-lg px-3 py-5 bg-white">
                         <div class=" flex items-start justify-between ">
                             <p class="font-semibold text-2xl">Sales</p>
                             <!-- Weekly -->
-                        <div class="ml-20 w-[246px] h-7  flex items-center justify-center text-[24px] font-semibold text-txtgray">
-                            <p>Total sales - 000000</p>
-                        </div>
+                            <div class="ml-20 w-[246px]  flex items-center justify-center xs:text-[17px] sm:text-[22px] md:text-[22px] lg:text-[24px] font-semibold text-txtgray">
+                                <p>Total sales - 10,0000</p>
+                            </div>
                         </div>
                         <!-- chart -->
-                            <div class="line">
-                                <canvas class="w-[580px] h-[256px]" id="lineChart"></canvas>
-                            </div>
+                        <div class="line w-full h-full">
+                            <canvas id="lineChart"></canvas>
+                        </div>
                     </div>
 
 
                     <!-- doughnut Chart -->
-                    <div class="w-[327px] h-[300px] rounded-lg px-3 py-5 bg-white relative ml-4 mb-16">
+                    <div class="sm:w-full lg:w-2/4 xs:w-full md:w-full min-h-[200px] rounded-lg px-3 py-3 bg-white relative">
                         <div class=" flex flex-col items-start justify-start">
                             <p class="font-semibold text-2xl">Best sellers</p>
                         </div>
                         <!-- chart -->
-                            <div class="doughnut text-[#000000] text-base font-normal">
-                                <canvas id="doughnut"></canvas>
-                            </div>
-                            <span class="absolute left-[23%] top-[65%] text-[#000000]">50 Items</span>
+                        <div class="doughnut text-[#000000] text-base font-normal relative">
+                            <canvas id="doughnut"></canvas>
+                            <span class="absolute bottom-[50%] left-[25%] text-[#000000]">50 Items</span>
+                        </div>
+                        
                     </div>
                     
                 </div>
 
                 <!-- bar chart -->
-                <div class="w-[1000px] h-[550px] flex flex-col items-start justify-center mt-[95px] bg-white ml-4">
-                    <div class=" flex items-start justify-between ml-6 mt-5">
+                <div class="w-full items-start justify-center mt-[50px] bg-white">
+                    <div class="w-full flex items-start justify-between mt-5 px-5">
                         <p class="font-semibold text-2xl">Store visits</p>
-                        <div class="ml-[540px] w-[246px] h-7  flex items-center justify-center text-[24px] font-semibold text-txtgray">
-                            <p>Total Visits - 0,0000</p>
+                        <div class="flex items-center justify-center text-[24px] font-semibold text-txtgray">
+                            <p>Total Visits - 10,000</p>
                         </div>
                     </div>
-                    <div class="w-[1000px] h-[460px] flex items-start justify-start ml-5">
+                    <div class="w-full mt-10 flex items-start justify-start">
                         <canvas id="barchart"></canvas>
                     </div>
                 </div>
 
                 <!-- Footer -->
-                <div class="w-[1100px] h-[103px] flex items-center mt-[100px] justify-start pl-10 bg-footer">
+                <div class="w-full mt-[100px] min-h-[103px] flex items-center pl-10 justify-start bg-footer">
                     <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
                     <div class="w-[266px] h-[30px]  flex items-center justify-center">
                         <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
                         <p class="font-medium text-base text-txtgray">2024, Powered by Marketxtra.</p>
                     </div>
                 </div>
-            </div>     
+            </div>
         </div>
     </div>
 
-
-
-    <script src="JS/dash.js"></script>
+    <script src="js/dash.js"></script>
 </body>
 </html>

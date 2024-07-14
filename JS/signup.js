@@ -1,8 +1,6 @@
 const signup = document.getElementById('button1');
 const signup1 = document.getElementById('button2');
 
-
-
 // Toggle Password
 const passwordInput = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
@@ -11,10 +9,10 @@ const eyeImage = togglePassword.querySelector('img');
 togglePassword.addEventListener('click', function() {
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
-        eyeImage.src = '/images/EyeClosed.png';
+        eyeImage.src = './images/EyeClosed.png';
     } else {
         passwordInput.type = 'password';
-        eyeImage.src = '/images/Eyes-Outline.png';
+        eyeImage.src = './images/Eyes-Outline.png';
     }
 });
 
