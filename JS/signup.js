@@ -9,10 +9,10 @@ const eyeImage = togglePassword.querySelector('img');
 togglePassword.addEventListener('click', function() {
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
-        eyeImage.src = './images/EyeClosed.png';
+        togglePassword.innerHTML = '<i class="ph ph-eye"></i>';
     } else {
         passwordInput.type = 'password';
-        eyeImage.src = './images/Eyes-Outline.png';
+        togglePassword.innerHTML = '<i class="ph ph-eye"></i>';
     }
 });
 

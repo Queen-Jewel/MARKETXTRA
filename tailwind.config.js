@@ -33,7 +33,7 @@ module.exports = {
             },
 
             fontFamily: {
-                Work: ["Karla"],
+                Work: ["Work Sans"],
                 Man: ["Manrope"],
                 Rob: ["Roboto"],
             },

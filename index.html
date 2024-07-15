@@ -5,17 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Marketxtra Sign Up</title>
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Marketxtra | Sign Up</title>
 </head>
 
-<body>
-    <div class="container font-Work flex items-center bg-Drwhite justify-center max-w-[100%] h-[100%]">
+<body class="font-Work">
+    <div class="flex items-center bg-Drwhite justify-center w-full h-full">
         <div class="body font-Work w-[424px] h-[772px]">
-            <img class="mt-4 ml-28 md:ml-32 w-[158.41px] h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2" />
+            <div class="flex justify-center w-full items-center">
+                <img class="mt-4 h-[80px]" src="images/Mx 2@2x.png" alt="mx2" />
+            </div>
 
-            <div class="sign pl-7 py-5 bg-white">
+            <div class="sign py-5 bg-white">
                 <div class="flex flex-col items-center justify-center mb-6">
-                    <h2 class="  font-Work text-Graytrue-900 font-semibold text-2xl items-center">
+                    <h2 class="text-Graytrue-900 font-semibold text-2xl items-center mt-4">
                         Sign up
                     </h2>
                     <p class="text-Gray text-sm mt-3">
@@ -23,45 +27,42 @@
                     </p>
                 </div>
 
-                <div class="flex flex-col items-start justify-center text-[14px]">
-                    <input id="username" class="border-Gray-400 border py-3 pl-2 w-[360px] mb-2 rounded-md" type="text"
-                        name="Username" placeholder="Full Name" required autocomplete="given-name" />
-                    <input class="border-Gray-400 border py-3 pl-2 w-[360px] mb-2 rounded-md" id="email" type="email"
-                        name="Email" placeholder="E-mail" required autocomplete="email" />
-                    <div>
-                        <input class="border-Gray-400 border py-3 pl-2 w-[360px] mb-2 rounded-md relative" id="password"
-                            type="password" name="Password" placeholder="Password" required autocomplete="current-password" />
-                        <span id="togglePassword"
-                            class="absolute w-5 h-5 top-[44.5%] left-[80%] md:top-[50.5%] md:left-[60%]">
-                            <img src="images/Eyes-Outline.png" alt="eye" />
+                <div class="w-full block items-center justify-center text-[14px] px-10">
+                    <input id="username" class="border-Gray-400 border py-3 pl-2 w-full mb-2 rounded-md" type="text" name="username" placeholder="Full Name" required autocomplete="given-name" />
+                    <input class="border-Gray-400 border py-3 pl-2 w-full mb-2 rounded-md" id="email" type="email" name="email" placeholder="E-mail" required autocomplete="email" />
+                    <div class="relative">
+                        <input class="border-Gray-400 border py-3 pl-2 w-full mb-2 rounded-md relative" id="password" type="password" name="password" placeholder="Password" required autocomplete="current-password" />
+                        <span id="togglePassword" class="absolute w-5 h-5 top-[12px] right-[10px]">
+                            <i class="ph ph-eye"></i>
                         </span>
                     </div>
                 </div>
 
-                <button id="button1"
-                    class="w-[360px] h-[44px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg"
-                    type="button">
-                    Create account
-                </button>
+                <div class="w-full px-10 py-10">
+                    <button id="button1" class="transition-all hover:bg-white hover:border-2 hover:border-emerald-400 w-full min-h-[44px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg" type="button">
+                        Create account
+                    </button>
+                </div>
 
-                <p class="mt-4 ml-[70px] w-[220px] text-[14px]">
+                <p class="w-full text-[14px] text-center p-5">
                     Already have an account?<a id="button2" class="text-Orange underline font-[600] ml-1"
                         href="welcome.html">Login</a>
                 </p>
 
-                <div class="or flex items-center justify-center mt-8 mb-8 w-[361px] h-5">
+                <div class="or flex items-center justify-center mt-2 mb-5 w-full h-5">
                     <span class="border-gray-300 border-[0.3px] w-[150px]"></span>
                     <p class="mx-4">or</p>
                     <span class="border-gray-300 border-[0.3px] w-[150px]"></span>
                 </div>
 
-                <div
-                    class="goo font-Work font-medium text-[16px] border-[1px] border-GreenB flex items-center justify-center w-[360px] h-[44px] rounded-[8px] py-[10px] px-[10px] mb-2">
-                    <img class="w-[24px] h-[24px] text-TextGray mr-3" src="images/google.svg" alt="google" />
-                    <span>Continue with Google</span>
+                <div class="w-full flex items-center justify-center px-10 py-3">
+                    <div class="goo font-Work font-medium text-[16px] border-[1px] border-GreenB flex items-center justify-center w-full h-[44px] rounded-[8px] py-[10px] px-[10px] mb-2">
+                        <img class="w-[24px] h-[24px] text-TextGray mr-3" src="images/google.svg" alt="google" />
+                        <span>Continue with Google</span>
+                    </div>
                 </div>
 
-                <p class="font-Work font-medium text-xs m-4 text-TextGray leading-[18px] w-[360px] h-[36px]">
+                <p class="font-Work font-medium text-xs px-3 py-3 text-TextGray leading-[18px] w-full min-h-[36px]">
                     By creating an account, you acknowledge you have read and agreed to
                     our
                     <a class="font-bold text-black" href="#">
