@@ -89,26 +89,6 @@
                                 <input class="outline-none bg-footer px-4 py-3 pr-[35px] w-full" type="text" placeholder="Search" name="Search">
                                 <i class="ph ph-magnifying-glass pr-2 absolute right-[5px]"></i>
                             </div>
-        
-                            <!-- Daily -->
-                            <div class="lg:w-1/4 sm:w-1/2 relative overflow-visible mr-4">
-                                <div onclick="toggleDropdown()" class="ml-3 lg:w-[120px] xs:w-[50px] md:w-[100px] h-12 rounded-md bg-white lg:p-[10px] md:p-[8px] sm:p-[5px] xs:p-[2px] flex items-center justify-between text-base font-normal text-txtgray cursor-pointer">
-                                    <p id="cate" class="pr-[2px]">Daily</p>
-                                    <i id="icon-ctrl"  class="ph ph-caret-down text-[13px] w-4 h-[10px] lg:ml-3 xs:ml-1"></i>
-                                </div>
-                                <!-- categpryy options -->
-                                <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-start justify-center w-[160px] h-[140pxpx] border-gray-300  top-[85%] left-[16.5%] absolute ">
-                                    <a href="dash2.html" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer hover:border-l-5 hover:border-l-black">
-                                        <div> Daily</div>
-                                    </a>
-                                    <a href="dash3.html" id="cat2" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
-                                        <div>Weekly</div>
-                                    </a>
-                                    <a href="dash4.html" id="cat3" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
-                                        <div>Monthly</div>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
 
                         <!-- User -->
@@ -261,28 +241,27 @@
                                         </div>
                                         <!-- sizes -->
                                         <div class="lg:w-2/4 md:w-3/4 sm:w-full xs:w-full h-[25px] flex items-center justify-between text-base font-normal">
-                                            <label class="w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                            <label class="cursor-pointer w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
                                                 <input type="checkbox" value="S" class="hidden peer">
                                                 <p class="peer-checked:text-green-500 peer-checked:border-GreenT">S</p>
                                             </label>
-                                            <label class="w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                            <label class="cursor-pointer w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
                                                 <input type="checkbox" value="M" class="hidden peer">
                                                 <p class="peer-checked:text-green-500 peer-checked:border-GreenT">M</p>
                                             </label>
-                                            <label class="w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                            <label class="cursor-pointer w-[31px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
                                                 <input type="checkbox" value="L" class="hidden peer">
                                                 <p class="peer-checked:text-green-500 peer-checked:border-GreenT">L</p>
                                             </label>
-                                            <label class="w-[36px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                            <label class="cursor-pointer w-[36px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
                                                 <input type="checkbox" value="XL" class="hidden peer">
                                                 <p class="peer-checked:text-green-500 peer-checked:border-GreenT">XL</p>
                                             </label>
-                                            <label class="w-[42px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
+                                            <label class="cursor-pointer w-[42px] h-[25px] border-[0.5px] border-TextGray p-[10px] rounded-[4px] flex items-center justify-center">
                                                 <input type="checkbox" value="XXL" class="hidden peer">
                                                 <p class="peer-checked:text-green-500 peer-checked:border-GreenT">XXL</p>
                                             </label>
-                                        </div>
-                                                                                                                      
+                                        </div>                                                                   
                                     </div>
                                 </div>
     
@@ -319,8 +298,7 @@
 
         </div>
     </div>
-
-    <script src="js/dash.js"></script>
+    <script src="js/jquery3.7.js"></script>
+    <script src="js/marketxtra.js"></script>
 </body>
-
 </html>

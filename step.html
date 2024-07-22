@@ -1,117 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <style>
         .clip {
             clip-path: inset(800px, 1000px, 200px, 0);
         }
     </style>
-    <title>Step 2</title>
-  </head>
-  <body>
-    <div class="flex items-center justify-center w-[1348px] h-[1024px]">
-      <div
-        class="font-Work flex items-start justify-center relative  "
-      >
+    <title>Step Forms | Complete your registration</title>
+</head>
+
+<body class="font-Work bg-Drwhite relative">
+    <div class="flex items-center justify-center w-full h-full fixed top-[0px] left-[0px]">
         <!-- left side -->
-        <div class="w-[738px] h-[1024px] relative ">
-          <img
-            src="images/smiling-ethnic-woman-with-tablet 1.png"
-            alt="smiling-ethnic-woman-with-tablet" class="h-[1024px] w-[738px] bg-clip-content "/>
+        <div class="lg:w-3/5 md:w-2/4 sm:w-full xs:w-full h-full relative">
+            <div style="background-image: url(images/steps.png);" class="w-full h-full bg-left-top bg-cover bg-no-repeat"></div>
         </div>
 
         <!-- right side -->
-        <div
-          class="flex flex-col items-start justify-start w-[610px] h-[1024px] pl-28"
-        >
-          <!-- first box -->
-          <div id="left" class="flex items-start justify-between w-[473px] mt-12">
-            <div class="flex flex-col items-start justify-start mt-1">
-              <img
-                class="w-[158.41px] h-[56.63px] mb-10"
-                src="images/Mx 2@2x.png"
-                alt="mx2"
-              />
-              <p
-                class="w-[473px] h-[56px] font-medium text-[24px] leading-tight text-txtgray"
-              >You’re three (3) steps away from creating your custom online store!
-              </p>
-
-              <div class="store w-[306px] h-[76px] mt-7">
-                <h2
-                  class="mb-1 font-medium text-[24px] bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent"
-                >Store structure
-                </h2>
-                <p
-                  class="font-normal text-[16px] bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent"
-                >
-                  Step 1 of 3
-                </p>
-                <div
-                  class="span flex items-center justify-between w-[306px] mt-2"
-                >
-                  <span
-                    class="w-[86px] h-[10px] border rounded-3xl bg-gradient-to-b from-GreenT to-GreenL"
-                  ></span>
-                  <span
-                    class="bg-stepgray w-[86px] h-[10px] border rounded-3xl"
-                  ></span>
-                  <span
-                    class="bg-stepgray w-[86px] h-[10px] border rounded-3xl"
-                  ></span>
+        <div class="lg:relative md:relative sm:fixed xs:fixed lg:w-2/5 md:w-2/4 sm:w-full xs:w-full h-full pl-10 pr-10 overflow-auto">
+            <!-- first box -->
+            <form action="#">
+                <div id="left" class="w-full mt-12 xs:mb-12 md:mb-12 sm:bg-Drwhite xs:bg-Drwhite sm:p-10 xs:p-10 rounded-lg">
+                    <div class="items-start justify-start mt-1">
+                        <img class="h-[82px] mb-10 ml-[-20px]" src="images/Mx 2@2x.png" alt="mx2" />
+                        <p class="w-full font-medium text-[20px] leading-tight text-txtgray">You're three
+                            (3) steps away from creating your custom online store!
+                        </p>
+    
+                        <div class="store w-full mt-7">
+                            <h2 class="mb-1 font-medium text-[24px] bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
+                                Store structure
+                            </h2>
+                            <p id="step-indicator" class="font-normal text-[16px] bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
+                                Step 1 of 3
+                            </p>
+                            <div class="span flex w-full mt-2 items-start">
+                                <div id="form-1" class="lg:w-[86px] sm:w-[50px] xs:w-[60px] md:w-[60px] h-[10px] border rounded-3xl bg-gradient-to-b from-GreenT to-GreenL"></div>
+                                <div id="form-2" class="ml-5 bg-stepgray lg:w-[86px] sm:w-[50px] xs:w-[60px] md:w-[60px] h-[10px] border rounded-3xl"></div>
+                                <div id="form-3" class="ml-5 bg-stepgray lg:w-[86px] sm:w-[50px] xs:w-[60px] md:w-[60px] h-[10px] border rounded-3xl"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- second box -->
+                    <div data-form="form-1" class="flex items-start justify-start w-full mt-5 forms">
+                        <div class="flex flex-col items-start justify-start w-full min-h-[200px] mt-10 text-TextGray font-medium text-14px">
+                            <input required class="border-Gray-400 border py-3 pl-2 w-full mb-2 rounded-md relative" id="storename" type="text" name="store_name" placeholder="Store name" autocomplete="store_name" />
+                            
+                            <select required name="category" class="border-Gray-400 border py-3 pl-2 w-full mb-2 mt-5 rounded-md relative" id="category">
+                                <option value="">Select Market type</option>
+                                <option value="market">Super Market</option>
+                                <option value="health-and-beauty">Health and Beauty</option>
+                                <option value="home-and-offices">Home and Offices</option>
+                                <option value="appliances">Appliances</option>
+                                <option value="computing">Computing</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="fashion">Fashion</option>
+                                <option value="baby-product">Baby Product</option>
+                                <option value="gaming">Gaming</option>
+                                <option value="sporting-goods">Sporting Goods</option>
+                                <option value="phone-and-gadgets">Phone and Gadgets</option>
+                                <option value="other-categories">Other Categories</option>
+                            </select>             
+                        </div>
+                    </div>
+    
+                    <div data-form="form-2" class="hidden flex items-start justify-start w-full mt-5 forms d-none">
+                        <div class="flex flex-col items-start justify-start w-full min-h-[200px] mt-10 text-TextGray font-medium text-14px">
+                            <textarea class="border w-full h-[140px] mb-3 ml-[1px] px-3 text-[14px] rounded-lg" type="text" name="Write a brief description about your business" placeholder="Write a brief description about your business" required></textarea>
+                            <input class="border w-full h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="b_email" placeholder="Business E-mail" required />
+                            <input class="border w-full h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="Phone Number" placeholder="phone number" required />
+                            <input class="border w-full h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="city" placeholder="City" required />
+                            <input class="border w-full h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="address" placeholder="Address" required />            
+                        </div>
+                    </div>
+    
+                    <div data-form="form-3" class="hidden flex items-start justify-start w-full mt-5 forms">
+                        <div class="flex flex-col items-start justify-start w-full min-h-[200px] mt-10 text-TextGray font-medium text-14px">
+                            <input class="border w-full min-h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="account_name" placeholder="Account name" required>
+                            <input class="border w-full min-h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="account_number" placeholder="Account number" required>
+                            <input class="border w-full min-h-[54px] mb-3 ml-[1px] pl-2 rounded-lg" type="text" name="bank_name" placeholder="Bank name" required>           
+                        </div>
+                    </div>
+                    
+                    <!-- Next and Previous page -->
+                    <div id="next" class="w-full min-h-[54px] mb-10 flex items-end justify-end">
+                        <div class="flex">
+                            <i id="prev_form" class="hidden cursor-pointer ph ph-arrow-circle-left text-5xl text-GreenT"></i>
+                            <i id="next_form" class="hidden cursor-pointer ph ph-arrow-circle-right text-5xl text-GreenT"></i>
+                        </div>
+                        <div id="submit_button" class="hidden w-full min-h-[54px] mt-10 flex items-end justify-end">
+                            <button type="submit" class="bg-gradient-to-b from-GreenT to-GreenL text-white py-2 px-4 rounded-lg">Submit</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- second box -->
-          <div class="flex items-start justify-start w-[360px] mt-5">
-            <div
-              class="flex flex-col items-start justify-start w-[360px] h-[414px] mt-10 text-TextGray font-medium text-14px"
-            >
-            <div class="border w-[360px] h-[54px] text-txtgray flex items-center justify-start py-[14px] mb-3 ml-[1px] pl-3 rounded-lg">
-                <p>Store Name</p>
-              </div> 
-              <div onclick="categoryDown()" class="relative text-txtgray">
-              <div class="border w-[360px] h-[54px] ml-[1px] pl-3 rounded-lg flex items-center justify-start  py-[14px] ">
-                <p>Category</p>
-                <img id="image" class="absolute md:top-[24px] md:left-[340px]" src="images/CD.png" alt="CD">
-              </div> 
-              <!-- Category -->
-            <div id="dropdown" class="hidden cursor-pointer absolute bg-white text-sm text-txtgray rounded-lg font-normal text-base font-normal flex flex-col items-center justify-start w-[370px] h-[288px] border-gray-300 top-[80%] ">
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Super Market</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Health and Beauty</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Home and Offices</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Appliances</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Computing</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Electronics</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Fashion</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Baby Product</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Gaming</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Sporting Goods</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Phone and Gadgets</p>
-                <p class="py-1 px-3 hover:bg-footer flex items-center justify-start w-[360px] h-8">Other Categories</p>
-            </div>
-          </div>
-            </div>
-            </div>
-          </div>
-
-          <!-- Next and Previous page -->
-          <div
-            class="w-[108px] h-[54px] flex items-center justify-center absolute left-[90%] top-[90%]"
-          >
-            <img id="next" src="/images/ArrowCircleRight.png" alt="rt" />
-          </div>
-
-          
+            </form>
         </div>
-      </div>
     </div>
+    <script src="js/jquery3.7.js"></script>
+    <script src="js/marketxtra.js"></script>
+</body>
 
-    <script src="JS/step.js"></script>
-  </body>
 </html>

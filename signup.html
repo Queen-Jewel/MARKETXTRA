@@ -11,7 +11,7 @@
 </head>
 
 <body class="font-Work bg-Drwhite">
-    <div class="flex items-center justify-center w-full h-full mt-5">
+    <div class="flex items-center justify-center w-full h-full">
         <div class="body lg:w-1/3 md:w-2/4 sm:w-3/4 xs:w-full min-h-[772px]">
             <div class="flex justify-center w-full items-center">
                 <img class="mt-4 h-[80px]" src="images/Mx 2@2x.png" alt="mx2" />
@@ -20,14 +20,15 @@
             <div class="sign py-5 bg-white">
                 <div class="flex flex-col items-center justify-center mb-6">
                     <h2 class="text-Graytrue-900 font-semibold text-2xl items-center mt-4">
-                        Welcome Back!
+                        Sign up
                     </h2>
                     <p class="text-Gray text-sm mt-3">
-                        Sign in to your Marketxtra account to continue.
+                        Start your sales journey with Marketxtra.
                     </p>
                 </div>
 
                 <div class="w-full block items-center justify-center text-[14px] px-10">
+                    <input id="username" class="border-Gray-400 border py-3 pl-2 w-full mb-2 rounded-md" type="text" name="username" placeholder="Full Name" required autocomplete="given-name" />
                     <input class="border-Gray-400 border py-3 pl-2 w-full mb-2 rounded-md" id="email" type="email" name="email" placeholder="E-mail" required autocomplete="email" />
                     <div class="relative">
                         <input class="border-Gray-400 border py-3 pl-2 w-full mb-2 rounded-md relative" id="password" type="password" name="password" placeholder="Password" required autocomplete="current-password" />
@@ -37,44 +38,34 @@
                     </div>
                 </div>
 
-                
-                <div class="mid flex items-center justify-between w-full px-10 text-[14px] mt-6">
-                    <div class="checked flex items-center justify-center relative">
-                        <input type="checkbox" id="myCheckbox" class="peer relative appearance-none w-[18px] h-[18px]  border-2 rounded-sm focus:outline-none checked:bg-black
-                            after:absolute after:left-0 after:top-0 after:h-full after:w-full
-                            after:bg-[url('/images/icons8-checkmark.svg')]  after:bg-[length:16px] after:bg-center after:bg-no-repeat after:content-[''] hover:ring hover:ring-gray-300 "
-                        />
-                        <label class="ml-2" for="myCheckbox">Remember password?</label>
-                    </div>
-                    <a class="text-Orange underline font-semibold" href="forgot.html">Forgot password</a>
-                </div>
                 <div class="w-full px-10 py-10">
-                    <button id="login-account" class="transition-all hover:bg-white hover:border-2 hover:border-emerald-400 w-full min-h-[44px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg" type="button">
-                        Sign In
+                    <button id="create-account" class="transition-all hover:bg-white hover:border-2 hover:border-emerald-400 w-full min-h-[44px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg" type="button">
+                        Create account
                     </button>
                 </div>
 
-                <div class="or flex items-center justify-center mb-5 w-full h-5">
+                <p class="w-full text-[14px] text-center p-5">
+                    Already have an account?
+                    <a class="text-Orange underline font-[600] ml-1" href="login.html">Login</a>
+                </p>
+
+                <div class="or flex items-center justify-center mt-2 mb-5 w-full h-5">
                     <span class="border-gray-300 border-[0.3px] w-[150px]"></span>
                     <p class="mx-4">or</p>
                     <span class="border-gray-300 border-[0.3px] w-[150px]"></span>
                 </div>
 
-                <div class="w-full px-10 py-3">
-                    <div class="goo font-Work font-medium text-[16px] border-[1px] border-GreenB flex items-center justify-center w-full h-[44px] rounded-[8px] py-[10px] px-[10px] mb-2">
+                <div class="w-full flex items-center justify-center px-10 py-3">
+                    <div class="cursor-pointer goo font-Work font-medium text-[16px] border-[1px] border-GreenB flex items-center justify-center w-full h-[44px] rounded-[8px] py-[10px] px-[10px] mb-2">
                         <img class="w-[24px] h-[24px] text-TextGray mr-3" src="images/google.svg" alt="google" />
                         <span>Continue with Google</span>
                     </div>
-                    
-                    <div class="app font-Work font-medium text-[16px] border-[1px] border-GreenB flex items-center justify-center w-full h-[44px] rounded-[8px] py-[10px] px-[10px]">
-                        <img class="mr-3 text-TextGray" src="images/ri_apple-line.png" alt="apple"/>
-                        <span>Continue with Apple</span>
-                    </div>
                 </div>
 
-                <p class="mt-6 w-full text-center min-h-5 text-[14px]">
-                    Don't have an account?
-                    <a class="text-Orange underline font-semibold ml-2" href="index.html">Create an account</a>
+                <p class="font-Work font-medium text-xs px-10 text-TextGray leading-[18px] w-full min-h-[36px]">
+                    By creating an account, you acknowledge you have read and agreed to
+                    our
+                    <a class="font-bold text-black" href="terms.html">Terms of Use and Privacy Policy.</a>
                 </p>
             </div>
         </div>

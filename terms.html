@@ -1,224 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/main.css" />
-    <style>
-        input[type = "radio"] {
-        accent-color: rgb(26, 150, 26);
-    }
-    input[type=checkbox] {
-      accent-color: black;
-    }
-    </style>
-    <title>Terms and Condition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Terms and Condition | MarketXtra</title>
 </head>
-<body>
-    <div class="h-[2649px] bg-Drwhite">
 
+<body class="font-Work bg-Drwhite">
+    <div class="w-full relative min-h-screen bg-Drwhite">
         <!-- Container -->
         <div class="flex items-start justify-start font-Work">
+            <!-- Side NavBar -->
+            <div id="side-navbar" class="shadow-3xl z-[100] sm:hidden xs:hidden fixed lg:block lg:w-1/5 xs:w-3/4 md:w-1/4 sm:w-2/5 h-full flex flex-col items-center justify-start bg-white">
+                <i id="close-sidebar"
+                    class="cursor-pointer ph ph-x-circle xs:block lg:hidden sm:block md:block px-5 py-5 text-3xl"></i>
+                <!-- image -->
+                <div class="h-[99px] mb-5">
+                    <img class="w-full min-h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2" />
+                </div>
+                <!-- nav dashboards -->
+                <div
+                    class="pb-[100px] pl-5 w-full h-screen overflow-auto flex flex-col items-start justify-start text-[16px] font-normal text-txtgray">
+                    <!-- 1st -->
+                    <a href="#"
+                        class="transition-all flex cursor-pointer items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
+                        <p>My store</p>
+                    </a>
+                    <!-- 2nd -->
+                    <a href="#"
+                        class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-receipt"></i>
+                        <p>Dashboard</p>
+                    </a>
+                    <!-- 3rd -->
+                    <a href="#"
+                        class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-package"></i>
+                        <p>Products</p>
+                    </a>
+                    <!-- 4th -->
+                    <a href="#"
+                        class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-note"></i>
+                        <p>Orders</p>
+                    </a>
 
-             <!-- Side Nav bar -->
-             <div
-             class="w-[267px] h-[2640px] flex flex-col items-center justify-start bg-white"
-           >
-             <!-- image -->
-             <div class="h-[99px] p-6">
-               <img
-                 class="w-[158.41px] h-[56.63px]"
-                 src="images/Mx 2@2x.png"
-                 alt="mx2"
-               />
-             </div>
-             <!-- nav dashboards -->
-             <div
-               class="w-[117px] h-[246px] flex flex-col items-start justify-start mt-12 text-[16px] font-normal text-txtgray"
-             >
-               <!-- 1st -->
-               <div
-                 class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
-               >
-                 <img
-                   class="mr-[6px]"
-                   src="images/StorefrontB.png"
-                   alt="my store"
-                 />
-                 <p>My store</p>
-               </div>
-               <!-- 2nd -->
-               <div
-                 class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
-               >
-                 <img class="mr-[6px]" src="images/Receipt.png" alt="Receipt" />
-                 <p>Dashboard</p>
-               </div>
-               <!-- 3rd -->
-               <div
-                 class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
-               >
-                 <img class="mr-[6px]" src="images/Package.png" alt="Package" />
-                 <p>Products</p>
-               </div>
-   
-               <!-- 4th -->
-               <div
-                 class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
-               >
-                 <img class="mr-[6px]" src="images/Note.png" alt="Note" />
-                 <p>Orders</p>
-               </div>
-               <!-- 5th -->
-               <div
-                 class="flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold"
-               >
-                 <img class="mr-[6px]" src="images/Users.png" alt="Note" />
-                 <p>Customers</p>
-               </div>
-               <!-- 6th -->
-               <div
-                 class="flex items-center justify-center h-6 mb-7 text-Orange font-bold"
-               >
-                 <img class="mr-[6px]" src="images/GearSix (1).png" alt="MapPin" />
-                 <p>Settings</p>
-               </div>
-             </div>
-           </div>
+                    <!-- 5th -->
+                    <a href="#"
+                        class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-users"></i>
+                        <p>Customers</p>
+                    </a>
+                    <!-- 6th -->
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 text-Orange font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-gear"></i>
+                        <p>Settings</p>
+                    </a>
+                </div>
+            </div>
 
-
-           <!-- Main -->
-           <main>
-
-            <div class="flex flex-col items-start justify-start">
-                <!-- Nav Body -->
-                <div class="w-[1120px] h-[97px] flex items-center justify-between mb-10">
+            <!-- Main -->
+            <div class="xs:w-full lg:w-4/5 lg:ml-[20%] md:w-full sm:w-full flex flex-col items-start justify-start relative lg:px-5 sm:px-3 xs:px-2">
+                <!-- nav body -->
+                <div class="w-full h-[97px] flex items-center justify-between mb-5">
                     <!-- search bar -->
-                    <div
-                      class="w-[705px] h-12 ml-5 bg-footer rounded-lg shadow-lg flex items-center justify-between"
-                    >
-                      <input
-                        class="outline-none bg-footer pl-3"
-                        type="text"
-                        placeholder="Search"
-                        name="Search"
-                      />
-                      <img class="pr-2" src="images/srch.png" alt="srch" />
+                    <div class="lg:w-3/5 md:w-3/5 sm:w-2/3 xs:w-2/3 flex items-start">
+                        <div id="sidebar-ctrl" class="mt-1 :block md:block lg:hidden h-12 flex items-center cursor-pointer">
+                            <i class="ph ph-list text-3xl pr-3"></i>
+                        </div>
+                        <div
+                            class="lg:w-3/4 sm:w-1/2 min-h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between relative">
+                            <input class="outline-none bg-footer px-4 py-3 pr-[35px] w-full" type="text" placeholder="Search" name="Search" />
+                            <i class="ph ph-magnifying-glass pr-2 absolute right-[5px]"></i>
+                        </div>
                     </div>
-      
+
                     <!-- User -->
-                    <div
-                      class="w-[283px] h-[43px] ml-30 mr-12 flex items-center justify-end"
-                    >
-                      <span
-                        class="w-[43px] h-[43px] mr-3 flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray"
-                        >JJ</span
-                      >
-                      <p class="font-normal text-base">Jaachi Jeff</p>
+                    <div class="lg:w-2/5 md:w-2/5 sm:w-1/3 xs:w-1/3 flex items-end">
+                        <div class="w-full min-h-[43px] flex items-center justify-end xs:ml-[-20px]">
+                            <a href="#">
+                                <i class="ph ph-bell mr-2 text-2xl text-txtgray"></i>
+                            </a>
+                            <span
+                                class="w-[43px] h-[43px] flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray">JJ</span>
+                            <p class="ml-2 font-normal text-base sm:hidden lg:block md:block xs:hidden">
+                                Jaachi Jeff
+                            </p>
+                        </div>
                     </div>
-                  </div>
+                </div>
 
-                   <!-- Other Pages -->
-                   <div class="bg-white w-[1117px]">
-                    <div class="h-[64px] flex items-center justify-start mx-6 py-6 text-base text-txtgray font-normal">
-                        <p class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">General</p>
-                        <p class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold mx-16">Profile</p>
-                        <p class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">Account</p>
-                        <p class="bg-gradient-to-b from-GreenT to-GreenL bg-clip-text font-bold text-transparent mx-16">Policies</p>
-                        <p class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">Security</p>
-                        <p class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold mx-16">Delivery</p>
+                <!-- Other Pages -->
+                <div class="bg-white w-full">
+                    <div class="tabs lg:flex md:block xs:block sm:block space-x-4 border-b">
+                        <button class="px-4 py-2 focus:outline-none">
+                            General
+                        </button>
+                        <button class="lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-gray-600 focus:outline-none">
+                            Profile
+                        </button>
+                        <button class="lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-gray-600 focus:outline-none">
+                            Account
+                        </button>
+                        <button class="lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-green-600 border-b-2 border-green-600 focus:outline-none">
+                            Policies
+                        </button>
+                        <button class="lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-gray-600 focus:outline-none">
+                            Security
+                        </button>
+                        <button class="lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-gray-600 focus:outline-none">
+                            Delivery
+                        </button>
                     </div>
-                  </div>
+                </div>
 
 
-                  <!-- Body -->
-                  <div class="w-[1078px] h-[1669px] flex flex-col items-start mt-[66px] ml-10 rounded-lg justify-start bg-white px-10 pt-16 text-base text-txtgray font-normal">
-                    <img class="ml-7" src="images/ArrowCircleLeft.png" alt="ArrowCircleLeft">
+                <!-- Body -->
+                <div class="content mt-6 w-full pl-5 pr-5">
+                    <i class="go-back cursor-pointer ph ph-arrow-circle-left text-6xl text-green-600"></i>
 
-                        <!-- write up -->
-                        <p class=" w-[952px] flex items-center justify-center w-[160px] h-7 text-[24px] font-bold mb-4">Terms and Condition</p>
-                        <div class="w-[952px] h-[1860] flex flex-col items-start justify-center ml-7">
-                        <p class="w-[952px] h-[1825] mt-3 flex items-start justify-start">Effective Date: (Insert Date)</p>
-                        <p class="w-[952px] flex items-start justify-start py-4">
-                            Welcome to [Your E-Commerce Store Name] ("we," "our," "us"). These Terms and Conditions ("Terms") govern your use of our website [your website URL] and the purchase of products from our store. By accessing our website or making a purchase, you agree to be bound by these Terms</p>
+                    <!-- write up -->
+                    <p class=" w-full flex items-center justify-center w-[160px] h-7 text-[24px] font-bold mb-4">Terms and Condition</p>
+                    <div class="w-full flex flex-col items-start justify-center">
+                        <p class="w-full mt-3 flex items-start justify-start">Effective Date: (Insert Date)</p>
+                        <p class="w-full flex items-start justify-start py-4">
+                            Welcome to [Your E-Commerce Store Name] ("we," "our," "us"). These Terms and Conditions
+                            ("Terms") govern your use of our website [your website URL] and the purchase of products
+                            from our store. By accessing our website or making a purchase, you agree to be bound by
+                            these Terms</p>
                         <p class=" flex items-start justify-start ">1. General Conditions <br>
-                            By using our website, you represent that you are at least the age of majority in your state or province of residence, or that you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site.</p>
-                          <p class="flex items-start justify-start py-4">
+                            By using our website, you represent that you are at least the age of majority in your
+                            state or province of residence, or that you are the age of majority in your state or
+                            province of residence and you have given us your consent to allow any of your minor
+                            dependents to use this site.</p>
+                        <p class="flex items-start justify-start py-4">
                             2. Account Information<br>
-                            To access certain features of our website, you may be required to create an account. You agree to:<br>
-                            - Provide accurate, current, and complete information during the registration process.<br>
+                            To access certain features of our website, you may be required to create an account. You
+                            agree to:<br>
+                            - Provide accurate, current, and complete information during the registration
+                            process.<br>
                             - Maintain and promptly update your account information.<br>
-                            - Keep your password secure and accept responsibility for all activities that occur under your account.</p>
-                          <p class="flex items-start justify-start">3. Products and Services<br>
+                            - Keep your password secure and accept responsibility for all activities that occur
+                            under your account.</p>
+                        <p class="flex items-start justify-start">3. Products and Services<br>
                             Product Descriptions:<br>
-                            - We strive to display accurate information, including product descriptions, pricing, and availability. However, we do not warrant that product descriptions or other content is accurate, complete, reliable, or error-free.<br>
+                            - We strive to display accurate information, including product descriptions, pricing,
+                            and availability. However, we do not warrant that product descriptions or other content
+                            is accurate, complete, reliable, or error-free.<br>
                             Pricing:<br>
-                            - Prices for our products are subject to change without notice. We reserve the right to modify or discontinue a product at any time without prior notice.</p>
-                          <p class="flex items-start justify-start py-4">4. Orders and Payments<br>
+                            - Prices for our products are subject to change without notice. We reserve the right to
+                            modify or discontinue a product at any time without prior notice.</p>
+                        <p class="flex items-start justify-start py-4">4. Orders and Payments<br>
                             Order Acceptance:<br>
-                            - We reserve the right to refuse any order you place with us. We may, at our discretion, limit or cancel quantities purchased per person, per household, or per order. In the event of a change to or cancellation of an order, we will notify you via the email and/or billing address/phone number provided at the time the order was made.<br>
+                            - We reserve the right to refuse any order you place with us. We may, at our discretion,
+                            limit or cancel quantities purchased per person, per household, or per order. In the
+                            event of a change to or cancellation of an order, we will notify you via the email
+                            and/or billing address/phone number provided at the time the order was made.<br>
                             Payment:<br>
-                            - We accept various forms of payment. By providing payment information, you represent and warrant that you are authorized to use the designated payment method and that you authorize us (or our third-party payment processor) to charge your payment method for the total amount of your order (including any applicable taxes and other charges).</p>
-                          <p class="flex items-start justify-start">5. Shipping and Delivery <br>
-                            Please review our [Shipping Policy] for details on how we handle shipping and delivery of products.</p>
-                          <p class="flex items-start justify-start py-4">6. Returns and Refunds <br>
+                            - We accept various forms of payment. By providing payment information, you represent
+                            and warrant that you are authorized to use the designated payment method and that you
+                            authorize us (or our third-party payment processor) to charge your payment method for
+                            the total amount of your order (including any applicable taxes and other charges).</p>
+                        <p class="flex items-start justify-start">5. Shipping and Delivery <br>
+                            Please review our [Shipping Policy] for details on how we handle shipping and delivery
+                            of products.</p>
+                        <p class="flex items-start justify-start py-4">6. Returns and Refunds <br>
                             Please review our [Return Policy] for information on returns and refunds.</p>
-                          <p class="flex items-start justify-start">
+                        <p class="flex items-start justify-start">
                             7. Intellectual Property<br>
                             Ownership:<br>
-                            - All content on our website, including but not limited to text, graphics, logos, images, and software, is the property of [Your E-Commerce Store Name] or its content suppliers and is protected by intellectual property laws.<br>
+                            - All content on our website, including but not limited to text, graphics, logos,
+                            images, and software, is the property of [Your E-Commerce Store Name] or its content
+                            suppliers and is protected by intellectual property laws.<br>
                             Restrictions:<br>
-                            - You may not use, reproduce, distribute, or create derivative works based on any content without our express written permission.</p>
-                          <p class="flex items-start justify-start py-4">
+                            - You may not use, reproduce, distribute, or create derivative works based on any
+                            content without our express written permission.</p>
+                        <p class="flex items-start justify-start py-4">
                             8. User Conduct<br>
-                            You agree not to use our website for any unlawful purpose or in any way that could harm us or any other party. You agree not to:<br>
+                            You agree not to use our website for any unlawful purpose or in any way that could harm
+                            us or any other party. You agree not to:<br>
                             - Violate any local, state, federal, or international law or regulation.<br>
-                            - Infringe upon or violate our intellectual property rights or the intellectual property rights of others.<br>
+                            - Infringe upon or violate our intellectual property rights or the intellectual property
+                            rights of others.<br>
                             - Transmit any malicious code or malware.<br>
-                            - Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the site.</p>
-                          <p class="flex items-start justify-start">9. Limitation of Liability<br>
-                            To the fullest extent permitted by law, [Your E-Commerce Store Name] shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from:<br>
+                            - Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the
+                            site.</p>
+                        <p class="flex items-start justify-start">9. Limitation of Liability<br>
+                            To the fullest extent permitted by law, [Your E-Commerce Store Name] shall not be liable
+                            for any direct, indirect, incidental, special, or consequential damages resulting
+                            from:<br>
                             - The use or inability to use our website or products.<br>
                             - Unauthorized access to or alteration of your transmissions or data.<br>
                             - Any other matter related to our website or products.</p>
-                          <p class="flex items-start justify-start py-4">10. Indemnification <br>
-                            You agree to indemnify, defend, and hold harmless [Your E-Commerce Store Name], its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of your violation of these Terms or your use of our website.</p>
-                          <p class="flex items-start justify-start">11. Governing Law <br>
-                            These Terms shall be governed by and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law principles.</p>
-                          <p class="flex items-start justify-start py-4">12. Changes to These Terms <br>
-                            We reserve the right to modify these Terms at any time. Changes and clarifications will take effect immediately upon their posting on the website. It is your responsibility to review these Terms periodically for updates.</p>
-                          <p class="flex items-start justify-start">13. Contact <br>
+                        <p class="flex items-start justify-start py-4">10. Indemnification <br>
+                            You agree to indemnify, defend, and hold harmless [Your E-Commerce Store Name], its
+                            affiliates, officers, directors, employees, and agents from any claims, liabilities,
+                            damages, judgments, awards, losses, costs, expenses, or fees (including reasonable
+                            attorneys' fees) arising out of your violation of these Terms or your use of our
+                            website.</p>
+                        <p class="flex items-start justify-start">11. Governing Law <br>
+                            These Terms shall be governed by and construed in accordance with the laws of [Your
+                            Country/State], without regard to its conflict of law principles.</p>
+                        <p class="flex items-start justify-start py-4">12. Changes to These Terms <br>
+                            We reserve the right to modify these Terms at any time. Changes and clarifications will
+                            take effect immediately upon their posting on the website. It is your responsibility to
+                            review these Terms periodically for updates.</p>
+                        <p class="flex items-start justify-start">13. Contact <br>
                             If you have any questions about these Terms, please contact us at<br>
                             [Your E-Commerce Store Name]<br>
                             [Your Contact Email]<br>
                             [Your Contact Phone Number]<br>
                             [Your Business Address] <br><br>
-                            
-                            This Terms and Conditions template provides clear guidelines and policies to protect your e-commerce business and inform your customers. Customize it to fit your specific business details and ensure it complies with applicable laws and regulations.</p>
 
-                        <button
-                        id="button1"
-                        class="mt-12 w-[232px] h-[62px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center"
-                        type="button">
-                        Save Changes
+                            This Terms and Conditions template provides clear guidelines and policies to protect
+                            your e-commerce business and inform your customers. Customize it to fit your specific
+                            business details and ensure it complies with applicable laws and regulations.</p>
+
+                        <button class="mt-12 px-4 py-4 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center" type="button">
+                            Save Changes
                         </button>
-                  </div>
-
-
-                  <!-- Footer -->
-                 <div class="w-[1128px] h-[103px] flex items-center justify-start mt-[160px] pl-10 bg-footer">
-                    <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
-                    <div class="w-[266px] h-[30px]  flex items-center justify-center">
-                        <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
-                        <p class="font-medium text-base text-txtgray">2024, Powered by Marketxtra.</p>
                     </div>
-                    
-            </div>
 
-           </main>
+                    <!-- Footer -->
+                    <div class="w-full mt-[100px] min-h-[103px] flex items-center pl-10 justify-start bg-footer">
+                        <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx">
+                        <div class="w-[266px] h-[30px]  flex items-center justify-center">
+                            <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright">
+                            <p class="font-medium text-base text-txtgray">2024, Powered by Marketxtra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
     </div>
+    <script src="js/jquery3.7.js"></script>
+    <script src="js/marketxtra.js"></script>
 </body>
+
 </html>

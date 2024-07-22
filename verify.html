@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/main.css" />
-    <title>Verify Email</title>
-  </head>
-  <body>
-    <div
-      class="container font-Work flex items-center justify-center bg-Drwhite max-w-[100%]"
-    >
-      <div class="body font-Work w-[424px] h-[732px]">
-        <img
-          class="mx2 mt-6 ml-28 md:ml-32 w-[158.41px] h-[56.63px]"
-          src="./images/Mx 2@2x.png"
-          alt="mx2"
-        />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png">
+    <title>Verify Email | MarketXtra</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
 
-        <div class="sign pl-3 md:p-8 mt-7 bg-white w-[424px] h-[204px] rounded-lg">
-          <div
-            class="flex flex-col items-center justify-center w-[360px] h-[88px] mt-6"
-          >
-            <div
-              class="w-[360px] h-[88px] flex flex-col items-center justify-center "
-            >
-              <h2
-                class="font-Rob text-Graytrue font-semibold text-2xl items-center mb-3"
-              >
-              Verify your email
-              </h2>
-
-              <p
-                class="h-12 font-Rob font-normal text-base text-txtgray flex items-center justify-center"
-              >
-                We have sent you an email for verification. Follow the link
-                provided to finalize the sign up process.
-              </p>
+<body class="font-Work bg-Drwhite">
+    <div class="w-full font-Work flex items-center justify-center bg-Drwhite">
+        <div class="body lg:w-1/3 md:w-2/4 sm:w-3/4 xs:w-full min-h-[772px]">
+            
+            <div class="flex justify-center w-full items-center">
+                <img class="mt-4 h-[80px]" src="images/Mx 2@2x.png" alt="mx2" />
             </div>
+            <div class="sign py-5 bg-white">
+                <div class="flex flex-col items-center justify-center mb-6">
+                    <div class="w-full flex flex-col items-center justify-center ">
+                        <h2 class="font-Rob text-Graytrue font-semibold text-2xl items-center mb-3">
+                            Verify your email
+                        </h2>
 
-            <p
-              class="mt-12 w-[280px] h-5 text-[14px] flex items-center justify-center"
-            >
-              Didn’t receive the mail?<a
-                id="resend"
-                class="bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent underline font-semibold ml-[3px]"
-                href="#"
-                >Click to resend</a
-              >
-            </p>
-          </div>
+                        <p class="h-12 font-Rob font-normal text-base text-txtgray px-5 flex items-center justify-center">
+                            We have sent you an email for verification. Follow the link
+                            provided to finalize the sign up process.
+                        </p>
+                    </div>
+
+                    <p class="mt-12 w-full h-5 text-[14px] flex items-center justify-center">
+                        Didn't receive the mail?
+                        <a href="#" class="bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent underline font-semibold">Click to resend</a>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+    
+    <script src="js/form.js"></script>
+</body>
 
-    <script type="module" src="JS/verify.js"></script>
-  </body>
 </html>

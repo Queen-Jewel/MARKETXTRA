@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Settings | MarketXtra</title>
+</head>
+
+<body class="font-Work bg-Drwhite">
+    <div class="w-full relative min-h-screen bg-Drwhite">
+        <!-- Container -->
+        <div class="flex items-start justify-start font-Work">
+            <!-- Side NavBar -->
+            <div id="side-navbar"
+                class="shadow-3xl z-[100] sm:hidden xs:hidden fixed lg:block lg:w-1/5 xs:w-3/4 md:w-1/4 sm:w-2/5 h-full flex flex-col items-center justify-start bg-white">
+                <i id="close-sidebar"
+                    class="cursor-pointer ph ph-x-circle xs:block lg:hidden sm:block md:block px-5 py-5 text-3xl"></i>
+                <!-- image -->
+                <div class="h-[99px] mb-5">
+                    <img class="w-full min-h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2" />
+                </div>
+                <!-- nav dashboards -->
+                <div
+                    class="pb-[100px] pl-5 w-full h-screen overflow-auto flex flex-col items-start justify-start text-[16px] font-normal text-txtgray">
+                    <!-- 1st -->
+                    <a href="#"
+                        class="transition-all flex cursor-pointer items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
+                        <p>My store</p>
+                    </a>
+                    <!-- 2nd -->
+                    <a href="#"
+                        class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-receipt"></i>
+                        <p>Dashboard</p>
+                    </a>
+                    <!-- 3rd -->
+                    <a href="#"
+                        class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
+                        <i class="mr-[6px] text-2xl ph ph-package"></i>
+                        <p>Products</p>
+                    </a>
+                    <!-- 4th -->
+                    <a href="#"
+                        class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-note"></i>
+                        <p>Orders</p>
+                    </a>
+
+                    <!-- 5th -->
+                    <a href="#"
+                        class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-users"></i>
+                        <p>Customers</p>
+                    </a>
+                    <!-- 6th -->
+                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 text-Orange font-bold">
+                        <i class="mr-[6px] text-2xl ph ph-gear"></i>
+                        <p>Settings</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main -->
+            <div class="xs:w-full lg:w-4/5 lg:ml-[20%] md:w-full sm:w-full flex flex-col items-start justify-start relative lg:px-5 sm:px-3 xs:px-2">
+                <!-- nav body -->
+                <div class="w-full h-[97px] flex items-center justify-between mb-5">
+                    <!-- search bar -->
+                    <div class="lg:w-3/5 md:w-3/5 sm:w-2/3 xs:w-2/3 flex items-start">
+                        <div id="sidebar-ctrl" class="mt-1 :block md:block lg:hidden h-12 flex items-center cursor-pointer">
+                            <i class="ph ph-list text-3xl pr-3"></i>
+                        </div>
+                        <div
+                            class="lg:w-3/4 sm:w-1/2 min-h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between relative">
+                            <input class="outline-none bg-footer px-4 py-3 pr-[35px] w-full" type="text" placeholder="Search" name="Search" />
+                            <i class="ph ph-magnifying-glass pr-2 absolute right-[5px]"></i>
+                        </div>
+                    </div>
+
+                    <!-- User -->
+                    <div class="lg:w-2/5 md:w-2/5 sm:w-1/3 xs:w-1/3 flex items-end">
+                        <div class="w-full min-h-[43px] flex items-center justify-end xs:ml-[-20px]">
+                            <a href="#">
+                                <i class="ph ph-bell mr-2 text-2xl text-txtgray"></i>
+                            </a>
+                            <span
+                                class="w-[43px] h-[43px] flex items-center justify-center bg-stepgray rounded-[50%] text-base font-bold text-txtgray">JJ</span>
+                            <p class="ml-2 font-normal text-base sm:hidden lg:block md:block xs:hidden">
+                                Jaachi Jeff
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Pages -->
+                <div class="bg-white w-full">
+                    <div class="tabs lg:flex md:block xs:block sm:block space-x-4 border-b">
+                        <button class="tab px-4 py-2 text-green-600 border-b-2 active border-green-600 focus:outline-none"
+                            data-tab-target="#general">
+                            General
+                        </button>
+                        <button class="tab lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-gray-600 focus:outline-none"
+                            data-tab-target="#profile">
+                            Profile
+                        </button>
+                        <button class="tab lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-gray-600 focus:outline-none"
+                            data-tab-target="#account">
+                            Account
+                        </button>
+                        <button class="tab lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-gray-600 focus:outline-none active border-green-600"
+                            data-tab-target="#policies">
+                            Policies
+                        </button>
+                        <button class="tab lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-gray-600 focus:outline-none"
+                            data-tab-target="#security">
+                            Security
+                        </button>
+                        <button class="tab lg:px-4 md:px-3 sm:px-2 xs:px-1 py-2 text-gray-600 focus:outline-none"
+                            data-tab-target="#delivery">
+                            Delivery
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Body -->
+                <div class="content mt-6 w-full pl-5 pr-5">
+                    <div id="general" class="tab-content">
+                        <h2 class="text-xl font-semibold mb-2">General</h2>
+                        <!-- 1st box -->
+                        <div class="w-full min-h-[98px]">
+                            <div class="w-full min-h-[54px] flex items-center justify-between">
+                                <p class="text-[24px] font-medium">Email Notifications</p>
+                                <label class="switch">
+                                    <input type="checkbox" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <p class="w-full min-h-[44px]">
+                                Get transaction notifications and other activities on your
+                                preferred mail address.
+                            </p>
+                        </div>
+
+                        <!-- 2nd box -->
+                        <div class="w-full flex flex-col items-start justify-start mt-20">
+                            <div class="w-full min-h-[58px] flex flex-col items-start justify-start">
+                                <div class="text-[24px] font-medium">Site Appearance</div>
+                                <div>Choose your preferred look</div>
+                            </div>
+                            <!-- Mode -->
+                            <div class="w-full flex items-center justify-start mt-8 py-1 text-gray-400">
+                                <input type="radio" id="Light Mode" name="cm" value="Light Mode" />
+                                <label class="mr-3 ml-2 text-txtgray" for="Light Mode">Light Mode</label>
+                                <input type="radio" id="Dark Mode" name="cm" value="Dark Mode" />
+                                <label class="mr-3 ml-2" for="Dark Mode">Dark Mode</label>
+                                <input type="radio" id="System Preferred" name="cm" value="System Preferred" />
+                                <label class="mr-3 ml-2" for="System Preferred">System Preferred</label>
+                            </div>
+                        </div>
+
+                        <!-- 3rd box -->
+                        <div class="w-full flex flex-col items-start justify-start mt-20 text-gray-400">
+                            <div class="w-full flex items-center justify-between mb-2">
+                                <p class="text-[24px] font-medium">Currency</p>
+                                <p class="text-[24px]">&#8358;</p>
+                            </div>
+                            <p>Choose your preferred Currency</p>
+                        </div>
+
+                        <!-- 4th box -->
+                        <div class="w-full mt-20 text-gray-400">
+                            <div class="w-full flex items-center justify-between mb-2">
+                                <p class="text-[24px] font-medium">Default Language</p>
+                                <p>English</p>
+                            </div>
+                            <p>Choose your preferred Language</p>
+                        </div>
+                    </div>
+                    <div id="profile" class="tab-content hidden">
+                        <h2 class="text-xl font-semibold mb-4">Profile</h2>
+
+                        <div class="w-full min-h-[358px] lg:flex md:block xs:block sm:block items-center">
+                            <div id="imageContainer" style="background-image: url('images/placeholder-img.png')"
+                                class="rounded-[50%] lg:w-[250px] sm:w-[250px] xs:w-[250px] md:w-[250px] lg:h-[250px] md:h-[250px] xs:h-[250px] sm:h-[250px] sm:mb-10 xs:mb-10 md:mb-10 lg:mb-0 bg-center bg-cover bg-no-repeat flex items-center justify-center">
+                                <h6 class="font-bold text-TextGray cursor-pointer" id="hide-image-label">
+                                    Click here to add image
+                                </h6>
+                            </div>
+                            <input type="file" id="imageInput" accept="image/*" class="hidden" />
+                            <div class="w-[162px] h-[55px] ml-6 flex flex-col items-center justify-start">
+                                <p class="text-[24px] font-medium">Profile Photo</p>
+                                <a href="#"
+                                    class="underline decoration-green-400 text-base flex flex-col items-center justify-center font-normal bg-gradient-to-b from-GreenT to-GreenL bg-clip-text font-bold text-transparent">Upload
+                                    Profile Photo</a>
+                            </div>
+                        </div>
+
+                        <!-- 2nd section -->
+                        <div class="w-full h-20 flex flex-col items-start justify-start mt-5">
+                            <p class="text-[24px] font-medium">Personal Information</p>
+                            <p class="text-base font-normal h-[44px]">
+                                Edit your personal information here. Click on “Save Changes”
+                                to save your edited details.
+                            </p>
+                        </div>
+
+                        <!-- 3rd section -->
+                        <div class="w-full min-h-40 mt-[20px]">
+                            <div class="min-h-[54px] w-full lg:flex md:flex sm:block xs:block">
+                                <input type="text" name="fname" placeholder="Firstname"
+                                    class="sm:w-full xs:w-full lg:w-1/2 md:w-1/2 h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
+                                    required />
+                                <input type="text" name="lname" placeholder="Lastname"
+                                    class="lg:ml-6 sm:w-full xs:w-full lg:w-1/2 md:w-1/2 h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
+                                    required />
+                            </div>
+                            <div class="min-h-[54px] mt-5 w-full lg:flex md:flex sm:block xs:block">
+                                <input type="text" name="email" placeholder="E-mail"
+                                    class="sm:w-full xs:w-full lg:w-1/2 md:w-1/2 rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
+                                    required />
+                                <input type="text" name="phone_number" placeholder="Phone Number"
+                                    class="lg:ml-6 sm:w-full xs:w-full lg:w-1/2 md:w-1/2 rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
+                                    required />
+                            </div>
+                        </div>
+                        <!-- 4th section -->
+                        <button id="button1"
+                            class="mt-5 px-10 py-5 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center"
+                            type="button">
+                            Save Changes
+                        </button>
+                    </div>
+                    <div id="account" class="tab-content hidden">
+                        <h2 class="text-xl font-semibold mb-4">Account</h2>
+                        <!-- 1st box -->
+                        <div class="w-full flex flex-col items-start justify-start">
+                            <!-- sub1 -->
+                            <div class="w-full flex flex-col items-start justify-start mb-7">
+                                <p class="text-[24px] font-medium mb-[6px]">
+                                    Business Credentials
+                                </p>
+                                <p>Edit your business details</p>
+                            </div>
+                            <!-- sub2 -->
+                            <div class="w-full flex flex-col items-start justify-start">
+                                <div class="w-full flex flex-col items-start justify-start text-[14px]">
+                                    <div class="w-full lg:flex sm:block xs:block md:flex items-start justify-start">
+                                        <input type="text" name="Name" placeholder="Business/Store name" class="sm:mb-5 xs:mb-5 lg:w-1/2 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required />
+                                        <input type="text" name="City" placeholder="City" class="sm:mb-5 xs:mb-5 lg:ml-6 md:ml-6 lg:w-1/2 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required />
+                                    </div>
+                                    
+                                    <div class="mt-[18px] w-full lg:flex sm:block xs:block md:flex items-start justify-start">
+                                        <input type="text" name="email" placeholder="Business E-mail" class="sm:mb-5 xs:mb-5 lg:w-1/2 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required />
+                                        <input type="text" name="address" placeholder="Address" class="sm:mb-5 xs:mb-5 lg:ml-6 md:ml-6 lg:w-1/2 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required />
+                                    </div>
+                                    <input type="text" name="phone_number" placeholder="Phone Number" class="w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] mt-5 bg-#E5E5E5" required />
+                                </div>
+
+                                <textarea type="text" name="Brief" placeholder="Write a brief description about your business" class="w-full h-[140px] rounded-lg border-[1px] px-3 py-[14px] mt-[18px] bg-#E5E5E5" required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- box2 -->
+                        <div class="w-full flex flex-col items-start justify-start mt-10">
+                            <div class="w-full flex flex-col items-start justify-start mb-5">
+                                <p class="text-[24px] font-medium mb-[6px]">Bank Details</p>
+                                <p>Edit your bank details</p>
+                            </div>
+                            <div class="w-full flex flex-wrap items-start justify-start">
+                                <div class="mt-[18px] w-full lg:flex sm:block xs:block md:flex items-start justify-start">
+                                    <input type="text" name="account_name" placeholder="Account name" class="sm:mb-5 xs:mb-5 lg:w-1/3 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required="">
+                                    <input type="text" name="account_number" placeholder="Account number" class="sm:mb-5 xs:mb-5 lg:ml-6 md:ml-6 lg:w-1/3 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required="">
+                                    <input type="text" name="bank_name" placeholder="Bank name" class="sm:mb-5 xs:mb-5 lg:ml-6 md:ml-6 lg:w-1/3 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- box3 -->
+                        <div class="w-full flex flex-col items-start justify-start mt-10">
+                            <div class="w-full h-[58px] flex flex-col items-start justify-start">
+                                <p class="text-[24px] font-medium">Social Links</p>
+                            </div>
+                            
+                            <div class="w-full flex flex-wrap items-start justify-start">
+                                <div class="mt-[18px] w-full lg:flex sm:block xs:block md:flex items-start justify-start">
+                                    <input type="text" name="fb" placeholder="Facebook" class="sm:mb-5 xs:mb-5 lg:w-1/3 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required="">
+                                    <input type="text" name="ig" placeholder="Instagram" class="sm:mb-5 xs:mb-5 lg:ml-6 md:ml-6 lg:w-1/3 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required="">
+                                    <input type="text" name="x" placeholder="X(twitter)" class="sm:mb-5 xs:mb-5 lg:ml-6 md:ml-6 lg:w-1/3 xs:w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5" required="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BOX 4   -->
+                        <div class="w-full flex flex-col items-start justify-start mt-16">
+                            <p class="h-7 text-[24px] font-medium">Payment Gateways</p>
+                            <div data-target="#paymentModal" class="btn-modal cursor-pointer mt-4 w-[223px] h-[58px] flex items-center justify-center border-[1px] border-txtgray rounded-lg">
+                                <img src="images/Paystack 1.png" alt="Paystack" />
+                                <a href="#" class="underline decoration-Orange text-Orange text-[14px] ml-[6px]">Learn More</a>
+                            </div>
+                        </div>
+
+                        <!-- Box 5 -->
+                        <button id="button1" class="px-8 py-4 mt-10 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center" type="button">
+                            Save Changes
+                        </button>
+                    </div>
+                    <div id="policies" class="tab-content hidden">
+                        <!-- 1st -->
+                        <div class="w-full h-10 flex items-center justify-between">
+                            <div class="lg:w-2/5 md:w-1/4 sm:w-2/3 xs:w-2/3 h-10 flex items-center justify-between">
+                                <p>Privacy Policy</p>
+                                <label class="switch">
+                                    <input type="checkbox" name="privacy_policy" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="relative">
+                                <i class="cursor-pointer other-edits ph ph-dots-three-circle-vertical text-4xl"></i>
+                                <div class="z-10 hidden w-[120px] left-[-50px] absolute action-box">
+                                    <div class="shadow-3xl cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-full border-gray-300">
+                                        <div class="mt-1 mr-2 w-full flex justify-end">
+                                            <i class="ph ph-x close-edits"></i>
+                                        </div>
+                                        <a href="privacy.html" class="flex items-center justify-center w-full pt-2 pb-2 hover:bg-footer">
+                                            <div>View</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd -->
+                        <div class="w-full h-10 flex items-center justify-between mt-10">
+                            <div class="lg:w-2/5 md:w-1/4 sm:w-2/3 xs:w-2/3 h-10 flex items-center justify-between">
+                                <p>Return Policy</p>
+                                <label class="switch">
+                                    <input type="checkbox" name="return_policy" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="relative">
+                                <i class="cursor-pointer other-edits ph ph-dots-three-circle-vertical text-4xl"></i>
+                                <div class="z-10 hidden w-[120px] left-[-50px] absolute action-box">
+                                    <div class="shadow-3xl cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-full border-gray-300">
+                                        <div class="mt-1 mr-2 w-full flex justify-end">
+                                            <i class="ph ph-x close-edits"></i>
+                                        </div>
+                                        <a href="return.html" class="flex items-center justify-center w-full pt-2 pb-2 hover:bg-footer">
+                                            <div>View</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3rd -->
+                        <div class="w-full h-10 flex items-center justify-between mt-10">
+                            <div class="lg:w-2/5 md:w-1/4 sm:w-2/3 xs:w-2/3 h-10 flex items-center justify-between">
+                                <p>Shipping Policy</p>
+                                <label class="switch">
+                                    <input type="checkbox" name="shipping_policy" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="relative">
+                                <i class="cursor-pointer other-edits ph ph-dots-three-circle-vertical text-4xl"></i>
+                                <div class="z-10 hidden w-[120px] left-[-50px] absolute action-box">
+                                    <div class="shadow-3xl cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-full border-gray-300">
+                                        <div class="mt-1 mr-2 w-full flex justify-end">
+                                            <i class="ph ph-x close-edits"></i>
+                                        </div>
+                                        <a href="shipping.html" class="flex items-center justify-center w-full pt-2 pb-2 hover:bg-footer">
+                                            <div>View</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4th -->
+                        <div class="w-full h-10 flex items-center justify-between mt-10">
+                            <div class="lg:w-2/5 md:w-1/4 sm:w-2/3 xs:w-2/3 h-10 flex items-center justify-between">
+                                <p>Terms and Conditions</p>
+                                <label class="switch">
+                                    <input type="checkbox" name="terms_conditions" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="relative">
+                                <i class="cursor-pointer other-edits ph ph-dots-three-circle-vertical text-4xl"></i>
+                                <div class="z-10 hidden w-[120px] left-[-50px] absolute action-box">
+                                    <div class="shadow-3xl cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-full border-gray-300">
+                                        <div class="mt-1 mr-2 w-full flex justify-end">
+                                            <i class="ph ph-x close-edits"></i>
+                                        </div>
+                                        <a href="terms.html" class="flex items-center justify-center w-full pt-2 pb-2 hover:bg-footer">
+                                            <div>View</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="security" class="tab-content hidden">
+                        <h2 class="text-xl font-semibold mb-4">Security</h2>
+                        <!-- middle -->
+                        <div class="w-full flex flex-col items-start justify-start mt-5">
+                            <div class="w-full flex flex-col items-start justify-start">
+                                <p class=" w-full text-[24px] pb-3 font-medium">Change Password</p>
+                                <p>Your password must be at least 6 character long and should include
+                                    a combination of numbers, letters and special characters. e.g !@#</p>
+                            </div>
+                            <div class="lg:w-2/3 md:w-2/3 sm:w-full xs:w-full flex flex-col items-start justify-start my-4">
+                                <form action="#" class="w-full" method="post">
+                                    <div class="w-full flex flex-col items-start justify-start">
+                                        <div class="w-full flex flex-col items-start justify-start my-3">
+                                            <input class="w-full border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-txtgray" type="text" name="current_password" placeholder="Current Password" required>
+                                            <input class="w-full border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-txtgray my-4" type="text" name="new_password" placeholder="New Password" required>
+                                            <input class="w-full border-gray-200 border-[1px] px-3 py-[14px] rounded-lg text-txtgray" type="text" name="confirm_password" placeholder="Confirm New Password" required>
+                                        </div>
+                                        <a href="#" class="underline decoration-txtgray text-base flex items-start justify-start mt-5">Forgot Password?</a>
+                                    </div>
+                                    <button class=" mt-2 px-4 py-4 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center" type="button">
+                                        Save Changes
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="delivery" class="tab-content hidden">
+                        <div class="w-full mb-5 lg:flex md:flex sm:block xs:block items-center justify-between mt-5">
+                            <p class="font-bold">Delivery within Nigeria</p>
+                            <button data-target="#deliveryModal" class="xs:mt-4 sm:mt-4 btn-modal cursor-pointer px-4 py-4 border-[1px] flex items-center rounded-lg border-GreenL">
+                                <p class="bg-gradient-to-b from-GreenT to-GreenL bg-clip-text font-bold text-transparent text-base font-normal">Add delivery state</p>
+                            </button>
+                        </div>
+                        <div class="w-full px-5 py-5 flex flex-col items-center mt-10 rounded-lg justify-center bg-white px-10 ">
+                            <p>No delivery state added</p>
+                        </div>
+                        
+                        <div class="mt-10 w-full flex items-center justify-between text-txtgray text-base font-normal bg-white px-5 py-5 rounded-lg">
+                            <p>LAGOS STATE</p>
+                            <div class="flex items-center justify-center">
+                                <p class="mr-1 font-bold">Delivery charge:</p>
+                                <p>NGN3,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="w-full mt-[100px] min-h-[103px] flex items-center pl-10 justify-start bg-footer">
+                    <img class="w-[50px] h-[50px] mr-8" src="images/Mx 1.png" alt="Mx" />
+                    <div class="w-[266px] h-[30px] flex items-center justify-center">
+                        <img class="w-6 h-6 mr-2" src="images/Copyright.png" alt="Copyright" />
+                        <p class="font-medium text-base text-txtgray">
+                            2024, Powered by Marketxtra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Payment Modal Body -->
+    <div id="paymentModal" class="custom-modal fixed z-[100] inset-0 bg-black  bg-opacity-50 x-50 w-screen h-screen hidden">
+        <div class="mb-10 overflow-auto w-2/3 mx-auto min-h-[367px] text-base text-txtgray font-normal p-10 rounded-lg flex flex-col items-center justify-center bg-white shadow-lg mt-[125px]">
+            <!-- first -->
+            <div class="w-full h-[48px] flex items-center justify-between mb-6">
+                <div class="w-full h-[12px] flex flex-col items-start justify-between">
+                    <p class="h-[19px] font-bold mb-4">Payment Methods</p>
+                    <p class="h-[21px] ">Bank transfer, Debit or Credit card or USSD</p>
+                </div>
+                <i class="ph ph-x text-3xl cursor-pointer close-modal"></i>
+            </div>
+
+            <!-- second -->
+            <div class="w-full flex flex-col items-start justify-start">
+                <img src="images/Paystack 1.png" alt="Paystack">
+                <div class="w-full h-full flex flex-col items-start justify-start mt-1">
+                    <p><b>Local payment charge (Basic Plan)</b> - 4% + (NGN100 for transactions above NGN2000)</p>
+                    <p class="mt-4 mb-6"> <b>International payment charge (Basic Plan)</b> - 6.4% + (NGN100 for all transactions)</p>
+                    <p><b>Settlement Schedule</b> - Next working day for local payments and two working days for international payments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delivery Modal Body -->
+    <div id="deliveryModal" class="hidden z-[102] custom-modal fixed inset-0 bg-black  bg-opacity-50 x-50 w-screen h-screen">
+        <form action="#" method="post">
+            <div class="mb-15 overflow-auto w-2/3 mx-auto min-h-[367px] text-base text-txtgray font-normal p-10 rounded-lg flex flex-col items-center justify-center bg-white shadow-lg mt-[125px]">
+                <!-- first -->
+                <div class="w-full h-6 flex items-start justify-between mb-6">
+                    <p class="w-2/3 font-bold">Add State available for delivery</p>
+                    <i class="ph ph-x close-modal cursor-pointer"></i>
+                </div>
+    
+                <!-- 1st box -->
+                <select type="text" class="w-full h-[54px] rounded-lg px-3 py-[14px] mt-5 border-footer border-[1px] bg-white text-[14px]" required name="state">
+                    <option value="">Choose a state</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="abuja">Abuja</option>
+                    <option value="enugu">Enugu</option>
+                    <option value="abakaliki">Abakaliki</option>
+                    <option value="akwa-ibom">Akwa Ibom</option>
+                </select>
+    
+                <!-- 2nd box -->
+                <input type="text" class="w-full h-[54px] rounded-lg px-3 py-[14px] mt-5 border-footer border-[1px] bg-white text-[14px]" name="price" placeholder="NGN 0">
+    
+                <!-- 3rd sec -->
+                <p class="text-[14px] mt-4 mb-4">Enter your delivery charge</p>
+    
+                <!-- 4th box -->
+                <button class="mt-5 px-4 py-4 lg:w-1/3 md:w-1/2 sm:w-2/3 xs:w-full bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center text-[20px] font-medium" type="button">
+                    Save
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/jquery3.7.js"></script>
+    <script src="js/marketxtra.js"></script>
+</body>
+
+</html>

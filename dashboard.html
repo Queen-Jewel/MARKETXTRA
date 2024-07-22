@@ -22,7 +22,7 @@
             height: auto !important;
         }
     </style>
-    <title>MarketXtra | Dashboard</title>
+    <title>Dashboard | MarketXtra</title>
 </head>
 <body class="font-Work">
     <div class="w-full relative min-h-screen bg-Drwhite">
@@ -30,7 +30,7 @@
         <div class="relative flex items-start justify-start">
             <!-- Side NavBar -->
             <div id="side-navbar" class="shadow-3xl z-[100] sm:hidden xs:hidden fixed lg:block lg:w-1/5 xs:w-3/4 md:w-1/4 sm:w-2/5 h-full flex flex-col items-center justify-start bg-white">
-                <i id="close-sidebar" class="ph ph-x-circle xs:block lg:hidden sm:block md:block px-5 py-5 text-3xl"></i>
+                <i id="close-sidebar" class="cursor-pointer ph ph-x-circle xs:block lg:hidden sm:block md:block px-5 py-5 text-3xl"></i>
                 <!-- image -->
                 <div class="h-[99px] mb-5">
                     <img class="w-full min-h-[56.63px]" src="images/Mx 2@2x.png" alt="mx2">
@@ -48,7 +48,7 @@
                         <p>Dashboard</p>
                     </a>
                     <!-- 3rd -->
-                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
+                    <a href="addp1.html" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold cursor-pointer">
                         <i class="mr-[6px] text-2xl ph ph-package"></i>
                         <p>Products</p>
                     </a>
@@ -64,7 +64,7 @@
                         <p>Customers</p>
                     </a>
                     <!-- 6th -->
-                    <a href="#" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
+                    <a href="settings.html" class="transition-all flex items-center justify-center h-6 mb-7 hover:text-Orange hover:font-bold">
                         <i class="mr-[6px] text-2xl ph ph-gear"></i>
                         <p>Settings</p>
                     </a>
@@ -73,12 +73,11 @@
 
             <!-- Body -->
             <div class="xs:w-full lg:w-4/5 lg:ml-[20%] md:w-full sm:w-full flex flex-col items-start justify-start relative lg:px-5 sm:px-3 xs:px-2"> 
-
                 <!-- nav body -->
                 <div class="w-full h-[97px] flex items-center justify-between mb-5">
                     <!-- search bar -->
                     <div class="lg:w-3/5 md:w-3/5 sm:w-2/3 xs:w-2/3 flex items-start">
-                        <div id="sidebar-ctrl" class="mt-1 :block md:block lg:hidden  h-12 flex items-center">
+                        <div id="sidebar-ctrl" class="mt-1 :block md:block lg:hidden  h-12 flex items-center cursor-pointer">
                             <i class="ph ph-list text-3xl pr-3"></i>
                         </div>
                         <div class="lg:w-3/4 sm:w-1/2 min-h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between relative">
@@ -92,17 +91,17 @@
                                 <p id="cate" class="pr-[2px]">Daily</p>
                                 <i id="icon-ctrl"  class="ph ph-caret-down text-[13px] w-4 h-[10px] lg:ml-3 xs:ml-1"></i>
                             </div>
-                            <!-- categpryy options -->
+                            <!-- category options -->
                             <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-start justify-center w-[160px] h-[140pxpx] border-gray-300  top-[85%] left-[16.5%] absolute ">
-                                <a href="dash2.html" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer hover:border-l-5 hover:border-l-black">
+                                <div data-chart="daily" class="bars-generate click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer hover:border-l-5 hover:border-l-black">
                                     <div> Daily</div>
-                                </a>
-                                <a href="dash3.html" id="cat2" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
+                                </div>
+                                <div data-chart="weekly" class="bars-generate click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
                                     <div>Weekly</div>
-                                </a>
-                                <a href="dash4.html" id="cat3" class="click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
+                                </div>
+                                <div data-chart="monthly" class="bars-generate click flex items-center justify-start pl-3 w-[160px] h-[45px] hover:bg-footer">
                                     <div>Monthly</div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,7 +117,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <!-- showcase 1 -->
                 <div class="w-full min-h-[154px] lg:flex md:flex sm:block items-center justify-between">
@@ -205,7 +203,7 @@
                             <p class="font-semibold text-2xl">Sales</p>
                             <!-- Weekly -->
                             <div class="ml-20 w-[246px]  flex items-center justify-center xs:text-[17px] sm:text-[22px] md:text-[22px] lg:text-[24px] font-semibold text-txtgray">
-                                <p>Total sales - 10,0000</p>
+                                <p>Total sales - 10,000</p>
                             </div>
                         </div>
                         <!-- chart -->
@@ -213,7 +211,6 @@
                             <canvas id="lineChart"></canvas>
                         </div>
                     </div>
-
 
                     <!-- doughnut Chart -->
                     <div class="sm:w-full lg:w-2/4 xs:w-full md:w-full min-h-[200px] rounded-lg px-3 py-3 bg-white relative">
@@ -254,7 +251,7 @@
             </div>
         </div>
     </div>
-
-    <script src="js/dash.js"></script>
+    <script src="js/jquery3.7.js"></script>
+    <script src="js/marketxtra.js"></script>
 </body>
 </html>
