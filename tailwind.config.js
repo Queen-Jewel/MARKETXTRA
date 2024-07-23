@@ -5,7 +5,7 @@ module.exports = {
     screens: {
       sm: "430px",
       md: "768px",
-      lg: "1440px",
+      lg: "1024px",
     },
     
     extend: {
@@ -24,6 +24,10 @@ module.exports = {
         txtgray: '#424242',
         stepgray:'#D9D9D9',
         footer: '#ECF1F4',
+        indigo: '#333333',
+        grayTrue1: "#F5F5F5",
+        grayTrue25: "#FCFCFC",
+        newT:"#475467",
         gradientCol: {
         GreenT: '#008000',
         GreenL: '#00B800',
@@ -34,7 +38,8 @@ module.exports = {
       fontFamily: {
         Work: ['Work Sans'],
         Man: ['Manrope'],
-        Rob: ['Roboto']
+        Rob: ['Roboto'],
+        Inter: ['Inter']
       }
     },
   },
