@@ -12,7 +12,7 @@ module.exports = {
         },
         extend: {
             backgroundImage: {
-                main: "url('images/smiling-ethnic-woman-with-tablet 1.png')",
+                main: "url('images/smiling-ethnic-woman-with-tablet 1.png')"
             },
             colors: {
                 GreenT: "#008000",
@@ -37,9 +37,13 @@ module.exports = {
             },
 
             fontFamily: {
-                Work: ["Karla"],
+                Work: ["Work Sans"],
                 Man: ["Manrope"],
                 Rob: ["Roboto"],
+            },
+
+            boxShadow: {
+                '3xl': '0 8px 16px 0px rgba(0, 0, 0, 0.2)',
             }
         },
     },

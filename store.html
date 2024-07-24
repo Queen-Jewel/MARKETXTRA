@@ -2,427 +2,428 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <style>
         .shadow-bottom {
             box-shadow: 0 0 10px 0 16px rgba(111, 110, 112, 0.5);
         }
     </style>
-    <title>My Store</title>
+    <title>My Store | MarketXtra</title>
 </head>
-<body>
-    <div class="h-[3060px] sm:w-[430px] sm:h-[1850px] md:w-[1348px] bg-Drwhite ">
-        
-        <div class="font-Work flex items-center justify-center">
+<body class="font-Work bg-Drwhite">
+    <div class="w-full">
+        <div class="flex items-center justify-center">
+            <!-- main -->
+            <main class="w-full">
+                <!-- main nav -->
+                <header class="z-[10] fixed flex items-center justify-center w-full sm:min-h-[38px] bg-GreenB text-white sm:text-sm md:text-base font-normal">Hello there, you're welcome to my online store</header>
 
-                <!-- main -->
-                <main class="sm:w-[430px] md:w-[1400px]">
-
-                    <!-- main nav -->
-                    <header class="fixed flex items-center justify-center sm:w-[430px] md:w-[100%] sm:h-[38px] md:h-[59px] bg-GreenB text-white sm:text-sm md:text-base font-normal">Hello there, you’re welcome to my online store</header>
-    
-                    <div class="fixed sm:mt-[38px] md:mt-[59px] sm:w-[430px] sm:h-[38px] md:w-[1348px] md:h-[91px] flex items-center justify-between font-normal text-base text-txtgray sm:px-5 md:px-12 bg-white shadow-bottom">
-                        
+                <div class="fixed w-full mt-[36px] z-[10] flex items-center p-5 justify-between font-normal text-base text-txtgray bg-white shadow-bottom">
+                    
+                    <div class="flex justify-start">
                         <!--Menu-->
-                         <img onclick="toggleDropdown2()" src="images/Menu.png" id="ham" class="md:hidden w-5 h-5 flex flex-col items-center justify-center mr-5">
+                        <i onclick="toggleDropdown2()" class="mt-3 mr-4 ph ph-list text-3xl lg:hidden md:hidden"></i>
+                        <!-- Logo -->
+                        <div class="flex items-center justify-center">
+                            <span class="w-[50px] h-[50px] border-transparent bg-stepgray rounded-[50%]"></span>
+                            <p class="sm:text-sm sm:font-normal md:text-base ml-4">Your Logo</p>
+                        </div>
+                    </div>
+
+                    <!-- Other pages -->
+                    <div class="w-[288px] h-[22px] flex items-center justify-between sm:ml-3 md:ml-[70px] ">
+                        <a href="#" class="sm:hidden md:block bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent font-bold">Home</a>
+                        <div  class="flex items-center justify-center p[10px] w-[118px] h-[22px] ">
+                            <p id="cate" class="sm:w-[75px] sm:h-5 md:w-[69px] md:h-[22px] sm:text-sm md:text-base">Category </p>
+                            <img id="image" onclick="toggleDropdown()" class="sm:w-3 sm:h-[6px] md:w-4 md:h-2 ml-0 md:ml-3" src="images/CD.png" alt="">
+                        </div>
+                        <a href="#" class="sm:hidden md:block hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">About Us</a>
+                    </div>
+
+                    <!-- Catelog -->
+                    <div class="flex items-center justify-center">
+                        <i class="ph ph-shopping-cart-simple text-3xl mr-5"></i>
+                    </div>
+                </div>
+
+                <!-- main showcase -->
+                <!-- first box -->
+                <div class="sm:w-[430px] md:w-[1348px] sm:h-[239px] md:h-[481px] relative flex flex-col overflow-hidden sm:mt-[76px] md:mt-[151px]">
+                    <div class="absolute inset-0 bg-cover filter blur-sm bg-[url('./images/shirtf.png')]"></div>
+
+                    <!-- Dark overlay -->
+                    <div class="absolute inset-0 bg-black opacity-70"></div>
+
+                    <!-- content -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <p class="mb-5 md:h-[150px] sm:h-[56px] md:w-[590px] sm:w-[218px] flex items-center justify-center md:leading-[70px] text-center sm:text-2xl md:text-[64px] text-white font-bold">
+                            We Sell The Best Quality of T-shirts
+                        </p>
+                    </div>
+                </div>
+
+                <!-- second box -->
+                <div class="sm:w-[394px] md:w-[1200px] sm:h-[333px] md:h-[586px] flex flex-col items-start justify-start text-txtgray sm:ml-6 sm:mt-5  md:ml-20 md:mt-16">
+                    <p class="font-bold sm:text-base md:text-[24px]">Featured Products</p>
+
+                    <!-- shirts -->
+                    <div class="sm:w-[387px] sm:h-[298px] md:w-[1188px] md:h-[526px] flex  md:items-center justify-between mt-4">
+
+                        <!-- 1st -->
+                        <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/blackp.png" alt="shirt1">
+                            <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
+                                <button
+                                    class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 2nd -->
+                        <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/blackm.png" alt="shirt1">
+                            <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
+                                <button
+                                    class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 3rd -->
+                        <div class="sm:hidden md:block w-[380px] h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="w-[380px] h-[321px] flex items-start justify-start rounded-lg mb-5" src="images/yellow.png" alt="shirt1">
+                            <div class="w-[370px] h-[19px] ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="w-[129px] h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="w-[69px] h-[23px] font-bold text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[370px] h-[42px] px-3 my-2 flex items-center justify-between mt-[95px]">
+                                <button
+                                    class="w-[370px] h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third box -->
+                <div class=" sm:w-[387px] sm:h-[993px] md:w-[1200px] md:h-[1766px] flex flex-col items-start justify-center text-txtgray sm:ml-6 sm:mt-7 md:ml-20 md:mt-12">
+                    <p class="font-bold sm:text-base text-[24px]">Product Catalogue</p>
+
+                    <!-- shirts -->
+                    <div class="sm:w-[387px] sm:h-[298px] md:w-[1188px] md:h-[526px] flex  md:items-center justify-between sm:mt-3 md:mt-4">
+
+                        <!-- 1st -->
+                        <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/rainbow.png" alt="shirt1">
+                            <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
+                                <button
+                                    class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 2nd -->
+                        <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/red.png" alt="shirt1">
+                            <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
+                                <button
+                                    class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 3rd -->
+                        <div class="sm:hidden md:block w-[380px] h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="w-[380px] h-[321px] flex items-start justify-start rounded-lg mb-5" src="images/yellow.png" alt="shirt1">
+                            <div class="w-[370px] h-[19px] ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="w-[129px] h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="w-[69px] h-[23px] font-bold text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[370px] h-[42px] px-3 my-2 flex items-center justify-between mt-[95px]">
+                                <button
+                                    class="w-[370px] h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- shirts 2 -->
+                    <div class="sm:w-[387px] sm:h-[298px] md:w-[1188px] md:h-[526px] flex  md:items-center justify-between sm:my-5 md:my-8">
+
+                        <!-- 1st -->
+                        <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/blackm.png" alt="shirt1">
+                            <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
+                                <button
+                                    class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 2nd -->
+                        <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/Blue-t-shirt.png" alt="shirt1">
+                            <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
+                                <button
+                                    class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 3rd -->
+                        <div class="sm:hidden md:block w-[380px] h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="w-[380px] h-[321px] flex items-start justify-start rounded-lg mb-5" src="images/yellow.png" alt="shirt1">
+                            <div class="w-[370px] h-[19px] ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="w-[129px] h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="w-[69px] h-[23px] font-bold text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[370px] h-[42px] px-3 my-2 flex items-center justify-between mt-[95px]">
+                                <button
+                                    class="w-[370px] h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <!-- shirts 3 -->
+                    <div class="sm:w-[387px] sm:h-[298px] md:w-[1188px] md:h-[526px] flex  md:items-center justify-between sm:mt-2 md:mt-4">
+
+                        <!-- 1st -->
+                        <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/pink.png" alt="shirt1">
+                            <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
+                                <button
+                                    class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 2nd -->
+                        <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/yellow.png" alt="shirt1">
+                            <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
+                                <button
+                                    class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 3rd -->
+                        <div class="sm:hidden md:block w-[380px] h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
+                            <img class="w-[380px] h-[321px] flex items-start justify-start rounded-lg mb-5" src="images/blackm.png" alt="shirt1">
+                            <div class="w-[370px] h-[19px] ml-4 flex flex-col items-start justify-start font-normal text-base">
+                                <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
+
+                                <div class="w-[129px] h-6 flex items-start justify-start mt-6">
+                                    <div class="flex items-center justify-center">
+                                        <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
+                                        <p class="w-[69px] h-[23px] font-bold text-[25px] mr-2">3500</p>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
+                                        <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[370px] h-[42px] px-3 my-2 flex items-center justify-between mt-[95px]">
+                                <button
+                                    class="w-[370px] h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
+                                    type="button">Add to cart
+                                </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="sm:w-[430px] sm:h-[83px] md:h-[128px] md:w-[1348px] flex items-center justify-between  md:px-[70px] px-7  bg-txtgray text-white mt-20">
+                    <!-- Logo -->
+                    <div class="sm:w-[67px] sm:h-[45px] md:w-[128px] md:h-[43px] flex sm:flex-wrap sm:items-start md:items-center sm:justify-start md:justify-between text-base text-white font-normal">
+                        <span class="md:w-[43px] md:h-[43px] sm:w-4 sm:h-4 border-transparent bg-stepgray rounded-[50%] mr-[2px]"></span>
+                        <p class="sm:w-[67px] sm:h-5 sm:text-sm md:text-base md:w-[77px] md:h-[22px] sm:mt-[5px] md:mt-0">Your Logo</p>
+                    </div>
+
+                    <div class="flex items-center md:justify-between sm:justify-center sm:flex-wrap md:flex sm:w-20 sm:h-[44px] md:w-[221px] md:h-[34px]">
+                        <p class="sm:w-[79px] sm:text-sm md:text-base md:w-[87px] h-22px ">Contact Us</p>
+                        <div class="sm:h-4 md:w-[118px] md:h-[34px] flex items-center justify-between sm:mt-2 md:mt-0">
+                            <img class="sm:w-4 sm:h-4 md:w-[34px] md:h-[34px]"  src="images/InstagramLogo.png" alt="ig">
+                            <img class="sm:w-4 sm:h-4 md:w-[34px] md:h-[34px]" src="images/FacebookLogo.png" alt="fb">
+                            <img class="sm:w-4 sm:h-4 md:w-[34px] md:h-[34px]" src="images/TwitterLogo.png" alt="X">
+                        </div>
                         
-                        <!-- Logo -->
-                        <div class="sm:w-[91px] sm:h-5 md:w-[128px] md:h-[43px] flex items-center justify-center">
-                            <span class="sm:w-4 sm:h-4 md:w-[43px] md:h-[43px] border-transparent bg-stepgray rounded-[50%] md:mr-[2px]"></span>
-                            <p class="sm:text-sm sm:font-normal md:text-base sm:w-[67px] sm:h-5 md:w-[77px] md:h-[22px] sm:ml-2 md:ml-0">Your Logo</p>
-                        </div>
-
-                        <!-- Other pages -->
-                        <div class="w-[288px] h-[22px] flex items-center justify-between sm:ml-3 md:ml-[70px] ">
-                            <a href="#" class="sm:hidden md:block bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent font-bold">Home</a>
-                            <div  class="flex items-center justify-center p[10px] w-[118px] h-[22px] ">
-                                <p id="cate" class="sm:w-[75px] sm:h-5 md:w-[69px] md:h-[22px] sm:text-sm md:text-base">Category </p>
-                                <img id="image" onclick="toggleDropdown()" class="sm:w-3 sm:h-[6px] md:w-4 md:h-2 ml-0 md:ml-3" src="images/CD.png" alt="">
-                            </div>
-                            <a href="#" class="sm:hidden md:block hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">About Us</a>
-                        </div>
-
-                        <!-- Catelog -->
-                        <div class="h-[30px] flex items-center justify-center md:ml-[700px]">
-                            <img class="md:w-[30px] md:h-[30px] sm:w-[18px] sm:h-[17px]" src="images/ShoppingCartSimple.png" alt="ShoppingCartSimple">
-                        </div>
                     </div>
-
-                    <!-- main showcase -->
-                    <!-- first box -->
-                    <div class="sm:w-[430px] md:w-[1348px] sm:h-[239px] md:h-[481px] relative flex flex-col overflow-hidden sm:mt-[76px] md:mt-[151px]">
-                        <div class="absolute inset-0 bg-cover filter blur-sm bg-[url('/images/shirtf.png')]"></div>
-
-                        <!-- Dark overlay -->
-                        <div class="absolute inset-0 bg-black opacity-70"></div>
-
-                        <!-- content -->
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <p class="mb-5 md:h-[150px] sm:h-[56px] md:w-[590px] sm:w-[218px] flex items-center justify-center md:leading-[70px] text-center sm:text-2xl md:text-[64px] text-white font-bold">We Sell The Best
-                                Quality of T-shirts</p>
-                        </div>
+                    <div class="sm:w-[136px] sm:h-[27px] md:w-[258px] md:h-[48px] border-[2px] rounded-lg borer-white flex items-center justify-center text-center sm:text-sm md:text-base" >
+                            <p class="sm:hidden md:block">Create your own store now</p>
+                            <p class="sm:block md:hidden">Create store now</p>
                     </div>
+                </div>
 
-                    <!-- second box -->
-                    <div class="sm:w-[394px] md:w-[1200px] sm:h-[333px] md:h-[586px] flex flex-col items-start justify-start text-txtgray sm:ml-6 sm:mt-5  md:ml-20 md:mt-16">
-                        <p class="font-bold sm:text-base md:text-[24px]">Featured Products</p>
+                <!-- category options -->
+                <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-[103px] h-[95px] border-gray-300 sm:top-[14%] sm:left-[25%] md:top-[21%] md:left-[24%] absolute  py-2">
+                    <p id="cat1" class="click   hover:text-footer px-[7px]">Category 1</p>
+                    <p id="cat2" class="click  hover:text-footer px-[7px] py-2">Category 2</p>
+                    <p id="cat3" class="click hover:text-footer px-[7px]">Category 3</p>
+                </div>
 
-                        <!-- shirts -->
-                        <div class="sm:w-[387px] sm:h-[298px] md:w-[1188px] md:h-[526px] flex  md:items-center justify-between mt-4">
-
-                            <!-- 1st -->
-                            <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/blackp.png" alt="shirt1">
-                                <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
-                                    <button
-                                        class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- 2nd -->
-                            <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/blackm.png" alt="shirt1">
-                                <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
-                                    <button
-                                        class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- 3rd -->
-                            <div class="sm:hidden md:block w-[380px] h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="w-[380px] h-[321px] flex items-start justify-start rounded-lg mb-5" src="images/yellow.png" alt="shirt1">
-                                <div class="w-[370px] h-[19px] ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="w-[129px] h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="w-[69px] h-[23px] font-bold text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-[370px] h-[42px] px-3 my-2 flex items-center justify-between mt-[95px]">
-                                    <button
-                                        class="w-[370px] h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- third box -->
-                    <div class=" sm:w-[387px] sm:h-[993px] md:w-[1200px] md:h-[1766px] flex flex-col items-start justify-center text-txtgray sm:ml-6 sm:mt-7 md:ml-20 md:mt-12">
-                        <p class="font-bold sm:text-base text-[24px]">Product Catalogue</p>
-
-                        <!-- shirts -->
-                        <div class="sm:w-[387px] sm:h-[298px] md:w-[1188px] md:h-[526px] flex  md:items-center justify-between sm:mt-3 md:mt-4">
-
-                            <!-- 1st -->
-                            <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/rainbow.png" alt="shirt1">
-                                <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
-                                    <button
-                                        class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- 2nd -->
-                            <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/red.png" alt="shirt1">
-                                <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
-                                    <button
-                                        class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- 3rd -->
-                            <div class="sm:hidden md:block w-[380px] h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="w-[380px] h-[321px] flex items-start justify-start rounded-lg mb-5" src="images/yellow.png" alt="shirt1">
-                                <div class="w-[370px] h-[19px] ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="w-[129px] h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="w-[69px] h-[23px] font-bold text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-[370px] h-[42px] px-3 my-2 flex items-center justify-between mt-[95px]">
-                                    <button
-                                        class="w-[370px] h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                    </div>
-                            </div>
-                        </div>
-
-                        <!-- shirts 2 -->
-                        <div class="sm:w-[387px] sm:h-[298px] md:w-[1188px] md:h-[526px] flex  md:items-center justify-between sm:my-5 md:my-8">
-
-                            <!-- 1st -->
-                            <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/blackm.png" alt="shirt1">
-                                <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
-                                    <button
-                                        class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- 2nd -->
-                            <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/Blue-t-shirt.png" alt="shirt1">
-                                <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
-                                    <button
-                                        class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- 3rd -->
-                            <div class="sm:hidden md:block w-[380px] h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="w-[380px] h-[321px] flex items-start justify-start rounded-lg mb-5" src="images/yellow.png" alt="shirt1">
-                                <div class="w-[370px] h-[19px] ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="w-[129px] h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="w-[69px] h-[23px] font-bold text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-[370px] h-[42px] px-3 my-2 flex items-center justify-between mt-[95px]">
-                                    <button
-                                        class="w-[370px] h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                    </div>
-                            </div>
-                        </div>
-
-
-                        <!-- shirts 3 -->
-                        <div class="sm:w-[387px] sm:h-[298px] md:w-[1188px] md:h-[526px] flex  md:items-center justify-between sm:mt-2 md:mt-4">
-
-                            <!-- 1st -->
-                            <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/pink.png" alt="shirt1">
-                                <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
-                                    <button
-                                        class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- 2nd -->
-                            <div class="sm:w-[185px] sm:h-[298px] md:w-[380px] md:h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="sm:w-[185px] sm:h-[139px]  md:w-[380px] md:h-[321px] flex items-start justify-start sm:rounded-t-md md:rounded-lg sm:mb-2 md:mb-5" src="images/yellow.png" alt="shirt1">
-                                <div class="sm:w-[162.75px] sm:h-[75.41px] md:w-[370px] md:h-[19px] sm:ml-[10px] md:ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="md:w-[293px] sm:w-[162.69px] sm:h-10 md:h-[22px] sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="sm:w-[100px] sm:h-[19px] md:w-[129px] md:h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[15px] sm:h-[15px] md:w-[17px] md:h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-10 sm:h-[19px] md:w-[69px] md:h-[23px] font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="sm:w-[14px] sm:h-[14px] md:w-[13px] md:h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="sm:w-[29px] sm:h-[18px] md:w-[52px] md:h-[19px] sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" h-[42px] sm:pl-2 md:px-3 my-2 flex items-center justify-between  sm:mt-6 md:mt-[95px]">
-                                    <button
-                                        class="sm:w-[167px] sm:h-8 md:w-[370px] md:h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- 3rd -->
-                            <div class="sm:hidden md:block w-[380px] h-[526px] greenB curser-pointer flex flex-col items-start justify-start bg-footer rounded-lg hover:shadow-xl ">
-                                <img class="w-[380px] h-[321px] flex items-start justify-start rounded-lg mb-5" src="images/blackm.png" alt="shirt1">
-                                <div class="w-[370px] h-[19px] ml-4 flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="w-[293px] h-[22px]">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="w-[129px] h-6 flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <img class="w-[17px] h-[17px]" src="images/naira.png" alt="naira">
-                                            <p class="w-[69px] h-[23px] font-bold text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <img class="w-[13px] h-[13px] mt-1" src="images/naira.png" alt="naira">
-                                            <p class="w-[52px] h-[19px] font-medium text-base line-through">3500</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-[370px] h-[42px] px-3 my-2 flex items-center justify-between mt-[95px]">
-                                    <button
-                                        class="w-[370px] h-[42px]  flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white text-[16px] font-bold rounded-lg"
-                                        type="button">Add to cart
-                                    </button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="sm:w-[430px] sm:h-[83px] md:h-[128px] md:w-[1348px] flex items-center justify-between  md:px-[70px] px-7  bg-txtgray text-white mt-20">
-                        <!-- Logo -->
-                        <div class="sm:w-[67px] sm:h-[45px] md:w-[128px] md:h-[43px] flex sm:flex-wrap sm:items-start md:items-center sm:justify-start md:justify-between text-base text-white font-normal">
-                            <span class="md:w-[43px] md:h-[43px] sm:w-4 sm:h-4 border-transparent bg-stepgray rounded-[50%] mr-[2px]"></span>
-                            <p class="sm:w-[67px] sm:h-5 sm:text-sm md:text-base md:w-[77px] md:h-[22px] sm:mt-[5px] md:mt-0">Your Logo</p>
-                        </div>
-
-                        <div class="flex items-center md:justify-between sm:justify-center sm:flex-wrap md:flex sm:w-20 sm:h-[44px] md:w-[221px] md:h-[34px]">
-                            <p class="sm:w-[79px] sm:text-sm md:text-base md:w-[87px] h-22px ">Contact Us</p>
-                            <div class="sm:h-4 md:w-[118px] md:h-[34px] flex items-center justify-between sm:mt-2 md:mt-0">
-                                <img class="sm:w-4 sm:h-4 md:w-[34px] md:h-[34px]"  src="images/InstagramLogo.png" alt="ig">
-                                <img class="sm:w-4 sm:h-4 md:w-[34px] md:h-[34px]" src="images/FacebookLogo.png" alt="fb">
-                                <img class="sm:w-4 sm:h-4 md:w-[34px] md:h-[34px]" src="images/TwitterLogo.png" alt="X">
-                            </div>
-                            
-                        </div>
-                        <div class="sm:w-[136px] sm:h-[27px] md:w-[258px] md:h-[48px] border-[2px] rounded-lg borer-white flex items-center justify-center text-center sm:text-sm md:text-base" >
-                                <p class="sm:hidden md:block">Create your own store now</p>
-                                <p class="sm:block md:hidden">Create store now</p>
-                        </div>
-                    </div>
-
-                    <!-- category options -->
-                    <div id="dropdown" class="hidden cursor-pointer bg-white text-base text-txtgray font-normal flex flex-col items-center justify-center w-[103px] h-[95px] border-gray-300 sm:top-[14%] sm:left-[25%] md:top-[21%] md:left-[24%] absolute  py-2">
-                        <p id="cat1" class="click   hover:text-footer px-[7px]">Category 1</p>
-                        <p id="cat2" class="click  hover:text-footer px-[7px] py-2">Category 2</p>
-                        <p id="cat3" class="click hover:text-footer px-[7px]">Category 3</p>
-                    </div>
-
-                    <!-- home and about -->
-                    <div id="dropdown2" class=" absolute w-[90px] h-[70px] text-sm bg-white flex flex-col items-start justify-center rounded-lg pl-[14px] left-[20px] top-[13%] hidden">
-                        <p class="bg-gradient-to-b from-GreenT to-GreenL bg-clip-text font-bold text-transparent">Home</p>
-                        <p class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold mt-[6px]">About Us</p>
-                    </div>
-                </main>
+                <!-- home and about -->
+                <div id="dropdown2" class=" absolute w-[90px] h-[70px] text-sm bg-white flex flex-col items-start justify-center rounded-lg pl-[14px] left-[20px] top-[13%] hidden">
+                    <p class="bg-gradient-to-b from-GreenT to-GreenL bg-clip-text font-bold text-transparent">Home</p>
+                    <p class="hover:bg-gradient-to-b from-GreenT to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold mt-[6px]">About Us</p>
+                </div>
+            </main>
         </div>
     </div>
 
 
-    <script src="JS/store.js"></script>
+    <script src="js/store.js"></script>
 </body>
 </html>
