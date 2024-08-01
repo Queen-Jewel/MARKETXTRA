@@ -182,58 +182,51 @@
                         </div>
                     </div>
                     <div id="profile" class="tab-content hidden">
-                        <h2 class="text-xl font-semibold mb-4">Profile</h2>
+                        <form action="#" method="post">
+                            <h2 class="text-xl font-semibold mb-4">Profile</h2>
 
-                        <div class="w-full min-h-[358px] lg:flex md:block xs:block sm:block items-center">
-                            <div id="imageContainer" style="background-image: url('images/placeholder-img.png')"
-                                class="rounded-[50%] lg:w-[250px] sm:w-[250px] xs:w-[250px] md:w-[250px] lg:h-[250px] md:h-[250px] xs:h-[250px] sm:h-[250px] sm:mb-10 xs:mb-10 md:mb-10 lg:mb-0 bg-center bg-cover bg-no-repeat flex items-center justify-center">
-                                <h6 class="font-bold text-TextGray cursor-pointer" id="hide-image-label">
-                                    Click here to add image
-                                </h6>
+                            <div class="w-full min-h-[358px] lg:flex md:block xs:block sm:block items-center">
+                                <div id="imageContainer" style="background-image: url('images/placeholder-img.png')"
+                                    class="rounded-[50%] lg:w-[250px] sm:w-[250px] xs:w-[250px] md:w-[250px] lg:h-[250px] md:h-[250px] xs:h-[250px] sm:h-[250px] sm:mb-10 xs:mb-10 md:mb-10 lg:mb-0 bg-center bg-cover bg-no-repeat flex items-center justify-center">
+                                    <h6 class="font-bold text-TextGray cursor-pointer" id="hide-image-label">
+                                        Click here to add image
+                                    </h6>
+                                </div>
+                                <input type="file" id="imageInput" accept="image/*" class="hidden" />
+                                <div class="w-[162px] h-[55px] ml-6 flex flex-col items-center justify-start">
+                                    <p class="text-[24px] font-medium">Profile Photo</p>
+                                    <a href="#" class="underline decoration-green-400 text-base flex flex-col items-center justify-center font-normal bg-gradient-to-b from-GreenT to-GreenL bg-clip-text font-bold text-transparent">Upload Profile Photo</a>
+                                </div>
                             </div>
-                            <input type="file" id="imageInput" accept="image/*" class="hidden" />
-                            <div class="w-[162px] h-[55px] ml-6 flex flex-col items-center justify-start">
-                                <p class="text-[24px] font-medium">Profile Photo</p>
-                                <a href="#"
-                                    class="underline decoration-green-400 text-base flex flex-col items-center justify-center font-normal bg-gradient-to-b from-GreenT to-GreenL bg-clip-text font-bold text-transparent">Upload
-                                    Profile Photo</a>
-                            </div>
-                        </div>
 
-                        <!-- 2nd section -->
-                        <div class="w-full h-20 flex flex-col items-start justify-start mt-5">
-                            <p class="text-[24px] font-medium">Personal Information</p>
-                            <p class="text-base font-normal h-[44px]">
-                                Edit your personal information here. Click on “Save Changes”
-                                to save your edited details.
-                            </p>
-                        </div>
+                            <!-- 2nd section -->
+                            <div class="w-full h-20 flex flex-col items-start justify-start mt-5">
+                                <p class="text-[24px] font-medium">Personal Information</p>
+                                <p class="text-base font-normal h-[44px]">
+                                    Edit your personal information here. Click on “Save Changes”
+                                    to save your edited details.
+                                </p>
+                            </div>
 
-                        <!-- 3rd section -->
-                        <div class="w-full min-h-40 mt-[20px]">
-                            <div class="min-h-[54px] w-full lg:flex md:flex sm:block xs:block">
-                                <input type="text" name="fname" placeholder="Firstname"
-                                    class="sm:w-full xs:w-full lg:w-1/2 md:w-1/2 h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
-                                    required />
-                                <input type="text" name="lname" placeholder="Lastname"
-                                    class="lg:ml-6 sm:w-full xs:w-full lg:w-1/2 md:w-1/2 h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
-                                    required />
+                            <!-- 3rd section -->
+                            <div class="w-full min-h-40 mt-[20px]">
+                                <div class="min-h-[54px] w-full lg:flex md:flex sm:block xs:block">
+                                    <input type="text" name="fullname" placeholder="Fullname" class="w-full h-[54px] rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5" required />
+                                </div>
+                                <div class="min-h-[54px] mt-5 w-full lg:flex md:flex sm:block xs:block">
+                                    <input type="text" name="email" placeholder="E-mail"
+                                        class="sm:w-full xs:w-full lg:w-1/2 md:w-1/2 rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
+                                        required />
+                                    <input type="text" name="phone_number" placeholder="Phone Number"
+                                        class="lg:ml-6 sm:w-full xs:w-full lg:w-1/2 md:w-1/2 rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
+                                        required />
+                                </div>
                             </div>
-                            <div class="min-h-[54px] mt-5 w-full lg:flex md:flex sm:block xs:block">
-                                <input type="text" name="email" placeholder="E-mail"
-                                    class="sm:w-full xs:w-full lg:w-1/2 md:w-1/2 rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
-                                    required />
-                                <input type="text" name="phone_number" placeholder="Phone Number"
-                                    class="lg:ml-6 sm:w-full xs:w-full lg:w-1/2 md:w-1/2 rounded-lg border-[1px] px-3 py-[14px] bg-#E5E5E5 mb-5"
-                                    required />
-                            </div>
-                        </div>
-                        <!-- 4th section -->
-                        <button id="button1"
-                            class="mt-5 px-10 py-5 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center"
-                            type="button">
-                            Save Changes
-                        </button>
+                            <!-- 4th section -->
+                            <button class="mt-5 px-10 py-5 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center" >
+                                Save Changes
+                            </button>
+                        </form>
                     </div>
                     <div id="account" class="tab-content hidden">
                         <h2 class="text-xl font-semibold mb-4">Account</h2>

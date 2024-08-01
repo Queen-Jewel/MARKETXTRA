@@ -56,9 +56,9 @@ const cat3 = document.getElementById('cat3');
 cats.forEach(cat => {
   cat.addEventListener('click', ()=> {
     if(cat.style.fontWeight = 'normal'){
-    cat.style.fontWeight = 'bold';
-    cat.style.color = '#00B800';
-  }
+      cat.style.fontWeight = 'bold';
+      cat.style.color = '#00B800';
+    }
   });
 });
 
