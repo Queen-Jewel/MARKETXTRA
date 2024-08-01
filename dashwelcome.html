@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>MARKETXTRA Dashboard | Settings</title>
+</head>
+<body>
+    <div class="h-[960px] w-full flex items-start justify-center bg-Drwhite">
+        <!-- Container -->
+         <div class=" w-[424px] h-[540px] font-Work text-base flex flex-col item-center justify-center font-normal">
+            <img src="images/Mx 2@2x.png" alt="" class="w-[157px] h-[57px] ml-32 mb-8">
+            <div class="pt-8 pb-20 bg-white flex flex-col items-center justify-center">
+              <div
+                class="flex flex-col items-center justify-center mb-6"
+              >
+                <h2
+                  class="h-[32px] mb-2 font-Work text-Graytrue-900 font-semibold text-2xl items-center"
+                >
+                  Welcome Back!
+                </h2>
+                <p class="text-center text-gray-900 text-md h-[48px] px-5">Sign in to your account to continue
+                </p>
+              </div>
+    
+              <div
+                class="flex flex-col items-start justify-center text-Graytrue text-[14px] w-[360px] h-[116px]"
+              >
+                <input
+                id="email"
+                  class="border-Gray-400 border py-3 pl-2 w-[360px] h-[54px] mb-2 rounded-md font-medium"
+                  type="email"
+                  name="Email"
+                  placeholder="E-mail"
+                  required autocomplete="email"
+                />
+                <div>
+                  <input
+                  id="password"
+                    class="border-Gray-400 border py-3 pl-2 w-[360px] mb-2 rounded-md relative font-medium"
+                    type="password"
+                    name="Password"
+                    placeholder="Password"
+                    required autocomplete="current-password"
+                  />
+                </div>
+              </div>
+              <div
+                class="mid flex items-center justify-between w-[360px] h-5 text-[14px] mt-6"
+              >
+                <div class="checked w-[180px] flex items-center justify-center relative">
+                  <input
+                    type="checkbox"
+                    id="myCheckbox"
+                    class=" peer relative appearance-none w-[18px] h-[18px]  border-2 rounded-sm focus:outline-none checked:bg-black
+                    after:absolute after:left-0 after:top-0 after:h-full after:w-full
+                    after:bg-[url('/images/icons8-checkmark.svg')]  after:bg-[length:16px] after:bg-center after:bg-no-repeat after:content-[''] hover:ring hover:ring-gray-300 "
+                  />
+                  <label class="ml-2 "   for="myCheckbox">Remember password?</label>
+                </div>
+                <a id="forgot" class="text-Orange underline font-semibold " href="#"
+                  >Forgot password</a
+                >
+              </div>
+    
+              <button
+              id="button"
+                class="w-[360px] h-[44px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg mt-7"
+                type="submit"
+              >
+                Sign In
+              </button>
+            </div>
+         </div>
+    </div>
+
+</body>
+</html>
