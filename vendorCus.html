@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css" />
-    <title>MARKETXTRA Dashboard | Customers</title>
+    <title>MARKETXTRA Dashboard | Settings</title>
 </head>
 <body>
     <div class="h-[960px] w-full ">
@@ -29,8 +29,8 @@
                              </div>
                             <!-- 2 -->
                              <div class="w-[217px] h-12 rounded-md p-3 flex items-center justify-start my-2">
-                                <img src="images/people O.png" alt="">
-                                <p class="font-semibold text-Orange ml-2 ">Customers</p>
+                                <img src="images/people B.png" alt="">
+                                <p class="font-semibold text-indigo ml-2  hover:text-Orange hover:font-bold">Customers</p>
                              </div>
                             <!-- 3 -->
                              <div class="w-[217px] h-12 rounded-md p-3 flex items-center justify-start mb-2">
@@ -44,8 +44,8 @@
                              </div>
                             <!-- 5 -->
                              <div class="w-[217px] h-12 rounded-md p-3 flex items-center justify-start">
-                                <img src="images/vendor.png" alt="">
-                                <p class="font-semibold text-indigo ml-2  hover:text-Orange hover:font-bold">Vendors</p>
+                                <img src="images/vend.png" alt="">
+                                <p class="font-semibold text-Orange ml-2">Vendors</p>
                              </div>
                              <hr class="w-[217px] border-[0.5px] border-txtgray my-10">
                              <!-- 6 -->
@@ -60,7 +60,7 @@
 
                <main class="w-4/5 h-[960px] px-8 py-8 bg-Drwhite">
                 <header class="flex items-center justify-between">
-                  <h3 class="font-semibold text-2xl text-#101828"> <span class="text-custom">Customers</span> / John Doe</h3>
+                  <h3 class="font-semibold text-2xl text-#101828"> <span class="text-custom">Vendors</span> / John Doe</h3>
                   <!-- profile -->
                   <div class="w-[188px] h-[52px] pl-[10px] pt-4 pr-4 pb-[10px] border-[0.5px] border-grayTrue1 rounded-lg flex items-center justify-between">
                      <div class="w-[118px] h-[8] flex items-center justify-between">
@@ -76,44 +76,59 @@
 
                 <section class="grid grid-cols-2 gap-x-8 gap-y-6 mt-7">
                   <div class="h-[85px]">
-                     <p class="font-normal text-sm text-indigo mb-3">Customer Name</p> 
+                     <p class="font-normal text-sm text-indigo mb-3">Vendor Name</p> 
                      <input type="text" required name="Name" class="border-usbord border-[1px] bg-Drwhite rounded-md h-[57px] w-[500px]  pl-[10px] py-4">
                   </div>
                   <div class="h-[85px]">
-                     <p class="font-normal text-sm text-indigo mb-3">Email Address</p> 
+                     <p class="font-normal text-sm text-indigo mb-3">Sign up Date</p> 
                      <input type="email" required name="email" class="border-usbord border-[1px] bg-Drwhite rounded-md h-[57px] w-[500px]  pl-[10px] py-4">
                   </div>
                   <div class="h-[85px]">
-                     <p class="font-normal text-sm text-indigo mb-3">Timer</p> 
+                     <p class="font-normal text-sm text-indigo mb-3">Status</p> 
                      <input type="text" required name="Timer" class="border-usbord border-[1px] bg-Drwhite rounded-md h-[57px] w-[500px]  pl-[10px] py-4">
                   </div>
                   <div class="h-[85px]">
-                     <p class="font-normal text-sm text-indigo mb-3">Subscriber</p> 
+                     <p class="font-normal text-sm text-indigo mb-3">Number of Sales</p> 
                      <input type="text" required name="Subscriber" class="border-usbord border-[1px] bg-Drwhite rounded-md h-[57px] w-[500px]  pl-[10px] py-4">
                   </div>
-                  <div class="h-[85px]">
-                     <p class="font-normal text-sm text-indigo mb-3">Made Sale</p> 
-                     <input type="text" required name="Name" class="border-usbord border-[1px] bg-Drwhite rounded-md h-[57px] w-[500px]  pl-[10px] py-4">
-                  </div>
-                  <div class="h-[85px]">
-                     <p class="font-normal text-sm text-indigo mb-3">Number of sales</p> 
-                     <input type="text" required name="numberofsales" class="border-usbord border-[1px] bg-Drwhite rounded-md h-[57px] w-[500px]  pl-[10px] py-4">
-                  </div>
                 </section>
-                <img src="images/brokenL.png" alt="" class=" my-[90px]">
 
-                <section class="h-[313px] flex flex-col items-start justify-start">
-                  <p class="font-normal text-sm mb-2">Mail</p>
-                  <input type="text" required name="name" placeholder="Type here..." class="border-usbord border-[1px] bg-Drwhite rounded-md h-[290px] w-full pl-6 pb-[100px]">
-                  <button id="button"
-                     class="w-full h-12 my-10 p-[10px] bg-gradient-to-b from-GreenT to-GreenL font-normal text-lg text-white rounded-md"
-                     type="submit" > Send Mail
-                  </button>
+                <section class="flex flex-col items-start justify-start mt-10">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="font-bold text-xl">Sold Products</p>
+                        <a href="#" class="text-Orange border-b-[1px] border-b-Orange underline-Orange">View all</a>
+                    </div>
+                    <!-- products -->
+                     <div class="w-full flex items-center justify-between mt-7">
+                        <!-- 1st -->
+                         <div class="flex flex-col items-start justify-start bg-footer rounded-md">
+                            <img src="images/blackp.png" alt="blackp">
+                            <div class="mx-4 my-5 flex flex-col items-start justify-start">
+                                <p class="text-sm mb-3">Cotton quality blue plain T-Shirt </p>
+                                <img src="images/amt.png" alt="amt">
+                            </div>
+                         </div>
+                        <!-- 2nd -->
+                         <div class="flex flex-col items-start justify-start bg-footer rounded-md mx-5">
+                            <img src="images/blackm.png" alt="blackp">
+                            <div class="mx-4 my-5 flex flex-col items-start justify-start">
+                                <p class="text-sm mb-3">Cotton quality blue plain T-Shirt </p>
+                                <img src="images/amt.png" alt="amt">
+                            </div>
+                         </div>
+                        <!-- 3rd -->
+                         <div class="flex flex-col items-start justify-start bg-footer rounded-md">
+                            <img src="images/yellow.png" alt="blackp">
+                            <div class="mx-4 my-5 flex flex-col items-start justify-start">
+                                <p class="text-sm mb-3">Cotton quality blue plain T-Shirt </p>
+                                <img src="images/amt.png" alt="amt">
+                            </div>
+                         </div>
+                     </div>
                 </section>
                </main>
          </div>
     </div>
 
-    <script type="module" src="JS/cusDashboard.js"></script>
 </body>
 </html>
