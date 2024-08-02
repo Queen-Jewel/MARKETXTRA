@@ -4349,6 +4349,9 @@ input{
     height: 30px;
   }
 
+  .xs\:w-1\/2{
+    width: 50%;
+  }
   .xs\:w-1\/3{
     width: 33.333333%;
   }
