@@ -148,10 +148,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (doughnutChartInstance) {
                 doughnutChartInstance.destroy();
             }
-            if(document.getElementById('lineChart')){
+            if(document.getElementById('doughnut')){
                 // Doughnut Chart
                 const doughnut = document.getElementById('doughnut').getContext('2d');
-                
+
                 var gradient = doughnut.createLinearGradient(0, 0, 10, 400);
                 gradient.addColorStop(0, 'rgba(0, 128, 0, 1)');
                 gradient.addColorStop(1, 'rgba(0, 184, 0, 1)');
@@ -171,12 +171,17 @@ document.addEventListener('DOMContentLoaded', () => {
                             legend: {
                                 position: 'right',
                                 labels: {
-                                    boxWidth: 10,
-                                    boxHeight: 10
+                                    boxWidth: 5,
+                                    boxHeight: 5,
+                                    font: {
+                                        family: 'karla',
+                                        size: 16,
+                                        style: 'normal',
+                                    }
                                 }
                             },
                         },
-                        cutout: 70,
+                        cutout: '70%',
                     }
                 })
             }

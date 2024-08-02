@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <style>
+        body,html{
+            font-family: 'Karla' !important;
+        }
         .shadow-bottom {
             box-shadow: 0 0 10px 0 16px rgba(111, 110, 112, 0.5);
         }
@@ -21,6 +27,7 @@
             position: absolute;
             background: #fff !important;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.363);
+            transition: all .3s ease;
             padding: 5px 10px;
             border-radius: 50%;
             width: 50px;
@@ -36,8 +43,99 @@
         .owl-next{
             right: -15px;
         }
+        .owl-next:hover, .owl-prev:hover{
+            background: #009700 !important;
+            color: #fff !important;
+        }
         .owl-prev span,.owl-next span{
+            font-size: 30px;
+            transition: all .1s ease;
+        }
+        .owl-prev:hover span,.owl-next:hover span{
             font-size: 40px;
+        }
+        .owl-stage-outer{
+            padding-bottom: 20px;
+        }
+        .owl-item{
+            cursor: pointer;
+        }
+        .add-to-cart{
+            transition: all .5s ease;
+            border: solid 1px transparent;
+            position: relative;
+        }
+        .add-to-cart:hover{
+            background: transparent;
+            border: solid 1px #009700;
+            color: #009700;
+        }
+        .add-to-cart::after,.add-to-cart::before{
+            content: '';
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            background: #009700;
+            border-radius: 50%;
+            opacity: 0;
+            transition: all 1s ease;
+        }
+        .add-to-cart::after{
+            left: 0px;
+            top: -5px;
+        }
+        .add-to-cart::before{
+            right: 0px;
+            bottom: -5px;
+        }
+        .add-to-cart:hover.add-to-cart::after{
+            opacity: 1;
+            left: 98%;
+            top: 0px;
+            height: 0px;
+            width: 0px;
+        }
+        .add-to-cart:hover.add-to-cart::before{
+            opacity: 1;
+            right: 98%;
+            height: 0px;
+            width: 0px;
+            bottom: 0px;
+        }
+        .product-card{
+            transition: all .3s ease;
+        }
+        .product-card .main-card{
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .product-card:hover{
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+        .product-image{
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        .mx-link{
+            transition: all .3s ease;
+            position: relative;
+            margin-right: 15px;
+        }
+        .mx-link:hover{
+            color: #009700;
+            font-weight: bold;
+        }
+        .create-store{
+            background: transparent;
+            border: solid 2px #fff;
+            color: #fff;
+            transform: all .3s ease;
+        }
+        .create-store:hover{
+            background: #fff;
+            color: #008000;
         }
     </style>
     <title>My Store | MarketXtra</title>
@@ -50,7 +148,7 @@
                 <!-- main nav -->
                 <header class="z-[10] fixed flex items-center justify-center w-full h-[38px] bg-GreenB text-white sm:text-sm md:text-base font-normal">Hello there, you're welcome to my online store</header>
 
-                <div class="fixed w-full mt-[34px] z-[10] flex items-center p-5 justify-between font-normal text-base text-txtgray bg-white shadow-bottom">
+                <div class="shadow-3xl fixed w-full mt-[34px] z-[10] flex items-center p-5 justify-between font-normal text-base text-txtgray bg-white shadow-bottom">
                     
                     <div class="lg:w-1/4 md:w-1/3 sm:w-2/3 xs:w-2/3 flex justify-start">
                         <!--Menu-->
@@ -65,10 +163,10 @@
                     <!-- Other pages -->
                     <div class="lg:flex sm:hidden xs:hidden md:hidden lg:w-2/4 md:w-1/3 sm:w-2/3 xs:w-2/3 items-center justify-center">
                         <div class="inline-block flex">
-                            <div class="relative hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold mr-5">
+                            <div class="mx-link">
                                 <a href="#" class="sm:text-sm md:text-base">Home</a>
                             </div>
-                            <div class="relative hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold mr-5">
+                            <div class="mx-link">
                                 <a href="#" id="cate" class="sm:text-sm md:text-base">
                                     Category 
                                     <i class="ph ph-caret-down ml-1"></i>
@@ -79,8 +177,8 @@
                                     <a href="#" class="click hover:text-footer px-5 py-2">Category 3</a>
                                 </div>
                             </div>
-                            <div class="relative hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold mr-5">
-                                <a href="#" class="hover:bg-gradient-to-b hover:from-GreenT hover:to-GreenL hover:bg-clip-text hover:text-transparent hover:font-bold">About Us</a>
+                            <div class="mx-link">
+                                <a href="#" class="sm:text-sm md:text-base">About Us</a>
                             </div>
                         </div>
                     </div>
@@ -97,8 +195,8 @@
                 <!-- first box -->
                 <div class="h-[481px] relative flex flex-col overflow-hidden mt-[50px]">
                     <!-- Dark overlay -->
-                    <div class="flex justify-center items-center absolute inset-0" style="background: rgba(0, 0, 0, 0.363);">
-                        <p class="z-5 mb-5 w-2/3 flex items-center justify-center md:leading-[70px] text-center sm:text-4xl xs:text-3xl lg:text-6xl  text-white font-bold">
+                    <div class="flex justify-center items-center absolute inset-0" style="background: rgba(0, 0, 0, 0.58);">
+                        <p class="z-5 mb-5 lg:w-2/4 sm:w-2/3 xs:w-2/3 flex items-center justify-center md:leading-[70px] text-center sm:text-4xl xs:text-3xl lg:text-6xl  text-white font-bold">
                             We Sell The Best Quality of T-shirts.
                         </p>
                     </div>
@@ -113,13 +211,13 @@
                     <!-- shirts -->
                     <div class="owl-carousel featured-carousel pb-5 flex flex-wrap lg:justify-start sm:justify-center xs:justify-center mt-4 w-full">
                         <!-- 1st -->
-                        <div class="item w-full curser-pointer rounded-lg hover:shadow-xl p-2">
-                            <div class="w-full bg-footer">
-                                <div class="w-full h-[321px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackp.png);"></div>
-                                <div class="p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
+                        <div class="item w-full curser-pointer rounded-lg product-card">
+                            <div class="main-card w-full bg-footer">
+                                <div class="w-full product-image h-[230px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackp.png);"></div>
+                                <div class=" p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
 
-                                    <div class="w-full flex items-start justify-start mt-6">
+                                    <div class="w-full flex items-start justify-start mt-2">
                                         <div class="flex items-center justify-center">
                                             <span class="font-bold">&#8358;</span>
                                             <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
@@ -130,18 +228,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mt-2 w-full p-5">
-                                    <button class="text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                <div class="w-full p-5">
+                                    <button class="add-to-cart text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="item w-full curser-pointer rounded-lg hover:shadow-xl p-2">
-                            <div class="w-full bg-footer">
-                                <div class="w-full h-[321px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackp.png);"></div>
-                                <div class="p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
+                        <div class="item w-full curser-pointer rounded-lg product-card">
+                            <div class="main-card w-full bg-footer">
+                                <div class="w-full product-image h-[230px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackm.png);"></div>
+                                <div class=" p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
 
-                                    <div class="w-full flex items-start justify-start mt-6">
+                                    <div class="w-full flex items-start justify-start mt-2">
                                         <div class="flex items-center justify-center">
                                             <span class="font-bold">&#8358;</span>
                                             <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
@@ -152,18 +250,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mt-2 w-full p-5">
-                                    <button class="text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                <div class="w-full p-5">
+                                    <button class="add-to-cart text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="item w-full curser-pointer rounded-lg hover:shadow-xl p-2">
-                            <div class="w-full bg-footer">
-                                <div class="w-full h-[321px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/yellow.png);"></div>
-                                <div class="p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
+                        <div class="item w-full curser-pointer rounded-lg product-card">
+                            <div class="main-card w-full bg-footer">
+                                <div class="w-full product-image h-[230px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackp.png);"></div>
+                                <div class=" p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
 
-                                    <div class="w-full flex items-start justify-start mt-6">
+                                    <div class="w-full flex items-start justify-start mt-2">
                                         <div class="flex items-center justify-center">
                                             <span class="font-bold">&#8358;</span>
                                             <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
@@ -174,18 +272,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mt-2 w-full p-5">
-                                    <button class="text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                <div class="w-full p-5">
+                                    <button class="add-to-cart text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="item w-full curser-pointer rounded-lg hover:shadow-xl p-2">
-                            <div class="w-full bg-footer">
-                                <div class="w-full h-[321px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/yellow.png);"></div>
-                                <div class="p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
+                        <div class="item w-full curser-pointer rounded-lg product-card">
+                            <div class="main-card w-full bg-footer">
+                                <div class="w-full product-image h-[230px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackp.png);"></div>
+                                <div class=" p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
 
-                                    <div class="w-full flex items-start justify-start mt-6">
+                                    <div class="w-full flex items-start justify-start mt-2">
                                         <div class="flex items-center justify-center">
                                             <span class="font-bold">&#8358;</span>
                                             <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
@@ -196,18 +294,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mt-2 w-full p-5">
-                                    <button class="text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                <div class="w-full p-5">
+                                    <button class="add-to-cart text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="item w-full curser-pointer rounded-lg hover:shadow-xl p-2">
-                            <div class="w-full bg-footer">
-                                <div class="w-full h-[321px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/yellow.png);"></div>
-                                <div class="p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
+                        <div class="item w-full curser-pointer rounded-lg product-card">
+                            <div class="main-card w-full bg-footer">
+                                <div class="w-full product-image h-[230px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackp.png);"></div>
+                                <div class=" p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
                                     <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
 
-                                    <div class="w-full flex items-start justify-start mt-6">
+                                    <div class="w-full flex items-start justify-start mt-2">
                                         <div class="flex items-center justify-center">
                                             <span class="font-bold">&#8358;</span>
                                             <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
@@ -218,8 +316,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mt-2 w-full p-5">
-                                    <button class="text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                <div class="w-full p-5">
+                                    <button class="add-to-cart text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -228,86 +326,120 @@
 
                 <!-- third box -->
                  
-                <div class="w-full flex flex-wrap items-start justify-start text-txtgray sm:mt-5 md:mt-16 px-5 py-5">
+                <div class="w-full flex flex-wrap items-start justify-start text-txtgray px-5 py-5">
                     <p class="font-bold sm:text-base md:text-[24px] p-2">Product Catalogue</p>
 
                     <!-- shirts -->
                     <div class="flex flex-wrap lg:justify-start sm:justify-center xs:justify-center mt-4 w-full">
                         <!-- 1st -->
-                        <div class="lg:w-1/3 md:w-1/2 sm:w-full xs:w-full curser-pointer rounded-lg hover:shadow-xl p-2">
-                            <div class="w-full bg-footer">
-                                <div class="w-full h-[321px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackp.png);"></div>
-                                <div class="p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
-
-                                    <div class="w-full flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <span class="font-bold">&#8358;</span>
-                                            <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <span class="font-bold">&#8358;</span>
-                                            <p class="sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                        <div class="p-2 lg:w-1/4 md:w-1/3 sm:w-1/2 xs:w-full ">
+                            <div class="curser-pointer rounded-lg hover:shadow-xl product-card">
+                                <div class="main-card w-full bg-footer">
+                                    <div class="w-full product-image h-[230px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackp.png);"></div>
+                                    <div class=" p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
+                                        <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+    
+                                        <div class="w-full flex items-start justify-start mt-2">
+                                            <div class="flex items-center justify-center">
+                                                <span class="font-bold">&#8358;</span>
+                                                <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                            </div>
+                                            <div class="flex items-center justify-center">
+                                                <span class="font-bold">&#8358;</span>
+                                                <p class="sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="mt-2 w-full p-5">
-                                    <button class="text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                    <div class="w-full p-5">
+                                        <button class="add-to-cart text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="lg:w-1/3 md:w-1/2 sm:w-full xs:w-full curser-pointer rounded-lg hover:shadow-xl p-2">
-                            <div class="w-full bg-footer">
-                                <div class="w-full h-[321px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackp.png);"></div>
-                                <div class="p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
 
-                                    <div class="w-full flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <span class="font-bold">&#8358;</span>
-                                            <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <span class="font-bold">&#8358;</span>
-                                            <p class="sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                        <div class="p-2 lg:w-1/4 md:w-1/3 sm:w-1/2 xs:w-full">
+                            <div class="curser-pointer rounded-lg hover:shadow-xl product-card">
+                                <div class="main-card w-full bg-footer">
+                                    <div class="w-full product-image h-[230px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/blackm.png);"></div>
+                                    <div class=" p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
+                                        <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+    
+                                        <div class="w-full flex items-start justify-start mt-2">
+                                            <div class="flex items-center justify-center">
+                                                <span class="font-bold">&#8358;</span>
+                                                <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                            </div>
+                                            <div class="flex items-center justify-center">
+                                                <span class="font-bold">&#8358;</span>
+                                                <p class="sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="mt-2 w-full p-5">
-                                    <button class="text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                    <div class="w-full p-5">
+                                        <button class="add-to-cart text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="lg:w-1/3 md:w-1/2 sm:w-full xs:w-full curser-pointer rounded-lg hover:shadow-xl p-2">
-                            <div class="w-full bg-footer">
-                                <div class="w-full h-[321px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/yellow.png);"></div>
-                                <div class="p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
-                                    <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
 
-                                    <div class="w-full flex items-start justify-start mt-6">
-                                        <div class="flex items-center justify-center">
-                                            <span class="font-bold">&#8358;</span>
-                                            <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
-                                        </div>
-                                        <div class="flex items-center justify-center">
-                                            <span class="font-bold">&#8358;</span>
-                                            <p class="sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                        <div class="p-2 lg:w-1/4 md:w-1/3 sm:w-1/2 xs:w-full">
+                            <div class="curser-pointer rounded-lg hover:shadow-xl product-card">
+                                <div class="main-card w-full bg-footer">
+                                    <div class="w-full product-image h-[230px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/Blue-t-shirt.png);"></div>
+                                    <div class=" p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
+                                        <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+    
+                                        <div class="w-full flex items-start justify-start mt-2">
+                                            <div class="flex items-center justify-center">
+                                                <span class="font-bold">&#8358;</span>
+                                                <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                            </div>
+                                            <div class="flex items-center justify-center">
+                                                <span class="font-bold">&#8358;</span>
+                                                <p class="sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="mt-2 w-full p-5">
-                                    <button class="text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                    <div class="w-full p-5">
+                                        <button class="add-to-cart text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="p-2 lg:w-1/4 md:w-1/3 sm:w-1/2 xs:w-full">
+                            <div class="curser-pointer rounded-lg hover:shadow-xl product-card">
+                                <div class="main-card w-full bg-footer">
+                                    <div class="w-full product-image h-[230px] sm:rounded-t-md md:rounded-lg mb-2 bg-cover" style="background-image: url(images/Canvas.png);"></div>
+                                    <div class=" p-5 sm:w-full flex flex-col items-start justify-start font-normal text-base">
+                                        <p class="w-full sm:text-sm sm:font-normal md:text-base">Cotton quality blue plain T-Shirt</p>
+    
+                                        <div class="w-full flex items-start justify-start mt-2">
+                                            <div class="flex items-center justify-center">
+                                                <span class="font-bold">&#8358;</span>
+                                                <p class="font-bold sm:text-base md:text-[25px] mr-2">3500</p>
+                                            </div>
+                                            <div class="flex items-center justify-center">
+                                                <span class="font-bold">&#8358;</span>
+                                                <p class="sm:font-normal sm:text-[12px] md:font-medium md:text-base line-through">3500</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full p-5">
+                                        <button class="add-to-cart text-center w-full px-3 py-3 bg-gradient-to-b from-GreenT to-GreenL text-white md:text-[16px] sm:font-normal sm:text-sm md:font-bold rounded-lg">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- Footer -->
                 <div class="w-full px-3 py-3 flex items-center justify-between bg-txtgray text-white mt-20">
                     <!-- Logo -->
-                    <div class="flex sm:flex-wrap sm:items-start md:items-center sm:justify-start md:justify-between text-base text-white font-normal">
-                        <span class="w-[43px] h-[43px] border-transparent bg-stepgray rounded-[50%] mr-[2px]"></span>
-                        <p class="sm:text-sm md:text-base mt-2 ml-3">Your Logo</p>
+                    <div class="lg:flex sm:block xs:block sm:items-start md:items-center sm:justify-start md:justify-between text-base text-white font-normal">
+                        <div class="lg:w-[43px] lg:h-[43px] xs:w-[20px] xs:h-[20px] border-transparent bg-stepgray rounded-[50%] mr-[2px]"></div>
+                        <p class="sm:text-sm md:text-base mt-2 lg:ml-3">Your Logo</p>
                     </div>
 
                     <div class="lg:flex sm:block xs:block">
@@ -325,7 +457,7 @@
                         </div>
                     </div>
                     
-                    <a class="cursor-pointer px-5 py-3 border-[2px] rounded-lg borer-white flex items-center justify-center text-center sm:text-sm md:text-base">
+                    <a class="create-store cursor-pointer lg:px-5 lg:py-3 xs:px-2 xs:py-2 rounded-lg borer-white text-center sm:text-sm md:text-base">
                         Create store now
                     </a>
                 </div>
@@ -354,11 +486,11 @@
                         nav:true
                     },
                     600:{
-                        items:2,
+                        items:3,
                         nav:true
                     },
                     1000:{
-                        items:3,
+                        items:4,
                         nav:true,
                         loop:false
                     }
