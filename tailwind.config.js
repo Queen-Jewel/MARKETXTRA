@@ -45,7 +45,7 @@ module.exports = {
             },
 
             fontFamily: {
-                Work: ["Work Sans"],
+                Work: ["Karla"],
                 Man: ["Manrope"],
                 Rob: ["Roboto"],
                 Inter: ['Inter']

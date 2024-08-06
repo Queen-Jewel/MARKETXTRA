@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* The switch - the box around the slider */
+input,select{
+    outline: none;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #1f9741;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #1f9741;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+input{
+    outline: none !important;
+}
+
+/* modification css */
+.gradient-border {
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, #008000, #00B800);
+    border-image-slice: 1;
+}
+.chart-container {
+    position: relative;
+    width: 100%;
+}
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+#doughnut {
+    width: 250px !important;
+    height: 250px !important;
+}
+#lineChart{
+    height: 250px !important;
+}
+.sales-card,.profit-card,.customer-card{
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.sales-card:hover{
+    background: #f2fcff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+}
+.sales-card:hover p,.sales-card:hover i,.sales-card:hover a{
+    color: #556b2f;
+}
+.profit-card:hover{
+    background: #f2fcff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+}
+.profit-card:hover p,.profit-card:hover i,.profit-card:hover a{
+    color: #009600;
+}
+.customer-card:hover{
+    background: #f2fcff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+}
+.customer-card:hover p,.customer-card:hover i,.customer-card:hover a{
+    color: #d45800;
+}
+.mx-side-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    margin-bottom: 20px;
+}
+.mx-side-link:hover{
+    font-weight: bold;
+    color: #d45800;
+    padding-left: 10px;
+}
+.mx-side-link.active{
+    color: #d45800;
+    font-weight: bold;
+}
+
+thead tr th{
+    text-align: left;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
