@@ -1,299 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/main.css">
-    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css?version=1">
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Checkout | MarketXtra</title>
 </head>
-<body>
-    <div class="h-[1428px] w-full bg-Drwhite">
+
+<body class="font-Work bg-Drwhite">
+    <div class="w-full bg-Drwhite">
         <!-- Container -->
         <div class="flex flex-col items-start justify-start">
-
             <!-- Nav Bar -->
-            <div class="h-[97px] w-full flex items-center justify-between px-7">
-                <!-- Logo -->
-                <div class="w-[128px] h-[43px] flex items-center justify-center">
-                    <span class="w-[43px] h-[43px] border-transparent bg-stepgray rounded-[50%] mr-1"></span>
-                    <p>Your Logo</p>
+            <div class="w-full flex items-center p-5 justify-between font-normal text-base text-txtgray bg-white shadow-bottom">
+                    
+                <div class="lg:w-1/4 md:w-1/3 sm:w-2/3 xs:w-2/3 flex justify-start">
+                    <!-- Logo -->
+                    <div class="flex items-center justify-center">
+                        <span class="border-transparent bg-stepgray rounded-[50%] lg:h-[50px] lg:w-[50px] xs:h-[30px] xs:w-[30px]"></span>
+                        <p class="sm:text-sm sm:font-normal md:text-base ml-4">Your Logo</p>
+                    </div>
                 </div>
 
-                <!-- search bar -->
-                <div class="w-[705px] h-12  bg-footer rounded-lg shadow-lg flex items-center justify-between">
-                    <input
-                    class="outline-none bg-footer pl-3"
-                    type="text"
-                    placeholder="Search"
-                    name="Search"/>
-                    <img class="pr-2" src="images/srch.png" alt="srch" />
-              </div>
-            <!-- Catelog -->
-            <div class="h-[30px] w-[30px] flex items-center justify-center">
-                <img src="images/ShoppingCartSimple.png" alt="ShoppingCartSimple">
-            </div>
-            
+                <div class="lg:w-3/5 md:w-3/5 sm:w-2/3 xs:w-2/3 flex items-start">
+                    <div class="lg:w-3/4 sm:w-1/2 min-h-12 bg-footer rounded-lg shadow-lg flex items-center justify-between relative">
+                        <input class="outline-none bg-footer px-4 py-3 pr-[35px] w-full" type="text" placeholder="Search" name="Search">
+                        <i class="ph ph-magnifying-glass pr-2 absolute right-[5px]"></i>
+                    </div>
+                </div>
+
+                <!-- Catalog -->
+                <div class="lg:w-1/4 md:w-1/3 sm:w-2/3 xs:w-2/3 flex items-center justify-end">
+                    <a href="#">
+                        <i class="ph ph-shopping-cart-simple text-3xl mr-5"></i>
+                    </a>
+                </div>
             </div>
 
             <!-- Body -->
-            <div class="h-[1100px] flex items-center justify-start text-base text-txtgray font-normal ">
+            <div class="w-full flex flex-wrap justify-start text-base text-txtgray font-normal pt-[50px]">
                 <!-- left -->
-                <div class="w-[795px] h-[941px] flex flex-col items-start justify-start pl-5">
-                    <p class="font-medium text-2xl h-12">Items (4)</p>
+                <div class="lg:w-3/5 md:w-2/4 sm:w-full xs:w-full px-5 py-5">
+                    <p class="font-medium text-2xl pb-5">Items (4)</p>
 
-                    <!-- items -->
-                    <div class="w-[795px] h-[893px] flex flex-col items-start justify-start">
-                        <!-- box 1 -->
-                        <div class="w-[795px] h-[250px] rounded-lg bg-white flex items-start justify-between p-5">
-                            <img src="images/Canvas.png" alt="Canvas" class="w-[201.5px] h-[164.95px] rounded-lg">
-                            <!-- rt sub1 -->
-                            <div class="w-[523px] h-[180px] flex items-start justify-between">
-                                <!-- lt sub2 -->
-                                <div class="w-[396px] h-[169px] flex items-start justify-start">
-                                    <div class="w-[185px] h-[169px] flex flex-col items-start justify-start">
-                                        <p class="font-medium text-2xl">Canvas</p>
-                                        <!-- small inside box1 -->
-                                        <div class="w-[113px] h-[22px] flex items-center justify-between mb-2 mt-3">
-                                            <p>Color:</p>
-                                            <div class="w-[58px] h-[21px] bg-footer flex items-center justify-center">White</div>
-                                        </div>
-                                        <!-- small inside box2 -->
-                                        <div class="w-[77px] h-[22px] flex items-center justify-between mb-1">
-                                            <p>Size:</p>
-                                            <div class="w-[32px] h-[21px] bg-footer flex items-center justify-center">42</div>
-                                        </div>
-                                        <p>10 Units remaining</p>
-
-                                        <div class="w-[92px] h-[22px] mt-5 flex items-center justify-between">
-                                            <!-- minus -->
-                                            <div class="w-[25px] h-[22px] flex items-center justify-center border-[1px] border-GreenL rounded-lg">
-                                                <p class="pb-[3px]">-</p>
-                                            </div>
-                                            <p>2</p>
-                                            <!-- plus -->
-                                            <div class="w-[25px] h-[22px] flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg">
-                                                <p class="pb-[3px]">+</p>
-                                            </div>
-                                        </div>
+                    <!-- box 1 -->
+                    <div class="w-full rounded-lg bg-white flex flex-wrap items-start justify-between lg:p-5 mb-5">
+                        <div class="lg:w-1/3 md:w-1/3 sm:w-full xs:w-full">
+                            <div style="background-image: url('images/canvas.png');" class="sm:h-[200px] xs:h-[200px] w-full rounded-lg bg-cover bg-center bg-no-repeat"></div>
+                        </div>
+                        <!-- rt sub1 -->
+                        <div class="lg:w-2/3 md:w-2/3 sm:w-full xs:w-full sm:w-full px-3 sm:py-3 xs:py-3">
+                            <!-- lt sub2 -->
+                            <div class="w-full">
+                                <div class="flex justify-between">
+                                    <div class="flex">
+                                        <p class="font-medium lg:text-2xl md:text-[16px] sm:text-[13px] xs:text-[13px]">Canvas</p>
+                                        <span class="text-base font-normal bg-footer px-1 h-6 ml-4 mt-1">#325412</span>
                                     </div>
-                                    <!-- rt sub3 -->
-                                    <div class="flex items-center justify-center bg-footer p-[10px] w-[84px] h-[27px] mr-[500px]">
-                                        <p class="text-base font-normal">#325412</p>
+                                    <div class="place-items-center">
+                                        <div class="flex place-items-center justify-items-center">
+                                            <p class="lg:text-2xl md:text-[16px] sm:text-[13px] xs:text-[13px] font-bold flex place-items-center justify-items-end bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
+                                                <span>&#8358;</span>3,500
+                                            </p>
+                                        </div>
+                                        <div class="lg:text-[15px] md:text-[15px] sm:text-[11px] xs:text-[10px] lg:ml-7 mt-[-3px]">
+                                            <p class="font-medium line-through ">&#8358;3,500</p>
+                                        </div>
                                     </div>
                                 </div>
 
-
-                                <!-- rt sub2  -->
-                                <div class="w-[87px] h-[55px] flex flex-col place-items-end justify-items-end">
-                                    <div class="flex place-items-center justify-items-center">
-                                        <p class="w-[87px] h-7 text-2xl font-bold flex place-items-center justify-items-end bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
-                                        <span><img class="mr-[2px]"src="images/naira  (1).png" alt="naira"/></span>3,500</p>
+                                <div class="w-full flex flex-col items-start justify-start">
+                                    
+                                    <!-- small inside box1 -->
+                                    <div class="flex items-center justify-start mb-2">
+                                        <p>Color:</p>
+                                        <div class="px-2 ml-5 bg-footer text-center">White</div>
                                     </div>
-                                    <div class="flex place-items-center justify-items-end ml-7">
-                                        <img class="w-[13px] h-[13px] mt-1 " src="images/naira.png" alt="naira">
-                                        <p class="w-[59px] h-[19px] font-medium line-through ">3,500</p>
+                                    <!-- small inside box2 -->
+                                    <div class="flex items-center justify-start mb-2">
+                                        <p>Size:</p>
+                                        <div class="px-2 ml-5 bg-footer text-center">42</div>
                                     </div>
-                                    <!-- trash -->
-                                    <img src="images/Trash.png" alt="trash"  class=" trashButton mt-[110px]">
+                                    <div class="w-full flex items-center justify-start">
+                                        <button class="text-center px-2 border-[1px] mr-3 border-GreenL rounded-lg">-</button>
+                                        <span>2</span>
+                                        <button class="text-center px-2 bg-gradient-to-b ml-3 from-GreenT to-GreenL text-white rounded-lg">+</button>
+                                    </div>
+                                    
+                                    <div class="w-full pt-2 flex justify-between">
+                                        <p>10 Units remaining</p>
+                                    
+                                        <!-- trash -->
+                                        <a href="#">
+                                            <i class="ph ph-trash text-2xl"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
-                        <!-- box 2 -->
-                        <div class="w-[795px] h-[250px] rounded-lg bg-white flex items-start justify-between p-5 my-5">
-                            <img src="images/Canvas.png" alt="Canvas" class="w-[201.5px] h-[164.95px] rounded-lg">
-                            <!-- rt sub1 -->
-                            <div class="w-[523px] h-[180px] flex items-start justify-between">
-                                <!-- lt sub2 -->
-                                <div class="w-[396px] h-[169px] flex items-start justify-start">
-                                    <div class="w-[185px] h-[169px] flex flex-col items-start justify-start">
-                                        <p class="font-medium text-2xl">Canvas</p>
-                                        <!-- small inside box1 -->
-                                        <div class="w-[113px] h-[22px] flex items-center justify-between mb-2 mt-3">
-                                            <p>Color:</p>
-                                            <div class="w-[58px] h-[21px] bg-footer flex items-center justify-center">White</div>
-                                        </div>
-                                        <!-- small inside box2 -->
-                                        <div class="w-[77px] h-[22px] flex items-center justify-between mb-1">
-                                            <p>Size:</p>
-                                            <div class="w-[32px] h-[21px] bg-footer flex items-center justify-center">42</div>
-                                        </div>
-                                        <p>10 Units remaining</p>
-
-                                        <div class="w-[92px] h-[22px] mt-5 flex items-center justify-between">
-                                            <!-- minus -->
-                                            <div class="w-[25px] h-[22px] flex items-center justify-center border-[1px] border-GreenL rounded-lg">
-                                                <p class="pb-[3px]">-</p>
-                                            </div>
-                                            <p>2</p>
-                                            <!-- plus -->
-                                            <div class="w-[25px] h-[22px] flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg">
-                                                <p class="pb-[3px]">+</p>
-                                            </div>
-                                        </div>
+                    </div>
+                    <div class="w-full rounded-lg bg-white flex flex-wrap items-start justify-between lg:p-5 mb-5">
+                        <div class="lg:w-1/3 md:w-1/3 sm:w-full xs:w-full">
+                            <div style="background-image: url('images/canvas.png');" class="sm:h-[200px] xs:h-[200px] w-full rounded-lg bg-cover bg-center bg-no-repeat"></div>
+                        </div>
+                        <!-- rt sub1 -->
+                        <div class="lg:w-2/3 md:w-2/3 sm:w-full xs:w-full sm:w-full px-3 sm:py-3 xs:py-3">
+                            <!-- lt sub2 -->
+                            <div class="w-full">
+                                <div class="flex justify-between">
+                                    <div class="flex">
+                                        <p class="font-medium lg:text-2xl md:text-[16px] sm:text-[13px] xs:text-[13px]">Canvas</p>
+                                        <span class="text-base font-normal bg-footer px-1 h-6 ml-4 mt-1">#325412</span>
                                     </div>
-                                    <!-- rt sub3 -->
-                                    <div class="flex items-center justify-center bg-footer p-[10px] w-[84px] h-[27px] mr-[500px]">
-                                        <p class="text-base font-normal">#325412</p>
+                                    <div class="place-items-center">
+                                        <div class="flex place-items-center justify-items-center">
+                                            <p class="lg:text-2xl md:text-[16px] sm:text-[13px] xs:text-[13px] font-bold flex place-items-center justify-items-end bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
+                                                <span>&#8358;</span>3,500
+                                            </p>
+                                        </div>
+                                        <div class="lg:text-[15px] md:text-[15px] sm:text-[11px] xs:text-[10px] lg:ml-7 mt-[-3px]">
+                                            <p class="font-medium line-through ">&#8358;3,500</p>
+                                        </div>
                                     </div>
                                 </div>
 
-
-                                <!-- rt sub2  -->
-                                <div class="w-[87px] h-[55px] flex flex-col place-items-end justify-items-end">
-                                    <div class="flex place-items-center justify-items-center">
-                                        <p class="w-[87px] h-7 text-2xl font-bold flex place-items-center justify-items-end bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
-                                        <span><img class="mr-[2px]"src="images/naira  (1).png" alt="naira"/></span>3,500</p>
+                                <div class="w-full flex flex-col items-start justify-start">
+                                    
+                                    <!-- small inside box1 -->
+                                    <div class="flex items-center justify-start mb-2">
+                                        <p>Color:</p>
+                                        <div class="px-2 ml-5 bg-footer text-center">White</div>
                                     </div>
-                                    <div class="flex place-items-center justify-items-end ml-7">
-                                        <img class="w-[13px] h-[13px] mt-1 " src="images/naira.png" alt="naira">
-                                        <p class="w-[59px] h-[19px] font-medium line-through ">3,500</p>
+                                    <!-- small inside box2 -->
+                                    <div class="flex items-center justify-start mb-2">
+                                        <p>Size:</p>
+                                        <div class="px-2 ml-5 bg-footer text-center">42</div>
                                     </div>
-
-                                    <!-- trash -->
-                                    <img src="images/Trash.png" alt="trash"  class="trashButton mt-[110px]">
+                                    <div class="w-full flex items-center justify-start">
+                                        <button class="text-center px-2 border-[1px] mr-3 border-GreenL rounded-lg">-</button>
+                                        <span>2</span>
+                                        <button class="text-center px-2 bg-gradient-to-b ml-3 from-GreenT to-GreenL text-white rounded-lg">+</button>
+                                    </div>
+                                    
+                                    <div class="w-full pt-2 flex justify-between">
+                                        <p>10 Units remaining</p>
+                                    
+                                        <!-- trash -->
+                                        <a href="#">
+                                            <i class="ph ph-trash text-2xl"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- box 3 -->
-                        <div class="w-[795px] h-[250px] rounded-lg bg-white flex items-start justify-between p-5 mb-5">
-                            <img src="images/Canvas.png" alt="Canvas" class="w-[201.5px] h-[164.95px] rounded-lg">
-                            <!-- rt sub1 -->
-                            <div class="w-[523px] h-[180px] flex items-start justify-between">
-                                <!-- lt sub2 -->
-                                <div class="w-[396px] h-[169px] flex items-start justify-start">
-                                    <div class="w-[185px] h-[169px] flex flex-col items-start justify-start">
-                                        <p class="font-medium text-2xl">Canvas</p>
-                                        <!-- small inside box1 -->
-                                        <div class="w-[113px] h-[22px] flex items-center justify-between mb-2 mt-3">
-                                            <p>Color:</p>
-                                            <div class="w-[58px] h-[21px] bg-footer flex items-center justify-center">White</div>
-                                        </div>
-                                        <!-- small inside box2 -->
-                                        <div class="w-[77px] h-[22px] flex items-center justify-between mb-1">
-                                            <p>Size:</p>
-                                            <div class="w-[32px] h-[21px] bg-footer flex items-center justify-center">42</div>
-                                        </div>
-                                        <p>10 Units remaining</p>
-
-                                        <div class="w-[92px] h-[22px] mt-5 flex items-center justify-between">
-                                            <!-- minus -->
-                                            <div class="w-[25px] h-[22px] flex items-center justify-center border-[1px] border-GreenL rounded-lg">
-                                                <p class="pb-[3px]">-</p>
-                                            </div>
-                                            <p>2</p>
-                                            <!-- plus -->
-                                            <div class="w-[25px] h-[22px] flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg">
-                                                <p class="pb-[3px]">+</p>
-                                            </div>
-                                        </div>
+                    </div>
+                    <div class="w-full rounded-lg bg-white flex flex-wrap items-start justify-between lg:p-5 mb-5">
+                        <div class="lg:w-1/3 md:w-1/3 sm:w-full xs:w-full">
+                            <div style="background-image: url('images/canvas.png');" class="sm:h-[200px] xs:h-[200px] w-full rounded-lg bg-cover bg-center bg-no-repeat"></div>
+                        </div>
+                        <!-- rt sub1 -->
+                        <div class="lg:w-2/3 md:w-2/3 sm:w-full xs:w-full sm:w-full px-3 sm:py-3 xs:py-3">
+                            <!-- lt sub2 -->
+                            <div class="w-full">
+                                <div class="flex justify-between">
+                                    <div class="flex">
+                                        <p class="font-medium lg:text-2xl md:text-[16px] sm:text-[13px] xs:text-[13px]">Canvas</p>
+                                        <span class="text-base font-normal bg-footer px-1 h-6 ml-4 mt-1">#325412</span>
                                     </div>
-                                    <!-- rt sub3 -->
-                                    <div class="flex items-center justify-center bg-footer p-[10px] w-[84px] h-[27px] mr-[500px]">
-                                        <p class="text-base font-normal">#325412</p>
+                                    <div class="place-items-center">
+                                        <div class="flex place-items-center justify-items-center">
+                                            <p class="lg:text-2xl md:text-[16px] sm:text-[13px] xs:text-[13px] font-bold flex place-items-center justify-items-end bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
+                                                <span>&#8358;</span>3,500
+                                            </p>
+                                        </div>
+                                        <div class="lg:text-[15px] md:text-[15px] sm:text-[11px] xs:text-[10px] lg:ml-7 mt-[-3px]">
+                                            <p class="font-medium line-through ">&#8358;3,500</p>
+                                        </div>
                                     </div>
                                 </div>
 
-
-                                <!-- rt sub2  -->
-                                <div class="w-[87px] h-[55px] flex flex-col place-items-end justify-items-end">
-                                    <div class="flex place-items-center justify-items-center">
-                                        <p class="w-[87px] h-7 text-2xl font-bold flex place-items-center justify-items-end bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
-                                        <span><img class="mr-[2px]"src="images/naira  (1).png" alt="naira"/></span>3,500</p>
+                                <div class="w-full flex flex-col items-start justify-start">
+                                    
+                                    <!-- small inside box1 -->
+                                    <div class="flex items-center justify-start mb-2">
+                                        <p>Color:</p>
+                                        <div class="px-2 ml-5 bg-footer text-center">White</div>
                                     </div>
-                                    <div class="flex place-items-center justify-items-end ml-7">
-                                        <img class="w-[13px] h-[13px] mt-1 " src="images/naira.png" alt="naira">
-                                        <p class="w-[59px] h-[19px] font-medium line-through ">3,500</p>
+                                    <!-- small inside box2 -->
+                                    <div class="flex items-center justify-start mb-2">
+                                        <p>Size:</p>
+                                        <div class="px-2 ml-5 bg-footer text-center">42</div>
                                     </div>
-
-                                    <!-- trash -->
-                                    <img src="images/Trash.png" alt="trash"  class=" trashButton mt-[110px]">
+                                    <div class="w-full flex items-center justify-start">
+                                        <button class="text-center px-2 border-[1px] mr-3 border-GreenL rounded-lg">-</button>
+                                        <span>2</span>
+                                        <button class="text-center px-2 bg-gradient-to-b ml-3 from-GreenT to-GreenL text-white rounded-lg">+</button>
+                                    </div>
+                                    
+                                    <div class="w-full pt-2 flex justify-between">
+                                        <p>10 Units remaining</p>
+                                    
+                                        <!-- trash -->
+                                        <a href="#">
+                                            <i class="ph ph-trash text-2xl"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- box 4 -->
-                        <div class="w-[795px] h-[250px] rounded-lg bg-white flex items-start justify-between p-5">
-                            <img src="images/Canvas.png" alt="Canvas" class="w-[201.5px] h-[164.95px] rounded-lg">
-                            <!-- rt sub1 -->
-                            <div class="w-[523px] h-[180px] flex items-start justify-between">
-                                <!-- lt sub2 -->
-                                <div class="w-[396px] h-[169px] flex items-start justify-start">
-                                    <div class="w-[185px] h-[169px] flex flex-col items-start justify-start">
-                                        <p class="font-medium text-2xl">Canvas</p>
-                                        <!-- small inside box1 -->
-                                        <div class="w-[113px] h-[22px] flex items-center justify-between mb-2 mt-3">
-                                            <p>Color:</p>
-                                            <div class="w-[58px] h-[21px] bg-footer flex items-center justify-center">White</div>
-                                        </div>
-                                        <!-- small inside box2 -->
-                                        <div class="w-[77px] h-[22px] flex items-center justify-between mb-1">
-                                            <p>Size:</p>
-                                            <div class="w-[32px] h-[21px] bg-footer flex items-center justify-center">42</div>
-                                        </div>
-                                        <p>10 Units remaining</p>
-
-                                        <div class="w-[92px] h-[22px] mt-5 flex items-center justify-between">
-                                            <!-- minus -->
-                                            <div class="w-[25px] h-[22px] flex items-center justify-center border-[1px] border-GreenL rounded-lg">
-                                                <p class="pb-[3px]">-</p>
-                                            </div>
-                                            <p>2</p>
-                                            <!-- plus -->
-                                            <div class="w-[25px] h-[22px] flex items-center justify-center bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg">
-                                                <p class="pb-[3px]">+</p>
-                                            </div>
-                                        </div>
+                    </div>
+                    <div class="w-full rounded-lg bg-white flex flex-wrap items-start justify-between lg:p-5 mb-5">
+                        <div class="lg:w-1/3 md:w-1/3 sm:w-full xs:w-full">
+                            <div style="background-image: url('images/canvas.png');" class="sm:h-[200px] xs:h-[200px] w-full rounded-lg bg-cover bg-center bg-no-repeat"></div>
+                        </div>
+                        <!-- rt sub1 -->
+                        <div class="lg:w-2/3 md:w-2/3 sm:w-full xs:w-full sm:w-full px-3 sm:py-3 xs:py-3">
+                            <!-- lt sub2 -->
+                            <div class="w-full">
+                                <div class="flex justify-between">
+                                    <div class="flex">
+                                        <p class="font-medium lg:text-2xl md:text-[16px] sm:text-[13px] xs:text-[13px]">Canvas</p>
+                                        <span class="text-base font-normal bg-footer px-1 h-6 ml-4 mt-1">#325412</span>
                                     </div>
-                                    <!-- rt sub3 -->
-                                    <div class="flex items-center justify-center bg-footer p-[10px] w-[84px] h-[27px] mr-[500px]">
-                                        <p class="text-base font-normal">#325412</p>
+                                    <div class="place-items-center">
+                                        <div class="flex place-items-center justify-items-center">
+                                            <p class="lg:text-2xl md:text-[16px] sm:text-[13px] xs:text-[13px] font-bold flex place-items-center justify-items-end bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
+                                                <span>&#8358;</span>3,500
+                                            </p>
+                                        </div>
+                                        <div class="lg:text-[15px] md:text-[15px] sm:text-[11px] xs:text-[10px] lg:ml-7 mt-[-3px]">
+                                            <p class="font-medium line-through ">&#8358;3,500</p>
+                                        </div>
                                     </div>
                                 </div>
 
-
-                                <!-- rt sub2  -->
-                                <div class="w-[87px] h-[55px] flex flex-col place-items-end justify-items-end">
-                                    <div class="flex place-items-center justify-items-center">
-                                        <p class="w-[87px] h-7 text-2xl font-bold flex place-items-center justify-items-end bg-gradient-to-b from-GreenT to-GreenL bg-clip-text text-transparent">
-                                        <span><img class="mr-[2px]"src="images/naira  (1).png" alt="naira"/></span>3,500</p>
+                                <div class="w-full flex flex-col items-start justify-start">
+                                    
+                                    <!-- small inside box1 -->
+                                    <div class="flex items-center justify-start mb-2">
+                                        <p>Color:</p>
+                                        <div class="px-2 ml-5 bg-footer text-center">White</div>
                                     </div>
-                                    <div class="flex place-items-center justify-items-end ml-7">
-                                        <img class="w-[13px] h-[13px] mt-1 " src="images/naira.png" alt="naira">
-                                        <p class="w-[59px] h-[19px] font-medium line-through ">3,500</p>
+                                    <!-- small inside box2 -->
+                                    <div class="flex items-center justify-start mb-2">
+                                        <p>Size:</p>
+                                        <div class="px-2 ml-5 bg-footer text-center">42</div>
                                     </div>
-
-                                    <!-- trash -->
-                                    <img src="images/Trash.png" alt="trash"  class=" trashButton mt-[110px]">
+                                    <div class="w-full flex items-center justify-start">
+                                        <button class="text-center px-2 border-[1px] mr-3 border-GreenL rounded-lg">-</button>
+                                        <span>2</span>
+                                        <button class="text-center px-2 bg-gradient-to-b ml-3 from-GreenT to-GreenL text-white rounded-lg">+</button>
+                                    </div>
+                                    
+                                    <div class="w-full pt-2 flex justify-between">
+                                        <p>10 Units remaining</p>
+                                    
+                                        <!-- trash -->
+                                        <a href="#">
+                                            <i class="ph ph-trash text-2xl"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Right -->
-                <div class="w-[480px] h-[1300px] flex flex-col items-start justify-start ml-10 ">
-                    <p class="font-medium text-2xl mt-[180px]">Checkout</p>
+                <div class="lg:w-2/5 md:w-2/4 xs:mt-5 sm:mt-5 sm:w-full xs:w-full px-5 py-5">
+                    <p class="font-medium text-2xl pb-5">Checkout</p>
 
                     <!-- second section -->
-                    <div class="w-[480px] h-[1500px]  rounded-lg bg-white pt-7 pl-5 mt-[15px]">
+                    <div class="w-full rounded-lg bg-white py-5 px-5">
                         <p class="font-bold">Delivery details</p>
                         <!-- the rest -->
-                        <div class="w-[440px] h-[404px] flex flex-col items-start justify-start text-sm mt-8">
-                            <input class="w-[440px] h-[44px] flex items-center justify-center border-[1px] border-gray-200 rounded-lg px-3 py-[14px]"  type="text" name="name" placeholder="Full name" required>
-                            <input class="w-[440px] h-[44px] flex items-center justify-center border-[1px] border-gray-200 rounded-lg px-3 py-[14px] my-4"  type="text" name="Address" placeholder="Address" required>
-                            <input class="w-[440px] h-[44px] flex items-center justify-center border-[1px] border-gray-200 rounded-lg px-3 py-[14px]"  type="text" name="City" placeholder="City" required>
-                            <input class="w-[440px] h-[44px] flex items-center justify-center border-[1px] border-gray-200 rounded-lg px-3 py-[14px] my-4"  type="text" name="State" placeholder="State" required>
-                            <input class="w-[440px] h-[44px] flex items-center justify-center border-[1px] border-gray-200 rounded-lg px-3 py-[14px]"  type="text" name="Mail addresss" placeholder="Mail addresss" required>
-                            <input class="w-[440px] h-[44px] flex items-center justify-center border-[1px] border-gray-200 rounded-lg px-3 py-[14px] my-4"  type="text" name="Phone number" placeholder="Phone number" required>
-                            <input class="w-[440px] h-[44px] flex items-center justify-center border-[1px] border-gray-200 rounded-lg px-3 py-[14px]"  type="text" name="Zipcode (optional)" placeholder="Zipcode (optional)">
+                        <div class="w-full text-sm mt-8">
+                            <input class="h-[44px] w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] mb-3" type="text" name="name" placeholder="Full name" required>
+                            <input class="h-[44px] w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] mb-3" type="text" name="Address" placeholder="Address" required>
+                            <input class="h-[44px] w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] mb-3" type="text" name="City" placeholder="City" required>
+                            <input class="h-[44px] w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] mb-3" type="text" name="State" placeholder="State" required>
+                            <input class="h-[44px] w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] mb-3" type="text" name="Mail addresss" placeholder="Mail addresss" required>
+                            <input class="h-[44px] w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] mb-3" type="text" name="Phone number" placeholder="Phone number" required>
+                            <input class="h-[44px] w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] mb-3" type="text" name="Zipcode (optional)" placeholder="Zipcode (optional)">
                         </div>
-
                         <p class="font-bold mt-7">Payment Method</p>
-
-
                         <!-- paystack -->
                         <div class="w-[171px] h-[117px] flex flex-col items-center justify-center relative mt-7">
                             <div class="w-[171px] h-[93px] flex items-center justify-center border-[1px] border-gray-200 rounded-lg mt-6">
@@ -308,23 +301,23 @@
 
 
                         <!-- Summary -->
-                        <div class="w-[270px] h-[167px] flex flex-col items-start justify-start my-16">
+                        <div class="w-full my-16">
                             <p class="font-bold">Summary</p>
-                            <p class="my-5">Total item : (4)    2,000 </p>
-                            <p>Delivery charge :    2,000</p>
-                            <hr class="border-[1px] border-footer w-[265.5px] my-5">
-                            <p class="font-bold text-2xl">Total :    14,000</p>
+                            <p class="my-5">Total item : (4) 2,000 </p>
+                            <p>Delivery charge : 2,000</p>
+                            <hr class="border-[1px] border-footer w-2/3 my-5">
+                            <p class="font-bold text-2xl">Total : 14,000</p>
                         </div>
 
-                        <button class="w-[440px] h-[60px] p-[10px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg mb-5"
-                                type="button">Make payment
+                        <button class="add-to-cart w-full px-5 py-5 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg mb-5" type="button">
+                            Make payment
                         </button>
 
                         <!-- terms -->
-                        <div class="w-[419px] h-[22px] flex items-center justify-between mb-8">
-                            <p class="underline decoration-txtgray">Privacy policy</p>
-                            <p class="underline decoration-txtgray">Return policy</p>
-                            <p class="underline decoration-txtgray">Terms and condition</p>
+                        <div class="w-full flex items-center justify-between mb-8">
+                            <a href="#" class="underline decoration-txtgray">Privacy policy</a>
+                            <a href="#" class="underline decoration-txtgray">Return policy</a>
+                            <a href="#" class="underline decoration-txtgray">Terms and condition</a>
                         </div>
 
                     </div>
@@ -334,25 +327,31 @@
 
 
             <!-- Footer -->
-            <div class="w-full h-[128px] flex items-center justify-center mt-[250px] pl-10 bg-txtgray text-base text-white font-normal">
+            <div class="w-full px-3 py-3 flex items-center justify-between bg-txtgray text-white mt-20">
                 <!-- Logo -->
-                <div class="w-[128px] h-[43px] flex items-center justify-between ">
-                    <span class="w-[43px]  h-[43px] border-transparent bg-stepgray rounded-[50%] mr-[2px]"></span>
-                    <p>Your Logo</p>
+                <div class="lg:flex sm:block xs:block sm:items-start md:items-center sm:justify-start md:justify-between text-base text-white font-normal">
+                    <div class="lg:w-[43px] lg:h-[43px] xs:w-[20px] xs:h-[20px] border-transparent bg-stepgray rounded-[50%] mr-[2px]"></div>
+                    <p class="sm:text-sm md:text-base mt-2 lg:ml-3">Your Logo</p>
                 </div>
 
-                <div class="flex items-center justify-between w-[221px] h-[34px] mx-[300px]">
-                    <p>Contact Us</p>
-                    <div class="w-[118px] h-[34px] flex items-center justify-between">
-                        <img src="images/InstagramLogo.png" alt="ig">
-                        <img src="images/FacebookLogo.png" alt="fb">
-                        <img src="images/TwitterLogo.png" alt="X">
+                <div class="lg:flex sm:block xs:block">
+                    <p class="sm:text-sm md:text-base mr-2 mt-2">Contact Us</p>
+                    <div class="flex items-center justify-between mt-2">
+                        <a href="#">
+                            <i class="ph ph-instagram-logo text-3xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="ph ph-facebook-logo text-3xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="ph ph-twitter-logo text-3xl"></i>
+                        </a>
                     </div>
-                    
                 </div>
-                <div class="w-[258px] h-[48px] border-[2px] rounded-lg border-white flex items-center justify-center text-center" >
-                        Create your own store now
-                </div>
+                
+                <a class="create-store cursor-pointer lg:px-5 lg:py-3 xs:px-2 xs:py-2 rounded-lg borer-white text-center sm:text-sm md:text-base">
+                    Create store now
+                </a>
             </div>
 
 
@@ -360,25 +359,25 @@
     </div>
 
     <!-- Modal Body -->
-    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
-        <div class="w-[730px] h-[236px] rounded-lg bg-white flex flex-col items-center justify-center">
-          <div class="w-[600px] h-6 flex items-center justify-between">
-            <p class="font-bold text-base text-txtgray">Remove this product</p>
-            <img src="images/X.png" alt="X" id="close">
-          </div>
-          <p class="font-normal text-base text-txtgray w-[600px] h-[21px] pt-5 pb-16">Are you sure you want to unlist this product</p>
-          <div class="w-[600px] h-[60px] flex items-center justify-start font-normal text-base">
-          <button
-            onclick="cancelDelete()"
-            
-            class="w-[285px] mr-10 h-[60px] bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg  p-[10px] flex items-center justify-center"
-            type="button">No, keep item
-          </button>
-          <button type="button" onclick="confirmDelete()" class="w-[285px] h-[60px] rounded-lg border-[1px] border-Orange p-[10px] flex items-center justify-center">Yes, remove item</button>
-          </div>
+    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-5 hidden">
+        <div class="p-5 lg:w-2/5 sm:w-2/3 xs:w-full md:w-2/3 h-[250px] overflow-auto rounded-lg bg-white flex flex-col items-center justify-center">
+            <div class="w-full h-6 flex items-center justify-between">
+                <p class="font-bold text-base text-txtgray">Remove this product</p>
+                <i class="ph ph-x cursor-pointer" id="close"></i>
+            </div>
+            <p class="font-normal text-base text-txtgray w-full pt-5 pb-16">Are you sure you want to unlist this product</p>
+            <div class="w-full flex items-center justify-start font-normal text-base">
+                <button onclick="cancelDelete()" class="add-to-cart w-1/2 px-5 py-5 mr-5 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg flex items-center justify-center"
+                    type="button">No, keep item
+                </button>
+                <button type="button" onclick="confirmDelete()" class="w-1/2 px-5 py-5 rounded-lg border-[1px] border-Orange flex items-center justify-center">
+                    Yes, remove item
+                </button>
+            </div>
         </div>
-      </div>
+    </div>
 
-    <script src="JS/check1.js"></script>
+    <script src="js/check1.js"></script>
 </body>
+
 </html>
