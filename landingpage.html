@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/main.css?version=1" />
     <link rel="icon" href="images/favicon.png" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>MarketXtra | Landing Page</title>
@@ -43,9 +43,7 @@
     <div class="w-full flex flex-col-reverse md:flex-row items-center justify-between">
         <article class="w-[380px] h-[230px] md:w-[733px] md:h-[524px] flex flex-col items-start justify-start md:pl-12">
             <div class="md:w-[669px] md:h-[396px] flex flex-col items-center md:items-start justify-start">
-                <h1
-                    class="font-bold text-[32px] md:text-5xl w-[368px] h-[76px] md:w-[510px] md:h-[130px] mt-10 md:mt-[55px] flex items-center justify-start">
-                    Effortlessly Scale up Your Business Online!</h1>
+                <h1 class="font-extrabold text-[32px] md:text-5xl mt-10 md:mt-[55px] xs:text-center lg:text-left h-[80px]" id="elementTyped"></h1>
                 <p class=" hidden md:block font-normal text-base text-newT w-[654px] h-[96px] mt-10">MarketXtra empowers
                     small businesses in Africa to grow their sales, brand and customer base.Bring your business online
                     by simply creating a professional online store in minutes and your business is on its way to reach a
@@ -86,14 +84,13 @@
 
     <!-- 1st section -->
     <section class="w-full flex flex-col items-center justify-between mt-[100px]">
-        <h3
-            class="w-[254px] text-center h-[38px] md:w-[669px] md:h-6 font-bold text-base md:text-2xl mt-12 md:mt-[0px]">
+        <h3 class="w-[254px] text-center h-[38px] md:w-[669px] md:h-6 font-extrabold text-base md:text-2xl mt-12 md:mt-[0px]">
             Bring Your Business Online In 3 Simple Steps</h3>
         <div class="w-full flex flex-row md:flex-col items-center justify-start">
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between">
-                <img src="images/Step 1.png" alt="">
-                <img class="my-[-20px] md:my-[0px] md:mx-[150px]" src="images/Step 2.png" alt="">
-                <img src="images/Step 3.png" alt="">
+                <img src="images/step 1.png" class="mb-[30px] h-[350px] mt-[80px]" alt="">
+                <img class="md:mx-[150px] h-[350px] mt-[80px] mb-[30px]" src="images/step 2.png" alt="">
+                <img src="images/step 3.png" class="mb-[30px] h-[350px] mt-[80px]" alt="">
             </div>
             <div class="w-1/4 flex flex-col md:flex-row items-center justify-center">
                 <img src="images/C1.png" alt="">
@@ -114,7 +111,7 @@
 
     <!-- 2nd section -->
     <section class="w-full flex flex-col items-center justify-start md:mt-20">
-        <h3 class="w-[254px] text-center h-[38px] md:w-[669px] md:h-6 font-bold text-base md:text-2xl my-12 md:my-[0px]">
+        <h3 class="w-[254px] text-center h-[38px] md:w-[669px] md:h-6 font-extrabold text-base md:text-2xl my-12 md:my-[0px]">
             Keep Track Of Your Sales And Profit</h3>
         <div class="flex flex-col md:flex-row items-center justify-between md:mt-20">
             <img class="md:h-[205px] lg:h-[300px]" src="images/MacBook Pro 2.png" alt="">
@@ -144,19 +141,19 @@
                     <i class="ph ph-check-circle text-green-600 text-2xl ml-5"></i>
                 </div>
                 
-                <div class="mt-5 rounded-lg p-[10px] bg-white flex items-center justify-between">
+                <div class="mt-5 rounded-lg p-[10px] bg-white flex items-center justify-between ml-4">
                     <p>Access to business growth community</p>
                     <i class="ph ph-check-circle text-green-600 text-2xl ml-5"></i>
                 </div>
-                <div class="mt-5 rounded-lg p-[10px] bg-white flex items-center justify-between">
+                <div class="mt-5 rounded-lg p-[10px] bg-white flex items-center justify-between ml-4">
                     <p>Receive payments from customers seamlessly</p>
                     <i class="ph ph-check-circle text-green-600 text-2xl ml-5"></i>
                 </div>
-                <div class="mt-5 rounded-lg p-[10px] bg-white flex items-center justify-between mx-7">
+                <div class="mt-5 rounded-lg p-[10px] bg-white flex items-center justify-between ml-4">
                     <p>Receive payments seamlessly</p>
                     <i class="ph ph-check-circle text-green-600 text-2xl ml-5"></i>
                 </div>
-                <div class="mt-5 rounded-lg p-[10px] bg-white flex items-center justify-between">
+                <div class="mt-5 rounded-lg p-[10px] bg-white flex items-center justify-between ml-4">
                     <p>Manage customer list</p>
                     <i class="ph ph-check-circle text-green-600 text-2xl ml-5"></i>
                 </div>
@@ -213,6 +210,27 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#elementTyped', {
+            strings: [
+                'Effortlessly Scale up Your Business Online!',
+                "Grow Your Online Presence Today!",
+                "Easily Elevate Your Business to New Heights!",
+                "Expand Your Digital Footprint!",
+                "Boost Your Online Success!",
+                "Amplify Your Business Reach Online!"
+            ],
+            smartBackspace: true,
+            typeSpeed: 50,
+            backDelay: 3000,
+            loop: true,
+            loopCount: Infinity,
+            fadeOut: true,
+            fadeOutClass: 'typed-fade-out',
+            fadeOutDelay: 500,
+        });
+    </script>
 </body>
 
 </html>
