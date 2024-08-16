@@ -1410,10 +1410,6 @@ video {
   height: 62px;
 }
 
-.h-\[644px\]{
-  height: 644px;
-}
-
 .h-\[64px\]{
   height: 64px;
 }
@@ -2106,6 +2102,14 @@ video {
   max-width: 100%;
 }
 
+.max-w-64{
+  max-width: 16rem;
+}
+
+.max-w-32{
+  max-width: 8rem;
+}
+
 .grow{
   flex-grow: 1;
 }
@@ -2546,11 +2550,6 @@ video {
   padding-right: 0.5rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2768,10 +2767,6 @@ video {
   padding-right: 35px;
 }
 
-.pt-10{
-  padding-top: 2.5rem;
-}
-
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -2806,6 +2801,10 @@ video {
 
 .pt-\[88px\]{
   padding-top: 88px;
+}
+
+.pl-1{
+  padding-left: 0.25rem;
 }
 
 .text-left{
@@ -3833,6 +3832,11 @@ thead tr th{
     padding-right: 0.5rem;
   }
 
+  .xs\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .xs\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -3861,11 +3865,6 @@ thead tr th{
   .xs\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .xs\:px-3{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
   }
 
   .xs\:text-center{
@@ -4027,6 +4026,11 @@ thead tr th{
     padding-right: 0.25rem;
   }
 
+  .sm\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .sm\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -4060,11 +4064,6 @@ thead tr th{
   .sm\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .sm\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .sm\:text-center{
@@ -4628,6 +4627,11 @@ thead tr th{
     padding-right: 2.5rem;
   }
 
+  .lg\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .lg\:px-3{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -4661,11 +4665,6 @@ thead tr th{
   .lg\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .lg\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .lg\:pl-5{
