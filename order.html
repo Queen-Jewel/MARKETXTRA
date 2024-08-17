@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="css/main.css?version=1" />
     <link rel="icon" href="images/favicon.png" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -139,7 +139,7 @@
     <form action="#" method="post">
         <div id="dotModal" class="custom-modal justify-center flex align-items lg:px-10 lg:py-10 md:px-5 md:py-5 xs:px-5 xs:py-5 sm:px-5 sm:py-5 fixed z-[100] inset-0 bg-black  bg-opacity-50 x-50 w-screen h-screen hidden">
             <div class="overflow-auto h-4/5 lg:w-1/2 sm:w-2/3 md:w-2/3 xs:w-full px-10 py-10 xs:px-5 xs:py-5 bg-white rounded-lg items-center justify-center relative text-sm">
-                <p class="flex items-center justify-center font-medium text-2xl text-txtgray mb-5">Input details</p>
+                <p class="flex items-center justify-center lg:font-medium xs:font-extrabold text-2xl text-txtgray mb-5">Input details</p>
                 <input type="text" name="Name Category" placeholder="Name" id="customerName" class="w-full customerInput h-[56px] border-gray-300 border-[1px] rounded-lg px-3 mt-3" required>
                 <input type="text" name="E-mail" placeholder="E-mail" id="customerEmail" class="w-full customerInput h-[56px] border-gray-300 border-[1px] rounded-lg px-3 mt-3" required>
                 <input type="text" name="Phone Number" placeholder="Phone Number" id="customerPhone" class="w-full customerInput h-[56px] border-gray-300 border-[1px] rounded-lg px-3 mt-3" required>
@@ -158,8 +158,8 @@
         <div class="overflow-auto h-4/5 lg:w-2/3 sm:w-full md:w-full xs:w-full px-10 py-10 xs:px-5 xs:py-5 bg-white rounded-lg items-center justify-center relative text-sm">
             <!-- add category button -->
             <div class="w-full flex items-start justify-between mb-5">
-                <p class="text-2xl font-medium text-txtgray">Your Customers</p>
-                <button class="flex items-center justify-center rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg px-3 py-2" type="submit">
+                <p class="lg:text-2xl xs:text-[16px] xs:mt-2 lg:font-medium xs:font-extrabold text-txtgray">Your Customers</p>
+                <button class="xs:text-[12px] lg:text-base flex items-center justify-center rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg px-3 py-2" type="submit">
                     Add Customer <i class="ph ph-plus-circle ml-3"></i>
                 </button>
             </div>
@@ -167,23 +167,23 @@
             <!-- customer -->
             <div id="customercontainer" class="w-full flex flex-col items-start justify-start text-base text-txtgray font-normal">
                 <!-- 1st customer -->
-                <div class="w-full bg-footer flex items-start justify-between rounded-lg px-5 py-5 mb-2">
-                    <p class="pl-2">Jaachi Jeff</p>
-                    <p class="pl-2 max-w-32">jaachijeff@gmail.com</p>
-                    <p class="pl-2">07025566524</p>
-                    <p class="pl-2">5 days ago</p>
+                <div class="w-full bg-footer flex items-start justify-between rounded-lg lg:px-5 lg:py-5 sm:px-2 sm:py-3 xs:px-2 xs:py-3 mb-2">
+                    <div class="pl-2">Jaachi Jeff</div>
+                    <div class="pl-2">jaachijeff@gmail.com</div>
+                    <div class="pl-2 lg:block md:block xs:hidden">07025566524</div>
+                    <div class="pl-2">5 days ago</div>
                 </div>
-                <div class="w-full bg-footer flex items-start justify-between rounded-lg px-5 py-5 mb-2">
-                    <p class="pl-2">Jaachi Jeff</p>
-                    <p class="pl-2 max-w-32">jaachijeff@gmail.com</p>
-                    <p class="pl-2">07025566524</p>
-                    <p class="pl-2">5 days ago</p>
+                <div class="w-full bg-footer flex items-start justify-between rounded-lg lg:px-5 lg:py-5 sm:px-2 sm:py-3 xs:px-2 xs:py-3 mb-2">
+                    <div class="pl-2">Jaachi Jeff</div>
+                    <div class="pl-2">jaachijeff@gmail.com</div>
+                    <div class="pl-2 lg:block md:block xs:hidden">07025566524</div>
+                    <div class="pl-2">5 days ago</div>
                 </div>
-                <div class="w-full bg-footer flex items-start justify-between rounded-lg px-5 py-5 mb-2">
-                    <p class="pl-2">Jaachi Jeff</p>
-                    <p class="pl-2 max-w-32">jaachijeff@gmail.com</p>
-                    <p class="pl-2">07025566524</p>
-                    <p class="pl-2">5 days ago</p>
+                <div class="w-full bg-footer flex items-start justify-between rounded-lg lg:px-5 lg:py-5 sm:px-2 sm:py-3 xs:px-2 xs:py-3 mb-2">
+                    <div class="pl-2">Jaachi Jeff</div>
+                    <div class="pl-2">jaachijeff@gmail.com</div>
+                    <div class="pl-2 lg:block md:block xs:hidden">07025566524</div>
+                    <div class="pl-2">5 days ago</div>
                 </div>
             </div>
 
@@ -191,18 +191,28 @@
     </div>
 
     <!-- Product Modal -->
-    <div id="proModal" class="custom-modal justify-center flex align-items lg:px-10 lg:py-10 md:px-5 md:py-5 xs:px-5 xs:py-5 sm:px-5 sm:py-5 fixed z-[100] inset-0 bg-black bg-opacity-50 x-50 w-screen h-screen hidden">
+    <div id="proModal" class="custom-modal justify-center flex align-items lg:px-10 lg:py-10 md:px-5 md:py-5 xs:px-5 xs:py-5 sm:px-5 sm:py-5 fixed z-[100] inset-0 bg-black bg-opacity-50 x-50 w-screen h-screen">
         <div class="overflow-auto h-4/5 lg:w-2/3 sm:w-full md:w-full xs:w-full px-10 py-10 xs:px-5 xs:py-5 bg-white rounded-lg items-center justify-center relative text-sm">
             <!-- add category button -->
-            <div class="w-full flex items-start justify-between mt-7 mb-5">
-                <p class="text-2xl font-medium text-txtgray">Listed Products</p>
-                <button class="cursor-pointer flex items-center justify-center px-3 py-2 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg" type="submit">
+            <div class="w-full flex items-start justify-between mb-5">
+                <p class="lg:text-2xl xs:text-[16px] xs:mt-2 lg:font-medium xs:font-extrabold text-txtgray">Listed Products</p>
+                <button class="xs:text-[12px] lg:text-base flex items-center justify-center rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg px-3 py-2" type="submit">
                     Add Products <i class="ph ph-plus-circle ml-3"></i>
                 </button>
             </div>
 
             <!-- 1st customer -->
-            <div class="w-full bg-footer flex items-start justify-between rounded-lg px-5 py-5">
+            <div class="w-full bg-footer flex items-start justify-between rounded-lg lg:px-5 lg:py-5 sm:px-2 sm:py-3 xs:px-2 xs:py-3 mb-2">
+                <p>Plain T-shirt</p>
+                <p>2 Units</p>
+                <p>NGN3,000</p>
+            </div>
+            <div class="w-full bg-footer flex items-start justify-between rounded-lg lg:px-5 lg:py-5 sm:px-2 sm:py-3 xs:px-2 xs:py-3 mb-2">
+                <p>Plain T-shirt</p>
+                <p>2 Units</p>
+                <p>NGN3,000</p>
+            </div>
+            <div class="w-full bg-footer flex items-start justify-between rounded-lg lg:px-5 lg:py-5 sm:px-2 sm:py-3 xs:px-2 xs:py-3 mb-2">
                 <p>Plain T-shirt</p>
                 <p>2 Units</p>
                 <p>NGN3,000</p>

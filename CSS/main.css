@@ -966,10 +966,6 @@ video {
   margin-right: 33px;
 }
 
-.mr-\[460px\]{
-  margin-right: 460px;
-}
-
 .mr-\[6px\]{
   margin-right: 6px;
 }
@@ -1334,10 +1330,6 @@ video {
   height: 42px;
 }
 
-.h-\[434px\]{
-  height: 434px;
-}
-
 .h-\[43px\]{
   height: 43px;
 }
@@ -1356,10 +1348,6 @@ video {
 
 .h-\[481px\]{
   height: 481px;
-}
-
-.h-\[483px\]{
-  height: 483px;
 }
 
 .h-\[48px\]{
@@ -1794,10 +1782,6 @@ video {
   width: 166px;
 }
 
-.w-\[167px\]{
-  width: 167px;
-}
-
 .w-\[170px\]{
   width: 170px;
 }
@@ -1856,10 +1840,6 @@ video {
 
 .w-\[223px\]{
   width: 223px;
-}
-
-.w-\[22px\]{
-  width: 22px;
 }
 
 .w-\[230px\]{
@@ -2034,10 +2014,6 @@ video {
   width: 654px;
 }
 
-.w-\[66px\]{
-  width: 66px;
-}
-
 .w-\[691px\]{
   width: 691px;
 }
@@ -2054,10 +2030,6 @@ video {
   width: 80px;
 }
 
-.w-\[821px\]{
-  width: 821px;
-}
-
 .w-\[84px\]{
   width: 84px;
 }
@@ -2068,10 +2040,6 @@ video {
 
 .w-\[864px\]{
   width: 864px;
-}
-
-.w-\[889px\]{
-  width: 889px;
 }
 
 .w-\[90px\]{
@@ -2098,16 +2066,12 @@ video {
   min-width: 5%;
 }
 
-.max-w-\[100\%\]{
-  max-width: 100%;
-}
-
-.max-w-64{
-  max-width: 16rem;
-}
-
 .max-w-32{
   max-width: 8rem;
+}
+
+.max-w-\[100\%\]{
+  max-width: 100%;
 }
 
 .grow{
@@ -2801,10 +2765,6 @@ video {
 
 .pt-\[88px\]{
   padding-top: 88px;
-}
-
-.pl-1{
-  padding-left: 0.25rem;
 }
 
 .text-left{
@@ -3725,6 +3685,14 @@ thead tr th{
     margin-top: 1.25rem;
   }
 
+  .xs\:mt-1{
+    margin-top: 0.25rem;
+  }
+
+  .xs\:mt-2{
+    margin-top: 0.5rem;
+  }
+
   .xs\:block{
     display: block;
   }
@@ -3903,6 +3871,18 @@ thead tr th{
   .xs\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .xs\:text-\[12px\]{
+    font-size: 12px;
+  }
+
+  .xs\:text-\[16px\]{
+    font-size: 16px;
+  }
+
+  .xs\:font-extrabold{
+    font-weight: 800;
   }
 }
 
@@ -4667,6 +4647,11 @@ thead tr th{
     padding-bottom: 1rem;
   }
 
+  .lg\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
   .lg\:pl-5{
     padding-left: 1.25rem;
   }
@@ -4700,5 +4685,14 @@ thead tr th{
 
   .lg\:text-\[3rem\]{
     font-size: 3rem;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:font-medium{
+    font-weight: 500;
   }
 }
