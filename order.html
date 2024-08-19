@@ -242,12 +242,23 @@
     <script src="js/jquery3.7.js"></script>
     <script src="js/marketxtra.js"></script>
     <script>
-        $('#hideCustomer,#goBackCustomer').click(function(){
-            $('#cusModal').toggleClass('hidden');
+        $('#hideCustomer').click(function(){
+            $('#cusModal').addClass('hidden');
+            $('#dotModal').removeClass('hidden');
+        });
+        $('#goBackCustomer').click(function(){
+            $('#dotModal').addClass('hidden')
+            $('#cusModal').removeClass('hidden');
         });
 
-        $('#hideProducts,#goBackProduct').click(function(){
-            $('#proModal').toggleClass('hidden');
+        $('#hideProducts').click(function(){
+            $('#proModal').addClass('hidden');
+            $('#productModal').removeClass('hidden');
+        });
+
+        $('#goBackProduct').click(function(){
+            $('#proModal').removeClass('hidden');
+            $('#productModal').addClass('hidden');
         });
     </script>
 </body>
