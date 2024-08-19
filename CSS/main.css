@@ -724,6 +724,14 @@ video {
   top: 85%;
 }
 
+.left-\[10px\]{
+  left: 10px;
+}
+
+.top-\[20px\]{
+  top: 20px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1478,6 +1486,10 @@ video {
   height: 100vh;
 }
 
+.h-\[20px\]{
+  height: 20px;
+}
+
 .min-h-12{
   min-height: 3rem;
 }
@@ -2054,6 +2066,10 @@ video {
   width: 100vw;
 }
 
+.w-\[20px\]{
+  width: 20px;
+}
+
 .min-w-48{
   min-width: 12rem;
 }
@@ -2064,10 +2080,6 @@ video {
 
 .min-w-\[5\%\]{
   min-width: 5%;
-}
-
-.max-w-32{
-  max-width: 8rem;
 }
 
 .max-w-\[100\%\]{
@@ -3677,20 +3689,16 @@ thead tr th{
     margin-left: -20px;
   }
 
+  .xs\:mt-2{
+    margin-top: 0.5rem;
+  }
+
   .xs\:mt-4{
     margin-top: 1rem;
   }
 
   .xs\:mt-5{
     margin-top: 1.25rem;
-  }
-
-  .xs\:mt-1{
-    margin-top: 0.25rem;
-  }
-
-  .xs\:mt-2{
-    margin-top: 0.5rem;
   }
 
   .xs\:block{
@@ -3848,6 +3856,10 @@ thead tr th{
     font-size: 10px;
   }
 
+  .xs\:text-\[12px\]{
+    font-size: 12px;
+  }
+
   .xs\:text-\[13px\]{
     font-size: 13px;
   }
@@ -3858,6 +3870,10 @@ thead tr th{
 
   .xs\:text-\[15px\]{
     font-size: 15px;
+  }
+
+  .xs\:text-\[16px\]{
+    font-size: 16px;
   }
 
   .xs\:text-\[17px\]{
@@ -3871,14 +3887,6 @@ thead tr th{
   .xs\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .xs\:text-\[12px\]{
-    font-size: 12px;
-  }
-
-  .xs\:text-\[16px\]{
-    font-size: 16px;
   }
 
   .xs\:font-extrabold{

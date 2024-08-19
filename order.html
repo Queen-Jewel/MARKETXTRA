@@ -90,7 +90,7 @@
                     <p class="font-medium text-2xl text-txtgray my-10">Offline order</p>
                     <!-- Inputs -->
                     <div class="lg:w-2/4 sm:w-full md:w-2/3 xs:w-full flex flex-wrap items-start justify-start text-base text-txtgray font-normal">
-                        <input data-target="#dotModal" type="text" name="dot" placeholder="Date of transaction" id="DOT" class="cursor-pointer btn-modal w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center" required>
+                        <input type="text" name="dot" placeholder="Date of transaction" id="DOT" class="cursor-pointer w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-center justify-center" required>
                         
                         <div data-target="#cusModal" class="cursor-pointer btn-modal w-full flex items-center justify-between relative my-5">
                             <div class="w-full border-[1px] border-gray-200 rounded-lg px-3 py-[14px] flex items-start justify-start">
@@ -135,10 +135,11 @@
     <!-- Modal Bodies -->
 
     
-    <!-- DOT Modal -->
+    <!-- add customer Modal -->
     <form action="#" method="post">
         <div id="dotModal" class="custom-modal justify-center flex align-items lg:px-10 lg:py-10 md:px-5 md:py-5 xs:px-5 xs:py-5 sm:px-5 sm:py-5 fixed z-[100] inset-0 bg-black  bg-opacity-50 x-50 w-screen h-screen hidden">
             <div class="overflow-auto h-4/5 lg:w-1/2 sm:w-2/3 md:w-2/3 xs:w-full px-10 py-10 xs:px-5 xs:py-5 bg-white rounded-lg items-center justify-center relative text-sm">
+                <i id="goBackCustomer" class="cursor-pointer ph ph-caret-left text-2xl absolute left-[10px] top-[20px] h-[20px] w-[20px]"></i>
                 <p class="flex items-center justify-center lg:font-medium xs:font-extrabold text-2xl text-txtgray mb-5">Input details</p>
                 <input type="text" name="Name Category" placeholder="Name" id="customerName" class="w-full customerInput h-[56px] border-gray-300 border-[1px] rounded-lg px-3 mt-3" required>
                 <input type="text" name="E-mail" placeholder="E-mail" id="customerEmail" class="w-full customerInput h-[56px] border-gray-300 border-[1px] rounded-lg px-3 mt-3" required>
@@ -152,6 +153,24 @@
             </div>
         </div>
     </form>
+    <!-- add product modal -->
+    <form action="#" method="post">
+        <div id="productModal" class="custom-modal justify-center flex align-items lg:px-10 lg:py-10 md:px-5 md:py-5 xs:px-5 xs:py-5 sm:px-5 sm:py-5 fixed z-[100] inset-0 bg-black  bg-opacity-50 x-50 w-screen h-screen hidden">
+            <div class="overflow-auto h-4/5 lg:w-1/2 sm:w-2/3 md:w-2/3 xs:w-full px-10 py-10 xs:px-5 xs:py-5 bg-white rounded-lg items-center justify-center relative text-sm">
+                <i id="goBackProduct" class="cursor-pointer ph ph-caret-left text-2xl absolute left-[10px] top-[20px] h-[20px] w-[20px]"></i>
+                <p class="flex items-center justify-center lg:font-medium xs:font-extrabold text-2xl text-txtgray mb-5">Input details</p>
+                <input type="text" name="product_name" placeholder="Product Name" id="customerName" class="w-full customerInput h-[56px] border-gray-300 border-[1px] rounded-lg px-3 mt-3" required>
+                <input type="text" name="units" placeholder="Units" class="w-full customerInput h-[56px] border-gray-300 border-[1px] rounded-lg px-3 mt-3" required>
+                <input type="text" name="amount" placeholder="Amount" class="w-full customerInput h-[56px] border-gray-300 border-[1px] rounded-lg px-3 mt-3" required>
+                <input type="text" name="ppu" placeholder="Profit per unit" class="w-full customerInput h-[56px] border-gray-300 border-[1px] rounded-lg px-3 mt-3" required>
+                <div class="flex justify-center w-full">
+                    <button class="add-to-cart text-center px-8 py-4 mb-5 rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-[20px] font-medium mt-8">
+                        Add
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
 
     <!-- Customer Modal -->
     <div id="cusModal" class="custom-modal justify-center flex align-items lg:px-10 lg:py-10 md:px-5 md:py-5 xs:px-5 xs:py-5 sm:px-5 sm:py-5 fixed z-[100] inset-0 bg-black  bg-opacity-50 x-50 w-screen h-screen hidden">
@@ -159,7 +178,7 @@
             <!-- add category button -->
             <div class="w-full flex items-start justify-between mb-5">
                 <p class="lg:text-2xl xs:text-[16px] xs:mt-2 lg:font-medium xs:font-extrabold text-txtgray">Your Customers</p>
-                <button class="xs:text-[12px] lg:text-base flex items-center justify-center rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg px-3 py-2" type="submit">
+                <button id="hideCustomer" data-target="#dotModal" class="btn-modal xs:text-[12px] lg:text-base flex items-center justify-center rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg px-3 py-2" type="submit">
                     Add Customer <i class="ph ph-plus-circle ml-3"></i>
                 </button>
             </div>
@@ -191,16 +210,15 @@
     </div>
 
     <!-- Product Modal -->
-    <div id="proModal" class="custom-modal justify-center flex align-items lg:px-10 lg:py-10 md:px-5 md:py-5 xs:px-5 xs:py-5 sm:px-5 sm:py-5 fixed z-[100] inset-0 bg-black bg-opacity-50 x-50 w-screen h-screen">
+    <div id="proModal" class="custom-modal justify-center flex align-items lg:px-10 lg:py-10 md:px-5 md:py-5 xs:px-5 xs:py-5 sm:px-5 sm:py-5 fixed z-[100] inset-0 bg-black bg-opacity-50 x-50 w-screen h-screen hidden">
         <div class="overflow-auto h-4/5 lg:w-2/3 sm:w-full md:w-full xs:w-full px-10 py-10 xs:px-5 xs:py-5 bg-white rounded-lg items-center justify-center relative text-sm">
             <!-- add category button -->
             <div class="w-full flex items-start justify-between mb-5">
                 <p class="lg:text-2xl xs:text-[16px] xs:mt-2 lg:font-medium xs:font-extrabold text-txtgray">Listed Products</p>
-                <button class="xs:text-[12px] lg:text-base flex items-center justify-center rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg px-3 py-2" type="submit">
+                <button id="hideProducts" data-target="#productModal" class="btn-modal xs:text-[12px] lg:text-base flex items-center justify-center rounded-lg bg-gradient-to-b from-GreenT to-GreenL text-white text-base font-normal rounded-lg px-3 py-2" type="submit">
                     Add Products <i class="ph ph-plus-circle ml-3"></i>
                 </button>
             </div>
-
             <!-- 1st customer -->
             <div class="w-full bg-footer flex items-start justify-between rounded-lg lg:px-5 lg:py-5 sm:px-2 sm:py-3 xs:px-2 xs:py-3 mb-2">
                 <p>Plain T-shirt</p>
@@ -223,5 +241,14 @@
 
     <script src="js/jquery3.7.js"></script>
     <script src="js/marketxtra.js"></script>
+    <script>
+        $('#hideCustomer,#goBackCustomer').click(function(){
+            $('#cusModal').toggleClass('hidden');
+        });
+
+        $('#hideProducts,#goBackProduct').click(function(){
+            $('#proModal').toggleClass('hidden');
+        });
+    </script>
 </body>
 </html>
