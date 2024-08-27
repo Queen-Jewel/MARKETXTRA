@@ -103,14 +103,18 @@ input{
 }
 canvas {
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: none;
+    box-shadow: none;
 }
 #doughnut {
-    width: 250px !important;
-    height: 250px !important;
+    width: 300px !important;
+    height: 300px !important;
 }
 #lineChart{
-    height: 250px !important;
+    height: 300px !important;
 }
 .sales-card,.profit-card,.customer-card{
     transition: all .3s ease;
@@ -334,6 +338,21 @@ thead tr th{
     height: 0px;
     width: 0px;
     bottom: 0px;
+}
+
+
+#sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+#sidebar.show {
+    transform: translateX(0);
+}
+.dropdown-content {
+    display: none;
+}
+.mx-link:hover .dropdown-content {
+    display: block;
 }
  
 @media only screen and (min-width: 320px) and (max-width: 479px){

@@ -76,6 +76,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     options: {
                         responsive: true,
                         maintainAspectRatio: true,
+                        animation: {
+                            duration: 0
+                        },
+                        hover: {
+                            mode: null // Disables hover interactions
+                        },
                         scales: {
                             x: {
                                 grid: {
@@ -125,11 +131,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     options: {
                         responsive: true,
                         maintainAspectRatio: true,
+                        devicePixelRatio: window.devicePixelRatio || 1,
                         scales: {
                             x: {
                                 grid: {
                                     display: false
                                 },
+                                ticks: {
+                                    maxRotation: 0,
+                                    minRotation: 0
+                                }
                             }
                         },
                         plugins: {
@@ -188,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if(chart_type == "daily"){
-            var data_bar_label_daily = ['12am-3am', '3;01am-6am', '6:01am-9am', '9:01am-12pm', '12:01pm-3pm', '3:01pm-6pm', '6:01pm-9pm', '9:01pm-11:59pm'];
+            var data_bar_label_daily = ['12am-3am', '3:01am-6am', '6:01am-9am', '9:01am-12pm', '12:01pm-3pm', '3:01pm-6pm', '6:01pm-9pm', '9:01pm-11:59pm'];
             var data_bar_daily = [2, 40, 80, 90, 20, 45, 100, 110, 120];
             loadBarChartOnly(data_bar_label_daily,data_bar_daily);
 
@@ -197,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loadLineChartOnly(line_labels,line_data);
 
             var doughLabel = ['Plain T', 'Branded T', 'Customized T'];
-            var dataDoughnut = [5, 10, 85];
+            var dataDoughnut = [33, 33, 33];
             loadDoughnutChartOnly(doughLabel, dataDoughnut);
         }else if(chart_type == "weekly"){
             var data_bar_label_daily = ['Sun', 'Mon','Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
@@ -237,6 +248,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // load default charts
     switchChartForDashboard("daily");
+
+    window.addEventListener('resize', function() {
+        switchChartForDashboard("daily");
+    });
 });
 
 // Dropdown toggle
@@ -377,24 +392,55 @@ $('.go-back').click(function(){
 })
 
 $(document).ready(function(){
-    $('.featured-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            600:{
-                items:3,
-                nav:true
-            },
-            1000:{
-                items:4,
-                nav:true,
-                loop:false
+    if($('.featured-carousel')){
+        $('.featured-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:true
+                },
+                1000:{
+                    items:4,
+                    nav:true,
+                    loop:false
+                }
             }
-        }
-    })
+        })
+    }
 });
+
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+        const accordionItem = header.parentElement;
+        const accordionContent = accordionItem.querySelector('.accordion-content');
+
+        // Toggle the current accordion item
+        accordionContent.classList.toggle('hidden');
+
+        // Close other accordion items if needed
+        accordionHeaders.forEach(item => {
+            if (item !== header) {
+                const otherContent = item.parentElement.querySelector('.accordion-content');
+                otherContent.classList.add('hidden');
+            }
+        });
+    });
+});
+
+
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('show');
+}
+
+document.querySelector('#openSide').addEventListener('click', toggleSidebar);
+document.querySelector('#close-small-sidebar').addEventListener('click', toggleSidebar);
