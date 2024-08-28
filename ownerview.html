@@ -27,11 +27,7 @@
                 </div>
                 <!-- nav dashboards -->
                 <div class="pb-[100px] pl-10 w-full h-screen overflow-auto flex flex-col items-start justify-start text-[16px] font-normal text-txtgray">
-                    <!-- 1st -->
-                    <a href="#" class="mx-side-link">
-                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
-                        <p>My store</p>
-                    </a>
+                    
                     <!-- 2nd -->
                     <a href="#" class="mx-side-link active">
                         <i class="mr-[6px] text-2xl ph ph-receipt"></i>
@@ -46,6 +42,11 @@
                     <a href="#" class="mx-side-link">
                         <i class="mr-[6px] text-2xl ph ph-note"></i>
                         <p>Orders</p>
+                    </a>
+                    <!-- 1st -->
+                    <a href="#" class="mx-side-link">
+                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
+                        <p>My store</p>
                     </a>
                     
                     <!-- 5th -->
@@ -66,20 +67,39 @@
                 <div class="flex w-100 justify-center">
                     <i class="ph ph-x-circle text-3xl mt-4" id="close-small-sidebar"></i>
                 </div>
-                <div class="flex flex-col p-5">
-                    <a href="#" class="mb-4 text-base">Home</a>
-                    <div class="accordion-item mb-4">
-                        <button class="accordion-header w-full text-left flex justify-between">
-                            <span>Category</span> <i class="ph ph-caret-down"></i>
-                        </button>
-                        <div class="accordion-content hidden p-4 bg-white block">
-                            <a href="#" class="mb-4 text-base inline-block w-full">Category 1</a>
-                            <a href="#" class="mb-4 text-base inline-block w-full">Category 2</a>
-                            <a href="#" class="mb-4 text-base inline-block w-full">Category 3</a>
-                        </div>
-                    </div>
-                    <a href="#" class="mb-4 text-base">About Us</a>
-                    <a href="#" class="text-base">Cart</a>
+                
+                <div class="pb-[100px] pl-10 w-full h-screen overflow-auto flex flex-col items-start justify-start text-[16px] font-normal text-txtgray">
+                    <!-- 2nd -->
+                    <a href="#" class="mx-side-link active">
+                        <i class="mr-[6px] text-2xl ph ph-receipt"></i>
+                        <p>Dashboard</p>
+                    </a>
+                    <!-- 3rd -->
+                    <a href="addp1.html" class="mx-side-link">
+                        <i class="mr-[6px] text-2xl ph ph-package"></i>
+                        <p>Products</p>
+                    </a>
+                    <!-- 4th -->
+                    <a href="#" class="mx-side-link">
+                        <i class="mr-[6px] text-2xl ph ph-note"></i>
+                        <p>Orders</p>
+                    </a>
+                    <!-- 1st -->
+                    <a href="#" class="mx-side-link">
+                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
+                        <p>My store</p>
+                    </a>
+                    
+                    <!-- 5th -->
+                    <a href="#" class="mx-side-link">
+                        <i class="mr-[6px] text-2xl ph ph-users"></i>
+                        <p>Customers</p>
+                    </a>
+                    <!-- 6th -->
+                    <a href="settings.html" class="mx-side-link">
+                        <i class="mr-[6px] text-2xl ph ph-gear"></i>
+                        <p>Settings</p>
+                    </a>
                 </div>
             </div>
 
@@ -114,7 +134,7 @@
                         <div id="toggledState" class="lg:block relative top-0 right-0 w-auto bg-inherit md:relative lg:relative lg:top-0 md:top-0 lg:right-0 md:right-0 lg:w-auto md:w-auto lg:bg-inherit md:bg-inherit lg:px-0 md:px-0 lg:py-0 md:py-0 sm:absolute sm:top-[110px] sm:w-[230px] sm:rounded-lg sm:right-[30px] sm:bg-Drwhite sm:px-3 sm:py-3 xs:hidden xs:absolute xs:top-[110px] xs:w-[230px] xs:rounded-lg xs:right-[30px] xs:bg-Drwhite xs:px-3 xs:py-3">
                             <p class="flex items-center justify-between">
                                 <span><i id="clickSwitch" class="cursor-pointer ph ph-toggle-left mr-3 text-4xl"></i></span>
-                                <span id="toggleSwitchTxt">View as customer</span>
+                                <a id="toggleSwitchTxt" href="customerview.html">View as customer</a>
                             </p>
                         </div>
     
@@ -129,6 +149,10 @@
                 <div class="h-[481px] w-full relative">
                     <!-- Dark overlay -->
                     <div class="flex justify-center items-center absolute inset-0" style="background: rgba(0, 0, 0, 0.58);">
+                        <i id="open-upload2" class="editable ph ph-pencil-line text-[22px] absolute top-[25px] right-[20px] font-light bg-stepgray rounded-full px-1 py-1 cursor-pointer text-black"></i>
+                        <form action="#">
+                            <input type="file" id="bg-input" name="bg-file" hidden>
+                        </form>
                         <p class="editable-parent rounded-lg z-5 mb-5 lg:w-2/4 sm:w-2/3 xs:w-2/3 flex items-center justify-center md:leading-[70px] text-center sm:text-4xl xs:text-3xl lg:text-[3rem]  text-white font-extrabold relative">
                             <span>We Sell The Best Quality of T-shirts.</span>
                             <i style="display: none;" class="editable ph ph-pencil-line absolute top-[15px] right-[-15px] font-light bg-stepgray rounded-full text-[25px] px-1 py-1 cursor-pointer text-black"></i>
@@ -164,7 +188,7 @@
                 $('.editable').show();
                 $('.editable-parent').removeClass('border-2 border-white');
                 $('.editable-parent').addClass('border-2 border-white');
-                $('#toggleSwitchTxt').text("View as owner");
+                $('#toggleSwitchTxt').text("View as customer");
                 toggleCtrl = 1;
             }else{
                 $(this).removeClass('ph-toggle-right text-GreenT');
@@ -176,6 +200,8 @@
                 toggleCtrl = 0;
             }
         })
+
+        $('#clickSwitch').click();
 
         $('.editable').on('click', function() {
             var spanElement = $(this).siblings('span');
@@ -198,6 +224,9 @@
         });
         $('#open-upload').click(function(){
             $('#logoUpload').click();
+        })
+        $('#open-upload2').click(function(){
+            $('#bg-input').click();
         })
         var toggleStateCtrl = 0;
         $('#toggleShowItem').click(function(){
