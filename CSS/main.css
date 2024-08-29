@@ -672,6 +672,10 @@ video {
   right: 10px;
 }
 
+.right-\[20px\]{
+  right: 20px;
+}
+
 .right-\[5px\]{
   right: 5px;
 }
@@ -728,6 +732,10 @@ video {
   top: 230%;
 }
 
+.top-\[25px\]{
+  top: 25px;
+}
+
 .top-\[3\%\]{
   top: 3%;
 }
@@ -746,14 +754,6 @@ video {
 
 .top-\[85\%\]{
   top: 85%;
-}
-
-.right-\[20px\]{
-  right: 20px;
-}
-
-.top-\[25px\]{
-  top: 25px;
 }
 
 .z-10{
@@ -2983,6 +2983,10 @@ video {
   font-size: 20px;
 }
 
+.text-\[22px\]{
+  font-size: 22px;
+}
+
 .text-\[24px\]{
   font-size: 24px;
 }
@@ -3022,10 +3026,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[22px\]{
-  font-size: 22px;
 }
 
 .font-\[400\]{
@@ -3885,6 +3885,10 @@ thead tr th{
     margin-top: 1.25rem;
   }
 
+  .xs\:mr-3{
+    margin-right: 0.75rem;
+  }
+
   .xs\:block{
     display: block;
   }
@@ -4129,6 +4133,10 @@ thead tr th{
 
   .sm\:mt-5{
     margin-top: 1.25rem;
+  }
+
+  .sm\:mr-3{
+    margin-right: 0.75rem;
   }
 
   .sm\:block{
@@ -4770,6 +4778,10 @@ thead tr th{
 
   .lg\:mr-3{
     margin-right: 0.75rem;
+  }
+
+  .lg\:mr-0{
+    margin-right: 0px;
   }
 
   .lg\:block{

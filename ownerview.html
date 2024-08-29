@@ -28,8 +28,14 @@
                 <!-- nav dashboards -->
                 <div class="pb-[100px] pl-10 w-full h-screen overflow-auto flex flex-col items-start justify-start text-[16px] font-normal text-txtgray">
                     
-                    <!-- 2nd -->
+                    <!-- 1st -->
                     <a href="#" class="mx-side-link active">
+                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
+                        <p>My store</p>
+                    </a>
+
+                    <!-- 2nd -->
+                    <a href="#" class="mx-side-link">
                         <i class="mr-[6px] text-2xl ph ph-receipt"></i>
                         <p>Dashboard</p>
                     </a>
@@ -42,11 +48,6 @@
                     <a href="#" class="mx-side-link">
                         <i class="mr-[6px] text-2xl ph ph-note"></i>
                         <p>Orders</p>
-                    </a>
-                    <!-- 1st -->
-                    <a href="#" class="mx-side-link">
-                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
-                        <p>My store</p>
                     </a>
                     
                     <!-- 5th -->
@@ -70,7 +71,12 @@
                 
                 <div class="pb-[100px] pl-10 w-full h-screen overflow-auto flex flex-col items-start justify-start text-[16px] font-normal text-txtgray">
                     <!-- 2nd -->
+                    <!-- 1st -->
                     <a href="#" class="mx-side-link active">
+                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
+                        <p>My store</p>
+                    </a>
+                    <a href="#" class="mx-side-link">
                         <i class="mr-[6px] text-2xl ph ph-receipt"></i>
                         <p>Dashboard</p>
                     </a>
@@ -83,11 +89,6 @@
                     <a href="#" class="mx-side-link">
                         <i class="mr-[6px] text-2xl ph ph-note"></i>
                         <p>Orders</p>
-                    </a>
-                    <!-- 1st -->
-                    <a href="#" class="mx-side-link">
-                        <i class="mr-[6px] text-2xl ph ph-storefront"></i>
-                        <p>My store</p>
                     </a>
                     
                     <!-- 5th -->
@@ -107,9 +108,9 @@
             <main class="xs:w-full lg:w-4/5 lg:ml-[20%] md:w-full sm:w-full flex flex-col items-start justify-start relative">
                 <!-- the top -->
                 <header class="z-[10] flex items-center justify-center w-full h-[42px] bg-GreenB text-white sm:text-sm md:text-base font-normal">
-                    <span class="editable-parent rounded-lg px-1 py-1 relative">
+                    <span class="editable-parent rounded-lg px-1 py-1 relative border-2 border-white">
                         <span>Hello there, you're welcome to my online store</span>
-                        <i style="display: none;" class="editable ph ph-pencil-line absolute top-[-5px] font-light bg-stepgray rounded-full text-[12px] px-1 py-1 cursor-pointer text-black"></i>
+                        <i class="editable ph ph-pencil-line absolute top-[-5px] font-light bg-stepgray rounded-full text-[12px] px-1 py-1 cursor-pointer text-black"></i>
                     </span>
                 </header>
                 <div class="shadow-3xl w-full z-[10] flex items-center p-5 justify-between font-normal text-base text-txtgray bg-white shadow-bottom">
@@ -119,8 +120,8 @@
                         <i id="openSide" class="mt-2 mr-4 ph ph-list text-3xl lg:hidden"></i>
                         <!-- Logo -->
                         <div class="flex items-center justify-center">
-                            <div class="editable-parent bg-stepgray rounded-[50%] lg:h-[50px] lg:w-[50px] xs:h-[30px] xs:w-[30px] relative cursor-pointer">
-                                <i id="open-upload" style="display: none;" class="editable ph ph-pencil-line text-[12px] absolute top-[-5px] right-0 font-light bg-stepgray rounded-full px-1 py-1 cursor-pointer text-black"></i>
+                            <div class="editable-parent border-2 border-white bg-stepgray rounded-[50%] lg:h-[50px] lg:w-[50px] xs:h-[30px] xs:w-[30px] relative cursor-pointer">
+                                <i id="open-upload" class="editable ph ph-pencil-line text-[12px] absolute top-[-5px] right-0 font-light bg-stepgray rounded-full px-1 py-1 cursor-pointer text-black"></i>
                                 <form action="#" enctype="multipart/form-data" method="post">
                                     <input type="file" name="logo-select" hidden id="logoUpload">
                                 </form>
@@ -133,7 +134,7 @@
                     <div class="lg:w-2/4 md:w-1/3 sm:w-2/3 xs:w-2/3 flex items-center justify-end">
                         <div id="toggledState" class="lg:block relative top-0 right-0 w-auto bg-inherit md:relative lg:relative lg:top-0 md:top-0 lg:right-0 md:right-0 lg:w-auto md:w-auto lg:bg-inherit md:bg-inherit lg:px-0 md:px-0 lg:py-0 md:py-0 sm:absolute sm:top-[110px] sm:w-[230px] sm:rounded-lg sm:right-[30px] sm:bg-Drwhite sm:px-3 sm:py-3 xs:hidden xs:absolute xs:top-[110px] xs:w-[230px] xs:rounded-lg xs:right-[30px] xs:bg-Drwhite xs:px-3 xs:py-3">
                             <p class="flex items-center justify-between">
-                                <span><i id="clickSwitch" class="cursor-pointer ph ph-toggle-left mr-3 text-4xl"></i></span>
+                                <span><i id="clickSwitch" class="cursor-pointer ph mr-3 text-4xl ph-toggle-right text-GreenT"></i></span>
                                 <a id="toggleSwitchTxt" href="customerview.html">View as customer</a>
                             </p>
                         </div>
@@ -153,9 +154,9 @@
                         <form action="#">
                             <input type="file" id="bg-input" name="bg-file" hidden>
                         </form>
-                        <p class="editable-parent rounded-lg z-5 mb-5 lg:w-2/4 sm:w-2/3 xs:w-2/3 flex items-center justify-center md:leading-[70px] text-center sm:text-4xl xs:text-3xl lg:text-[3rem]  text-white font-extrabold relative">
+                        <p class="editable-parent border-2 border-white rounded-lg z-5 mb-5 lg:w-2/4 sm:w-2/3 xs:w-2/3 flex items-center justify-center md:leading-[70px] text-center sm:text-4xl xs:text-3xl lg:text-[3rem]  text-white font-extrabold relative">
                             <span>We Sell The Best Quality of T-shirts.</span>
-                            <i style="display: none;" class="editable ph ph-pencil-line absolute top-[15px] right-[-15px] font-light bg-stepgray rounded-full text-[25px] px-1 py-1 cursor-pointer text-black"></i>
+                            <i class="editable ph ph-pencil-line absolute top-[15px] right-[-15px] font-light bg-stepgray rounded-full text-[25px] px-1 py-1 cursor-pointer text-black"></i>
                         </p>
                     </div>
                     <!-- content -->
@@ -180,28 +181,26 @@
     <script src="js/owl.carousel.min.js"></script>
     
     <script>
-        var toggleCtrl = 0;
-        $('#clickSwitch').on('click',function(e){
-            if(toggleCtrl == 0){
-                $(this).removeClass('ph-toggle-left');
-                $(this).addClass('ph-toggle-right text-GreenT');
-                $('.editable').show();
-                $('.editable-parent').removeClass('border-2 border-white');
-                $('.editable-parent').addClass('border-2 border-white');
-                $('#toggleSwitchTxt').text("View as customer");
-                toggleCtrl = 1;
-            }else{
-                $(this).removeClass('ph-toggle-right text-GreenT');
-                $(this).addClass('ph-toggle-left');
-                $('.editable').hide();
-                $('.editable-parent').addClass('border-2 border-white');
-                $('.editable-parent').removeClass('border-2 border-white');
-                $('#toggleSwitchTxt').text("View as customer");
-                toggleCtrl = 0;
-            }
-        })
+        // var toggleCtrl = 0;
+        // $('#clickSwitch').on('click',function(e){
+        //     if(toggleCtrl == 0){
+        //         $('.editable').show();
+        //         $('.editable-parent').removeClass('border-2 border-white');
+        //         $('.editable-parent').addClass('border-2 border-white');
+        //         $('#toggleSwitchTxt').text("View as customer");
+        //         toggleCtrl = 1;
+        //     }else{
+        //         $(this).removeClass('ph-toggle-right text-GreenT');
+        //         $(this).addClass('ph-toggle-left');
+        //         $('.editable').hide();
+        //         $('.editable-parent').addClass('border-2 border-white');
+        //         $('.editable-parent').removeClass('border-2 border-white');
+        //         $('#toggleSwitchTxt').text("View as customer");
+        //         toggleCtrl = 0;
+        //     }
+        // })
 
-        $('#clickSwitch').click();
+        // $('#clickSwitch').click();
 
         $('.editable').on('click', function() {
             var spanElement = $(this).siblings('span');
@@ -210,13 +209,11 @@
                 spanElement.removeAttr('contenteditable');
             } else {
                 spanElement.attr('contenteditable', 'true').focus();
-
-                // Set cursor position at the end of the text
                 var range = document.createRange();
                 var selection = window.getSelection();
                 if(spanElement.length > 0){
                     range.selectNodeContents(spanElement[0]);
-                    range.collapse(false); // Move cursor to the end
+                    range.collapse(false);
                     selection.removeAllRanges();
                     selection.addRange(range);
                 }
