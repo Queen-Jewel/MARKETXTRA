@@ -39,12 +39,12 @@
                     </div>
 
                     <!-- Other pages -->
-                    <div class="lg:flex sm:hidden xs:hidden md:hidden lg:w-2/4 md:w-1/3 sm:w-2/3 xs:w-2/3 items-center justify-center">
+                    <div class="lg:flex lg:w-2/4 md:w-1/3 sm:w-2/3 xs:w-2/3 items-center justify-center">
                         <div class="inline-block flex">
-                            <div class="mx-link relative">
+                            <div class="mx-link relative xs:hidden sm:hidden lg:block sm:block">
                                 <a href="#" class="sm:text-sm md:text-base">Home</a>
                             </div>
-                            <div class="mx-link relative">
+                            <div class="mx-link relative sm:ml-5 xs:ml-5">
                                 <a href="#" id="cate" class="sm:text-sm md:text-base">
                                     Category
                                     <i class="ph ph-caret-down ml-1"></i>
@@ -55,7 +55,7 @@
                                     <a href="#" class="click px-5 py-2 w-full inline-block text-center">Category 3</a>
                                 </div>
                             </div>
-                            <div class="mx-link relative">
+                            <div class="mx-link relative xs:hidden sm:hidden lg:block sm:block">
                                 <a href="#" class="sm:text-sm md:text-base">About Us</a>
                             </div>
                         </div>
@@ -88,23 +88,6 @@
                         </a>
                         <i id="toggleShowItem" class="lg:hidden md:hidden xs:block sm:block mr-[-20px] cursor-pointer ph ph-dots-three-vertical text-3xl"></i>
                     </div>
-<!--                     
-                    <div class="lg:w-2/4 md:w-1/3 sm:w-2/3 xs:w-2/3 flex items-center justify-end">
-                        <div class="flex items-start justify-center lg:mr-0 sm:mr-3 xs:mr-3">
-                            <a href="ownerview.html" class="flex items-center justify-between">
-                                <span><i class="ph ph-toggle-left mr-3 text-4xl" id="clickSwitch"></i></span>
-                                View as owner
-                            </a>
-                        </div>
-    
-                        <button class="add-to-cart hidden md:block px-3 py-2 ml-[20px] mr-3 bg-gradient-to-b from-GreenT to-GreenL text-white rounded-lg text-base text-white font-normal" type="button">
-                            Share store link
-                        </button>
-
-                        <a href="#">
-                            <i class="ph ph-shopping-cart-simple text-3xl mr-5"></i>
-                        </a>
-                    </div> -->
                 </div>
 
                 <!-- Sidebar for small devices -->
@@ -114,16 +97,6 @@
                     </div>
                     <div class="flex flex-col p-5">
                         <a href="#" class="mb-4 text-base">Home</a>
-                        <div class="accordion-item mb-4">
-                            <button class="accordion-header w-full text-left flex justify-between">
-                                <span>Category</span> <i class="ph ph-caret-down"></i>
-                            </button>
-                            <div class="accordion-content hidden p-4 bg-white block">
-                                <a href="#" class="mb-4 text-base inline-block w-full">Category 1</a>
-                                <a href="#" class="mb-4 text-base inline-block w-full">Category 2</a>
-                                <a href="#" class="mb-4 text-base inline-block w-full">Category 3</a>
-                            </div>
-                        </div>
                         <a href="#" class="mb-4 text-base">About Us</a>
                         <a href="#" class="text-base">Cart</a>
                     </div>
