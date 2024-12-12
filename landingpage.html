@@ -11,6 +11,17 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>MarketXtra | Landing Page</title>
     <style>
+      .orangeSvg {
+        position: absolute;
+        top: 10px;
+        left: 7px;
+      }
+      .whiteSvg {
+        position: absolute;
+        bottom: -20px;
+        right: 40px;
+        width: 30px;
+      }
       .centerRectangle {
         position: absolute;
         width: 573px;
@@ -36,6 +47,18 @@
         .centerRectangle {
           left: 50%;
           transform: translateX(-50%);
+        }
+        .whiteSvg {
+          position: absolute;
+          bottom: -7px;
+          right: 10px;
+          width: 20px;
+        }
+        .orangeSvg {
+          position: absolute;
+          top: 1px;
+          left: 14px;
+          width: 15px;
         }
       }
     </style>
@@ -152,6 +175,20 @@
         <div
           class="grid place-content-center relative overflow-visible w-[340.03px] h-[396px] md:w-[573px] md:h-[621px]"
         >
+          <svg
+            width="28"
+            height="27"
+            viewBox="0 0 28 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="orangeSvg"
+          >
+            <path
+              d="M27.2651 12.7544C17.3852 12.6568 14.1421 10.0345 13.1628 0.0208554C10.4225 9.97564 7.57659 12.9217 0.462798 14.1662C10.0562 15.1189 13.0159 18.0448 14.5652 26.8998C14.8186 18.0954 17.7376 15.0948 27.2651 12.7544Z"
+              fill="#D45800"
+            />
+          </svg>
+
           <img
             src="images/miva Div.png"
             alt=""
@@ -163,6 +200,19 @@
             src="images/Miva.png"
             alt="Miva"
           />
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="whiteSvg"
+          >
+            <path
+              d="M35.2653 16.7542C22.2657 16.6257 17.9986 13.1754 16.71 -3.8743e-05C13.1045 13.098 9.36 16.9743 1.27956e-05 18.6117C12.6225 19.8652 16.5168 23.7151 18.5553 35.3659C18.8887 23.7817 22.7294 19.8335 35.2653 16.7542Z"
+              fill="white"
+            />
+          </svg>
         </div>
       </aside>
     </div>
