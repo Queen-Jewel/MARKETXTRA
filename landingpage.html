@@ -11,36 +11,53 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>MarketXtra | Landing Page</title>
     <style>
+      .bgImage {
+        position: relative;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
       .orangeSvg {
         position: absolute;
-        top: 10px;
-        left: 7px;
+        top: 2%;
+        left: 11%;
+      }
+
+      .Inset {
+        top: 50%;
+        transform: translate(50%, -50%);
+        right: 50%;
+        width: 70%;
+        position: absolute;
+      }
+      .Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "item1"
+          "item2";
+      }
+      .Div {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
       }
       .whiteSvg {
         position: absolute;
-        bottom: -20px;
-        right: 40px;
+        bottom: 1%;
+        right: 9%;
         width: 30px;
       }
       .centerRectangle {
         position: absolute;
-        width: 573px;
+        width: 85%;
         inset: 70% 0 0 0;
         object-fit: contain;
-        transform: translateX(-5%);
+        transform: translateX(8%);
       }
-      .centerPic {
-        position: absolute;
-        top: 4%;
-        left: 50%;
-        transform: translateX(-55%);
-      }
+
       @media screen and (max-width: 768px) {
         .centerbg {
-          left: 50%;
-          transform: translateX(-50%);
-        }
-        .centerPic {
           left: 50%;
           transform: translateX(-50%);
         }
@@ -48,17 +65,18 @@
           left: 50%;
           transform: translateX(-50%);
         }
-        .whiteSvg {
-          position: absolute;
-          bottom: -7px;
-          right: 10px;
-          width: 20px;
+        .Grid {
+          grid-template-columns: 1fr;
         }
-        .orangeSvg {
-          position: absolute;
-          top: 1px;
-          left: 14px;
-          width: 15px;
+        .col2 {
+          order: 1;
+        }
+        .GridChild1 {
+          grid-area: item2;
+        }
+        .ButtonMargin {
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     </style>
@@ -108,73 +126,57 @@
     </header>
 
     <!-- SHOWCASE -->
-    <div
-      class="w-full flex flex-col-reverse md:flex-row items-center justify-between"
-    >
-      <article
-        class="w-[380px] h-[230px] md:w-[733px] md:h-[524px] flex flex-col items-start justify-start md:pl-12"
-      >
-        <div
-          class="md:w-[669px] md:h-[396px] flex flex-col items-center md:items-start justify-start"
+    <div class="Grid">
+      <div class="order-2 md:order-1 px-5 GridChild1">
+        <h1
+          class="font-extrabold block md:hidden text-[32px] md:text-5xl mt-10 md:mt-[55px] xs:text-center lg:text-left lg:h-[80px] xs:h-[100px] sm:h-[100px]"
         >
-          <h1
-            class="font-extrabold block md:hidden text-[32px] md:text-5xl mt-10 md:mt-[55px] xs:text-center lg:text-left lg:h-[80px] xs:h-[100px] sm:h-[100px]"
-          >
-            Amplify Your Business Reach Online
-          </h1>
-          <h1
-            class="font-extrabold hidden md:block text-[32px] md:text-5xl mt-10 md:mt-[55px] xs:text-center lg:text-left lg:h-[80px] xs:h-[100px] sm:h-[100px]"
-            id="elementTyped"
-          ></h1>
+          Amplify Your Business Reach Online
+        </h1>
+        <h1
+          class="font-extrabold hidden md:block text-[32px] md:text-4xl mt-10 md:mt-[55px] xs:text-center lg:text-left"
+          id="elementTyped"
+        ></h1>
+        <p class="hidden md:block font-normal text-base text-newT mt-10">
+          MarketXtra empowers small businesses in Africa to grow their sales,
+          brand and customer base.Bring your business online by simply creating
+          a professional online store in minutes and your business is on its way
+          to reach a global audience.Get started today and discover the power of
+          e-commerce made simple.
+        </p>
 
-          <p
-            class="hidden md:block font-normal text-base text-newT w-[654px] h-[96px] mt-10"
+        <p class="md:hidden font-normal text-sm text-newT text-center mt-5">
+          MarketXtra empowers small businesses in Africa to grow their sales,
+          brand and customer base. Get started today and discover the power of
+          e-commerce made simple.
+        </p>
+        <button
+          class="w-[245px] ButtonMargin h-[45px] md:w-[235px] md:h-[50px] flex items-center justify-center px-5 py-4 mt-10 rounded-lg border-transparent bg-gradient-to-b from-GreenT to-GreenL text-white text-xl font-medium"
+          type="submit"
+        >
+          Scale Now!
+        </button>
+        <div class="hidden md:block">
+          <div
+            class="w-[540px] h-10 flex items-start justify-between mt-20 mb-5"
           >
-            MarketXtra empowers small businesses in Africa to grow their sales,
-            brand and customer base.Bring your business online by simply
-            creating a professional online store in minutes and your business is
-            on its way to reach a global audience.Get started today and discover
-            the power of e-commerce made simple.
-          </p>
-
-          <p
-            class="md:hidden font-normal text-sm text-newT w-[374px] h-[80px] text-center mt-5"
-          >
-            MarketXtra empowers small businesses in Africa to grow their sales,
-            brand and customer base. Get started today and discover the power of
-            e-commerce made simple.
-          </p>
-          <button
-            class="w-[245px] h-[45px] md:w-[265px] md:h-[70px] flex items-center justify-center px-5 py-4 mt-10 rounded-lg border-transparent bg-gradient-to-b from-GreenT to-GreenL text-white text-xl font-medium"
-            type="submit"
-          >
-            Scale Now!
-          </button>
-
-          <div class="hidden md:block">
-            <div
-              class="w-[540px] h-10 flex items-start justify-between mt-20 mb-5"
-            >
-              <p>MarketXtra</p>
-              <img src="images/RG.png" alt="" />
-              <p>Effortless marketing</p>
-              <img src="images/RO.png" alt="" />
-              <p>Seamless registration</p>
-            </div>
-            <div class="w-[540px] h-10 flex items-start justify-between">
-              <p>MarketXtra</p>
-              <img src="images/RG.png" alt="" />
-              <p>Effortless marketing</p>
-              <img src="images/RO.png" alt="" />
-              <p>Seamless registration</p>
-            </div>
+            <p>MarketXtra</p>
+            <img src="images/RG.png" alt="" />
+            <p>Effortless marketing</p>
+            <img src="images/RO.png" alt="" />
+            <p>Seamless registration</p>
+          </div>
+          <div class="w-[540px] h-10 flex items-start justify-between">
+            <p>MarketXtra</p>
+            <img src="images/RG.png" alt="" />
+            <p>Effortless marketing</p>
+            <img src="images/RO.png" alt="" />
+            <p>Seamless registration</p>
           </div>
         </div>
-      </article>
-      <aside class="bg-Drwhite mt-6 mr-0 md:mr-10 p-0 h-min overflow-visible">
-        <div
-          class="grid place-content-center relative overflow-visible w-[340.03px] h-[396px] md:w-[573px] md:h-[621px]"
-        >
+      </div>
+      <div class="grid place-content-center">
+        <div class="bgImage">
           <svg
             width="28"
             height="27"
@@ -189,17 +191,9 @@
             />
           </svg>
 
-          <img
-            src="images/miva Div.png"
-            alt=""
-            class="md:w-[520px] absolute md:h-[621px] w-[320px] h-[396px] centerbg"
-          />
+          <img src="images/miva Div.png" alt="" class="Div" />
           <img src="images/Rectangle 122.png" alt="" class="centerRectangle" />
-          <img
-            class="w-[285px] h-[346px] md:w-[470px] md:h-[579px] centerPic"
-            src="images/Miva.png"
-            alt="Miva"
-          />
+          <img class="Inset" src="images/Miva.png" alt="Miva" />
           <svg
             width="36"
             height="36"
@@ -214,7 +208,7 @@
             />
           </svg>
         </div>
-      </aside>
+      </div>
     </div>
 
     <!-- 1st section -->
@@ -249,13 +243,13 @@
         <div
           class="w-1/4 flex flex-col md:flex-row items-center justify-center"
         >
-          <img src="images/C1.png" alt="" />
+          <img src="images/C1.svg" alt="" />
           <img src="images/HL.png" alt="" class="hidden md:block" />
-          <img src="images/VL.png" alt="" class="md:hidden" />
-          <img src="images/C2.png" alt="" />
+          <img src="images/VL.svg" alt="" class="md:hidden" />
+          <img src="images/C2.svg" alt="" />
           <img src="images/HL.png" alt="" class="hidden md:block" />
-          <img src="images/VL.png" alt="" class="md:hidden" />
-          <img src="images/C3.png" alt="" />
+          <img src="images/VL.svg" alt="" class="md:hidden" />
+          <img src="images/C3.svg" alt="" />
         </div>
         <div
           class="w-1/4 md:w-2/3 flex flex-col md:flex-row items-center justify-between mt-5 md:mt-[3px]"
