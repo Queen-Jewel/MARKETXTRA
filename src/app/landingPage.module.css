@@ -1,0 +1,61 @@
+.bgImage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.orangeSvg {
+  position: absolute;
+  top: 2%;
+  left: 11%;
+}
+
+.Inset {
+  top: 50%;
+  transform: translate(50%, -50%);
+  right: 50%;
+  width: 70%;
+  position: absolute;
+}
+.Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "item1"
+    "item2";
+}
+
+.whiteSvg {
+  position: absolute;
+  bottom: 1%;
+  right: 9%;
+  width: 30px;
+}
+.centerRectangle {
+  position: absolute;
+  width: 85%;
+  inset: 70% 0 0 0;
+  object-fit: contain;
+  transform: translateX(8%);
+}
+
+@media screen and (max-width: 768px) {
+  .centerRectangle {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .Grid {
+    grid-template-columns: 1fr;
+  }
+  .col2 {
+    order: 1;
+  }
+  .GridChild1 {
+    grid-area: item1;
+  }
+  .ButtonMargin {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
