@@ -1,4 +1,4 @@
-import TypingEffect from "@/components/typingEffect/typingEffect";
+import TypingEffect from "@/components/LandingPage/typingEffect/typingEffect";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./landingPage.module.css";
