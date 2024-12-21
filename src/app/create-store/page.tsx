@@ -159,7 +159,9 @@ const CreateStore = () => {
       </div>
       <button
         onClick={handlePreviousClick}
-        className="fixed bottom-0 hidden lg:block right-0 mr-[80px] mb-[25px] transform rotate-180"
+        className={`fixed bottom-0 hidden ${
+          name !== "storeStructure" ? "lg:block" : "lg:hidden"
+        } right-0 mr-[80px] mb-[25px] transform rotate-180`}
       >
         <svg
           width="54"
