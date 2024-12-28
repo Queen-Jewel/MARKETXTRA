@@ -2,21 +2,21 @@ import React from "react";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div className="lg:~lg/fxl:~h-[73.24444px]/[103px] bg-footer w-full flex items-center lg:~lg/fxl:~gap-[25.6px]/[36px] lg:~lg/fxl:~pl-[17.7777px]/[25px]">
+    <div className="lg:~lg/fxl:~h-[73.24444px]/[103px] h-[58px] bg-footer w-full flex gap-[10px] items-center lg:~lg/fxl:~gap-[25.6px]/[36px] lg:~lg/fxl:~pl-[17.7777px]/[25px] pl-[22px]">
       <Image
         src="/images/logos/Mx 1.png"
         height={47}
         width={47}
-        className="~lg/fxl:~max-w-[33.4222px]/[47px]"
+        className="lg:~lg/fxl:~max-w-[33.4222px]/[47px] max-w-[32px]"
         alt="logo"
         layout="responsive"
       />
-      <div className="flex items-center gap-[3px]">
+      <div className="flex items-center gap-[8px] lg:gap-[3px]">
         <span>
           <svg
             width="24"
             height="24"
-            className="lg:~lg/fxl:~w-[17.066px]/[24px]"
+            className="lg:~lg/fxl:~w-[17.066px]/[24px] w-[20px]"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Footer = () => {
             />
           </svg>
         </span>
-        <span className="lg:~lg/fxl:~text-[11.37777px]/[16px]">
+        <span className="lg:~lg/fxl:~text-[11.37777px]/[16px] text-[14px]">
           2024, Powered by Marketxtra.
         </span>
       </div>

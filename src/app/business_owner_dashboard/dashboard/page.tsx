@@ -8,8 +8,11 @@ const Dashboard: FC = () => {
   if (store.length === 0) {
     return (
       <>
-        <Navbar />
-        <div className="lg:~lg/fxl:~pl-[17.7777px]/[25px] px-[25px] lg:px-0">
+        <div className="lg:~lg/fxl:~pr-[49.066666px]/[69px]">
+          <Navbar />
+        </div>
+
+        <div className="lg:~lg/fxl:~pl-[17.7777px]/[25px] px-[25px] lg:px-0 lg:~lg/fxl:~pr-[49.066666px]/[69px]">
           <div className=" w-full lg:~lg/fxl:~h-[46.93333px]/[66px] ~/lg:~h-[44px]/[46.93333px] bg-[#ff8e8e]/30 lg:~lg/fxl:~mt-[34.1333px]/[48px] lg:~lg/fxl:~mb-[49.7777px]/[70px] mb-[16px] lg:~lg/fxl:~rounded-[5.68888px]/[8px] rounded-[8px] flex items-center justify-between p-[12px] lg:px-4">
             <span className="text-[#ff5747] hidden lg:block lg:~lg/fxl:~text-[11.37777px]/[16px]  lg:~lg/fxl:~leading-[15.928888px]/[22.4px]">
               Ready to experience revolutionary sales?
@@ -25,10 +28,10 @@ const Dashboard: FC = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 gap-[8px] auto-rows-[67px] lg:grid-cols-3 lg:~lg/fxl:~auto-rows-[109.51111px]/[154px] lg:~lg/fxl:~gap-[7.111px]/[10px]">
-            <div className="bg-GreenB lg:~lg/fxl:~rounded-[5.68888px]/[8px] lg:~lg/fxl:~pr-[17.0666px]/[24px] lg:~lg/fxl:~pl-[19.2px]/[27px] lg:~lg/fxl:~py-[13.5111px]/[19px] overflow-hidden">
-              <div className="text-white lg:~lg/fxl:~text-[17.0666px]/[24px] flex">
-                <span className=" font-[500] lg:~lg/fxl:~leading-[20.01777]/[28.15px]">
+          <div className="grid grid-cols-1 gap-[8px]  lg:grid-cols-3  lg:~lg/fxl:~gap-[7.111px]/[10px]">
+            <div className="bg-GreenB rounded-[8px] ~fsm/lg:~pl-[13px]/[19px] ~fsm/lg:~pr-[11px]/[17px] lg:~lg/fxl:~h-[109.51111px]/[154px] ~fsm/lg:~h-[67px]/[109px] lg:~lg/fxl:~pr-[17.0666px]/[24px] lg:~lg/fxl:~pl-[19.2px]/[27px] lg:~lg/fxl:~py-[13.5111px]/[19px] overflow-hidden pt-[7px] pb-[8px] flex flex-col">
+              <div className="text-white lg:~lg/fxl:~text-[17.0666px]/[24px] ~fsm/lg:~text-[14px]/[17px] flex h-min">
+                <span className=" font-[500] lg:~lg/fxl:~leading-[20.01777]/[28.15px] flex items-center">
                   Total Sales
                 </span>
                 <span className="ml-auto">
@@ -37,7 +40,7 @@ const Dashboard: FC = () => {
                     height="34"
                     viewBox="0 0 34 34"
                     fill="none"
-                    className="lg:~lg/fxl:~w-[24.17777px]/[34px] "
+                    className="lg:~lg/fxl:~w-[24.17777px]/[34px] lg:~lg/fxl:~h-[24.17777px]/[34px]  ~fsm/lg:~w-[16px]/[24px] ~fsm/lg:~h-[16px]/[24px]"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -71,19 +74,22 @@ const Dashboard: FC = () => {
                   </svg>
                 </span>
               </div>
-              <div className="flex">
-                <div className="flex flex-col gap-0 w-min h-min">
-                  <span className="font-bold text-white lg:~lg/fxl:~text-[22.75555px]/[32px] lg:~lg/fxl:~leading-[26.695111px]/[37.54px] tracking-[-2%]">
-                    NGN<br></br>0
+              <div className="flex mt-auto lg:mt-auto">
+                <div className="flex flex-row lg:flex-col gap-[3px] lg:gap-0 w-min h-min">
+                  <span className="font-bold text-white ~fsm/lg:~text-[16px]/[22px] ~fsm/lg:~leading-[18.77px]/[22px] lg:~lg/fxl:~text-[22.75555px]/[32px] lg:~lg/fxl:~leading-[26.695111px]/[37.54px] tracking-[-2%]">
+                    NGN
+                  </span>
+                  <span className="font-bold text-white ~fsm/lg:~text-[16px]/[22px] ~fsm/lg:~leading-[18.77px]/[22px] lg:~lg/fxl:~text-[22.75555px]/[32px] lg:~lg/fxl:~leading-[26.695111px]/[37.54px] tracking-[-2%]">
+                    0
                   </span>
                 </div>
-                <div className="ml-auto mt-auto underline text-white flex-shrink-0 w-max">
+                <div className="ml-auto text-[10px] lg:~lg/fxl:~text-[11.3777px]/[16px] leading-[14px] lg:leading-[22.4px] mt-auto underline text-white flex-shrink-0 w-max">
                   See report
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-b from-gradientCol-GreenT to-gradientCol-GreenL lg:~lg/fxl:~rounded-[5.68888px]/[8px] lg:~lg/fxl:~pr-[17.0666px]/[24px] lg:~lg/fxl:~pl-[19.2px]/[27px] lg:~lg/fxl:~py-[13.5111px]/[19px] overflow-hidden">
-              <div className="text-white lg:~lg/fxl:~text-[17.0666px]/[24px] flex">
+            <div className="bg-gradient-to-b lg:~lg/fxl:~h-[109.51111px]/[154px] ~fsm/lg:~h-[67px]/[109px] pt-[7px] pb-[8px] from-gradientCol-GreenT to-gradientCol-GreenL ~fsm/lg:~pl-[13px]/[19px] ~fsm/lg:~pr-[11px]/[17px] rounded-[8px] lg:~lg/fxl:~pr-[17.0666px]/[24px] lg:~lg/fxl:~pl-[19.2px]/[27px] lg:~lg/fxl:~py-[13.5111px]/[19px] overflow-hidden flex flex-col">
+              <div className="text-white lg:~lg/fxl:~text-[17.0666px]/[24px] ~fsm/lg:~text-[14px]/[17px] flex ">
                 <span className=" font-[500] lg:~lg/fxl:~leading-[20.01777]/[28.15px]">
                   Total Profit
                 </span>
@@ -93,7 +99,7 @@ const Dashboard: FC = () => {
                     height="34"
                     viewBox="0 0 34 34"
                     fill="none"
-                    className="lg:~lg/fxl:~w-[24.17777px]/[34px] "
+                    className="lg:~lg/fxl:~w-[24.17777px]/[34px] lg:~lg/fxl:~h-[24.17777px]/[34px]  ~fsm/lg:~w-[16px]/[24px] ~fsm/lg:~h-[16px]/[24px]"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -127,20 +133,23 @@ const Dashboard: FC = () => {
                   </svg>
                 </span>
               </div>
-              <div className="flex">
-                <div className="flex flex-col gap-0 w-min h-min">
-                  <span className="font-bold text-white lg:~lg/fxl:~text-[22.75555px]/[32px] lg:~lg/fxl:~leading-[26.695111px]/[37.54px] tracking-[-2%]">
-                    NGN<br></br>0
+              <div className="flex mt-auto lg:mt-auto">
+                <div className="flex flex-row lg:flex-col gap-[3px] lg:gap-0 w-min h-min">
+                  <span className="font-bold text-white ~fsm/lg:~text-[16px]/[22px] ~fsm/lg:~leading-[18.77px]/[22px] lg:~lg/fxl:~text-[22.75555px]/[32px] lg:~lg/fxl:~leading-[26.695111px]/[37.54px] tracking-[-2%]">
+                    NGN
+                  </span>
+                  <span className="font-bold text-white ~fsm/lg:~text-[16px]/[22px] ~fsm/lg:~leading-[18.77px]/[22px] lg:~lg/fxl:~text-[22.75555px]/[32px] lg:~lg/fxl:~leading-[26.695111px]/[37.54px] tracking-[-2%]">
+                    0
                   </span>
                 </div>
-                <div className="ml-auto mt-auto underline text-white flex-shrink-0 w-max">
+                <div className="ml-auto mt-auto text-[10px] lg:~lg/fxl:~text-[11.3777px]/[16px] leading-[14px] lg:leading-[22.4px]  underline text-white flex-shrink-0 w-max">
                   See report
                 </div>
               </div>
             </div>
-            <div className="bg-Orange lg:~lg/fxl:~rounded-[5.68888px]/[8px] lg:~lg/fxl:~pr-[17.0666px]/[24px] lg:~lg/fxl:~pl-[19.2px]/[27px] lg:~lg/fxl:~py-[13.5111px]/[19px] overflow-hidden">
-              <div className="text-white lg:~lg/fxl:~text-[17.0666px]/[24px] flex">
-                <span className=" font-[500] lg:~lg/fxl:~leading-[20.01777]/[28.15px]">
+            <div className="bg-Orange lg:~lg/fxl:~h-[109.51111px]/[154px] ~fsm/lg:~h-[67px]/[109px] pt-[7px] pb-[8px] ~fsm/lg:~pr-[11px]/[17px] ~fsm/lg:~pl-[13px]/[19px] rounded-[8px] lg:~lg/fxl:~pr-[17.0666px]/[24px] lg:~lg/fxl:~pl-[19.2px]/[27px] lg:~lg/fxl:~py-[13.5111px]/[19px] overflow-hidden flex flex-col">
+              <div className="text-white lg:~lg/fxl:~text-[17.0666px]/[24px] ~fsm/lg:~text-[14px]/[17px] flex">
+                <span className=" font-[500] lg:~lg/fxl:~leading-[20.01777]/[28.15px] leading-[19.6px]">
                   Total Customers
                 </span>
                 <span className="ml-auto">
@@ -149,7 +158,7 @@ const Dashboard: FC = () => {
                     height="34"
                     viewBox="0 0 34 34"
                     fill="none"
-                    className="lg:~lg/fxl:~w-[24.17777px]/[34px] "
+                    className="lg:~lg/fxl:~w-[24.17777px]/[34px] lg:~lg/fxl:~h-[24.17777px]/[34px]  ~fsm/lg:~w-[16px]/[24px] ~fsm/lg:~h-[16px]/[24px]"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -183,45 +192,47 @@ const Dashboard: FC = () => {
                   </svg>
                 </span>
               </div>
-              <div className="flex">
+              <div className="flex mt-auto lg:mt-auto">
                 <div className="flex flex-col gap-0 w-min h-min">
-                  <span className="font-bold text-white lg:~lg/fxl:~text-[22.75555px]/[32px] lg:~lg/fxl:~leading-[26.695111px]/[37.54px] tracking-[-2%]">
-                    <br></br>0
+                  <span className="font-bold text-white ~fsm/lg:~text-[16px]/[22px] ~fsm/lg:~leading-[18.77px]/[22px] lg:~lg/fxl:~text-[22.75555px]/[32px] lg:~lg/fxl:~leading-[26.695111px]/[37.54px] tracking-[-2%]">
+                    <br className="lg:block hidden"></br>0
                   </span>
                 </div>
-                <div className="ml-auto mt-auto underline text-white flex-shrink-0 w-max">
+                <div className="ml-auto mt-auto text-[10px] lg:~lg/fxl:~text-[11.3777px]/[16px] leading-[14px] lg:leading-[22.4px] underline text-white flex-shrink-0 w-max">
                   See report
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="w-full lg:~lg/fxl:~mt-[49.7777px]/[70px]">
-            <h1 className="text-txtgray font-[500] lg:~lg/fxl:~leading-[17.066px]/[24px] lg:~lg/fxl:~leading-[20.01777]/[28.15px]">
+          <div className="w-full lg:~lg/fxl:~mt-[49.7777px]/[70px] ~fsm/lg:~mt-[32px]/[49px]">
+            <h1 className="text-txtgray font-[400] lg:font-[500] text-[16px] lg:~lg/fxl:~text-[17.066px]/[24px] lg:~lg/fxl:~leading-[20.01777px]/[28.15px]">
               Transaction History
             </h1>
-            <div className="lg:~lg/fxl:~h-[46.93333px]/[66px] text-txtgray lg:~lg/fxl:~pl-[32px]/[45px] lg:~lg/fxl:~leading-[15.928888px]/[22.4px] lg:~lg/fxl:~text-[11.37777px]/[16px] w-full bg-footer lg:~lg/fxl:~rounded-[5.68888px]/[8px] lg:~lg/fxl:~mt-[11.37777px]/[16px] flex items-center text">
+            <div className="lg:~lg/fxl:~h-[46.93333px]/[66px] h-[56px] text-txtgray lg:~lg/fxl:~pl-[32px]/[45px] lg:~lg/fxl:~leading-[15.928888px]/[22.4px] lg:~lg/fxl:~text-[11.37777px]/[16px] text-[14px] w-full bg-footer lg:~lg/fxl:~rounded-[5.68888px]/[8px] mt-[16px] rounded-[8px] pl-[12px]  flex items-center text">
               Create your store to view recent transactions
             </div>
           </div>
-          <div className="w-full lg:~lg/fxl:~mt-[51.2px]/[72px]">
-            <h1 className="text-txtgray font-[500] lg:~lg/fxl:~leading-[17.066px]/[24px] lg:~lg/fxl:~leading-[20.01777]/[28.15px]">
+          <div className="w-full lg:~lg/fxl:~mt-[51.2px]/[72px] ~fsm/lg:~mt-[32px]/[49px]">
+            <h1 className="text-txtgray font-[400] lg:font-[500] text-[16px] lg:~lg/fxl:~text-[17.066px]/[24px] lg:~lg/fxl:~leading-[20.01777px]/[28.15px]">
               Recent Sales
             </h1>
-            <div className="lg:~lg/fxl:~h-[46.93333px]/[66px] text-txtgray lg:~lg/fxl:~pl-[32px]/[45px] lg:~lg/fxl:~leading-[15.928888px]/[22.4px] lg:~lg/fxl:~text-[11.37777px]/[16px] w-full bg-footer lg:~lg/fxl:~rounded-[5.68888px]/[8px] lg:~lg/fxl:~mt-[11.37777px]/[16px] flex items-center text">
+            <div className="lg:~lg/fxl:~h-[46.93333px]/[66px] mt-[16px] pl-[12px]  h-[56px] text-txtgray text-[14px] lg:~lg/fxl:~pl-[32px]/[45px] lg:~lg/fxl:~leading-[15.928888px]/[22.4px]  w-full bg-footer lg:~lg/fxl:~rounded-[5.68888px]/[8px] lg:~lg/fxl:~mt-[11.37777px]/[16px] rounded-[8px] flex items-center text">
               Create your store to view recent sales
             </div>
           </div>
-          <div className="w-full lg:~lg/fxl:~mt-[51.2px]/[72px] lg:~lg/fxl:~mb-[85.333px]/[120px]">
-            <h1 className="text-txtgray font-[500] lg:~lg/fxl:~leading-[17.066px]/[24px] lg:~lg/fxl:~leading-[20.01777]/[28.15px]">
+          <div className="w-full lg:~lg/fxl:~mt-[51.2px]/[72px] lg:~lg/fxl:~mb-[85.333px]/[120px] ~fsm/lg:~mt-[32px]/[49px]">
+            <h1 className="text-txtgray font-[400] lg:font-[500]  text-[16px] lg:~lg/fxl:~text-[17.066px]/[24px] lg:~lg/fxl:~leading-[20.01777px]/[28.15px]">
               Recent Store Visits
             </h1>
-            <div className="lg:~lg/fxl:~h-[46.93333px]/[66px] text-txtgray lg:~lg/fxl:~pl-[32px]/[45px] lg:~lg/fxl:~leading-[15.928888px]/[22.4px] lg:~lg/fxl:~text-[11.37777px]/[16px] w-full bg-footer lg:~lg/fxl:~rounded-[5.68888px]/[8px] lg:~lg/fxl:~mt-[11.37777px]/[16px] flex items-center text">
+            <div className="lg:~lg/fxl:~h-[46.93333px]/[66px] h-[56px] mt-[16px] text-txtgray text-[14px] pl-[12px] lg:~lg/fxl:~pl-[32px]/[45px] lg:~lg/fxl:~leading-[15.928888px]/[22.4px] lg:~lg/fxl:~text-[11.37777px]/[16px] w-full bg-footer lg:~lg/fxl:~rounded-[5.68888px]/[8px] rounded-[8px] flex items-center text">
               Create your store to view recent store visits
             </div>
           </div>
         </div>
-        <Footer />
+        <div className="mt-[95px] lg:mt-0">
+          <Footer />
+        </div>
       </>
     );
   }

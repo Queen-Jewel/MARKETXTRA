@@ -24,7 +24,7 @@ export default function RootLayout({
       <Sidebar page={page} />
       <div
         className={`lg:~lg/fxl:~ml-[189.8666px]/[267px] ml-0 ${
-          page === "my-store" ? "" : "lg:~lg/fxl:~pr-[49.066666px]/[69px]"
+          page === "my-store" ? "" : ""
         } `}
       >
         {children}
