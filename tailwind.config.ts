@@ -1,11 +1,16 @@
 import type { Config } from "tailwindcss";
 import scrollbar from "tailwind-scrollbar";
+import fluid, { extract } from "fluid-tailwind";
+
 export default {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: {
+    files: [
+      "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+      "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+      "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    extract,
+  },
   theme: {
     screens: {
       sm: "480px",
@@ -15,6 +20,7 @@ export default {
       "2xl": "1536px",
       // Add custom breakpoints
       fxl: "1440px",
+      fsm: "430px",
     },
     extend: {
       colors: {
@@ -48,5 +54,5 @@ export default {
       },
     },
   },
-  plugins: [scrollbar],
+  plugins: [scrollbar, fluid],
 } satisfies Config;

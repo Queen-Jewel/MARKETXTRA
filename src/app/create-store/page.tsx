@@ -71,7 +71,7 @@ const CreateStore = () => {
 
   return (
     <div className="font-Work bg-transparent relative h-full grid grid-cols-1 lg:grid-cols-2 grid-rows-1 auto-rows-[100vh]">
-      <div className="bg-black min-h-full h-screen w-full relative hidden lg:block">
+      <div className=" min-h-full h-screen w-full relative hidden lg:block">
         <div className="absolute inset-0">
           <Image
             src="/images/banners/womanWithWhiteTeeth.jpeg"
